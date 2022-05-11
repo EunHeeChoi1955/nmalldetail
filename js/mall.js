@@ -9,6 +9,7 @@
             this.smoothScrollFn();         
             this.section1Fn();
             this.section1BtnFn();
+            this.section2Fn();
             this.section3Fn();
             this.section5Fn();
             this.section6Fn();
@@ -69,7 +70,7 @@
                   $smoothBtn.on({
                         click:  function(event){
                               event.preventDefault();
-                              $this = $(this); //현재 클릭한 이(this) 버튼
+                           var $this = $(this); //현재 클릭한 이(this) 버튼
 
                               var url = $this.attr('href'); 
                         if(url !== undefined && url != ''){
@@ -82,155 +83,159 @@
         },
         section1Fn:  function(){
 
-               const slideWrap      = $('#section1 .slide-wrap');
-               const slideContainer = $('#section1 .slide-view');
-               let   cnt            = 0;
-               let   setId          = 0;
-               let   setId2         = 0;
-               let   swipeStart     = null;
-               let   swipeEnd       = null;
-               let   count          = 0;
-   
-               let   dragStart      = null; // 슬라이드 마지막이 처음에서 왼쪽으로 이동된 상태 값을 빼주고 시작
-               let   dragEnd        = null; 
-               let   mouseDown      = null; // 반드시 마우스가 다우된 상태를판단 다운이면 tru, 업이면 false
-   
-   
-   
-               //1.메인슬라이드 함수
-               function mainSlide(){   
-                  // slideWrap.stop().animate({left:(-100*cnt) + '%'});       
-                  slideWrap.stop().animate( {left:(-330*cnt)},600, 'easeInOutExpo',function(){
-                     if(cnt>2){cnt=0}  //다음슬라이드 롤링
-                     if(cnt<0){cnt=2}  //이전슬라이드 롤링
-                     slideWrap.stop().animate( {left:(-330*cnt)},0)
-                  });
-               }
-   
-               //2.다음카운트 함수
-               function nextCount(){
-                  cnt++;
-                  mainSlide();
-               }
-               //2.이전카운트 함수
-               function prevCount(){
-                  cnt--;
-                  mainSlide();
-               }
-               //3.자동타이머 함수
-               function autoTimer(){
-                  setId = setInterval(nextCount, 3000);  //함수호출하고 3초 후에 실행
-                  //console.log('setId', setId);
-               }
-   
-               autoTimer();
-               
-               //4. 마우스 터치 스와이프
-               slideContainer.on({
-                     mousedown: function(event){
-                        //터치스와이프 시작 포지션
-                        swipeStart = event.clientX;
-   
-                        dragStart  = event.clientX - slideWrap.offset().left - 330;
-                        mouseDown  = true;//드래그 시작임을 표시
-                        timerCount(); //터치시작하면 타이머 카운트 실행
-   
-                     },//mousedown 끝
-                     mouseup: function(event){
-                        swipeEnd = event.clientX;
-                        mouseDown  = false; //드래그 끝
-                        if( swipeStart-swipeEnd > 0 ){//다음슬라이드                     
-                           nextCount();
-                        }
-                        if( swipeStart-swipeEnd < 0 ){   // 이전슬라이드                    
-                           prevCount();
-                     }
-               
-                  },// mouseup 끝
-                  mousemove: function(event){//마우스무브
-                     //console.log(event);
-                     // 반드시 마우스를 다운한 상태가 아니면 종료(리턴)시켜라
-                     // if(mouseDown !== true){
-                     // if(mouseDown == null){초기값을 null 지정해야한다.
-                     // if(mouseDown == false){초기값을 false 지정해야한다.
-                     if(!mouseDown){ //true가 아니면
-                        return;
-                     }
-                     dragEnd  = event.clientX; //마우스가 움직이면 계속 드래그된다.
-                     // 이동거리는 = dragEnd - dragStart;
-                     slideWrap.css({left: dragEnd - dragStart })
-                  },
-                  mouseleave: function(event){ 
-                        if(!mouseDown){return}
-                        swipeEnd = event.clientX;
-                        mouseDown  = false; //드래그 끝
-                        if( swipeStart-swipeEnd > 0 ){//다음슬라이드                       
-                           nextCount();
-                        }
-                        if( swipeStart-swipeEnd < 0 ){   // 이전슬라이드                        
-                           prevCount();
-                        }
-                  
-                  }
-               });
-               //4-2. 타이머를 컨트롤 타이머 만들어서 5초 동안 터치가 없으면 다시
-               // 타이머카운트함수 : 마우스 터치시에 슬라이드 정지시키고
-               //                   카운트 동작 5초간 터치가 없으면 다시
-               //                   다음 슬라이드 자동타이머 동작 알고리즘
-               // 타이머카운트함수
-               function timerCount(){
-                  clearInterval(setId); // setId 중지
-                  clearInterval(setId2); // setId2 중지
-                     count  = 0;         // 초기화 다시 카운트
-                     setId2 = setInterval(function(){
-                        count++;          // 증가변수는 반드시 초기값 설정                        
-                        if(count>5){      // 5초간 터치가 없으면 
-                           nextCount();   // 다음슬라이드 호출 실행
-                           autoTimer();   // 자동타이머 딱한번 호출하면 3초후 무한반복
-                           clearInterval(setId2);// 나 setId2자신을 중지시켜라
-                        }
-                     }, 1000);   // 자동타이머가 중지되면 카운트가 1초에 1회씩 증가
-                     
-                  
-                  }//
-               
-               //5. 마우스 드레그 앤 드롭
-               // mousemove
-   
-               //6. 반응형 모바일 손가락 핑거 드래드 앤 드롭(반응형)
-               // 마우스 인식못함 동작안함
-               // 반응형 진행하고 폴리필 touchEvent 추가
-               // touchstart(mousedown) / touchend(mouseup) / touchmove(mousemove)
-               slideContainer.on({
 
-                  
-                  touchstart: function(event){
-                     swipeStart = event.originalEvent.touches[0].clientX;
-                     dragStart  = event.originalEvent.touches[0].clientX - slideWrap.offset().left - 330;
-                     mouseDown  = true;//드래그 시작임을 표시  
-                     timerCount(); //터치시작하면 타이머 카운트 실행
-                  },
-                  touchend: function(event){
-                  
-                        swipeEnd   = event.originalEvent.changedTouches[0].clientX;   
-                        mouseDown  = false; //드래그 끝   
-                        if( swipeStart-swipeEnd > 0 ){//다음슬라이드                     
-                           nextCount();
-                        }
-                        if( swipeStart-swipeEnd < 0 ){   // 이전슬라이드                    
-                           prevCount();
-                        }   
-   
-                  },
-                  touchmove: function(event){                 
-                     if(!mouseDown){ //true가 아니면
-                        return;
-                     }
-                     dragEnd  = event.originalEvent.touches[0].clientX; //마우스가 움직이면 계속 드래그된다.
-                     // 이동거리는 = dragEnd - dragStart;
-                     slideWrap.css({left: dragEnd - dragStart })
+         const slideWrap      = $('#section1 .slide-wrap');
+         const slideContainer = $('#section1 .slide-view');
+         var setId = 0;
+         var t = 0;
+         var t2 = 0;
+         var ratio = $(' #section1 .slide').eq(0).innerWidth();
+         var slideW = $(window).innerWidth()*( ratio / $(window).innerWidth() ); //슬라이드너비 = 창너비*(슬라이드너비/창너비); //0.435627956 슬라이드 1개의 창너비의 대한 너비 비율
+         var m = $('#section1 .slide-wrap>li').length+1; //총 슬라이드 갯수 좌측슬라이드+중앙슬라이드+우측슬라이드
+         var n = m-2-1; //가운데 중앙슬라이드 갯수 4 = 7-2-1 (슬라이드는 5개 인덱스번호는 0 ~ 4)
+         var cnt = 0;
+         let   swipeStart     = null;
+         let   swipeEnd       = null;
+
+
+
+
+            
+            autoPlay('_play');  //자동실행 4초 후에 실행
+         
+         
+            function autoPlay(z){
+               if( z=='_play' || z=='_mouseleave' || z=='_play_auto'){
+                  if(t2==0){ //플레이버튼 클릭과 마우스떠났을때
+                           //두번 자동실행을 막기 위해 t2변수 사용 버블링 디버깅.
+                           
+                     setId = setInterval(nextSlide,3000);
+                     t2=1;
                   }
+               }			
+            }	
+            
+            
+            //슬라이드의 모든 버튼위에 마우스 올리면 타이머 일시정지
+            
+            $('#section1  .slide-wrap').on({
+               
+               mouseover:	function(e){
+                  clearInterval(setId);  	//일시정지
+                  t=0;
+               },
+               mouseout:	function(e){				
+                  if(t==0){  	//플레이버튼 스톱(▶) 상태이라면 플레이 불가능
+                     t2=0;	//자동실행함수를 호출시 변수 초기화
+                     clearInterval(setId);  	//일시정지
+                     autoPlay('_mouseleave'); //플레이(||)	상태에서 자동 실행 가능	
+                    
+                     
+                  }
+               }
+               
+            });
+      
+      
+          
+      
+            //메인 슬라이드 함수
+            function mainSlide(){
+            
+               $('#section1 .slide-wrap li').stop().animate({ left: -slideW*cnt}, 600, function(){
+                  cnt>n?cnt=0:cnt;
+                  cnt<0?cnt=n:cnt;
+                  $('#section1 .slide-wrap li').stop().animate({ left: -slideW*cnt}, 0);
+                  cnt>n?cnt=0:cnt;
                });
+            
+               
+               
+            }
+            
+      	
+          
+      
+      
+      
+            //다음 슬라이드 카운트 함수
+            function nextSlide(){
+               cnt++;
+               mainSlide();
+            }
+      
+      
+            //이전 슬라이드 카운트 함수
+            function prevSlide(){
+               cnt--;
+               mainSlide();
+            }
+      
+      
+         
+
+            //4. 마우스 터치 스와이프
+            slideContainer.on({
+               mousedown: function(event){
+                  //터치스와이프 시작 포지션
+                  swipeStart = event.clientX;
+                  dragStart  = event.clientX - slideWrap.offset().left -slideW*cnt;
+                  mouseDown  = true;//드래그 시작임을 표시
+                  
+
+               },//mousedown 끝
+               mouseup: function(event){
+                  swipeEnd = event.clientX;
+                  mouseDown  = false; //드래그 끝
+                  
+                  if( swipeStart-swipeEnd > 0 ){//다음슬라이드                     
+                     nextSlide();
+                  }
+                  if( swipeStart-swipeEnd < 0 ){   // 이전슬라이드                    
+                     prevSlide();
+               }
+            
+            }
+         });
+
+
+      
+         //5. 마우스 드레그 앤 드롭
+         // mousemove
+
+         //6. 반응형 모바일 손가락 핑거 드래드 앤 드롭(반응형)
+         // 마우스 인식못함 동작안함
+         // 반응형 진행하고 폴리필 touchEvent 추가
+         // touchstart(mousedown) / touchend(mouseup) / touchmove(mousemove)
+         slideContainer.on({
+            touchstart: function(event){
+            
+               swipeStart = event.originalEvent.touches[0].clientX;
+               dragStart  = event.originalEvent.touches[0].clientX - slideWrap.offset().left -slideW*cnt;
+               mouseDown  = true;//드래그 시작임을 표시 
+                                 
+            },
+            touchend: function(event){                  
+                  swipeEnd   = event.originalEvent.changedTouches[0].clientX;   
+                  mouseDown  = false; //드래그 끝
+                  
+                  
+                  if( swipeStart-swipeEnd > 0 ){//다음슬라이드                     
+                     nextSlide();
+                  }
+                  if( swipeStart-swipeEnd < 0 ){   // 이전슬라이드                    
+                     prevSlide();
+                     
+                  }   
+            }
+         });
+
+
+
+
+
+
+
    
         },
         section1BtnFn:  function(){
@@ -323,6 +328,57 @@
                   }
                });
    
+        },
+        section2Fn: function(){
+            //    // svg 애니메잉션 선택자 
+            //    const circleAni = $('.circleAni');
+            //    let   objLength = [];  //4개의 길이를 각각 저장 
+            //    let   per       = [ .9 , .75 , .9 , .65 ];  //4개의 길이를 각각 저장 
+
+
+
+               
+            //    //개체(Object) 배열 반열 처리
+            //    $.each(circleAni, function(idx, obj){
+            //       //서클원형의 전체 길이를 산출
+            //       objLength[idx] = obj.getTotalLength();
+            //       //console.log(`objLength[${idx}] : ${objLength[idx]}`);
+            //       // obj.style.strokeDasharray = objLength[idx];
+            //       // obj.style.strokeDashoffset = objLength[idx];
+
+            //       //내일 배열처리 
+            //       //백분율 계산처리
+            //       //반복문 처리 애니메이션
+            //       //시간을 이용 애니메이션 제작
+
+            //   });
+
+
+
+               // 카운트
+               // 3초간 자동증가
+               let cnt   = [0,0,0,0,0,0,0,0,0,0];
+               let setId = [null,null,null,null,null,null,null,null,null,null];
+               let time  = [60,60,60,60,60,60,60,60,60,60];
+               //let num   = [60,60,60,60,60,60,60,60,60,60];
+
+               function countfn(n){
+                  cnt[n]++;
+                  
+                  if(cnt[n]>time[n]){
+                     clearInterval(setId[n]);
+                  }
+                  else{
+                     $('.time>.right').eq(n).html(`<i>${cnt[n]+`:`+cnt[n]+`:`+cnt[n]}<i>`);
+                  }
+                  cnt[n]=0;
+               }
+               for(let i=0; i<10; i++){
+                  setId[i] = setInterval( function(){
+                     countfn(i);
+                  }, time[i] );
+               }
+
         },
         section3Fn:  function(){
 
@@ -609,20 +665,6 @@
 
 
 
-		// //4터치이벤트
-		// slideContainer.swipe({
-		// 	swipeLeft:	function(){
-		// 		clearInterval( setId );	//자동타이머호출
-		// 		nextCount();		//다음 슬라이드 호출				
-		// 		timerControlFn();	//6초간 터이 없으면 동작하는 함수
-				
-		// 	},swipeRight:	function(){
-		// 		clearInterval( setId );
-		// 		prevCount();
-		// 		timerControlFn();
-		// 	}
-		// });
-		
          
          //5. 마우스 드레그 앤 드롭
          // mousemove
@@ -763,7 +805,7 @@
          var slideW = $(window).innerWidth()*( ratio / $(window).innerWidth() ); //슬라이드너비 = 창너비*(슬라이드너비/창너비); //0.435627956 슬라이드 1개의 창너비의 대한 너비 비율
          var m = $('#section9 .screensWrap>li').length+1; //총 슬라이드 갯수 좌측슬라이드+중앙슬라이드+우측슬라이드
          var n = m-2-1; //가운데 중앙슬라이드 갯수 4 = 7-2-1 (슬라이드는 5개 인덱스번호는 0 ~ 4)
-         //var slideW = $(window).innerWidth()*ratio; //슬라이드너비 = 창너비*슬라이드1개의비율값
+        
          var cnt = 0;
          var heart = $('#section9 .heart');
         
@@ -949,147 +991,19 @@
         },
         section10Fn: function(){
 
-         // const slideWrap      = $('#section10 .slide-wrap');
-         // const slideContainer = $('#section10 .slide-view');
-         // var setId = 0;
-         // var t = 0;
-         // var t2 = 0;
-         // var ratio = $(' #section10 .item').eq(0).innerHeight();
-         // var slideH = $(window).innerHeight()*( ratio / $(window).innerHeight() ); //슬라이드너비 = 창너비*(슬라이드너비/창너비); //0.435627956 슬라이드 1개의 창너비의 대한 너비 비율
-         // var m = $('#section10 .screensWrap>li').length+1; //총 슬라이드 갯수 좌측슬라이드+중앙슬라이드+우측슬라이드
-         // var n = m-1-1; //가운데 중앙슬라이드 갯수 4 = 7-2-1 (슬라이드는 5개 인덱스번호는 0 ~ 4)
-         // //var slideW = $(window).innerWidth()*ratio; //슬라이드너비 = 창너비*슬라이드1개의비율값
-         // var cnt = 0;
-      
-            
-         //    autoPlay('_play');  //자동실행 4초 후에 실행
-         
-         
-         //    function autoPlay(z){
-         //       if( z=='_play' || z=='_mouseleave' || z=='_play_auto'){
-         //          if(t2==0){ //플레이버튼 클릭과 마우스떠났을때
-         //                   //두번 자동실행을 막기 위해 t2변수 사용 버블링 디버깅.
-                           
-         //             setId = setInterval(nextSlide,3000);
-         //             t2=1;
-         //          }
-         //       }			
-         //    }	
-            
-            
-         //    //슬라이드의 모든 버튼위에 마우스 올리면 타이머 일시정지
-            
-         //    $('#section10 .slideControl, .screensWrap').on({
-               
-         //       mouseover:	function(e){
-         //          clearInterval(setId);  	//일시정지
-         //          $(e.target).addClass('addBtn10');
-         //          t=0;
-         //       },
-         //       mouseout:	function(e){				
-         //          if(t==0){  	//플레이버튼 스톱(▶) 상태이라면 플레이 불가능
-         //             t2=0;	//자동실행함수를 호출시 변수 초기화
-         //             clearInterval(setId);  	//일시정지
-         //             autoPlay('_mouseleave'); //플레이(||)	상태에서 자동 실행 가능	
-         //             $(e.target).removeClass('addBtn10');
-         //          }
-         //       }
-               
-         //    });
-      
-         
-         
-          
-      
-         
-         //    //메인 슬라이드 함수
-         //    function mainSlide(){
-            
-         //       $('#section10 .screensWrap').stop().animate({ top: -slideH*cnt}, 600, function(){
-         //          cnt>n?cnt=0:cnt;
-         //          cnt<0?cnt=n:cnt;
-         //          $('#section10 .screensWrap').stop().animate({ top: -slideH*cnt}, 0);
-         //          cnt>5?cnt=0:cnt;
-         //       });
-            
-         //       navFn();
-               
-         //    }
-            
-      
-         //    //네비게이션 버튼(페이지 버튼==인디게이터 버튼) 마킹(Marking) 이벤트 
-         //    function navFn(){
-               
-         //       $('#section10 .navItems').removeClass('addBtn10');	    //초기화
-         //       $('#section10 .item').removeClass('addBtn10');	    //초기화
-         //       $('#section10 .navItems').eq(cnt>n?0:cnt).addClass('addBtn10');	//해당 슬라이드 버튼만 표시 
-         //       $('#section10 .item').eq(cnt>n?0:cnt).addClass('addBtn10');	//해당 슬라이드 버튼만 표시 
-      
-                  
-                     
-         //    }		
-      
          
       
-         //    ////////////////////////////////////////////////////////////////////////
-         //    //네비게이션 버튼 클릭이벤트
-         //    //네비게이션 버튼을 배열처리(each()메소드)하여 인덱스값 이용
-         //    $('#section10 .navItems').each(function(index){
-         //       $(this).on({
-         //          click:	function(){
-         //             cnt = index;
-         //             mainSlide();
-         //          }
-         //       });
-         //    });
-      
-      
-         //    //다음 슬라이드 카운트 함수
-         //    function nextSlide(){
-         //       cnt++;
-         //       mainSlide();
-         //    }
-      
-      
-         //    //이전 슬라이드 카운트 함수
-         //    function prevSlide(){
-         //       cnt--;
-         //       mainSlide();
-         //    }
-      
-      
-         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
          const slideWrap      = $('#section10 .slide-wrap');
-          //const slideContainer = $('#section10 .slide-view');
+         
           var setId = 0;
           var t = 0;
           var t2 = 0;
-          //var ratio = $(' #section10 .item').eq(0).innerHeight();
-          //var slideH = $(window).innerHeight()*( ratio / $(window).innerHeight() ); //슬라이드너비 = 창너비*(슬라이드너비/창너비); //0.435627956 슬라이드 1개의 창너비의 대한 너비 비율
+        
           var m = $('#section10 .img-box'); //총 슬라이드 갯수 좌측슬라이드+중앙슬라이드+우측슬라이드
           var n = m-1; //가운데 중앙슬라이드 갯수 4 = 7-2-1 (슬라이드는 5개 인덱스번호는 0 ~ 4)
-         // var slideH = $(window).innerHeight()*ratio; //슬라이드너비 = 창너비*슬라이드1개의비율값
+        
           var cnt = 0;
           var Btn =$('#section10 .pageBtn ');
           var item =$('#section10 .item');

@@ -85,19 +85,280 @@
 
         },
         section1Fn:  function(){
-         var Detailheart   = $('#wrap1> #main> #section1 .detail-heart');
+            
 
 
-               // sec1 detail heart 클릭 이벤트
-               Detailheart.each(function (idx) {
+
+
+
+            //   탭버튼 이벤트
+               var t=0;
+               var tab8_btn = $('.tab .active');
+               var tab8mobile = $('#section1 .tabBtn');
+               priceBox       = $('#wrap1> #main>#section1 .priceBox');
+
+
+               $('.tabBtn').on({
+                  click:	function(){
+                     showHideList();
+                  }
+               });
+               
+               
+               $(".tab > li > a").click(function(e) {
+               e.preventDefault();	
+               priceBox.removeClass('addClose'); // 탭버튼 누르면 priceBox 다시나타남
+               // 전역변수 조정
+               showHideList();
+               
+               //새로운 클릭일 경우에만 ui 변경
+               if(!$(this).parent().hasClass('active')) { 
+                 $('.tabBtn').text($(this).text()); //보여지는 제목 바꾸기
+               }
+               
+               // 액티브 조정 
+               $(this).parent().siblings().removeClass('active').end().addClass('active');
+               
+               });
+               
+               //모바일 & PC 공통 
+               $(".tabs a").click(function(e) {
+                  e.preventDefault();	
+                  $(this).parent().siblings().removeClass('active').end().addClass('active');
+                  
+               //	$(this).parents('ul').next().children().hide().eq($(this).parent().index()).show();
+                  $('.tab').parents('ul').next().children().hide().eq($(this).parent().index()).show();
+               });
+               
+               //현재 active 되어있는 탭 외의 모든 데이터 접기 => 모바일도 적용하기 위해선 공통 class 생성하여 적용 필요
+               $('.ServiceTab > li').on('click', function(e){
+                  e.preventDefault();	
+               // $(".nav").navgoco('toggle', false);
+                  $(".nav > li").removeClass('active');
+                  $(".nav > li").removeClass('open');
+               });
+               
+               function showHideList() {
+                  if(t==0){
+                     t=1;
+                     $('.tab').stop().slideDown();
+                     $('.tabBtn').addClass('addFamily');
+                  }else{
+                     t=0;
+                     $('.tab').hide();
+                     $('.tabBtn').removeClass('addFamily');	
+                     $('.tabBtn').children().stop().slideUp();	
+                  }
+               }
+               
+
+
+
+
+               // 버튼클릭 이벤트 
+               reset =0;
+               PriceCloseBtn     = $('#wrap1> #main>#section1 .PriceCloseBtn');
+               priceBox          = $('#wrap1> #main>#section1 .priceBox');
+               ArrowBtn          = $('#wrap1> #main>#section1 .arrowBtn');
+               BoxWrap4          = $('#wrap1> #main>#section1 .btnBoxWrap4');
+               BoxWrap3          = $('#wrap1> #main>#section1 .btnBoxWrap3');
+               BoxWrap1          = $('#wrap1> #main>#section1 .btnBoxWrap1');
+               buyNow            = $('#wrap1> #main>#section1 .buyNow');
+               gift              = $('#wrap1> #main>#section1 .gift');
+               Cart              = $('#wrap1> #main>#section1 .cart');    // 장바구니 버튼
+               CartHide          = $('#wrap1> #main>#section1 #cart');    // 장바구니 팝업창 이미지
+               mypickHide        = $('#wrap1> #main>#section1 #myPick'); // 찜하기 팝업창 띄우기
+               myPick            = $('#wrap1> #main>#section1 .myPick'); //버튼빨강색으로 만들기
+               CartHide          = $('#wrap1> #main>#section1 #cart');
+               removeMyPickHide  = $('#wrap1> #main>#section1 #removeMyPick'); // 찜하기해제 팝업창 띄우기
+               closeBtn          = $('#wrap1> #main>#section1 .closeBtn');
+               share             = $('#wrap1> #main>#section1 #share');    // SNS공유하기 팝업창
+               shareBtn          = $('#wrap1> #main>#section1 .share');  // SNS 공유하기 버튼  하트옆에있는거
+               coupon            = $('#wrap1> #main>#section1 .coupon');   // 쿠폰 (팝업창떴을때)
+               couponWrap        = $('#wrap1> #main>#section1 #coupon');   // 쿠폰 창 전체
+               getCoupon         = $('#wrap1> #main>#section1 .getCoupon');// 쿠폰 받기 버튼 (상세페이지)
+               getAllCoupon      = $('#wrap1> #main>#section1 .getAllCoupon');    // 모두다운받기 버튼 (팝업창)
+
+
+
+
+
+
+
+
+               // sec1 myPick 찜하기 클릭 이벤트
+               myPick.each(function (idx) {
                   $(this).on({
                       click: function () {
                       
-                        Detailheart.eq(idx).toggleClass('addDetailHeart'); // 클래스 주입
+                         myPick.eq(idx).toggleClass('addMyPick'); // 클래스 토글버튼
+                        // mypickHide.addClass('MyPickShow '); // 클래스 주입
+                        // setTimeout(function() { mypickHide.stop().removeClass('MyPickShow')},1500);
+
+                        if(myPick.eq(idx).hasClass("addMyPick")) { // 빨간하트 addclass하면
+                           mypickHide.addClass('MyPickShow '); // 찜하기 팝업 뜨고
+                           setTimeout(function() { mypickHide.stop().removeClass('MyPickShow')},1000);   //1.5초 뒤에 팝업창 사라짐
+                       } else if(myPick.eq(idx).removeClass("addMyPick")) {   //빨간하트 removeclass 해제하면
+                           removeMyPickHide.addClass('removeMyPick');   //찜하기 해제 팝업창 뜨고
+                           setTimeout(function() { removeMyPickHide.stop().removeClass('removeMyPick')},1000); //1.5초 뒤에 팝업창 사라짐
+                       }
                          
                       }
                   });
               });
+
+
+            //  url복사되었습니다 팝업창 뜨고 1.5초뒤에 사라지기
+              $('.urlCopyBtn').click(function(){	
+                  var urlAddress= $('#urlAddress');
+                  var urlCopytxt= $('.urlCopytxt');
+
+                  urlAddress.css('display','block').select();
+                  document.execCommand("Copy"); // url 복사됨
+                  urlAddress.css('display','none');                    	
+                 
+                         
+                  urlCopytxt.addClass('addUrlCopyTxt'); // url복사되었습니다 팝업 뜨고
+                  setTimeout(function() { urlCopytxt.stop().removeClass('addUrlCopyTxt')},1000);   //1.5초 뒤에 팝업창 사라짐           	
+                  return false;
+            });
+           
+
+
+              // 모두다운받기버튼 누르면 모든쿠폰들이 회색쿠폰으로 변함 
+              getAllCoupon.each(function (idx) {
+               
+                  $(this).on({
+                     click: function () {
+                        coupon.addClass('couponGray'); 
+                        getAllCoupon.addClass('couponGray');                
+                     }
+                     
+                  });
+               });
+
+
+               
+              // 쿠폰 누르면  회색쿠폰으로 변함 
+              coupon.each(function (idx) {
+                  $(this).on({
+                     
+                     click: function () {
+                        
+                        coupon.eq(idx).addClass('couponGray'); //공유하기창 사라짐
+                     }
+                  });
+               });
+
+
+
+              // x 버튼 누르면  share 공유하기 창 사라짐 
+              closeBtn.each(function (idx) {
+                  $(this).on({
+                     click: function () {
+                        share.hide(); //공유하기창 사라짐
+                        couponWrap.removeClass('addCoupon'); //공유하기창 사라짐
+                     }
+                  });
+               });
+
+
+
+              // shareBtn 버튼 누르면  share 공유하기 창  나타남 
+              shareBtn.each(function (idx) {
+                  $(this).on({
+                     click: function () {
+                        share.show(); //공유하기창 사라짐
+                     }
+                  });
+               });
+
+
+
+              // 쿠폰받기 버튼 누르면  coupon창  나타남 
+              getCoupon.each(function (idx) {
+                  $(this).on({
+                     click: function () {
+                        couponWrap.addClass('addCoupon'); //공유하기창 사라짐
+                     }
+                  });
+               });
+
+
+
+
+
+
+
+               // cart 버튼 누르면  장바구니 팝업 나타남 
+               Cart.each(function (idx) {
+                  $(this).on({
+                      click: function () {
+                      
+                        CartHide.addClass('cartShow '); // 클래스 주입
+                        setTimeout(function() { CartHide.stop().removeClass('cartShow')},1000);
+                        
+                     }
+                      
+                  });
+                  
+              });
+
+
+               //XBtn눌렀을때 price box 없어짐
+               PriceCloseBtn.each(function (idx) {
+                  $(this).on({
+                      click: function () {
+                      
+                        priceBox.addClass('addClose'); // 클래스 주입
+                         
+                      }
+                  });
+              });
+
+
+
+               // Down화살표 버튼 누르면  btnBoxWrap3, 4 사라짐  
+               ArrowBtn.each(function (idx) {
+                  $(this).on({
+                      click: function () {
+                      
+                        BoxWrap4.addClass('addhide'); // 클래스 주입
+                        BoxWrap3.addClass('addhide'); // 클래스 주입
+                        BoxWrap1.addClass('addShow'); // 클래스 주입
+                         
+                      }
+                  });
+              });
+
+              
+
+            
+             
+               // 바로구매 버튼 누르면 BoxWrap3 나타남
+               buyNow.each(function (idx) {
+                  $(this).on({
+                      click: function () {
+                      
+                        BoxWrap3.removeClass('addhide'); // 클래스  삭제
+                        BoxWrap1.removeClass('addShow'); // 클래스  삭제
+                      }
+                  });
+              });
+
+               // gift 버튼 누르면  btnBoxWrap4 나타남  
+               gift.each(function (idx) {
+                  $(this).on({
+                      click: function () {
+                      
+                        BoxWrap4.removeClass('addhide'); // 클래스 삭제
+                        BoxWrap1.removeClass('addShow'); // 클래스 삭제
+                         
+                      }
+                  });
+              });
+
+
 
 
               
