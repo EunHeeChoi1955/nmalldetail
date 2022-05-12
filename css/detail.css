@@ -167,7 +167,7 @@
 #coupon .couponwrap {width: 100%; font-family: 'SUIT';}
 #coupon .couponwrap .coupon-gap { width: 100%; }
 
-#coupon .couponwrap .coupon-gap .coupon-content { position:absolute; top:30%; left: 50%; margin-left: -174px; background: #fff; display: block; border-radius: 6px;}
+#coupon .couponwrap .coupon-gap .coupon-content { position:absolute; top:20%; left: 50%; margin-left: -174px; background: #fff; display: block; border-radius: 6px;}
 
 /* 쿠폰 x버튼 */
 #coupon .couponwrap .coupon-gap .coupon-content .closeBtn-wrap {  display: inline-block; position: absolute; top:10px; right: 10px; text-align: right;}
