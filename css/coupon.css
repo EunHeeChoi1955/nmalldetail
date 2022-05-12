@@ -3,17 +3,21 @@
 @import url(./fonts.css);
 
 
-/* 이미지 클릭시 확대 */
-*{   width:100%; height: 100%;}
-html, body {background: #fff; color: #fff;  }
+
+
+html, body {background: #fff; color: #fff;  width: 100%; height: 100%;}
+a {text-decoration: none;}
+h5,h4,h3,h2,h1,button {height: auto; width: auto; margin: 0;  }
 
 
 
 
-#coupon { max-width:1280px;width:100%; height: 100%; background: #fff; margin: 0 auto;display: block; }
-#coupon >.TopContainer {position: relative; width:100%; max-width:1280px; padding-top: 52px; margin: 0 auto;display: block;font-family: 'SUIT';}
+#wrap  {position: relative; width: 100%; height: 100%; }
+
+#wrap #coupon {position: relative; max-width:1280px;width:100%; height: 100%; background: #fff; margin: 0 auto;display: block; }
+#coupon >.TopContainer {z-index:4; position: relative; width:100%; max-width:1280px; padding-top: 52px; margin: 0 auto;display: block;font-family: 'SUIT';}
 /* 상단 로그인top */
-#coupon >.TopContainer .topWrap{ position: absolute; top: 0; left: 0; display: flex; height: 52px; width:100%;  display: flex;color: #1A1A1A;  padding: 10px ;  }
+#coupon >.TopContainer .topWrap{ z-index:3; position: absolute; top: 0; left: 0; display: flex; height: 52px; width:100%;  display: flex;color: #1A1A1A;  padding: 10px ;  }
 #coupon >.TopContainer .topWrap .Top { text-align: center;  padding:0 18px;}
 #coupon >.TopContainer .topWrap .Top .TopTxt {font-size: 18px; line-height: 190%; font-weight: 400; }
 #coupon >.TopContainer .topWrap .Back {  width:30px; }
@@ -63,11 +67,9 @@ html, body {background: #fff; color: #fff;  }
 /* 쿠폰들 */
 #coupon >.TopContainer .couponwrap .coupon-gap .coupon-content> ul { padding:0 16px 0 16px; display:inline-block;width: 100%; margin: 0 auto;text-overflow:ellipsis; }
 #coupon >.TopContainer .couponwrap .coupon-gap .coupon-content> ul> li { display:block;  text-align:center;   padding-bottom: 10px;}
-#coupon >.TopContainer .couponwrap .coupon-gap .coupon-content> ul> li a { width: auto; text-align: left; height:117px;display: inline-block; padding:10px 55px 10px 30px; background: url(../img/coupon_check.svg) no-repeat 50% 50%;background-size: contain;}
-#coupon >.TopContainer .couponwrap .coupon-gap .coupon-content> ul> li.couponGray a { background: url(../img/coupon_gray.svg) no-repeat 50% 50%;}
-#coupon >.TopContainer .couponwrap .coupon-gap .coupon-content> ul> li a .couponText {vertical-align: middle; display: inline-block; margin: 0 auto; width: auto; height: auto;}
+#coupon >.TopContainer .couponwrap .coupon-gap .coupon-content> ul> li a { text-align: left; display: inline-block; background: url(../img/mypageCoupon.svg) no-repeat 50% 50%;background-size: contain;}
+#coupon >.TopContainer .couponwrap .coupon-gap .coupon-content> ul> li a .couponText { padding:7px 55px 10px 30px;vertical-align: middle; display: inline-block; margin: 0 auto; width: auto; height: auto;}
 #coupon >.TopContainer .couponwrap .coupon-gap .coupon-content> ul> li a .couponText div{ color: #FF5C38; font-size: 26px; font-weight: 700; margin: 0; height: auto;}
-#coupon >.TopContainer .couponwrap .coupon-gap .coupon-content> ul> li.couponGray a .couponText div{ color: #CCCCCC; }
 #coupon >.TopContainer .couponwrap .coupon-gap .coupon-content> ul> li a .couponText div .percent{font-size: 20px; height: auto; }
 #coupon >.TopContainer .couponwrap .coupon-gap .coupon-content> ul> li a .couponText div .new { width: 30px;  height: 30px;}
 #coupon >.TopContainer .couponwrap .coupon-gap .coupon-content> ul> li a .couponText div .new img{width: 30px; margin: -10px 0 0 5px;}
@@ -77,11 +79,72 @@ html, body {background: #fff; color: #fff;  }
 
 
 
+/* 팝업 */
+#Popup {display:none; z-index:5; position:fixed; top:0; left: 0; background: rgba(0,0,0, .7); width: 100%; height: 100%;}
+#Popup.popupShow {display:block; z-index:5; position:fixed; top:0; left: 0; background: rgba(0,0,0, .7); width: 100%; height: 100%;}
+#Popup .couponWrap { display: block; position:relative; top:0; margin-top:200px; left: 50%; margin-left:-164px; background:#fff;  width: 328px; height: auto; border-radius: 6px; }
+#Popup .couponWrap .couponGap { padding:18px;}
+#Popup .couponWrap .couponGap .couponContent{width: 100%; }
+#Popup .couponWrap .couponGap .couponContent .coupon{width: 100%;  }
+#Popup .couponWrap .couponGap .couponContent .coupon a{ text-decoration: none; width: 100%; text-align: left; display: inline-block; background: url(../img/PopUpCoupon.svg) no-repeat 50% 50%;background-size: contain;}
+#Popup .couponWrap .couponGap .couponContent .coupon a .couponText{height: auto; padding:10px 55px 10px 20px;}
+#Popup .couponWrap .couponGap .couponContent .coupon a .couponText .price { color: #FF5C38; font-size: 26px; font-weight: 700; margin: 0; height: auto;}
+#Popup .couponWrap .couponGap .couponContent .coupon a .couponText .price .percent { font-size: 20px; height: auto;}
+#Popup .couponWrap .couponGap .couponContent .coupon a .couponText .price .new { width: auto;}
+#Popup .couponWrap .couponGap .couponContent .coupon a .couponText .price .new img{width: 28px; margin: -10px 0 0 5px;}
+#Popup .couponWrap .couponGap .couponContent .coupon a .couponText .txt2 {padding:0 0 2px 0;font-size:  14px; font-weight: 400; color: #1A1A1A;height: auto; white-space:nowrap;text-overflow:ellipsis;}
+#Popup .couponWrap .couponGap .couponContent .coupon a .couponText .txt3 {font-size: 12px; color:#797979 ;height: auto; font-weight: 400;text-overflow:ellipsis;white-space:nowrap;}
+
+
+#Popup .couponWrap .couponGap .couponContent .couponTxt2 { padding: 18px 0 20px 0; border-bottom: 1px solid #E2E2E2; }
+#Popup .couponWrap .couponGap .couponContent .couponTxt2>.txt2 {padding-bottom:2px;font-size:  14px; font-weight: 400; color: #1A1A1A;height: auto; white-space:nowrap;}
+#Popup .couponWrap .couponGap .couponContent .couponTxt2>.txt3 {font-size: 12px; color:#797979 ;height: auto; font-weight: 400;}
+
+#Popup .couponWrap .couponGap .couponContent .list {width: 100%;}
+#Popup .couponWrap .couponGap .couponContent .list h3 {font-size: 16px; font-weight: 700;}
+#Popup .couponWrap .couponGap .couponContent .list ul {width: 100%;}
+#Popup .couponWrap .couponGap .couponContent .list ul li {padding-bottom: 11px;}
+#Popup .couponWrap .couponGap .couponContent .list ul li a {display: flex;text-decoration: none; color: #1A1A1A;}
+#Popup .couponWrap .couponGap .couponContent .list ul li a .left { width: 72px;}
+#Popup .couponWrap .couponGap .couponContent .list ul li a .left img {width: 72px;}
+#Popup .couponWrap .couponGap .couponContent .list ul li a .right {display: inline-block; padding: 1px 0 0 12px;}
+#Popup .couponWrap .couponGap .couponContent .list ul li a .right .txt2 { font-size: 14px; }
+#Popup .couponWrap .couponGap .couponContent .list ul li a .right .txt3 { padding:1px 0 0 0;display: flex; font-size: 16px;font-weight: 700;}
+#Popup .couponWrap .couponGap .couponContent .list ul li a .right .txt3 .red {color: #FF5C38; font-weight: 700; font-size: 18px; }
+#Popup .couponWrap .couponGap .couponContent .list ul li a .right .txt3 .red .Percent {font-weight: 400; font-size: 14px; }
+#Popup .couponWrap .couponGap .couponContent .list ul li a .right .txt3 .price  {margin:auto 10px auto 5px;}
+#Popup .couponWrap .couponGap .couponContent .list ul li a .right .txt3 div .won {font-size: 12px; font-weight: 400;vertical-align: baseline;}
+#Popup .couponWrap .couponGap .couponContent .list ul li a .right .txt3 div button {font-size: 12px; padding: 3px 6px ;font-weight: 400; border-radius: 4px; border:1px solid #E2E2E2; background: #fff; vertical-align: baseline;} 
+
+
+#coupon >.TopContainer .couponContents .CloseBtn {display: block; width: 100%;}
+#coupon >.TopContainer .couponContents .CloseBtn button {display: block; padding:12px 0; color: #fff; background: #FF5C38; border-radius: 6px; border: 0; width: 100%;}
 
 
 
 
 
+/* 팝업1 */
+#Popup1 {display:none; z-index:5; position:fixed; top:0; left: 0; background: rgba(0,0,0, .7); width: 100%; height: 100%;}
+#Popup1.popupShow {display:block; z-index:5; position:fixed; top:0; left: 0; background: rgba(0,0,0, .7); width: 100%; height: 100%;}
+#Popup1 .couponWrap { display: block; position:relative; top:0; margin-top:200px; left: 50%; margin-left:-164px; background:#fff;  width: 328px; height: auto; border-radius: 6px; }
+#Popup1 .couponWrap .couponGap { padding:18px;}
+#Popup1 .couponWrap .couponGap .couponContent{width: 100%; }
+#Popup1 .couponWrap .couponGap .couponContent .coupon{width: 100%;  }
+#Popup1 .couponWrap .couponGap .couponContent .coupon a{ text-decoration: none; width: 100%; text-align: left; display: inline-block; background: url(../img/PopUpCoupon.svg) no-repeat 50% 50%;background-size: contain;}
+#Popup1 .couponWrap .couponGap .couponContent .coupon a .couponText{height: auto; padding:10px 55px 10px 20px;}
+#Popup1 .couponWrap .couponGap .couponContent .coupon a .couponText .price { color: #FF5C38; font-size: 26px; font-weight: 700; margin: 0; height: auto;}
+#Popup1 .couponWrap .couponGap .couponContent .coupon a .couponText .price .percent { font-size: 20px; height: auto;}
+#Popup1 .couponWrap .couponGap .couponContent .coupon a .couponText .price .new { width: auto;}
+#Popup1 .couponWrap .couponGap .couponContent .coupon a .couponText .price .new img{width: 28px; margin: -10px 0 0 5px;}
+#Popup1 .couponWrap .couponGap .couponContent .coupon a .couponText .txt2 {padding:0 0 2px 0;font-size:  14px; font-weight: 400; color: #1A1A1A;height: auto; white-space:nowrap;text-overflow:ellipsis;}
+#Popup1 .couponWrap .couponGap .couponContent .coupon a .couponText .txt3 {font-size: 12px; color:#797979 ;height: auto; font-weight: 400;text-overflow:ellipsis;white-space:nowrap;}
+                                                                     .red {color:#e7382d ;font-weight: 700; }
+
+#coupon >.TopContainer .couponContents  ul {width: 100%;  padding-top:10px;}                                                               
+#coupon >.TopContainer .couponContents  ul li {}                                                               
+#coupon >.TopContainer .couponContents .ShoppingBtn {display: block; width: 100%;border-radius: 6px; padding: 10px 0;}
+#coupon >.TopContainer .couponContents .ShoppingBtn button {display: block; padding:12px 0; color: #FF5C38; border:1px solid #FF5C38; border-radius: 6px; width: 100%; background: #fff; }
 
 
 
