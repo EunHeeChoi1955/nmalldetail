@@ -28,7 +28,7 @@ html, body {background: #fff; color: #fff;  }
 /* input박스 인증하기 인증번호 */
 #login >.TopContainer .loginContents ul {width: 100%;padding:0 17px;}
 #login >.TopContainer .loginContents ul li {display: flex; padding: 7px 0;}
-#login >.TopContainer .loginContents ul li .left { position: relative; width: 80%; height: 38px; padding-right: 10px; }
+#login >.TopContainer .loginContents ul li .left { position: relative; width: 80%; height: 38px; padding-right: 10px;  }
 #login >.TopContainer .loginContents ul li .left .time {position: absolute; top:0; right: 0;  margin-right: 35px; height:auto;width: auto; margin-top:11px; font-size:  12px;}
 #login >.TopContainer .loginContents ul li .left input { width: 100%;border: 1px solid #E2E2E2; border-radius: 6px; color: #CCCCCC; }
 #login >.TopContainer .loginContents ul li .left input[type='text']::placeholder {  color: #CCCCCC; padding: 0 14px; font-size: 12px; }
