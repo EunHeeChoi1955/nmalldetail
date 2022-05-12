@@ -29,11 +29,13 @@ html, body {background: #fff; color: #fff;  }
 
 #myPage >.TopContainer .myPageContents .myPageContentsWrap .menu {width: 100%; padding:20px 18px 0 18px; } 
 #myPage >.TopContainer .myPageContents .myPageContentsWrap .menu ul { width: 100%; background: #F9F9F9; padding:13px;  border-radius: 6px; display: flex; margin: 0; } 
-#myPage >.TopContainer .myPageContents .myPageContentsWrap .menu ul li { position:relative;display: inline-block; text-align:center; width:33.3333%; border-right: 1px solid #E2E2E2;}
+#myPage >.TopContainer .myPageContents .myPageContentsWrap .menu ul li {display: inline-block; text-align:center; width:33.3333%; border-right: 1px solid #E2E2E2;}
 #myPage >.TopContainer .myPageContents .myPageContentsWrap .menu ul li:last-child { border-right: 0;}
-#myPage >.TopContainer .myPageContents .myPageContentsWrap .menu ul li a { width: 100%;font-size: 14px; font-weight: 400; color: #343434;text-align:center; }
-#myPage >.TopContainer .myPageContents .myPageContentsWrap .menu ul li a span img {width: 42px; display: block;margin: 0 auto;}
-#myPage >.TopContainer .myPageContents .myPageContentsWrap .menu ul li a em { position:absolute; z-index:2; top:0px; margin-top:-5px; right:0px; margin-right: 20px;  padding:4.8px 4px; width:20px; height:20px; font-weight: 200; background-color: #FF5C38; border-radius: 50%; font-size: 11px;box-sizing: border-box;line-height: 11px;}
+#myPage >.TopContainer .myPageContents .myPageContentsWrap .menu ul li a { position:relative; width: 100%;font-size: 14px; font-weight: 400; color: #343434;text-align:center; }
+#myPage >.TopContainer .myPageContents .myPageContentsWrap .menu ul li a span img { width: 42px; display: block;margin: 0 auto;}
+#myPage >.TopContainer .myPageContents .myPageContentsWrap .menu ul li a em { position:absolute; z-index:2; top:0px; margin-top:-5px; right:0px; margin-right: -5px;  padding:4.8px 4px; width:20px; height:20px; font-weight: 200; background-color: #FF5C38; border-radius: 50%; font-size: 11px;box-sizing: border-box;line-height: 11px;}
+#myPage >.TopContainer .myPageContents .myPageContentsWrap .menu ul li:nth-child(2) a em {  margin-right: -14px;  }
+#myPage >.TopContainer .myPageContents .myPageContentsWrap .menu ul li:nth-child(3) a em {  margin-right: 0; }
 
 #myPage >.TopContainer .myPageContents .myPageContentsWrap .menuBtn {padding:14px 18px 20px 18px; }
 #myPage >.TopContainer .myPageContents .myPageContentsWrap .menuBtn ul { display:flex;width: 100%; border:1px solid #E2E2E2;  padding: 13px 20px; border-radius: 6px; margin:0;}
