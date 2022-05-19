@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 *{margin:0; padding:0; vertical-align:middle;box-sizing:border-box; }
-html, body {width:100%; max-width:1280px; margin:0 auto; height:auto; background: #EAEAEA;  }
+html, body {width:100%; max-width:1280px; margin:0 auto; height:auto; background: #EAEAEA;display: block;  }
 html{ overflow-y:scroll; }
 body{  font:14px/1  'SUIT','SUIT Variable','sans-serif', 'Nanum Gothic','Open Sans','Noto Sans KR', 'arial','Roboto','Montserrat'; color:#333; background:#fff;}
 i,em,address{font-style:normal;}
