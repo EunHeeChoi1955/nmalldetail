@@ -19,7 +19,7 @@
 #wrap1>#header .container .top>.left .leftWrap .backBtn a span { background:  url(../img/back.svg) no-repeat 0% 100%;  background-size:contain; width:100%;height:18px; display: inline-block;}
 
 /* header medium */
-#wrap1>#header .container .top>.medium {text-align: center; text-indent:-20px;color: #1A1A1A; font-size: 18px;font-weight: 400; white-space: nowrap; }
+#wrap1>#header .container .top>.medium {text-align: center; color: #1A1A1A; font-size: 18px;font-weight: 400; white-space: nowrap; }
 
 /* header  right */
 #wrap1>#header .container .top>.right #aside {width: 100%;  }
@@ -43,53 +43,11 @@
 #main  {width: 100%; height: auto;}
 
 /* 내용리스트 */
-#main .deliveryCon { position: relative; width: 100%; display:block; padding: 0 18px 0 18px; }
+#main .deliveryCon { position: relative; width: 100%; height:auto ;display:block;}
 #main .deliveryCon.tab1Delect { display:block;  }
-#main .deliveryCon .listWrap { width: 100%; font-family: 'SUIT';}
-#main .deliveryCon .listWrap> ul {width: 100%; margin:0; display: flex;}
-#main .deliveryCon .listWrap>.inputBox{ width: 100%; display: block; padding: 10px 0;}
-#main .deliveryCon .listWrap>.inputBox input[type='text']{appearance: none;  background: url(../img/inputmagni.svg) no-repeat  97% 43%;  border-radius: 4px; border:1px solid #E2E2E2; width: 100%; height:40px;display: block;  }
-#main .deliveryCon .listWrap>.inputBox input::placeholder{ font-size: 14px; color: #CCCCCC;text-indent: 10px; }
-#main .deliveryCon .listWrap>.inputBox input:focus{outline: none;  background: url(../img/btn_x_faq.svg) no-repeat 97% 45%; text-indent: 10px;}
-#main .deliveryCon .listWrap> ul> li {width: 48%;}
-#main .deliveryCon .listWrap> ul> li:last-child { margin: auto 0 auto auto; }
-
-
-
-
-
-
-
-
-
-
-/* 셀렉트박스 */
-.selectBox {position: relative; width: 100%; height:40px; display: block; border-radius: 4px; border: 1px solid #E2E2E2;   }
-
-/*   탭버튼 화살표 내리면 나오는거 */
- .selectBox .mobileTab{display: block;box-sizing: border-box; text-decoration:none; }
- .selectBox .mobileTab .tab-wrap{position:relative;z-index:4; display:block;width:100%;box-sizing:border-box;}
-/* 탭버튼  */
- .selectBox .mobileTab .tab-wrap>a{ font-size:14px;  position:relative; display:block; white-space: nowrap; color: #343434; text-decoration: none; padding: 10.5px 0; text-align:left;text-indent: 10px; background: url(../img/ico_option_arrow1.svg) no-repeat 98% 45%; }
- .selectBox .mobileTab .tab-wrap>a.addFamily{ background:  url(../img/ico_option_arrow2.svg) no-repeat 98% 45%;  }
-/* 탭버튼 누르면 나오는 메뉴 내용들 */
- .selectBox .mobileTab .tab-wrap>ul.tab{display:block;z-index:1; background:#fff;width:100%; height: auto; padding:5px 0; position:absolute; top:39px; margin:0;  box-sizing:border-box;border:1px solid #E2E2E2; border-radius: 6px;}
- .selectBox .mobileTab .tab-wrap>ul.tab>li{width:100%;display:block;box-sizing:border-box; padding: 5px 0;font-size:12px; }
- .selectBox .mobileTab .tab-wrap>ul.tab>li:last-child{ border:0 ;}
- .selectBox .mobileTab .tab-wrap>ul.tab>li>a{ color:#343434; font-size:12px; text-decoration: none; width:100%;display:block;}
- .selectBox .mobileTab .tab-wrap>ul.tab>li>a:hover{color:#e7382d;}
- .selectBox .mobileTab .tab-wrap>ul.tab>li>a div { display: block; white-space: nowrap; width:100%;  }
- .selectBox .mobileTab .tab-wrap>ul.tab>li>a div.option { text-align: center; display:block; width:100;}
-
-
-
-
-
-
-
-
+#main .deliveryCon .listWrap { width: 100%; font-family: 'SUIT'; padding: 0 18px 20px 18px; border-bottom: 7px solid #E2E2E2;  }
  /* box */
- #main .deliveryCon .listWrap .box {margin-bottom: 14px; width: 100%;  border: 1px solid #E2E2E2; border-radius: 6px; font-family: 'SUIT';}
+ #main .deliveryCon .listWrap .box { width: 100%;  border: 1px solid #E2E2E2; border-radius: 6px; font-family: 'SUIT';}
  /* box상단 */
  #main .deliveryCon .listWrap .box .boxTop {display: flex;  background: #F9F9F9; font-size: 12px;padding:11px 16px;  }
  #main .deliveryCon .listWrap .box .boxTop .boxLeft{ font-weight: 700; color: #343434;line-height: 120%; display: inline-block; }
@@ -98,7 +56,7 @@
  #main .deliveryCon .listWrap .box .boxTop .boxRight span i { color: #797979;font-size: 15px; font-weight: 400; vertical-align:bottom;}
  /* box하단 */
  #main .deliveryCon .listWrap .box .boxBottom { padding:18px 16px; margin: 0;}
- #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap { width: 100%;  }
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap { width: 100%; }
  #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .txt1 { display: flex;}
  #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .txt1 .red {color: #FF5C38; font-size: 16px; font-weight: 700; }
  #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .txt1 .txt1Left {color: #909090; font-size: 16px; font-weight: 700; }
@@ -109,12 +67,12 @@
  #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap1 { padding-bottom:38px ; }
  #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap2 { border-top: 1px solid #E2E2E2; }
  #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 {display: flex; padding: 12px 0 20px 0 ; }
- #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Left{ position:relative; padding-right: 12px;}
- #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Left a{width: 80px;  position:relative; }
- #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Left a img{ width: 80px; }
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Left{ position:relative; margin-right: 12px;}
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Left a{ width: 100%; position:relative; }
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Left a img{ width: 100%;min-width: 80px; }
  #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Left .imgCap { position: absolute; top: 0;left: 0; border-radius: 6px;background: rgba(0,0,0, .5);}
- #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Left .imgCap a { width: 100%; height:100%;  }
- #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Left .imgCap a img { width: 100%; padding:11px; }
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Left .imgCap a { width: 100%; max-width: 80px; }
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Left .imgCap a img { padding:11px; }
  
 
  #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Right{display: block; width: 100%;}
@@ -131,10 +89,47 @@
  
  #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt3 { width: 100%;}
  #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt3 ul{display: flex;margin: 0; }
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt3 ul .deliveryReserchBtn{ width: 100%; }
  #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt3 ul .btn2{ width: 50%; }
  #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt3 ul .btn3{ width: 33.333%; }
  #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt3 ul .buyfixBtn{  padding:0 2.5px; }
- #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt3 ul .deliveryReserchBtn{ width: 100%; }
  #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt3 ul li:first-child{ padding-right: 2.5px; }
  #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt3 ul li:last-child{ padding-left: 2.5px; }
  #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt3 ul li a{ display: block; width: 100%; white-space: nowrap; padding: 10px 0;  text-decoration: none; font-size: 14px; color: #565656; font-weight: 400; text-align: center; border-radius: 3px; border: 1px solid #E2E2E2;}
+
+
+
+
+
+
+ /* 배송지 정보 */
+ #main .deliveryCon .deliveryInfoWrap {font-family: 'SUIT'; padding: 20px 18px 20px 18px; border-bottom: 7px solid #E2E2E2;}
+ #main .deliveryCon .deliveryInfoWrap .deliveryInfo { width: 100%;}
+ #main .deliveryCon .deliveryInfoWrap .deliveryInfo h2 {margin:0;font-size: 16px; font-weight: 700; color: #343434;}
+ #main .deliveryCon .deliveryInfoWrap .deliveryInfo .deliveryinfoBox { width: 100%; padding: 18px 0 0 0;}
+ #main .deliveryCon .deliveryInfoWrap .deliveryInfo .deliveryinfoBox ul {  font-weight:400;}
+ #main .deliveryCon .deliveryInfoWrap .deliveryInfo .deliveryinfoBox ul li {display: flex; padding: 5px 0;  }
+ #main .deliveryCon .deliveryInfoWrap .deliveryInfo .deliveryinfoBox ul li:nth-child(1) {padding: 0 0 5px 0;}
+ #main .deliveryCon .deliveryInfoWrap .deliveryInfo .deliveryinfoBox ul .address {word-wrap:break-word ;}
+ #main .deliveryCon .deliveryInfoWrap .deliveryInfo .deliveryinfoBox ul li .left { width:82px;min-width: 80px; display:inline-block;color: #797979; font-size: 14px;}
+ #main .deliveryCon .deliveryInfoWrap .deliveryInfo .deliveryinfoBox ul li .right {  font-size: 14px; text-align: left; display:inline-block;}
+
+
+
+
+
+
+ /* 결제 정보 */
+ #main .deliveryCon .priceInfoWrap {font-family: 'SUIT'; padding: 20px 18px 20px 18px;border-bottom: 7px solid #E2E2E2; }
+ #main .deliveryCon .priceInfoWrap .priceInfo { width: 100%;}
+ #main .deliveryCon .priceInfoWrap .priceInfo h2 {margin:0;font-size: 16px; font-weight: 700; color: #343434;}
+ #main .deliveryCon .priceInfoWrap .priceInfo .priceinfoBox { width: 100%; padding: 18px 0 0 0;}
+ #main .deliveryCon .priceInfoWrap .priceInfo .priceinfoBox ul { display: block; font-weight:400;}
+ #main .deliveryCon .priceInfoWrap .priceInfo .priceinfoBox ul li {display: flex; padding: 5px 0;  }
+ #main .deliveryCon .priceInfoWrap .priceInfo .priceinfoBox ul li:nth-child(1) {padding: 0 0 5px 0;}
+ #main .deliveryCon .priceInfoWrap .priceInfo .priceinfoBox ul li:nth-child(3) {border-bottom:1px solid #E2E2E2 ; margin: 0 0 5px 0;}
+ #main .deliveryCon .priceInfoWrap .priceInfo .priceinfoBox ul .border {border-bottom:1px solid #E2E2E2 ; margin:5px 0;}
+ #main .deliveryCon .priceInfoWrap .priceInfo .priceinfoBox ul .bigTxt .right {font-size: 16px; color: #FF5C38; font-weight: 700;vertical-align: top; }
+ #main .deliveryCon .priceInfoWrap .priceInfo .priceinfoBox ul .bigTxt .left { font-size: 14px; color: #343434;font-weight: 700;}
+ #main .deliveryCon .priceInfoWrap .priceInfo .priceinfoBox ul li .left {display:inline-block; width: 70px; color: #797979; font-size: 14px;}
+ #main .deliveryCon .priceInfoWrap .priceInfo .priceinfoBox ul li .right { display:inline-block; margin: auto 0 auto auto ; font-size: 14px;}
