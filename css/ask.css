@@ -46,7 +46,7 @@
 #wrap1> #main> #section1 .container .gap .wrap ul { margin: 0;}
 #wrap1> #main> #section1 .container .gap .wrap>ul>li { width: 100%; border-bottom: 7px solid #E2E2E2; }
 /* 장바구니 상품left */
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap { width: 100%; display: flex; padding: 10px 18px  18px;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap { width: 100%; display: flex; padding: 10px 18px 10px 18px;}
 #wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .left { position: relative; width: 60px;border-radius: 6px; }
 #wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .left a  { width: 60px; height:60px; }
 #wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .left a img { width: 60px; height:60px; }
@@ -62,36 +62,22 @@
 #wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon {width: 100%; }
 #wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .top { border-bottom:1px solid #E2E2E2;padding: 20px 0 30px 0;}
 #wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .top h2 {text-align: center;  font-size: 18px; color: #343434; font-weight: 700;}
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .top p {text-align: center;  font-size: 16px;color: #909090;font-weight: 400; margin: 0;}
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .top .blue strong {vertical-align: baseline;}
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .top .blue {text-align: center;  font-size: 16px;  color: #187AEF;  font-weight: 400; margin: 0;}
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .top .star_list{text-align:center; padding: 10px 0; }
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .top .star_list li{position:relative;display:inline-block;width:26px;height:25px;background: #DBDFE5;}
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .top .star_list li:first-child{margin-left:0;}
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .top .star_list li img{position:relative;z-index:4; }
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .top .star_list li>span.rating{position:absolute;z-index:3;top:0;left:0;display:block;width:100%;height:26px;background-color:#FCAA07;}
+
+#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .top .inputBox {display:block; width: 100%;padding: 25px 0 0 0;}
+#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .top .inputBox .inputBoxGap  {margin: 0 auto; display:block;   }
+#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .top .inputBox .inputBoxGap .inputBoxWrap { text-align: center;  }
+#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .top .inputBox .inputBoxGap .inputBoxWrap .input { display: inline-block; margin-right: 12px;}
+#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .top .inputBox .inputBoxGap .inputBoxWrap .input input {color: #565656; font-size:14px ;font-weight: 400;   }
+#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .top .inputBox .inputBoxGap .inputBoxWrap .input input[type=checkbox] {margin:-2px 9px 0 0;  appearance: none; background: url(../img/ico_Unchecked_input.svg) no-repeat 50% 50%;  display: inline-block; width: 16px; height: 16px; background-size: contain; outline: none;}
+#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .top .inputBox .inputBoxGap .inputBoxWrap .input input[type=checkbox]:checked {margin:-2px 9px 0 0;  appearance: none; background: url(../img/ico_radio_sm.svg) no-repeat 50% 50%;  display: inline-block; width: 16px; height: 16px; background-size: contain;outline: none;}
 /* 하단 후기작성 인풋박스 */
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom {padding: 10px 18px  18px; border-bottom: 7px solid #E2E2E2;}
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom h2 { font-size: 18px; color: #343434; font-weight: 700; padding: 10px 0;}
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom textarea { outline: none; width: 100%;padding:10px; font-size: 14px; line-height: 130%;height: 220px; font-size: 14px;     color: #CCCCCC; border: solid 0.5px #B3B3B3;  border-radius:6px; }
-
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom .picBtn { display:block; text-align: center; }
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom .picBtn.addPic {display: none;}
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom .picBtn a {width: 100%; display:block; white-space: nowrap;color: #fff;  font-size: 14px; font-weight: 700; background: #51617D;border-radius: 3px;padding: 13px 0; margin:14px 0 10px 0; }
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom .picBtn a span { width: 19px; margin: -8px 7px auto auto; display: inline-block;}
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom .picBtn a span img { width: 19px;}
-
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom .bottomTextBox { display: flex; width: 100%; }
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom .bottomTextBox.addPic { display: none; }
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom .bottomTextBox div { color: #797979; font-size: 12px; font-weight: 400;display: inline-block;  }
-
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom .galleryBox { display:none;}
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom .galleryBox.picBtn { display: block;width: 100%;  padding-top: 20px;}
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom .galleryBox ul{display: flex; }
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom .galleryBox ul li { position: relative; display: inline-block;  padding-right: 10px;}
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom .galleryBox ul li img { width:80px; }
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom .galleryBox ul li >em { width:18px; position: absolute; top: -7px; right: 2px; }
-#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom .galleryBox ul li >em >img { width:18px; }
+#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom {padding: 20px 18px 26.5px 18px; border-bottom: 7px solid #E2E2E2;}
+#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom h2 { font-size: 16px; color: #343434; font-weight: 400; padding: 0 0 12px 0;  text-align: center;}
+#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom textarea { outline: none;  width: 100%;padding:10px; font-size: 14px; line-height: 130%;height: 220px; font-size: 14px; color: #CCCCCC; border: solid 0.5px #E2E2E2;  border-radius:6px; }
+#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom div {width: 100%; padding-top: 26px;}
+#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom div input {color: #565656; font-size:14px ;font-weight: 400; }
+#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom div input[type=checkbox] {margin:-2px 9px 0 0;  appearance: none; background: url(../img/ico_uncheck_square.svg) no-repeat 50% 50%;  display: inline-block; width: 16px; height: 16px; background-size: contain; outline: none;}
+#wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .bottom div input[type=checkbox]:checked {margin:-2px 9px 0 0;  appearance: none; background: url(../img/ico_check_square.svg) no-repeat 50% 50%;  display: inline-block; width: 16px; height: 16px; background-size: contain; outline: none;}
 
 /* 리뷰 유의사항 */
 #wrap1> #main> #section1 .container .gap .wrap>.reviewWrap .reviewCon .notice {width: 100%;padding: 13px 18px  18px; }

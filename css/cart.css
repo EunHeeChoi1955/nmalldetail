@@ -38,7 +38,7 @@
 #wrap1>#header .container .bottom .bottom-wrap ul .left {text-align: left; }
 #wrap1>#header .container .bottom .bottom-wrap ul .left div {  display: inline-block; margin-top: 1px;  }
 #wrap1>#header .container .bottom .bottom-wrap ul .left input:focus {  outline: none;}
-#wrap1>#header .container .bottom .bottom-wrap ul .left input[type='checkbox'] { appearance: none; display: inline-block; width: 22px; height: 22px; background: url(../img/ico_check.svg) no-repeat 50% 50%; margin: 0 10px 0 0; background-size: 22px 22px;}
+#wrap1>#header .container .bottom .bottom-wrap ul .left input[type='checkbox'] { appearance: none; display: inline-block; width: 22px; height: 22px; background: url(../img/ico_Unchecked_input.svg) no-repeat 50% 50%; margin: 0 10px 0 0; background-size: 22px 22px;}
 #wrap1>#header .container .bottom .bottom-wrap ul .left input[type='checkbox']:checked {  background: url(../img/ico_checked_color.svg) no-repeat 50% 50%; margin: 0 10px 0 0; background-size: 22px 22px;}
 #wrap1>#header .container .bottom .bottom-wrap ul .right {text-align: right;}
 

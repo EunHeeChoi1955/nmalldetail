@@ -320,11 +320,12 @@
 
                // Down화살표 버튼 누르면  btnBoxWrap3, 4 사라짐  
                ArrowBtn.each(function (idx) {
+                  BoxWrap1.addClass('addShow');
                   $(this).on({
                       click: function () {
                       
-                        BoxWrap4.addClass('addhide'); // 클래스 주입
-                        BoxWrap3.addClass('addhide'); // 클래스 주입
+                        BoxWrap4.removeClass('addhide'); // 클래스 삭제
+                        BoxWrap3.removeClass('addhide'); // 클래스 삭제
                         BoxWrap1.addClass('addShow'); // 클래스 주입
                          
                       }
@@ -340,7 +341,7 @@
                   $(this).on({
                       click: function () {
                       
-                        BoxWrap3.removeClass('addhide'); // 클래스  삭제
+                        BoxWrap3.addClass('addhide'); // 클래스  삭제
                         BoxWrap1.removeClass('addShow'); // 클래스  삭제
                       }
                   });
@@ -351,7 +352,7 @@
                   $(this).on({
                       click: function () {
                       
-                        BoxWrap4.removeClass('addhide'); // 클래스 삭제
+                        BoxWrap4.addClass('addhide'); // 클래스 삭제
                         BoxWrap1.removeClass('addShow'); // 클래스 삭제
                          
                       }
