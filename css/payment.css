@@ -67,35 +67,48 @@
 #main .paymentCon .paymentWrap .spot .spottxt2Right_txtBlue {width: 100%; }
 
 
-                                        /* 셀렉트박스 */
-                                        .selectBox {margin:auto 0 auto auto; position: relative; width: 100%;  border: 1px solid #E2E2E2; border-radius: 4px; display: block;  }
-                                        /*   탭버튼 화살표 내리면 나오는거 */
-                                        .selectBox .mobileTab{display: block;box-sizing: border-box; text-decoration:none; }
-                                        .selectBox .mobileTab .tab-wrap{position:relative;z-index:2; display:block;width:100%;box-sizing:border-box;}
-                                        /* 탭버튼  */
-                                        .selectBox .mobileTab .tab-wrap>a{ font-size:14px;  position:relative; display:block; white-space: wrap;  padding: 5px 24px 5px 14px;  color: #909090; text-decoration: none; text-align:left; background: url(../img/arrow_open_gray.svg) no-repeat 98% 50%; }
-                                        .selectBox .mobileTab .tab-wrap>a.addFamily{ background:  url(../img/ico_option_arrow2.svg) no-repeat 98% 50%;  }
-                                        /* 탭버튼 누르면 나오는 메뉴 내용들 */
-                                        .selectBox .mobileTab .tab-wrap>ul.tab{display:block;z-index:3; background:#fff;width:100%; height: auto; padding:5px 0; position:absolute; top:40px; margin:0;  box-sizing:border-box;border:1px solid #E2E2E2; border-radius: 6px;}
-                                        .selectBox .mobileTab .tab-wrap>ul.tab>li{width:100%;display:block; box-sizing:border-box; padding: 5px  14px; font-size:14px;}
-                                        .selectBox .mobileTab .tab-wrap>ul.tab>li:last-child{ border:0 ;}
-                                        .selectBox .mobileTab .tab-wrap>ul.tab>li>a{ color:#343434; font-size:14px; text-decoration: none; text-overflow: ellipsis;overflow: hidden; white-space: wrap;}
-                                        .selectBox .mobileTab .tab-wrap>ul.tab>li:hover{ background: #F4F4F4;}
-                                        .selectBox .mobileTab .tab-wrap>ul.tab>li>a div { display: block;   }
-                                        .selectBox .mobileTab .tab-wrap>ul.tab>li>a div.option { text-align: left; }
+
+/* 셀렉트박스 */
+#main .paymentCon .paymentWrap .spot .spotTxt4 .selectBox {margin:auto 0 auto auto; position: relative; width: 100%;  border: 1px solid #E2E2E2;  height: 42px; border-radius: 4px; display: block;  }
+/*   탭버튼 화살표 내리면 나오는거 */
+#main .paymentCon .paymentWrap .spot .spotTxt4 .selectBox .mobileTab{display: block;box-sizing: border-box; text-decoration:none; }
+#main .paymentCon .paymentWrap .spot .spotTxt4 .selectBox .mobileTab .tab-wrap{position:relative;z-index:2; display:block;width:100%;box-sizing:border-box;}
+/* 탭버튼  */
+#main .paymentCon .paymentWrap .spot .spotTxt4 .selectBox .mobileTab .tab-wrap>a{ font-size:14px;  position:relative; display:block; white-space: wrap;  padding: 10px 24px 7px 14px;  color: #909090; text-decoration: none; text-align:left; background: url(../img/arrow_open_gray.svg) no-repeat 98% 60%; }
+#main .paymentCon .paymentWrap .spot .spotTxt4 .selectBox .mobileTab .tab-wrap>a.addFamily{ background:  url(../img/ico_option_arrow2.svg) no-repeat 98% 60%;  }
+/* 탭버튼 누르면 나오는 메뉴 내용들 */
+#main .paymentCon .paymentWrap .spot .spotTxt4 .selectBox .mobileTab .tab-wrap>ul.tab{display:block;z-index:3; background:#fff;width:100%; height: auto;  position:absolute; top:41px; margin:0;  box-sizing:border-box;border:1px solid #E2E2E2; border-radius: 6px;}
+#main .paymentCon .paymentWrap .spot .spotTxt4 .selectBox .mobileTab .tab-wrap>ul.tab>li{width:100%;display:block; box-sizing:border-box; padding: 5px  14px; font-size:14px;}
+#main .paymentCon .paymentWrap .spot .spotTxt4 .selectBox .mobileTab .tab-wrap>ul.tab>li:last-child{ border:0 ;}
+#main .paymentCon .paymentWrap .spot .spotTxt4 .selectBox .mobileTab .tab-wrap>ul.tab>li>a{ color:#343434; font-size:14px; text-decoration: none; text-overflow: ellipsis;overflow: hidden; white-space: wrap;}
+#main .paymentCon .paymentWrap .spot .spotTxt4 .selectBox .mobileTab .tab-wrap>ul.tab>li:hover{ background: #F4F4F4;}
+#main .paymentCon .paymentWrap .spot .spotTxt4 .selectBox .mobileTab .tab-wrap>ul.tab>li>a div { display: block;   }
+#main .paymentCon .paymentWrap .spot .spotTxt4 .selectBox .mobileTab .tab-wrap>ul.tab>li>a div.option { text-align: left; }
+
+
+
 
 
 /* 주문상품 */
 #main .paymentCon .paymentWrap .order { padding:20px  18px ;  border-bottom: 7px solid #E2E2E2;}
-#main .paymentCon .paymentWrap .order .top {display: flex;  }
-#main .paymentCon .paymentWrap .order .top .topTxt1 { font-size: 16px; font-weight: 700; color: #343434; }
-#main .paymentCon .paymentWrap .order .top .topTxt2 { font-size:14px ; font-weight: 400; color: #343434; padding: 0 4px 0 33px;}
-#main .paymentCon .paymentWrap .order .top .topTxt2hid { display: none;}
-#main .paymentCon .paymentWrap .order .top .topTxt2hid.addTxt2 { display:block;}
-#main .paymentCon .paymentWrap .order .top .topTxt3 { margin: auto 0 auto auto; }
-#main .paymentCon .paymentWrap .order .top .topTxt3 a {display: inline-block; }
-#main .paymentCon .paymentWrap .order .top .topTxt3 a span { background: url(../img/arrow_open_gray.svg) no-repeat 98% 50%; width: 26px; height: 22px; display: block;}
-#main .paymentCon .paymentWrap .order .top .topTxt3 a.closeArrow span { background: url(../img/arrow_close_review.svg) no-repeat 98% 50%; width: 26px; height: 22px; display: block;}
+#main .paymentCon .paymentWrap .order .top {display: flex; width: 100%; }
+#main .paymentCon .paymentWrap .order .top li {display: inline-block; width: auto; }
+#main .paymentCon .paymentWrap .order .top .topTxt1 { font-size: 16px; font-weight: 700; color: #343434;width: auto; white-space: nowrap;}
+
+
+/* 화살표 */
+#main .paymentCon .paymentWrap .order .top .topTxt3 {  margin: auto 0 auto auto ;  }
+#main .paymentCon .paymentWrap .order .top .topTxt3 div { display:inline-block;  }
+#main .paymentCon .paymentWrap .order .top .topTxt3 a {display: inline-block;  margin: auto 0 auto auto;}
+#main .paymentCon .paymentWrap .order .top .topTxt3 a span { background: url(../img/arrow_open_gray.svg) no-repeat 98% 50%; width: 26px; height: 22px; display: inline-block;}
+#main .paymentCon .paymentWrap .order .top .topTxt3 a.closeArrow span { background: url(../img/arrow_close_review.svg) no-repeat 98% 50%; width: 26px; height: 22px; display: inline-block;}
+/* 첫번째 상품명 10글자 노출하고 외 1건  */
+#main .paymentCon .paymentWrap .order .top .topTxt3 .topTxt2 { font-size:14px ; font-weight: 400; color: #343434; margin: auto 0 auto auto; text-align: right; width: auto;}
+#main .paymentCon .paymentWrap .order .top .topTxt3 .topTxt2.hidTxt2 {display: none;}
+/* 2건  */
+#main .paymentCon .paymentWrap .order .top .topTxt3 .topTxt2hid { display: none;}
+#main .paymentCon .paymentWrap .order .top .topTxt3 .topTxt2hid.addTxt2 { display:inline-block;width: auto; margin: auto 0 auto auto;  }
+
 /* 주문상품 하단 */
 #main .paymentCon .paymentWrap .order .bottom { display: none;   }
 #main .paymentCon .paymentWrap .order .bottom.addArrow  { display: block;   }
@@ -161,12 +174,34 @@
 #main .paymentCon .paymentWrap .coupon .bottom .inputbox:last-child {  padding: 16px 0 0 0; border-bottom: 0; }
 #main .paymentCon .paymentWrap .coupon .bottom .inputbox .text  { font-size: 14px; font-weight: 400; color: #343434; padding:10px 10px 0 6px; white-space: nowrap;}
 #main .paymentCon .paymentWrap .coupon .bottom .inputbox .selectBoxWrap  { width: 100%;}
-#main .paymentCon .paymentWrap .coupon .bottom .inputbox input[type=checkbox] {margin-top:12px;appearance: none; outline: none; width: 16px; height: 16px;   background:url(../img/ico_radio_sm_unchecked.svg) no-repeat 50% 50%; background-size: contain; }
-#main .paymentCon .paymentWrap .coupon .bottom .inputbox input[type=checkbox]:checked { margin-top:12px;appearance: none; outline: none; width: 16px; height: 16px;   background:url(../img/ico_radio_sm_checked.svg) no-repeat 50% 50%; background-size: contain; }
+#main .paymentCon .paymentWrap .coupon .bottom .inputbox input[type=checkbox] {margin-top:12px;appearance: none; outline: none; min-width: 16px; height: 16px;   background:url(../img/ico_radio_sm_unchecked.svg) no-repeat 50% 50%; background-size: contain; }
+#main .paymentCon .paymentWrap .coupon .bottom .inputbox input[type=checkbox]:checked { margin-top:12px;appearance: none; outline: none; min-width: 16px; height: 16px;   background:url(../img/ico_radio_sm_checked.svg) no-repeat 50% 50%; background-size: contain; }
 /* 쿠폰할인 밑 빨간글씨 */
 #main .paymentCon .paymentWrap .coupon .bottom .inputbox .selectBoxWrap .red { padding-top:16px; font-size: 14px; color:#E7342C ;}
 #main .paymentCon .paymentWrap .coupon .bottom .inputbox .selectBoxWrap .red li { padding-bottom:12px; }
 #main .paymentCon .paymentWrap .coupon .bottom .inputbox .selectBoxWrap .red li:last-child { padding-bottom:0; }
+
+
+
+
+
+
+/* 셀렉트박스 */
+#main .paymentCon .paymentWrap .coupon .bottom .inputbox .selectBox {margin:auto 0 auto auto; position: relative; width: 100%;  border: 1px solid #E2E2E2;  height: 42px; border-radius: 4px; display: block;  }
+/*   탭버튼 화살표 내리면 나오는거 */
+#main .paymentCon .paymentWrap .coupon .bottom .inputbox .selectBox .mobileTab{display: block;box-sizing: border-box; text-decoration:none; }
+#main .paymentCon .paymentWrap .coupon .bottom .inputbox .selectBox .mobileTab .tab-wrap{position:relative;z-index:2; display:block;width:100%;box-sizing:border-box;}
+/* 탭버튼  */
+#main .paymentCon .paymentWrap .coupon .bottom .inputbox .selectBox .mobileTab .tab-wrap>a{ font-size:14px;  position:relative; display:block; white-space: wrap;  padding: 10px 24px 7px 14px;  color: #909090; text-decoration: none; text-align:left; background: url(../img/arrow_open_gray.svg) no-repeat 98% 60%; }
+#main .paymentCon .paymentWrap .coupon .bottom .inputbox .selectBox .mobileTab .tab-wrap>a.addFamily{ background:  url(../img/ico_option_arrow2.svg) no-repeat 98% 60%;  }
+/* 탭버튼 누르면 나오는 메뉴 내용들 */
+#main .paymentCon .paymentWrap .coupon .bottom .inputbox .selectBox .mobileTab .tab-wrap>ul.tab{display:block;z-index:3; background:#fff;width:100%; height: auto;  position:absolute; top:41px; margin:0;  box-sizing:border-box;border:1px solid #E2E2E2; border-radius: 6px;}
+#main .paymentCon .paymentWrap .coupon .bottom .inputbox .selectBox .mobileTab .tab-wrap>ul.tab>li{width:100%;display:block; box-sizing:border-box; padding: 5px  14px; font-size:14px;}
+#main .paymentCon .paymentWrap .coupon .bottom .inputbox .selectBox .mobileTab .tab-wrap>ul.tab>li:last-child{ border:0 ;}
+#main .paymentCon .paymentWrap .coupon .bottom .inputbox .selectBox .mobileTab .tab-wrap>ul.tab>li>a{ color:#343434; font-size:14px; text-decoration: none; text-overflow: ellipsis;overflow: hidden; white-space: wrap;}
+#main .paymentCon .paymentWrap .coupon .bottom .inputbox .selectBox .mobileTab .tab-wrap>ul.tab>li:hover{ background: #F4F4F4;}
+#main .paymentCon .paymentWrap .coupon .bottom .inputbox .selectBox .mobileTab .tab-wrap>ul.tab>li>a div { display: block;   }
+#main .paymentCon .paymentWrap .coupon .bottom .inputbox .selectBox .mobileTab .tab-wrap>ul.tab>li>a div.option { text-align: left; }
 
 
 
@@ -261,7 +296,9 @@
 #main .paymentCon .paymentWrap .pay .bottom.addArrow  { display: block; }
 #main .paymentCon .paymentWrap .pay .bottom .btnWrap { display: block; padding: 20px 0 16px 0; }
 #main .paymentCon .paymentWrap .pay .bottom .btnWrap ul {display:block;margin: 0 auto; }
-#main .paymentCon .paymentWrap .pay .bottom .btnWrap ul li {width:32.555%; padding: 0;display: inline-block; }
+#main .paymentCon .paymentWrap .pay .bottom .btnWrap ul li {width:32.001%; padding: 0;display: inline-block;border: 1px solid #E2E2E2; border-radius: 6px; }
+#main .paymentCon .paymentWrap .pay .bottom .btnWrap ul li:nth-child(2) {margin: 0 0.4%; }
+#main .paymentCon .paymentWrap .pay .bottom .btnWrap ul li.addbtn { border: 1px solid #E7342C; }
 #main .paymentCon .paymentWrap .pay .bottom .btnWrap ul li a span {width: 100%; height: 100%; min-height: 36px; display: inline-block; background-size:cover; }
 #main .paymentCon .paymentWrap .pay .bottom .btnWrap .dep2 { padding: 8px 0;}
 #main .paymentCon .paymentWrap .pay .bottom .btnWrap ul .btn1 a span { background: url(../img/payment_1.svg) no-repeat 50% 50%; }
@@ -281,20 +318,58 @@
 
 /* 카드선택 */
 #main .paymentCon .paymentWrap .pay .bottom .card { display: flex; padding-bottom: 10px;}
-#main .paymentCon .paymentWrap .pay .bottom .card .title { padding:11px 14px 0 0; font-size: 14px; color: #343434; font-weight: 400; white-space: nowrap;}
+#main .paymentCon .paymentWrap .pay .bottom .card .title { padding:10px 14px 0 0; font-size: 14px; color: #343434; font-weight: 400; white-space: nowrap;}
 #main .paymentCon .paymentWrap .pay .bottom .card .selectBoxWrap { width: 100%; }
 /* 할부선택 */
 #main .paymentCon .paymentWrap .pay .bottom .instalment { display: flex;}
-#main .paymentCon .paymentWrap .pay .bottom .instalment .title { padding:11px 14px 0 0;font-size: 14px; color: #343434; font-weight: 400; white-space: nowrap;}
+#main .paymentCon .paymentWrap .pay .bottom .instalment .title { padding:10px 14px 0 0;font-size: 14px; color: #343434; font-weight: 400; white-space: nowrap;}
 #main .paymentCon .paymentWrap .pay .bottom .instalment .selectBoxWrap { width: 100%; }
 /* redbox */
-#main .paymentCon .paymentWrap .pay .bottom .promotion { display: block; padding: 20px 14px 0 14px; margin:0 auto;   }
+#main .paymentCon .paymentWrap .pay .bottom .promotion { display: block; padding: 20px 14px 0 14px; margin:0 auto;  white-space: nowrap; }
 #main .paymentCon .paymentWrap .pay .bottom .promotion p {text-align: center; margin:0; padding:4px 14px; color: #E7342C; font-size: 14px;  background: rgba(231, 52, 44, 0.1); border-radius: 6px; }
 #main .paymentCon .paymentWrap .pay .bottom .promotion p strong {vertical-align: baseline;}
 #main .paymentCon .paymentWrap .pay .bottom .promotion p span{width: 14px; padding-left: 10px;  vertical-align: baseline;}
 #main .paymentCon .paymentWrap .pay .bottom .promotion p span img{ width: 14px;}
 
 
+
+
+/* 카드선택 셀렉트박스 */
+#main .paymentCon .paymentWrap .pay .bottom .card .selectBoxWrap .selectBox {margin:auto 0 auto auto; position: relative; width: 100%; height:38px; border: 1px solid #E2E2E2; border-radius: 4px; display: block;  }
+/*   탭버튼 화살표 내리면 나오는거 */
+#main .paymentCon .paymentWrap .pay .bottom .card .selectBoxWrap .selectBox .mobileTab{display: block;box-sizing: border-box; text-decoration:none; }
+#main .paymentCon .paymentWrap .pay .bottom .card .selectBoxWrap .selectBox .mobileTab .tab-wrap{position:relative;z-index:2; display:block;width:100%;box-sizing:border-box;}
+/* 탭버튼  */
+#main .paymentCon .paymentWrap .pay .bottom .card .selectBoxWrap .selectBox .mobileTab .tab-wrap>a{ font-size:14px;  position:relative; display:block; white-space: wrap;  padding: 8px 24px 5px 14px;  color: #909090; text-decoration: none; text-align:left; background: url(../img/arrow_open_gray.svg) no-repeat 98% 60%; }
+#main .paymentCon .paymentWrap .pay .bottom .card .selectBoxWrap .selectBox .mobileTab .tab-wrap>a.addFamily{ background:  url(../img/ico_option_arrow2.svg) no-repeat 98% 60%;  }
+/* 탭버튼 누르면 나오는 메뉴 내용들 */
+#main .paymentCon .paymentWrap .pay .bottom .card .selectBoxWrap .selectBox .mobileTab .tab-wrap>ul.tab{display:block;z-index:3; background:#fff;width:100%; height: auto; padding:5px 0; position:absolute; top:37px; margin:0;  box-sizing:border-box;border:1px solid #E2E2E2; border-radius: 6px;}
+#main .paymentCon .paymentWrap .pay .bottom .card .selectBoxWrap .selectBox .mobileTab .tab-wrap>ul.tab>li{width:100%;display:block; box-sizing:border-box; padding: 5px  14px; font-size:14px;}
+#main .paymentCon .paymentWrap .pay .bottom .card .selectBoxWrap .selectBox .mobileTab .tab-wrap>ul.tab>li:last-child{ border:0 ;}
+#main .paymentCon .paymentWrap .pay .bottom .card .selectBoxWrap .selectBox .mobileTab .tab-wrap>ul.tab>li>a{ color:#343434; font-size:14px; text-decoration: none; text-overflow: ellipsis;overflow: hidden; white-space: wrap;}
+#main .paymentCon .paymentWrap .pay .bottom .card .selectBoxWrap .selectBox .mobileTab .tab-wrap>ul.tab>li:hover{ background: #F4F4F4;}
+#main .paymentCon .paymentWrap .pay .bottom .card .selectBoxWrap .selectBox .mobileTab .tab-wrap>ul.tab>li>a div { display: block;   }
+#main .paymentCon .paymentWrap .pay .bottom .card .selectBoxWrap .selectBox .mobileTab .tab-wrap>ul.tab>li>a div.option { text-align: left; }
+
+
+
+
+/* 할부선택 셀렉트박스 */
+#main .paymentCon .paymentWrap .pay .bottom .instalment .selectBoxWrap .selectBox {margin:auto 0 auto auto; position: relative; width: 100%; height:38px; border: 1px solid #E2E2E2; border-radius: 4px; display: block;  }
+/*   탭버튼 화살표 내리면 나오는거 */
+#main .paymentCon .paymentWrap .pay .bottom .instalment .selectBoxWrap .selectBox .mobileTab{display: block;box-sizing: border-box; text-decoration:none; }
+#main .paymentCon .paymentWrap .pay .bottom .instalment .selectBoxWrap .selectBox .mobileTab .tab-wrap{position:relative;z-index:2; display:block;width:100%;box-sizing:border-box;}
+/* 탭버튼  */
+#main .paymentCon .paymentWrap .pay .bottom .instalment .selectBoxWrap .selectBox .mobileTab .tab-wrap>a{ font-size:14px;  position:relative; display:block; white-space: wrap;  padding: 8px 24px 5px 14px;  color: #909090; text-decoration: none; text-align:left; background: url(../img/arrow_open_gray.svg) no-repeat 98% 60%; }
+#main .paymentCon .paymentWrap .pay .bottom .instalment .selectBoxWrap .selectBox .mobileTab .tab-wrap>a.addFamily{ background:  url(../img/ico_option_arrow2.svg) no-repeat 98% 60%;  }
+/* 탭버튼 누르면 나오는 메뉴 내용들 */
+#main .paymentCon .paymentWrap .pay .bottom .instalment .selectBoxWrap .selectBox .mobileTab .tab-wrap>ul.tab{display:block;z-index:3; background:#fff;width:100%; height: auto; padding:5px 0; position:absolute; top:37px; margin:0;  box-sizing:border-box;border:1px solid #E2E2E2; border-radius: 6px;}
+#main .paymentCon .paymentWrap .pay .bottom .instalment .selectBoxWrap .selectBox .mobileTab .tab-wrap>ul.tab>li{width:100%;display:block; box-sizing:border-box; padding: 5px  14px; font-size:14px;}
+#main .paymentCon .paymentWrap .pay .bottom .instalment .selectBoxWrap .selectBox .mobileTab .tab-wrap>ul.tab>li:last-child{ border:0 ;}
+#main .paymentCon .paymentWrap .pay .bottom .instalment .selectBoxWrap .selectBox .mobileTab .tab-wrap>ul.tab>li>a{ color:#343434; font-size:14px; text-decoration: none; text-overflow: ellipsis;overflow: hidden; white-space: wrap;}
+#main .paymentCon .paymentWrap .pay .bottom .instalment .selectBoxWrap .selectBox .mobileTab .tab-wrap>ul.tab>li:hover{ background: #F4F4F4;}
+#main .paymentCon .paymentWrap .pay .bottom .instalment .selectBoxWrap .selectBox .mobileTab .tab-wrap>ul.tab>li>a div { display: block;   }
+#main .paymentCon .paymentWrap .pay .bottom .instalment .selectBoxWrap .selectBox .mobileTab .tab-wrap>ul.tab>li>a div.option { text-align: left; }
 
 
 
