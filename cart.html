@@ -43,6 +43,10 @@
         <li><a href="#footer" class="smoothBtn ">하단바로가기</a></li>
     </ul>
     <header id="header"  class="header">
+       
+    </header>
+
+    <div class="headerTop">
         <div class="container ">
 
             <ul class="top clearfix">
@@ -80,14 +84,14 @@
                 <div class="bottom-wrap">
                     <ul>
                         <li class="left"><input type="checkbox" placeholder="전체선택"><div>전체선택 (4/6)</div></li>
-                        <li class="right delect"><a href="javascript:Function();">선택삭제 </a></li>
+                        <li class="right delect"><a href ="javascript:Function();">선택삭제 </a></li>
                     </ul>
                 </div>
             </div>
 
            
         </div>
-    </header>
+    </div>
     <main id="main">
         <section id ="section1">
             <div class="container">
@@ -119,7 +123,7 @@
                                         <div class="txt1">옵션 : 블랙/90 (24,000)</div>
                                         <div class="numPrice">
                                             <div class="numBox"> 
-                                                <input type='number' name='amount'min="0" max="100" value="0" style = "text-align:center;" />
+                                                <input type='text' name='amount'min="0" max="100" value="0" style = "text-align:center;" />
                                                 <input type="button" value="+" id="inc-button" class="spinner-button" onClick="javascript:this.form.amount.value++;">
                                                 <input type="button" value="-" id="dec-button" class="spinner-button" onClick="javascript:this.form.amount.value--;">
                                             </div>
@@ -169,7 +173,7 @@
                                       
                                         <div class="numPrice">
                                             <div class="numBox"> 
-                                                <input type='number' name='amount'min="0" max="100" value="0" style = "text-align:center;" />
+                                                <input type='text' name='amount'min="0" max="100" value="0" style = "text-align:center;" />
                                                 <input type="button" value="+" id="inc-button" class="spinner-button" onClick="javascript:this.form.amount.value++;">
                                                 <input type="button" value="-" id="dec-button" class="spinner-button" onClick="javascript:this.form.amount.value--;">
                                             </div>
@@ -218,7 +222,7 @@
                                         <div class="txt1">옵션 : 핑크</div>
                                         <div class="numPrice">
                                             <div class="numBox"> 
-                                                <input type='number' name='amount'min="0" max="100" value="0" style = "text-align:center;" />
+                                                <input type='text' name='amount'min="0" max="100" value="0" style = "text-align:center;" />
                                                 <input type="button" value="+" id="inc-button" class="spinner-button" onClick="javascript:this.form.amount.value++;">
                                                 <input type="button" value="-" id="dec-button" class="spinner-button" onClick="javascript:this.form.amount.value--;">
                                             </div>
@@ -267,7 +271,7 @@
                                         <div class="txt1">옵션 : 블랙/90 (24,000)</div>
                                         <div class="numPrice">
                                             <div class="numBox"> 
-                                                <input type='number' name='amount'min="0" max="100" value="0" style = "text-align:center;" />
+                                                <input type='text' name='amount'min="0" max="100" value="0" style = "text-align:center;" />
                                                 <input type="button" value="+" id="inc-button" class="spinner-button" onClick="javascript:this.form.amount.value++;">
                                                 <input type="button" value="-" id="dec-button" class="spinner-button" onClick="javascript:this.form.amount.value--;">
                                             </div>
@@ -816,6 +820,47 @@
     
    
     
+    </script>
+
+    <script>
+
+
+ //헤더영역 스크롤 이벤트 (페럴럭스)
+ var $window  = $(window);
+         var $header  = $('#wrap1 .headerTop');
+         var $mainBtn = $('#wrap1 .headerTop .mainbtn');
+         var t = 0; // false === 0 같다는 표시   toggle
+         
+
+             
+             //마우스로 스크롤값이 아래로 30픽셀이상 >= 내려가면 
+             //선택자 헤더영역(.headerTop)에 효과 이벤트가 발생하게 하라 
+             $window.scroll(function(){ //스크롤 이벤트
+                // console.log(  $window.scrollTop() ); //스크롤 탑값 확인
+                 if( $window.scrollTop() >= 30 ){  //마우스로 스크롤값이 아래로 30픽셀이상 내려가면
+                  $header.addClass('addHeader');  //헤더에 클래스 추가
+                 // $appBtn.animate({left :'0px',right: '0px',bottom:'0px',borderRadius: '0px'},.1);
+              }
+              else{
+                  $header.removeClass('addHeader'); //추가된 클래스 삭제
+                 // $appBtn.animate({left :'30px',right: '30px',bottom:'54px',borderRadius: '6px'},.1);  
+              }           
+             });
+
+
+            //  메뉴버튼 addCLass removeClass            
+            $mainBtn.each(function (idx) {
+               $mainBtn.eq(0).addClass('addClass'); 
+               $(this).on({
+                  
+                   mouseenter: function () {
+                     $mainBtn.removeClass('addClass');  // 클래스 삭제
+                     $mainBtn.eq(idx).addClass('addClass'); // 클래스 주입
+                      // countFn(idx);
+                   }
+               });
+           });
+
     </script>
 </body>
 </html>

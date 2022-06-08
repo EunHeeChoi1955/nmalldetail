@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="publisher" content="eunheeChoi">
+    <title>주문결제</title>
+   
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/payment.css">    
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- jQuery 오픈소스 -->
+    <script src="./js/lib/jquery.min.js"></script> 
+	<script src='./js/lib/jquery-1.12.4.min.js'></script>
+	<!-- <script src='./js/lib/jquery.mobile-1.4.5.min.js'></script>터치이벤트 웹앱 -->
+	<script src='./js/lib/jquery.easing.1.3.js'></script>
+	<script src='./js/lib/jquery.touchSwipe.min.js'></script>
+	<!-- <script src='./js/lib/slick.min.js'></script> -->
+
+    <!-- 리액트 웹개발 오픈소스 -->    
+    <script src="./js/lib/react.development.js"></script>
+    <script src="./js/lib/react-dom.development.js"></script>
+    <script src="./js/lib/babel.min.js"></script>
+
+</head>
+<body>
+    <div id="wrap1">
+        <div id="header">
+            <div class="container">
+                <ul class="top clearfix">
+                    <li class="left">
+                        <div class="leftWrap">
+                            <span class="backBtn">
+                                <a  href="#" class="back-btn " title="back">
+                                    <span ></span>
+                                </a>
+                            </span>                       
+                        </div>
+                    </li>
+                    <li class="medium">
+                        주문결제
+                    </li>
+                    <li class="right">
+                        
+                    </li>
+                </ul>
+            </div>   
+        </div>     
+        <div id="main">    
+            <div class="paymentCon ">                   
+                    <div class="paymentWrap">                   
+                            
+                           <div class="spot">
+                                <div class="spotTxt1">
+                                    <div class="imgIcon"><img src="./img/order_add_mark.svg" alt=""></div>
+                                    <div class="redTxt">우리집</div>
+                                    <div class="blueTxt">기본배송지</div>
+                                    <div class="changeBtn"><a href="javascript:">변경</a></div>
+                                </div>
+                                <div class="spotTxt2">
+                                    <ul>
+                                        <li>홍길동</li>
+                                        <li class="bar"></li>
+                                        <li>010-1234-5678</li>
+                                    </ul>
+                                </div>
+                                <div class="spotTxt3">서울특별시 강남구 도곡로4길 11-4 ABCABC 205동 1203
+                                    호</div>
+                                <div class="spotTxt4">
+                                    <div class="selectBox">
+                                        <div class="mobileTab">
+                                            <div class="tab-wrap active">
+                                                <ul class="tab ServiceTab" style="  display: none; ">
+                                                    <li class="active">
+                                                        <a href="javascript:" class="service-tab-1" title="부재시 경비실에 맡겨주세요.">
+                                                            <div class="option">부재시 경비실에 맡겨주세요.</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="javascript:" class="service-tab-2" title="부재시 문앞에 놓아주세요.">
+                                                            <div class="option">부재시 문앞에 놓아주세요.</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="javascript:" class="service-tab-2" title="배송전에 연락주세요.">
+                                                            <div class="option">배송전에 연락주세요.</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="javascript:" class="service-tab-2" title="택배함에 넣어주세요.">
+                                                            <div class="option">택배함에 넣어주세요.</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="javascript:" class="service-tab-2" title="직접 입력">
+                                                            <div class="option">직접 입력</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <a href="javascript:" class="tabBtn" title="배송 메시지를 선택해주세요" style="text-decoration: none; ">배송 메시지를 선택해주세요</a>	
+                                            </div>						
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                           </div>
+
+                           <div class="order">
+                               <ul class="top">
+                                   <li class="topTxt1">주문상품</li>
+                                   <li class="topTxt2">첫번째 상품명 10글자 노출하고 외 1건</li>
+                                   <li class="topTxt2hid">2건</li>
+                                   <li class="topTxt3"><a href="javascript:"  class="arrowBtn"><span></span></a></li>
+                               </ul>
+                               <div class="bottom">
+                                    <ul class="boxBottomWrap">
+                                        <li class="box1 box">
+                                            <div class="brandWrap brandWrap1">
+                                                <div class="txt2">
+                                                    <div class="txt2Left">
+                                                        <a href="javascript:Function();">
+                                                            <img src="./img/delivery_th3.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="txt2Right">                                                    
+                                                        <div class="txt2Right_txt2">
+                                                            상품명 상품명 상품명 상품명 상품명 상품명 상품명 상품명 상품명 
+                                                        </div>
+                                                        <div class="txt2Right_txt3" >
+                                                            <div class="txt3_sub1">9,900원</div>
+                                                            <div class="txt3_sub2">1개</div>                                                                                            
+                                                        </div> 
+                                                        <div class="txt2Right_txtBlue">
+                                                            <ul>
+                                                                <li>무료배송<i> ·</i></li>
+                                                                <li>&nbsp;쿠폰적용</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>                                            
+                                            </div>
+
+                                            <div class="grayBox">
+                                                <div class="grayTxt1"><strong>9,900</strong>원 + 배송비 <strong>0</strong>원 - 할인 <strong>1,000</strong>원</div>
+                                                <div class="grayTxt2">= <strong>7,900</strong>원</div>
+                                            </div>
+                                        </li>
+
+                                        <li class="box2 box">
+                                            <div class="brandWrap brandWrap1">
+                                                <div class="txt2">
+                                                    <div class="txt2Left">
+                                                        <a href="javascript:Function();">
+                                                            <img src="./img/img_th_bottle.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="txt2Right">                                                    
+                                                        <div class="txt2Right_txt2">
+                                                            상품명 상품명 상품명 상품명 상품명 상품명 상품명 상품명 상품명 
+                                                        </div>
+                                                        <div class="txt2Right_txt3" >
+                                                            <div class="txt3_sub1">19,900원</div>
+                                                            <div class="txt3_sub2">1개</div>                                                                                            
+                                                        </div> 
+                                                        <div class="txt2Right_txtBlue">
+                                                            <ul>
+                                                                <li>무료배송</li>
+                                                               
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>                                            
+                                            </div>
+
+                                            <div class="grayBox">
+                                                <div class="grayTxt1"><strong>19,900</strong>원 + 배송비 <strong>0</strong>원 - 할인 <strong>1,000</strong>원</div>
+                                                <div class="grayTxt2">= <strong>18,900</strong>원</div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                               </div>
+
+                           </div>
+                           <div class="coupon">
+                                <ul class="top">
+                                    <li class="topTxt1">쿠폰할인</li>
+                                    <li class="topTxt2">쿠폰선택</li>
+                                    <li class="topTxt3"> <strong>- 2,000</strong>원<a href="javascript:"  class="arrowBtn"><span></span></a></li>
+                                </ul>
+                                <ul class="bottom">
+                                    <li class="input1 inputbox">
+                                        <input type="checkbox">
+                                        <div class="text">상품할인</div>
+                                        
+                                        <div class="selectBoxWrap">
+                                            <div class="selectBox">
+                                                <div class="mobileTab">
+                                                    <div class="tab-wrap active">
+                                                        <ul class="tab ServiceTab" style="  display: none; ">
+                                                            <li class="active">
+                                                                <a href="javascript:" class="service-tab-1" title="쿠폰을 선택해주세요.">
+                                                                    <div class="option">쿠폰을 선택해주세요.</div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="javascript:" class="service-tab-2" title="월요일 화이팅 쿠폰 2,000원 할인 (일부 상품 제외) ~22.00.00">
+                                                                    <div class="option">월요일 화이팅 쿠폰 2,000원 할인 (일부 상품 제외) ~22.00.00</div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="javascript:" class="service-tab-2" title="주말 5% 할인 쿠폰 (이벤트 내용) ~22.00.00">
+                                                                    <div class="option">주말 5% 할인 쿠폰 (이벤트 내용) ~22.00.00</div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="javascript:" class="service-tab-2" title="쿠폰 이름 전체 노출 ~22.00.00">
+                                                                    <div class="option">쿠폰 이름 전체 노출 ~22.00.00</div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="javascript:" class="service-tab-2" title="쿠폰 이름 전체 노출 쿠폰 이름 전체 노출 ~22.00.00">
+                                                                    <div class="option">쿠폰 이름 전체 노출 쿠폰 이름 전체 노출 ~22.00.00</div>
+                                                                </a>
+                                                            </li>
+                                                            
+                                                        </ul>
+                                                        <a href="javascript:" class="tabBtn" title="쿠폰을 선택해주세요." style="text-decoration: none; ">쿠폰을 선택해주세요.</a>	
+                                                    </div>						
+                                                </div>                                        
+                                            </div>
+                                        </div>
+                                      
+                                    </li>
+                                    <li class="input2 inputbox">
+                                        <input type="checkbox">
+                                        <div class="text">주문할인</div>
+
+                                         <div  class="selectBoxWrap">
+                                                <div class="selectBox">
+                                                    <div class="mobileTab">
+                                                        <div class="tab-wrap active">
+                                                            <ul class="tab ServiceTab" style="  display: none; ">
+                                                                <li class="active">
+                                                                    <a href="javascript:" class="service-tab-1" title="쿠폰을 선택해주세요.">
+                                                                        <div class="option">쿠폰을 선택해주세요.</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="javascript:" class="service-tab-2" title="월요일 화이팅 쿠폰 2,000원 할인 (일부 상품 제외) ~22.00.00">
+                                                                        <div class="option">월요일 화이팅 쿠폰 2,000원 할인 (일부 상품 제외) ~22.00.00</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="javascript:" class="service-tab-2" title="주말 5% 할인 쿠폰 (이벤트 내용) ~22.00.00">
+                                                                        <div class="option">주말 5% 할인 쿠폰 (이벤트 내용) ~22.00.00</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="javascript:" class="service-tab-2" title="쿠폰 이름 전체 노출 ~22.00.00">
+                                                                        <div class="option">쿠폰 이름 전체 노출 ~22.00.00</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="javascript:" class="service-tab-2" title="쿠폰 이름 전체 노출 쿠폰 이름 전체 노출 ~22.00.00">
+                                                                        <div class="option">쿠폰 이름 전체 노출 쿠폰 이름 전체 노출 ~22.00.00</div>
+                                                                    </a>
+                                                                </li>
+                                                                
+                                                            </ul>
+                                                            <a href="javascript:" class="tabBtn" title="쿠폰을 선택해주세요." style="text-decoration: none; ">쿠폰을 선택해주세요.</a>	
+                                                        </div>						
+                                                    </div>                                        
+                                                </div>
+
+                                                <ul class="red">
+                                                    <li>
+                                                        월요일 화이팅 기간한정 쿠폰 상품 이름
+                                                        전체노출 쿠폰 <strong>1,000</strong>원 할인 ~22.00.00
+                                                    </li>
+                                                    <li>
+                                                        와우이벤트 기간한정 쿠폰 <strong>1,000</strong>원 할인
+                                                        ~22.00.00
+                                                    </li>
+                                                </ul>
+                                         </div>
+                                        
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="point">
+                                <ul class="top">
+                                    <li class="topTxt1">포인트/적립</li>
+                                    <li class="topTxt2">1,000P</li>
+                                    <li class="topTxt3"> <strong>- 800</strong>원<a href="javascript:"  class="arrowBtn"><span></span></a></li>
+                                </ul>
+                                <ul class="bottom">
+                                    <li>
+                                        <input type="checkbox">
+                                        <div class="titleTxt">포인트</div>
+                                        <div class="smallTxt">현재 1,000P</div>
+                                        <div class="price">
+                                            <input type="text" ><span>원</span> 
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox">
+                                        <div class="titleTxt">적립금</div>
+                                        <div class="smallTxt">현재 0원</div>
+                                        <div class="price">
+                                            <input type="text"><span>원</span> 
+                                        </div>
+                                    </li>
+                                    <li class="lastText">포인트/적립금은 1,000원 이상부터 10원단위로 사용할 수 있습니다.</li>
+                                </ul>
+                            </div>
+                            <div class="total">
+                                <ul class="top">
+                                    <li class="topTxt1">최종 결제금액</li>                                   
+                                    <li class="topTxt2">
+                                        <div class="left">총 주문금액</div>
+                                        <div class="right bold">29,800원</div>
+                                    </li>   
+                                    <li class="topTxt3">
+                                        <div class="left">총 할인금액</div>
+                                        <div class="right red">- 2,800원</div>
+                                    </li>
+                                    <li class="topTxt4">
+                                        <div class="left">쿠폰할인</div>
+                                        <div class="right  red">- 2,000원</div>
+                                    </li>
+                                    <li class="topTxt5">
+                                        <div class="left">포인트</div>
+                                        <div class="right red">- 800원</div>
+                                    </li>
+                                    <li class="topTxt6">
+                                        <div class="left">배송비</div>
+                                        <div class="right  bold">0원</div>
+                                    </li>
+                                    <li class="topTxt7">
+                                        <div class="left black">총 결제금액</div>
+                                        <div class="right red">27,000원</div>
+                                    </li>                                
+                                </ul>
+                            </div>
+                            <div class="pay">
+                                <ul class="top">
+                                    <li class="topTxt1">결제수단</li>
+                                    <li class="topTxt3">신용카드<a href="javascript:"  class="arrowBtn"><span></span></a></li>
+                                </ul>
+                                <div class="bottom">
+                                    <div class="btnWrap">
+                                            <ul class="dep1">
+                                                <li class="btn1 btn addbtn"><a href="javascript:"><span></span></a></li>
+                                                <li class="btn2 btn"><a href="javascript:"><span></span></a></li>
+                                                <li class="btn3 btn"><a href="javascript:"><span></span></a></li>
+                                            </ul>  
+                                            <ul class="dep2">  
+                                                <li class="btn4 btn"><a href="javascript:"><span></span></a></li>
+                                                <li class="btn5 btn"><a href="javascript:"><span></span></a></li>
+                                                <li class="btn6 btn"><a href="javascript:"><span></span></a></li>
+                                            </ul>
+                                            <ul class="dep3">
+                                                <li class="btn7 btn"><a href="javascript:"><span></span></a></li>
+                                            </ul>
+                                    </div>
+                                    
+                                    <div class="card">
+                                        <div class="title">카드선택</div>
+                                        <div class="selectBoxWrap">
+                                            <div class="selectBox">
+                                                <div class="mobileTab">
+                                                    <div class="tab-wrap active">
+                                                        <ul class="tab ServiceTab" style="  display: none; ">
+                                                            <li class="active">
+                                                                <a href="javascript:" class="service-tab-1" title="카드를 선택해주세요.">
+                                                                    <div class="option">카드를 선택해주세요.</div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="javascript:" class="service-tab-2" title="BC카드">
+                                                                    <div class="option">BC카드</div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="javascript:" class="service-tab-2" title="신한카드">
+                                                                    <div class="option">신한카드</div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="javascript:" class="service-tab-2" title="KB국민카드">
+                                                                    <div class="option">KB국민카드</div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="javascript:" class="service-tab-2" title="현대카드">
+                                                                    <div class="option">현대카드</div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="javascript:" class="service-tab-2" title="삼성카드">
+                                                                    <div class="option">삼성카드</div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="javascript:" class="service-tab-2" title="우리카드">
+                                                                    <div class="option">우리카드</div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="javascript:" class="service-tab-2" title="NH농협카드">
+                                                                    <div class="option">NH농협카드</div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="javascript:" class="service-tab-2" title="KEB하나농협카드">
+                                                                    <div class="option">KEB하나농협카드</div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="javascript:" class="service-tab-2" title="씨티은행카드">
+                                                                    <div class="option">씨티은행카드</div>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                        <a href="javascript:" class="tabBtn" title="카드를 선택해주세요." style="text-decoration: none; ">카드를 선택해주세요.</a>	
+                                                    </div>						
+                                                </div>
+                                            
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div  class="instalment"> 
+                                        <div class="title">할부선택</div>
+                                        <div  class="selectBoxWrap">
+                                            <div class="selectBox">
+                                                <div class="mobileTab">
+                                                    <div class="tab-wrap active">
+                                                        <ul class="tab ServiceTab" style="  display: none; ">
+                                                            <li class="active">
+                                                                <a href="javascript:" class="service-tab-1" title="2개월">
+                                                                    <div class="option">2개월</div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="active">
+                                                                <a href="javascript:" class="service-tab-1" title="3개월">
+                                                                    <div class="option">3개월</div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="javascript:" class="service-tab-2" title="4개월">
+                                                                    <div class="option">4개월</div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="javascript:" class="service-tab-2" title="5개월">
+                                                                    <div class="option">5개월</div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="javascript:" class="service-tab-2" title="12개월">
+                                                                    <div class="option">6개월</div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="javascript:" class="service-tab-2" title="12개월">
+                                                                    <div class="option">12개월</div>
+                                                                </a>
+                                                            </li>
+                                                            
+                                                        </ul>
+                                                        <a href="javascript:" class="tabBtn" title="할부를 선택해주세요." style="text-decoration: none;  ">할부를 선택해주세요.</a>	
+                                                    </div>						
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="promotion">
+                                        <p><strong>KT</strong> 휴대폰결제 즉시 <strong>3,000원</strong> 할인 ~5/31 <span><img src="./img/ico_i.svg" alt=""></span></p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="terms">
+                                <div class="top">
+                                    <div>
+                                        <input type="checkbox" > <p>약관 전체동의</p> <span class="arrowBtn"></span>
+                                    </div>                                  
+                                </div>
+
+                                <div class="bottom">
+                                    <ul>
+                                        <li><input type="checkbox" > <p>주문정보, 결제대행 이용 및 결제 진행 동의 <span>(필수)</span></p> <span class="arrowBtn"></span></li>
+                                        <li><input type="checkbox" > <p>제3자 제공(재제공)관련 수신동의 <span>(선택)</span></p> <span class="arrowBtn"></span></li>
+                                        <li><input type="checkbox" > <p>현재 결제정보를 기본설정으로 사용 <span>(선택)</span></p> </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="bottomBtn">
+                                <div class="btnWrap">
+                                    <div class="btnGap">
+                                        <a href="#">
+                                            <div class="totalNum">총 2건</div>
+                                            <div class="totalPrice">27,000원 결제하기</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                    </div>
+            </div>
+        </div>    
+            
+
+
+       
+    </div>
+
+
+<script>
+
+
+    var arrowBtn     = $('.arrowBtn');    // 화살표 버튼
+    var bottom       = $('.bottom');  // answer    
+      
+
+  
+   
+    // 화살표 버튼 누르면 밑에 notice텍스트 토글
+    arrowBtn.each(function (idx) {                   
+        $(this).on({
+            click: function () {
+                bottom.eq(idx).toggleClass('addArrow'); //보여줌 
+                arrowBtn.eq(idx).toggleClass('closeArrow'); //보여줌 
+            }
+            
+        });
+    });
+</script>
+
+
+
+<script>
+        
+
+
+    //   탭버튼 이벤트
+    var t=0;
+       var tab8_btn = $('.tab .active');
+       var tab8mobile = $('#section1 .tabBtn');
+       priceBox       = $('#wrap1> #main>#section1 .priceBox');
+
+
+       $('.tabBtn').on({
+          click:	function(){
+             showHideList();
+          }
+       });
+       
+       
+       $(".tab > li > a").click(function(e) {
+       e.preventDefault();	
+       priceBox.removeClass('addClose'); // 탭버튼 누르면 priceBox 다시나타남
+       // 전역변수 조정
+       showHideList();
+       
+       //새로운 클릭일 경우에만 ui 변경
+       if(!$(this).parent().hasClass('active')) { 
+         $('.tabBtn').text($(this).text()); //보여지는 제목 바꾸기
+       }
+       
+       // 액티브 조정 
+       $(this).parent().siblings().removeClass('active').end().addClass('active');
+       
+       });
+       
+       //모바일 & PC 공통 
+       $(".tabs a").click(function(e) {
+          e.preventDefault();	
+          $(this).parent().siblings().removeClass('active').end().addClass('active');
+          
+       //	$(this).parents('ul').next().children().hide().eq($(this).parent().index()).show();
+          $('.tab').parents('ul').next().children().hide().eq($(this).parent().index()).show();
+       });
+       
+       //현재 active 되어있는 탭 외의 모든 데이터 접기 => 모바일도 적용하기 위해선 공통 class 생성하여 적용 필요
+       $('.ServiceTab > li').on('click', function(e){
+          e.preventDefault();	
+       // $(".nav").navgoco('toggle', false);
+          $(".nav > li").removeClass('active');
+          $(".nav > li").removeClass('open');
+       });
+       
+       function showHideList() {
+          if(t==0){
+             t=1;
+             $('.tab').stop().slideDown();
+             $('.tabBtn').addClass('addFamily');
+          }else{
+             t=0;
+             $('.tab').hide();
+             $('.tabBtn').removeClass('addFamily');	
+             $('.tabBtn').children().stop().slideUp();	
+          }
+       }
+       
+
+
+
+</script>
+    
+
+
+</body>
+</html>  
