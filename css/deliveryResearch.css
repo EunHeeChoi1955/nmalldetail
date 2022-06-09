@@ -54,7 +54,7 @@
  #main .deliveryCon .listWrap .box .iconBox li:last-child:before { border:0;  }
  #main .deliveryCon .listWrap .box .iconBox li a{display: block;color: #187AEF; font-size: 18px; font-weight: 700; }
  #main .deliveryCon .listWrap .box .iconBox li a span{padding-top: 10px; display: block;text-align: center; font-size: 12px; font-weight: 400; color:#343434 ;}
- #main .deliveryCon .listWrap .box .iconBox li.addBtn a span{  font-weight: 700; color:#FF5C38  ;}
+ #main .deliveryCon .listWrap .box .iconBox li.addBtn a span{  font-weight: 700; color:#E7342C  ;}
  #main .deliveryCon .listWrap .box .iconBox li img {width: 24px; margin:0 auto; }
  #main .deliveryCon .listWrap .box .iconBox li img.block1 {display: none;  }
  #main .deliveryCon .listWrap .box .iconBox li img.block { display: block; }
@@ -114,7 +114,7 @@
  #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .nav-container .nav-view .nav-wrap li::after {content: "";position: absolute;left:0 ; margin-left:3px; display: inline-block;  width:1px; height:55px; display:block;background: #CCCCCC;}
  #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .nav-container .nav-view .nav-wrap li:last-child:after { height:0; }
  #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .nav-container .nav-view .nav-wrap li span { border-radius: 50%; background: #CCCCCC; width: 7px; height: 7px; display: block; }
- #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .nav-container .nav-view .nav-wrap li.addBtn span { background: #FF5C38; width: 9px; height: 9px; }
+ #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .nav-container .nav-view .nav-wrap li.addBtn span { background: #E7342C; width: 9px; height: 9px; }
  #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .delivery-container { }
  #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .delivery-container .delivery-view { }
  #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .delivery-container .delivery-view .list_state{ }
@@ -122,7 +122,7 @@
  #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .delivery-container .delivery-view .list_state li div {font-weight: 400;line-height: 130%; }
  #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .delivery-container .delivery-view .list_state li.addBtn div {color: #343434; }
  #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .delivery-container .delivery-view .list_state li div.stateNow { font-weight: 700; padding-left: 23px;line-height: 120%;}
- #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .delivery-container .delivery-view .list_state li.addBtn div.stateNow { color: #FF5C38;  }
+ #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .delivery-container .delivery-view .list_state li.addBtn div.stateNow { color: #E7342C;  }
  #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .delivery-container .delivery-view .list_state li div.stateNow span { font-weight: 400; }
 
 

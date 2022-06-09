@@ -27,8 +27,8 @@ html, body {background: #fff; color: #fff;  }
 #myPick >.TopContainer .tabBtn {display: block; width: 100%;} 
 #myPick >.TopContainer .tabBtn ul{ display: flex;text-align: center; margin: 0;} 
 #myPick >.TopContainer .tabBtn ul li{display: inline-block;} 
-#myPick >.TopContainer .tabBtn ul li:focus a{border-bottom: 2px solid #FF5C38;}
-#myPick >.TopContainer .tabBtn ul li.addfocus a{border-bottom: 2px solid #FF5C38;}
+#myPick >.TopContainer .tabBtn ul li:focus a{border-bottom: 2px solid #E7342C;}
+#myPick >.TopContainer .tabBtn ul li.addfocus a{border-bottom: 2px solid #E7342C;}
 #myPick >.TopContainer .tabBtn ul li a{ color: #343434; font-weight: 700; font-size: 16px; text-decoration: none; padding: 12px 0; width: 100%; display: block; border-bottom:1px solid #E2E2E2;} 
 /* 총 ~건   전체삭제  */
 #myPick >.TopContainer .totalWrap { display: flex;border-bottom: 1px solid #F4F4F4;width: 100%;padding: 20px 18px 10px 18px;}
@@ -58,7 +58,7 @@ html, body {background: #fff; color: #fff;  }
 #myPick >.TopContainer .pickContents .listWrap ul li .right .txt2 { width: 100%;}
 #myPick >.TopContainer .pickContents .listWrap ul li .right .txt2 a {text-decoration: none; color:#1A1A1A; line-height:100%;text-overflow: ellipsis;}
 #myPick >.TopContainer .pickContents .listWrap ul li .right .txt3 {display: flex; padding-top: 5px;}
-#myPick >.TopContainer .pickContents .listWrap ul li .right .txt3 .red {margin:auto auto auto  0 ; font-size: 18px; font-weight: 700; line-height:100%;color: #FF5C38;white-space: nowrap;}
+#myPick >.TopContainer .pickContents .listWrap ul li .right .txt3 .red {margin:auto auto auto  0 ; font-size: 18px; font-weight: 700; line-height:100%;color: #E7342C;white-space: nowrap;}
 #myPick >.TopContainer .pickContents .listWrap ul li .right .txt3 .red span{ font-size: 14px; font-weight: 400;}
 #myPick >.TopContainer .pickContents .listWrap ul li .right .txt3 .price { color: #1A1A1A; font-size: 16px; font-weight: 700;margin:auto  0 auto auto ; line-height:100%;text-align: right; white-space: nowrap;}
 #myPick >.TopContainer .pickContents .listWrap ul li .right .txt3 .price .won { font-size: 12px; font-weight: 400;}
@@ -93,7 +93,7 @@ html, body {background: #fff; color: #fff;  }
 #myPick >.TopContainer .recentContents .listWrap ul li .right .txt2 { width: 100%;}
 #myPick >.TopContainer .recentContents .listWrap ul li .right .txt2 a {text-decoration: none; color:#1A1A1A; line-height:100%;text-overflow: ellipsis;}
 #myPick >.TopContainer .recentContents .listWrap ul li .right .txt3 {display: flex; padding-top: 5px;}
-#myPick >.TopContainer .recentContents .listWrap ul li .right .txt3 .red {margin:auto auto auto  0 ; font-size: 18px; font-weight: 700; line-height:100%;color: #FF5C38;white-space: nowrap;}
+#myPick >.TopContainer .recentContents .listWrap ul li .right .txt3 .red {margin:auto auto auto  0 ; font-size: 18px; font-weight: 700; line-height:100%;color: #E7342C;white-space: nowrap;}
 #myPick >.TopContainer .recentContents .listWrap ul li .right .txt3 .red span{ font-size: 14px; font-weight: 400;}
 #myPick >.TopContainer .recentContents .listWrap ul li .right .txt3 .price { color: #1A1A1A; font-size: 16px; font-weight: 700;margin:auto  0 auto auto ; line-height:100%;text-align: right; white-space: nowrap;}
 #myPick >.TopContainer .recentContents .listWrap ul li .right .txt3 .price .won { font-size: 12px; font-weight: 400;}
@@ -160,7 +160,7 @@ html, body {background: #fff; color: #fff;  }
 #modal .modalWrap .modalGap .modalContents .box1 p{  text-align: center;display: block; padding-top: 40px; font-size: 14px;}
 #modal .modalWrap .modalGap .modalContents .box2 { display: flex; height: 49px; border-top: 1px solid #E5E5E5; border-radius: 0 0 6px 6px; background: #F9F9F9;}
 #modal .modalWrap .modalGap .modalContents .box2 a{ color:#343434;border:0;display: inline-block; font-size: 16px; width:153px;height:48px; padding:12px 0;text-align: center; font-weight: 400;}
-#modal .modalWrap .modalGap .modalContents .box2 .ok{ border-left: 1px solid #E5E5E5; color: #FF5C38;}
+#modal .modalWrap .modalGap .modalContents .box2 .ok{ border-left: 1px solid #E5E5E5; color: #E7342C;}
 
 
 

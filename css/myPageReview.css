@@ -27,8 +27,8 @@ html, body {background: #fff; color: #fff;  }
 #myPageReview >.TopContainer .reviewBtn {display: block; width: 100%;} 
 #myPageReview >.TopContainer .reviewBtn ul{ display: flex;text-align: center; margin: 0;} 
 #myPageReview >.TopContainer .reviewBtn ul li{display: inline-block;} 
-#myPageReview >.TopContainer .reviewBtn ul li:focus a{border-bottom: 2px solid #FF5C38;}
-#myPageReview >.TopContainer .reviewBtn ul li.addfocus a{border-bottom: 2px solid #FF5C38;}
+#myPageReview >.TopContainer .reviewBtn ul li:focus a{border-bottom: 2px solid #E7342C;}
+#myPageReview >.TopContainer .reviewBtn ul li.addfocus a{border-bottom: 2px solid #E7342C;}
 #myPageReview >.TopContainer .reviewBtn ul li a{ color: #565656; font-weight: 400; font-size: 16px; text-decoration: none; padding: 12px 0; width: 100%; display: block; border-bottom:1px solid #E2E2E2;} 
 #myPageReview >.TopContainer .reviewBtn ul li a .red{ vertical-align: baseline;} 
 #myPageReview >.TopContainer .reviewBtn ul li.addfocus a{ color: #343434; font-weight: 700; font-size: 16px; text-decoration: none; padding: 12px 0; width: 100%; display: block; } 
@@ -92,7 +92,7 @@ html, body {background: #fff; color: #fff;  }
 #myPageReview >.TopContainer .reviewCon .listWrap ul li .top .closeBtn a img {width: 12.19px;}
 /* 리뷰작성하기 버튼 */
 #myPageReview >.TopContainer .reviewCon .listWrap ul li .bottom {  padding:20px 18px 10px 18px; width: 100%; display: block;text-align: center;}
-#myPageReview >.TopContainer .reviewCon .listWrap ul li .bottom a { width: 100%; color: #FF5C38; font-size:16px; font-weight: 700;padding:9px 0;display: block; border: 1px solid #FF5C38; border-radius: 6px; }
+#myPageReview >.TopContainer .reviewCon .listWrap ul li .bottom a { width: 100%; color: #E7342C; font-size:16px; font-weight: 700;padding:9px 0;display: block; border: 1px solid #E7342C; border-radius: 6px; }
 
 
 

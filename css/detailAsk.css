@@ -32,7 +32,7 @@
 #wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li { padding: 0 5px; text-align: center;display:inline-block; }
 #wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li a  { width:23.5px; }
 #wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li a img { color:#1A1A1A;  }
-#wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li a em {padding:4.6px 4px; width:20px; height:20px; position:absolute; z-index:2; top:27px; right:14px; font-weight: 200; background-color: #FF5C38; border-radius: 50%; font-size: 11px;box-sizing: border-box;line-height: 11px;}
+#wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li a em {padding:4.6px 4px; width:20px; height:20px; position:absolute; z-index:2; top:27px; right:14px; font-weight: 200; background-color: #E7342C; border-radius: 50%; font-size: 11px;box-sizing: border-box;line-height: 11px;}
 
 
 #wrap1>#header .container .bottom{ width:100%;display: block; }
@@ -40,8 +40,8 @@
 #wrap1>#header .container .bottom .bottom-wrap nav{ width:100%; }
 #wrap1>#header .container .bottom .bottom-wrap nav>ul{ display: flex; margin: 0;}
 #wrap1>#header .container .bottom .bottom-wrap nav>ul>li{width:25%; font-family: 'SUIT';  text-align: center; } 
-#wrap1>#header .container .bottom .bottom-wrap nav>ul>li:hover a i{border-bottom: 2px solid #FF5C38; width: 100%; display: block;} 
-#wrap1>#header .container .bottom .bottom-wrap nav>ul>li.addClass a i{border-bottom: 2px solid #FF5C38; width: 100%; display: block;} 
+#wrap1>#header .container .bottom .bottom-wrap nav>ul>li:hover a i{border-bottom: 2px solid #E7342C; width: 100%; display: block;} 
+#wrap1>#header .container .bottom .bottom-wrap nav>ul>li.addClass a i{border-bottom: 2px solid #E7342C; width: 100%; display: block;} 
 
 #wrap1>#header .container .bottom .bottom-wrap nav>ul>li:first-child{ margin:auto auto auto  0 ; padding-left:0;}
 #wrap1>#header .container .bottom .bottom-wrap nav>ul>li:last-child{ padding-right:0;margin:auto 0 auto auto; }
@@ -50,7 +50,7 @@
 
 #wrap1>#header .container .bottom .bottom-wrap nav>ul>li:hover a {font-weight: 700; text-decoration: none;  white-space: normal;   }
 #wrap1>#header .container .bottom .bottom-wrap nav>ul>li.addClass a {font-weight: 700; text-decoration: none;  white-space: normal;  }
-#wrap1>#header .container .bottom .bottom-wrap nav>ul>li.addClass a  {color:#FF5C38;   }
+#wrap1>#header .container .bottom .bottom-wrap nav>ul>li.addClass a  {color:#E7342C;   }
 
 
 
@@ -90,7 +90,7 @@
 #wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .askWriteTop { width: 100%;}
 #wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .askWriteTop>div { display: flex;}
 #wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .askWriteTop>div>.left { font-size:12px; color: #fff; background: #909090; padding: 3px 8px; border-radius: 4px; font-weight:600;height: 24px;}
-#wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .askWriteTop>div>.left.red { font-size:12px; color: #fff; background: #FF5C38; padding: 3px 8px; border-radius: 4px; font-weight:600;height: 24px;}
+#wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .askWriteTop>div>.left.red { font-size:12px; color: #fff; background: #E7342C; padding: 3px 8px; border-radius: 4px; font-weight:600;height: 24px;}
 #wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .askWriteTop>div>.right {margin:0 0 auto auto; }
 #wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .askWriteTop>div>.right>ul {display: flex; margin: 0; }
 #wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .askWriteTop>div>.right>ul>li { }
@@ -119,7 +119,7 @@
 #wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .answerBox div{ padding: 13px 15px 15px 15px;}
 #wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .answerBox div ul{ margin: 0;}
 #wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .answerBox .top ul .title{ font-size: 12px; color: #797979; font-weight: 700; padding-bottom: 2px; }
-#wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .answerBox .bottom ul .title{ font-size: 12px; color: #FF5C38; font-weight: 700; padding-bottom: 2px; }
+#wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .answerBox .bottom ul .title{ font-size: 12px; color: #E7342C; font-weight: 700; padding-bottom: 2px; }
 
 
 #wrap1> #main> #section1 .container .gap .wrap .askbottomBox .answerBtnmoreBox {width: 100%; display:block;margin: 0 auto;}
@@ -143,9 +143,9 @@
 #wrap1> #main>#section1> .btnBoxWrap1 { display:none;   z-index:6; position:fixed;bottom:0;left:0; width:100%;height:auto; opacity:1; transition:all 1s;}
 #wrap1> #main>#section1> .btnBoxWrap1.addShow { display:block;}
 #wrap1> #main>#section1> .btnBoxWrap1 .btnBox {display: flex; font-family:'SUIT'; margin: 0; }
-#wrap1> #main>#section1> .btnBoxWrap1 .btnBox li{width:33.33333%; display: inline-block; border-top: 1px solid #FF5C38; border-right: 1px solid #FF5C38;}
-#wrap1> #main>#section1> .btnBoxWrap1 .btnBox li:last-child a {color: #fff;background: #FF5C38; }
-#wrap1> #main>#section1> .btnBoxWrap1 .btnBox li a{ white-space: nowrap; text-align: center; font-size:16px ; font-weight: 700; color: #FF5C38; text-decoration:none;padding:18px 20px ;display: block; background: #fff;}
+#wrap1> #main>#section1> .btnBoxWrap1 .btnBox li{width:33.33333%; display: inline-block; border-top: 1px solid #E7342C; border-right: 1px solid #E7342C;}
+#wrap1> #main>#section1> .btnBoxWrap1 .btnBox li:last-child a {color: #fff;background: #E7342C; }
+#wrap1> #main>#section1> .btnBoxWrap1 .btnBox li a{ white-space: nowrap; text-align: center; font-size:16px ; font-weight: 700; color: #E7342C; text-decoration:none;padding:18px 20px ;display: block; background: #fff;}
 #wrap1> #main>#section1> .btnBoxWrap1 .btnBox li a span { width:15.51px; display: inline-block; margin:-7px 5px 0 0;}
 #wrap1> #main>#section1> .btnBoxWrap1 .btnBox li a span img { width:15.51px;}
 

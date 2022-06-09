@@ -34,7 +34,7 @@ html, body {background: #fff; color: #fff;  }
 #login >.TopContainer .loginContents ul li .left input[type='text']::placeholder {  color: #CCCCCC; padding: 0 14px; font-size: 12px; }
 #login >.TopContainer .loginContents ul li .right { width: 69px; }
 #login >.TopContainer .loginContents ul li .right button { font-size:14px ; color: #343434; border: 0; padding: 9px 10px; background: #F4F4F4;  border-radius: 6px; white-space: nowrap;}
-#login >.TopContainer .loginContents ul li .right button.addBtn  {background-color: #FF5C38; color: #fff;}
+#login >.TopContainer .loginContents ul li .right button.addBtn  {background-color: #E7342C; color: #fff;}
 /* 간편로그인 텍스트 밑줄 */
 #login >.TopContainer .loginContents> .loginStart { display: block; padding: 10px 0;}
 #login >.TopContainer .loginContents> .loginStart>div {display: inline-block; position: relative;}

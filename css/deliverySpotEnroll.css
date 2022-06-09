@@ -29,7 +29,7 @@
 #wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li { padding: 0 5px; text-align: center;display:inline-block; }
 #wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li a  { width:23.5px; }
 #wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li a img { color:#1A1A1A;  }
-#wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li a em {padding:4.9px 4px; width:20px; height:20px; position:absolute; z-index:2; top:27px; right:14px; font-weight: 200; background-color: #FF5C38; border-radius: 50%; font-size: 11px;box-sizing: border-box;line-height: 11px;}
+#wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li a em {padding:4.9px 4px; width:20px; height:20px; position:absolute; z-index:2; top:27px; right:14px; font-weight: 200; background-color: #E7342C; border-radius: 50%; font-size: 11px;box-sizing: border-box;line-height: 11px;}
 
 
 
@@ -83,10 +83,10 @@
 #main .deliveryCon .btnBoxWrap1.addShow { display:none;}
 #main .deliveryCon .btnBoxWrap1 .btnBox {display: flex; font-family:'SUIT'; margin: 0; }
 #main .deliveryCon .btnBoxWrap1 .btnBox li{ width:50%;height:60px; display: inline-block; border-top: 2px solid #CCCCCC;}
-#main .deliveryCon .btnBoxWrap1 .btnBox li.addBtn{ border-top: 2px solid #FF5C38;}
+#main .deliveryCon .btnBoxWrap1 .btnBox li.addBtn{ border-top: 2px solid #E7342C;}
 #main .deliveryCon .btnBoxWrap1 .btnBox li:first-child>a{ display:block; width: 100%; height: 100%;background: #fff; margin:auto;text-decoration:none; white-space: nowrap; font-size: 16px;font-weight: 400;text-align: center;padding:18px 0; color: #343434;}
 #main .deliveryCon .btnBoxWrap1 .btnBox li:last-child a {color: #fff; font-weight: 700; font-size: 16px; background: #CCCCCC; text-align: center;  width: 100%; height: 100%; display: block; padding:18px 0;text-decoration:none; white-space: nowrap; }
-#main .deliveryCon .btnBoxWrap1 .btnBox li.addBtn:last-child a {color: #fff; font-weight: 700; font-size: 16px; background: #FF5C38; text-align: center;  width: 100%; height: 100%; display: block; padding:18px 0;text-decoration:none; white-space: nowrap; }
+#main .deliveryCon .btnBoxWrap1 .btnBox li.addBtn:last-child a {color: #fff; font-weight: 700; font-size: 16px; background: #E7342C; text-align: center;  width: 100%; height: 100%; display: block; padding:18px 0;text-decoration:none; white-space: nowrap; }
 
 
 

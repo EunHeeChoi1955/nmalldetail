@@ -47,12 +47,12 @@ html, body {background: #fff; color: #fff;    }
 #discountCoupon >.TopContainer .reviewBtn {display: block; width: 100%;  font-family: 'SUIT';} 
 #discountCoupon >.TopContainer .reviewBtn ul{ display: flex;text-align: center; margin: 0;} 
 #discountCoupon >.TopContainer .reviewBtn ul li{display: inline-block;} 
-#discountCoupon >.TopContainer .reviewBtn ul li:focus a{border-bottom: 2px solid #FF5C38;}
-#discountCoupon >.TopContainer .reviewBtn ul li.addfocus a{border-bottom: 2px solid #FF5C38;}
+#discountCoupon >.TopContainer .reviewBtn ul li:focus a{border-bottom: 2px solid #E7342C;}
+#discountCoupon >.TopContainer .reviewBtn ul li.addfocus a{border-bottom: 2px solid #E7342C;}
 #discountCoupon >.TopContainer .reviewBtn ul li a{ color: #565656; font-weight: 400; font-size: 16px; text-decoration: none; padding: 12px 0; width: 100%; display: block; border-bottom:1px solid #E2E2E2;} 
 #discountCoupon >.TopContainer .reviewBtn ul li a .red{ vertical-align: baseline;} 
 #discountCoupon >.TopContainer .reviewBtn ul li.addfocus a{ color: #343434; font-weight: 700; font-size: 16px; text-decoration: none; padding: 12px 0; width: 100%; display: block; } 
-#discountCoupon >.TopContainer .reviewBtn ul li.addfocus a .red{ color: #E7382D; vertical-align: baseline;} 
+#discountCoupon >.TopContainer .reviewBtn ul li.addfocus a .red{ color: #E7342C; vertical-align: baseline;} 
 
 
 
@@ -189,7 +189,7 @@ html, body {background: #fff; color: #fff;    }
 #discountCoupon >.TopContainer .orderCon .orderList .orderWrap .subTitle .selectBox .mobileTab .tab-wrap>ul.tab>li{width:100%;display:block;box-sizing:border-box; padding: 5px 0;}
 #discountCoupon >.TopContainer .orderCon .orderList .orderWrap .subTitle .selectBox .mobileTab .tab-wrap>ul.tab>li:last-child{ border:0 ;}
 #discountCoupon >.TopContainer .orderCon .orderList .orderWrap .subTitle .selectBox .mobileTab .tab-wrap>ul.tab>li>a{ color:#343434; font-size:12px; text-decoration: none;  }
-#discountCoupon >.TopContainer .orderCon .orderList .orderWrap .subTitle .selectBox .mobileTab .tab-wrap>ul.tab>li>a:hover{color:#e7382d;}
+#discountCoupon >.TopContainer .orderCon .orderList .orderWrap .subTitle .selectBox .mobileTab .tab-wrap>ul.tab>li>a:hover{color:#E7342C;}
 #discountCoupon >.TopContainer .orderCon .orderList .orderWrap .subTitle .selectBox .mobileTab .tab-wrap>ul.tab>li>a div { display: block;   }
 #discountCoupon >.TopContainer .orderCon .orderList .orderWrap .subTitle .selectBox .mobileTab .tab-wrap>ul.tab>li>a div.option { text-align: center;  }
 

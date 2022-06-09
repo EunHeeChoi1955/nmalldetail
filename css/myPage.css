@@ -27,7 +27,7 @@ html, body {background: #fff; color: #fff;  }
 #myPage >.TopContainer .myPageContents .myPageContentsWrap .myPageHello .left { width: 42px; }
 #myPage >.TopContainer .myPageContents .myPageContentsWrap .myPageHello .left img { width: 100%; }
 #myPage >.TopContainer .myPageContents .myPageContentsWrap .loginBtn {width: 100%; padding:20px 18px 10px 18px; } 
-#myPage >.TopContainer .myPageContents .myPageContentsWrap .loginBtn button { width: 100%; background: #fff; color: #FF5C38; font-size: 16px; font-weight: 700; border:1px solid #FF5C38; border-radius:6px ; padding: 8px 0; } 
+#myPage >.TopContainer .myPageContents .myPageContentsWrap .loginBtn button { width: 100%; background: #fff; color: #E7342C; font-size: 16px; font-weight: 700; border:1px solid #E7342C; border-radius:6px ; padding: 8px 0; } 
 
 #myPage >.TopContainer .myPageContents .customList {width: 100%;}
 #myPage >.TopContainer .myPageContents .customList ul {width: 100%;margin: 0;}

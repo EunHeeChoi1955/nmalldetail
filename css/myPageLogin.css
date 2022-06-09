@@ -33,7 +33,7 @@ html, body {background: #fff; color: #fff;  }
 #myPage >.TopContainer .myPageContents .myPageContentsWrap .menu ul li:last-child { border-right: 0;}
 #myPage >.TopContainer .myPageContents .myPageContentsWrap .menu ul li a { position:relative; width: 100%;font-size: 14px; font-weight: 400; color: #343434;text-align:center; }
 #myPage >.TopContainer .myPageContents .myPageContentsWrap .menu ul li a span img { width: 42px; display: block;margin: 0 auto;}
-#myPage >.TopContainer .myPageContents .myPageContentsWrap .menu ul li a em { position:absolute; z-index:2; top:0px; margin-top:-5px; right:0px; margin-right: -5px;  padding:4.8px 4px; width:20px; height:20px; font-weight: 200; background-color: #FF5C38; border-radius: 50%; font-size: 11px;box-sizing: border-box;line-height: 11px;}
+#myPage >.TopContainer .myPageContents .myPageContentsWrap .menu ul li a em { position:absolute; z-index:2; top:0px; margin-top:-5px; right:0px; margin-right: -5px;  padding:4.8px 4px; width:20px; height:20px; font-weight: 200; background-color: #E7342C; border-radius: 50%; font-size: 11px;box-sizing: border-box;line-height: 11px;}
 #myPage >.TopContainer .myPageContents .myPageContentsWrap .menu ul li:nth-child(2) a em {  margin-right: -14px;  }
 #myPage >.TopContainer .myPageContents .myPageContentsWrap .menu ul li:nth-child(3) a em {  margin-right: 0; }
 

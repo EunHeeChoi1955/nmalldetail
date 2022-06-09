@@ -27,8 +27,8 @@ html, body {background: #fff; color: #fff;   }
 #myPageReview >.TopContainer .reviewBtn {display: block; width: 100%;} 
 #myPageReview >.TopContainer .reviewBtn ul{ display: flex;text-align: center; margin: 0;} 
 #myPageReview >.TopContainer .reviewBtn ul li{display: inline-block;} 
-#myPageReview >.TopContainer .reviewBtn ul li:focus a{border-bottom: 2px solid #FF5C38;}
-#myPageReview >.TopContainer .reviewBtn ul li.addfocus a{border-bottom: 2px solid #FF5C38;}
+#myPageReview >.TopContainer .reviewBtn ul li:focus a{border-bottom: 2px solid #E7342C;}
+#myPageReview >.TopContainer .reviewBtn ul li.addfocus a{border-bottom: 2px solid #E7342C;}
 #myPageReview >.TopContainer .reviewBtn ul li a{ color: #565656; font-weight: 400; font-size: 16px; text-decoration: none; padding: 12px 0; width: 100%; display: block; border-bottom:1px solid #E2E2E2;} 
 #myPageReview >.TopContainer .reviewBtn ul li a .red{ vertical-align: baseline;} 
 #myPageReview >.TopContainer .reviewBtn ul li.addfocus a{ color: #343434; font-weight: 700; font-size: 16px; text-decoration: none; padding: 12px 0; width: 100%; display: block; } 
