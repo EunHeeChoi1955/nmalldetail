@@ -42,11 +42,9 @@
         <li><a href="#main" class="smoothBtn ">메인바로가기</a></li>
         <li><a href="#footer" class="smoothBtn ">하단바로가기</a></li>
     </ul>
-    <header id="header"  class="header">
-       
-    </header>
+  
 
-    <div class="headerTop">
+    <header id="header"  class="header">
         <div class="container ">
 
             <ul class="top clearfix">
@@ -80,17 +78,23 @@
                     </aside>
                 </li>
             </ul>
-            <div class="bottom">
+    
+           
+        </div>
+    </header>
+
+    <div class="headerTop">
+        
+            
                 <div class="bottom-wrap">
                     <ul>
                         <li class="left"><input type="checkbox" placeholder="전체선택"><div>전체선택 (4/6)</div></li>
                         <li class="right delect"><a href ="javascript:Function();">선택삭제 </a></li>
                     </ul>
                 </div>
-            </div>
+            
 
            
-        </div>
     </div>
     <main id="main">
         <section id ="section1">
@@ -827,8 +831,8 @@
 
  //헤더영역 스크롤 이벤트 (페럴럭스)
  var $window  = $(window);
-         var $header  = $('#wrap1 .headerTop');
-         var $mainBtn = $('#wrap1 .headerTop .mainbtn');
+         var $header  = $('#wrap1 .bottom-wrap');
+         var $mainBtn = $('#wrap1 .bottom-wrap .mainbtn');
          var t = 0; // false === 0 같다는 표시   toggle
          
 
