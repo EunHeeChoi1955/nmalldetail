@@ -63,7 +63,7 @@
                                     <div class="imgIcon"><img src="./img/order_add_mark.svg" alt=""></div>
                                     <div class="redTxt">우리집</div>
                                     <div class="blueTxt">기본배송지</div>
-                                    <div class="changeBtn"><a href="javascript:">변경</a></div>
+                                    <div class="changeBtn"><a href="javascript:void(window.open('deliverySpotChange.html', '_self'))">변경</a></div>
                                 </div>
                                 <div class="spotTxt2">
                                     <ul>
@@ -72,8 +72,7 @@
                                         <li>010-1234-5678</li>
                                     </ul>
                                 </div>
-                                <div class="spotTxt3">서울특별시 강남구 도곡로4길 11-4 ABCABC 205동 1203
-                                    호</div>
+                                <div class="spotTxt3">서울특별시 강남구 도곡로4길 11-4 ABCABC 205동 1203호</div>
                                 <div class="spotTxt4">
                                     <div class="selectBox">
                                         <div class="mobileTab">
@@ -101,7 +100,7 @@
                                                     </li>
                                                     <li class="">
                                                         <a href="javascript:" class="service-tab-2" title="직접 입력">
-                                                            <div class="option">직접 입력</div>
+                                                            <div class="option wirteDown">직접 입력</div>
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -111,6 +110,14 @@
                                     
                                     </div>
                                 </div>
+
+                                <div class="message">
+                                    <div class="text">
+                                        <textarea type="text" class="TEXT" placeholder="입력해주세요" name="" id="" cols="30" rows="1"></textarea>
+                                        <span class="counter">0 / 20</span>
+                                    </div>
+                                </div>
+
                            </div>
 
                            <div class="order">
@@ -375,123 +382,249 @@
                                                 <li class="btn7 btn"><a href="javascript:"><span></span></a></li>
                                             </ul>
                                     </div>
-                                    
-                                    <div class="card">
-                                        <div class="title">카드선택</div>
-                                        <div class="selectBoxWrap">
-                                            <div class="selectBox">
-                                                <div class="mobileTab">
-                                                    <div class="tab-wrap active">
-                                                        <ul class="tab ServiceTab" style="  display: none; ">
-                                                            <li class="active">
-                                                                <a href="javascript:" class="service-tab-1" title="카드를 선택해주세요.">
-                                                                    <div class="option">카드를 선택해주세요.</div>
-                                                                </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="javascript:" class="service-tab-2" title="BC카드">
-                                                                    <div class="option">BC카드</div>
-                                                                </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="javascript:" class="service-tab-2" title="신한카드">
-                                                                    <div class="option">신한카드</div>
-                                                                </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="javascript:" class="service-tab-2" title="KB국민카드">
-                                                                    <div class="option">KB국민카드</div>
-                                                                </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="javascript:" class="service-tab-2" title="현대카드">
-                                                                    <div class="option">현대카드</div>
-                                                                </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="javascript:" class="service-tab-2" title="삼성카드">
-                                                                    <div class="option">삼성카드</div>
-                                                                </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="javascript:" class="service-tab-2" title="우리카드">
-                                                                    <div class="option">우리카드</div>
-                                                                </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="javascript:" class="service-tab-2" title="NH농협카드">
-                                                                    <div class="option">NH농협카드</div>
-                                                                </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="javascript:" class="service-tab-2" title="KEB하나농협카드">
-                                                                    <div class="option">KEB하나농협카드</div>
-                                                                </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="javascript:" class="service-tab-2" title="씨티은행카드">
-                                                                    <div class="option">씨티은행카드</div>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                        <a href="javascript:" class="tabBtn" title="카드를 선택해주세요." style="text-decoration: none; ">카드를 선택해주세요.</a>	
-                                                    </div>						
+                                    <div class="mobilePay">
+                                        <ol>
+                                            <li>휴대폰 결제는 결제 당월에만 결제수단 취소가 가능합니다. 결제 한도는 최대 월 50만원이며, 통신사 수납/가입상태 및 결제 대행사에 따라 한도가 상이할 수 있습니다.</li>
+                                            <li>한도문의는 ###으로(1500-0000) 문의주시기 바랍니다.</li>
+                                        </ol>
+                                    </div>
+                                    <div class="deposit">
+                                        <div class='input1 input'>
+                                            <div class="inputBox">                                            
+                                                <div class="title">은행선택</div>
+                                                <div class="right">
+                                                    <div class="selectBoxWrap">
+                                                        <div class="selectBox">
+                                                            <div class="mobileTab">
+                                                                <div class="tab-wrap active">
+                                                                    <ul class="tab ServiceTab" style="  display: none; ">
+                                                                        <li class="active">
+                                                                            <a href="javascript:" class="service-tab-1" title="은행을 선택해주세요.">
+                                                                                <div class="option">은행을 선택해주세요.</div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="">
+                                                                            <a href="javascript:" class="service-tab-2" title="KB국민">
+                                                                                <div class="option">KB국민</div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="">
+                                                                            <a href="javascript:" class="service-tab-2" title="기업">
+                                                                                <div class="option">기업</div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="">
+                                                                            <a href="javascript:" class="service-tab-2" title="산업">
+                                                                                <div class="option">산업</div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="">
+                                                                            <a href="javascript:" class="service-tab-2" title="수협">
+                                                                                <div class="option">수협</div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="">
+                                                                            <a href="javascript:" class="service-tab-2" title="우체국">
+                                                                                <div class="option">우체국</div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="">
+                                                                            <a href="javascript:" class="service-tab-2" title="우리">
+                                                                                <div class="option">우리</div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="">
+                                                                            <a href="javascript:" class="service-tab-2" title="NH농협">
+                                                                                <div class="option">NH농협</div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="">
+                                                                            <a href="javascript:" class="service-tab-2" title="한국씨티">
+                                                                                <div class="option">한국씨티</div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="">
+                                                                            <a href="javascript:" class="service-tab-2" title="하나">
+                                                                                <div class="option">하나</div>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <a href="javascript:" class="tabBtn" title="은행을 선택해주세요." style="text-decoration: none; ">은행을 선택해주세요.</a>	
+                                                                </div>						
+                                                            </div>
+                                                        
+                                                        </div>
+        
+                                                    </div>
                                                 </div>
-                                            
                                             </div>
+                                        </div>
+                                        <div class='input2 input'>
+                                            <div class="inputBox">  
+                                                <div class="title">입금기한</div>
+                                                <div class="right">
+                                                    <p>2022년 5월 20일</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='input3 input'>
+                                            <div class="inputBox">  
+                                                <div class="title">입금자명</div>
+                                                <div class="right">
+                                                    <input type="text" >
+                                                </div>
+                                            </div>
+                                        </div>
 
+                                        <div class="depositTxt ">
+                                            <ol>
+                                                <li>은행별로 입금가능시간이 다를 수 있습니다.</li>
+                                                <li>주문일 기존 다음날 (24시간 이내)까지 입금이 되지 않으면 주문취소처리 됩니다.</li>
+                                            </ol>
                                         </div>
+
                                     </div>
-                                    <div  class="instalment"> 
-                                        <div class="title">할부선택</div>
-                                        <div  class="selectBoxWrap">
-                                            <div class="selectBox">
-                                                <div class="mobileTab">
-                                                    <div class="tab-wrap active">
-                                                        <ul class="tab ServiceTab" style="  display: none; ">
-                                                            <li class="active">
-                                                                <a href="javascript:" class="service-tab-1" title="2개월">
-                                                                    <div class="option">2개월</div>
-                                                                </a>
-                                                            </li>
-                                                            <li class="active">
-                                                                <a href="javascript:" class="service-tab-1" title="3개월">
-                                                                    <div class="option">3개월</div>
-                                                                </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="javascript:" class="service-tab-2" title="4개월">
-                                                                    <div class="option">4개월</div>
-                                                                </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="javascript:" class="service-tab-2" title="5개월">
-                                                                    <div class="option">5개월</div>
-                                                                </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="javascript:" class="service-tab-2" title="12개월">
-                                                                    <div class="option">6개월</div>
-                                                                </a>
-                                                            </li>
-                                                            <li class="">
-                                                                <a href="javascript:" class="service-tab-2" title="12개월">
-                                                                    <div class="option">12개월</div>
-                                                                </a>
-                                                            </li>
-                                                            
-                                                        </ul>
-                                                        <a href="javascript:" class="tabBtn" title="할부를 선택해주세요." style="text-decoration: none;  ">할부를 선택해주세요.</a>	
-                                                    </div>						
+
+                                    <div class="account ">
+                                        <ol>
+                                            <li>계좌이체로 결제 완료시 본인 계좌에서 즉시 이체 처리됩니다.</li>
+                                            <li>실시간 계좌이체 은행별 이용시간이 다를 수 있습니다.</li>
+                                        </ol>
+                                    </div>
+
+
+                                    <div class="creditCard">
+                                        <div class="card ">
+                                            <div class="title">카드선택</div>
+                                            <div class="selectBoxWrap">
+                                                <div class="selectBox">
+                                                    <div class="mobileTab">
+                                                        <div class="tab-wrap active">
+                                                            <ul class="tab ServiceTab" style="  display: none; ">
+                                                                <li class="active">
+                                                                    <a href="javascript:" class="service-tab-1" title="카드를 선택해주세요.">
+                                                                        <div class="option">카드를 선택해주세요.</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="javascript:" class="service-tab-2" title="BC카드">
+                                                                        <div class="option">BC카드</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="javascript:" class="service-tab-2" title="신한카드">
+                                                                        <div class="option">신한카드</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="javascript:" class="service-tab-2" title="KB국민카드">
+                                                                        <div class="option">KB국민카드</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="javascript:" class="service-tab-2" title="현대카드">
+                                                                        <div class="option">현대카드</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="javascript:" class="service-tab-2" title="삼성카드">
+                                                                        <div class="option">삼성카드</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="javascript:" class="service-tab-2" title="우리카드">
+                                                                        <div class="option">우리카드</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="javascript:" class="service-tab-2" title="NH농협카드">
+                                                                        <div class="option">NH농협카드</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="javascript:" class="service-tab-2" title="KEB하나농협카드">
+                                                                        <div class="option">KEB하나농협카드</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="javascript:" class="service-tab-2" title="씨티은행카드">
+                                                                        <div class="option">씨티은행카드</div>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <a href="javascript:" class="tabBtn" title="카드를 선택해주세요." style="text-decoration: none; ">카드를 선택해주세요.</a>	
+                                                        </div>						
+                                                    </div>
+                                                
                                                 </div>
-                                            
+
+                                            </div>
+                                        </div>
+
+                                    
+                                        <div  class="instalment"> 
+                                            <div class="title">할부선택</div>
+                                            <div  class="selectBoxWrap">
+                                                <div class="selectBox">
+                                                    <div class="mobileTab">
+                                                        <div class="tab-wrap active">
+                                                            <ul class="tab ServiceTab" style="  display: none; ">
+                                                                <li class="active">
+                                                                    <a href="javascript:" class="service-tab-1" title="2개월">
+                                                                        <div class="option">2개월</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="active">
+                                                                    <a href="javascript:" class="service-tab-1" title="3개월">
+                                                                        <div class="option">3개월</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="javascript:" class="service-tab-2" title="4개월">
+                                                                        <div class="option">4개월</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="javascript:" class="service-tab-2" title="5개월">
+                                                                        <div class="option">5개월</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="javascript:" class="service-tab-2" title="12개월">
+                                                                        <div class="option">6개월</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="javascript:" class="service-tab-2" title="12개월">
+                                                                        <div class="option">12개월</div>
+                                                                    </a>
+                                                                </li>
+                                                                
+                                                            </ul>
+                                                            <a href="javascript:" class="tabBtn" title="할부를 선택해주세요." style="text-decoration: none;  ">할부를 선택해주세요.</a>	
+                                                        </div>						
+                                                    </div>
+                                                
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                
 
                                     <div class="promotion">
                                         <p><strong>KT</strong> 휴대폰결제 즉시 <strong>3,000원</strong> 할인 ~5/31 <span><img src="./img/ico_i.svg" alt=""></span></p>
+                                    
+                                        <div class="alert">
+                                            <div class="alertTop">
+                                                <h2>한정기간 이벤트</h2>
+                                                <div><span><img src="./img/alert_btn_x.svg" alt=""/></span></div>
+                                            </div>
+                                            <div class="alertBottom">
+                                                통신사 KT 사용자에 한해 진행하는 3천원 즉시할인 이벤트 (~5/31)
+                                            </div>
+                                        </div>
                                     </div>
+                                   
 
                                 </div>
                             </div>
@@ -505,9 +638,9 @@
 
                                 <div class="bottom">
                                     <ul>
-                                        <li><input type="checkbox" > <p>주문정보, 결제대행 이용 및 결제 진행 동의 <span>(필수)</span></p> <span class="arrowBtn"></span></li>
-                                        <li><input type="checkbox" > <p>제3자 제공(재제공)관련 수신동의 <span>(선택)</span></p> <span class="arrowBtn"></span></li>
-                                        <li><input type="checkbox" > <p>현재 결제정보를 기본설정으로 사용 <span>(선택)</span></p> </li>
+                                        <li><input type="checkbox" /> <p>주문정보, 결제대행 이용 및 결제 진행 동의 <span>(필수)</span></p> <span class="arrowBtn"></span></li>
+                                        <li><input type="checkbox" /> <p>제3자 제공(재제공)관련 수신동의 <span>(선택)</span></p> <span class="arrowBtn"></span></li>
+                                        <li><input type="checkbox" /> <p>현재 결제정보를 기본설정으로 사용 <span>(선택)</span></p> </li>
                                     </ul>
                                 </div>
                             </div>
@@ -539,7 +672,8 @@
 
     var arrowBtn     = $('.arrowBtn');    // 화살표 버튼
     var bottom       = $('.bottom');  // answer    
-      
+    var wirteDown    = $('.wirteDown');  // 직접입력    
+     
 
   
    
@@ -553,6 +687,20 @@
             
         });
     });
+
+ 
+    // 화살표 버튼 누르면 밑에 notice텍스트 토글
+    wirteDown.each(function (idx) {                   
+        $(this).on({
+            click: function () {
+                $('.message').eq(idx).addClass('showMes'); //보여줌 
+               
+            }
+            
+        });
+    });
+    
+
 </script>
 
 

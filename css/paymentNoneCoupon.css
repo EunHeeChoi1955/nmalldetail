@@ -393,14 +393,14 @@
 #main .paymentCon .paymentWrap .terms .bottom ul li p {color: #343434; margin:0; padding-left:6px; display: flex; width: 100%;}
 #main .paymentCon .paymentWrap .terms .bottom ul li p span {white-space: nowrap; color: #b3b3b3; font-size: 14px; padding-left: 6px; }
 #main .paymentCon .paymentWrap .terms .bottom ul li .arrowBtn{ margin: auto 0 auto auto; background: url(../img/ico_my_open.svg ) no-repeat 50% 50%; width: 24px; height: 24px; display: inline-block;}
+
 /* 하단 빨간박스 버튼 */
-#main .pddksaymentCon .paymentWrap .bottomBtn {border-radius: 16px 16px 0 0;  border:1px solid #E2E2E2;}
+#main .paymentCon .paymentWrap .bottomBtn { z-index: 5; position: fixed; bottom:0;  width:100%; max-width: 1280px; background:#fff; border-radius: 16px 16px 0 0;  border:1px solid #E2E2E2;}
 #main .paymentCon .paymentWrap .bottomBtn .btnWrap {padding: 12px;}
 #main .paymentCon .paymentWrap .bottomBtn .btnWrap .btnGap { margin: 0 auto; text-align: center;   background: #E7342C; border-radius: 3px;}
 #main .paymentCon .paymentWrap .bottomBtn .btnWrap .btnGap a { display: flex; display: inline-block; padding: 13px 0; }
 #main .paymentCon .paymentWrap .bottomBtn .btnWrap .btnGap a div {  font-size: 18px; display: inline-block; font-weight: 700; color: #fff; }
 #main .paymentCon .paymentWrap .bottomBtn .btnWrap .btnGap a .totalNum {  padding-right: 14px;}
-
 
 
 
