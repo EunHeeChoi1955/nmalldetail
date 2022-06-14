@@ -79,7 +79,7 @@
 /*장바구니 상품 right */
 #wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right {  padding: 0 20px 0 16px ; width: 100%; }
 #wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .txt1 { width: 100%;margin: 0 0 12px 0;color:#797979;  line-height:100%;text-overflow: ellipsis;}
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .blue  {width: 100%; padding: 12px 0; color:#187AEF ; font-size: 12px; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .blue  {width: 100%; padding:0 0 12px 0; color:#187AEF ; font-size: 12px; }
 #wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .soldOutRedbox { color: #fff;  background:#E7382D; border-radius:18px; display: inline-block; padding: 4px 10px; font-size: 12px; font-weight: 400;}
 #wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .soldOut { color: #E7342C; font-size: 14px; font-weight: 400;}
 
