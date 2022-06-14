@@ -9,8 +9,8 @@
 
 #wrap1>.header .container{width:100%; padding: 0; } 
 
-#wrap1>.header .container .top { padding:0 20px; display: flex; }
-#wrap1>.header .container .top>li{width: 33.333%; display:inline-block; padding:35px 0 0 0 ;}
+#wrap1>.header .container .top { padding:0 20px 11px 20px; display: flex; }
+#wrap1>.header .container .top>li{width: 33.333%; display:inline-block; padding:14px 0 0 0 ;}
 
 /*  header left */
 #wrap1>.header .container .top>.left .leftWrap {  width: 100%; }
@@ -31,7 +31,7 @@
 #wrap1>.header .container .top>.right #aside .icon-box-gap .icon-box ul li a img { color:#1A1A1A;  }
 
 /* headerTop 하단 전체선택 선택삭제 */
-#wrap1>.headerTop .bottom-wrap{ width:100%; display: block; z-index:3; position:fixed; top:60.71px; max-width:1280px; background: #fff; }
+#wrap1>.headerTop .bottom-wrap{ width:100%; display: block; z-index:3; position:fixed; top:50.71px; max-width:1280px; background: #fff; }
 #wrap1>.headerTop .bottom-wrap.addHeader {  border-bottom: 1px solid #E6E6E6; }
 #wrap1>.headerTop .bottom-wrap ul {display: flex; padding: 12px 18px; margin: 0;}
 #wrap1>.headerTop .bottom-wrap ul li {width: 50%; color:#565656; font-size: 14px; vertical-align: baseline;}
@@ -54,9 +54,10 @@
 #wrap1> #main> #section1{ position: relative; width:100%;height:auto; padding:0; border-bottom: 7px solid #E2E2E2;}
 #wrap1> #main> #section1 .container {position:relative; width:100%;height:100%; margin:0 auto;padding:0;background:#fff ; background-size: cover;}		
 #wrap1> #main> #section1 .container.addBg {background:#fff ; }		
-#wrap1> #main> #section1 .container .gap{ width: 100%; padding:50px 0 0 0 ;}
+#wrap1> #main> #section1 .container .gap{ width: 100%; padding:31px 0 0 0 ;}
 #wrap1> #main> #section1 .container .gap .wrap {width:100%;  }
 #wrap1> #main> #section1 .container .gap .wrap ul { margin: 0;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li:first-child { border-top: 7px solid #E2E2E2; }
 #wrap1> #main> #section1 .container .gap .wrap>ul>li { padding: 16px 0 0 0;width: 100%; border-bottom: 7px solid #E2E2E2; }
 #wrap1> #main> #section1 .container .gap .wrap>ul>li .listTop{display: flex; padding: 0 18px; }
 #wrap1> #main> #section1 .container .gap .wrap>ul>li .listTop .inputBox {display: flex; }
@@ -70,37 +71,48 @@
 #wrap1> #main> #section1 .container .gap .wrap>ul>li .listTop .closeBtn a { width: 12.19px;}
 #wrap1> #main> #section1 .container .gap .wrap>ul>li .listTop .closeBtn a img {width: 12.19px;}
 /* 장바구니 상품left */
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap { width: 100%; display: flex; padding: 12px 18px 30px 18px;}
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .left { position: relative; width: 90px;border-radius: 6px; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap { width: 100%; display: flex; padding: 12px 18px 0 18px;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .left { z-index:1;position: relative; width: 90px;border-radius: 6px; }
 #wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .left a  { width: 90px; height:90px; }
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .left a img { width: 90px; height:90px; }
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .left .imgCap { position: absolute; top: 0;left: 0; border-radius: 6px;background: rgba(0,0,0, .5);}
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .left .imgCap a { width: 100%; height:100%;  }
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .left .imgCap a img { width: 100%; padding:11px; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .left a img {width: 90px; height:90px; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .left .imgCap {z-index:2; position: absolute; bottom: 0;left: 0; width:100%;border-radius: 0 0 6px 6px; font-size: 12px; font-weight: 400; color: #fff; text-align: center; background: rgba(0,0,0, .9);}
 /*장바구니 상품 right */
 #wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right {  padding: 0 20px 0 16px ; width: 100%; }
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .txt1 { width: 100%;margin: 0 0 6px 0;color:#797979;  line-height:100%;text-overflow: ellipsis;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .txt1 { width: 100%;margin: 0 0 12px 0;color:#797979;  line-height:100%;text-overflow: ellipsis;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .blue  {width: 100%; padding: 12px 0; color:#187AEF ; font-size: 12px; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .soldOutRedbox { color: #fff;  background:#E7382D; border-radius:18px; display: inline-block; padding: 4px 10px; font-size: 12px; font-weight: 400;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .soldOut { color: #E7342C; font-size: 14px; font-weight: 400;}
 
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .numPrice { position: relative; display: flex; width: 100%;  margin: 0 0 6px 0; box-sizing: border-box;}
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .numPrice input {appearance: none; outline:none; }
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .numPrice input[type='text']::-webkit-inner-outer-button,
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .numPrice input[type='text']::-webkit-inner-spin-button { appearance: none; outline:none; position: absolute; left: 0; top: 0; width: 109px; height: 30px;  }
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .numPrice input[type='text'] { position: relative; left: 0;  top: 0; width: 120px; height: 30px; font-size: 14px; border: solid 0.5px #D8D8D8;  border-radius:6px; }
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .numPrice .numBox .spinner-button[type='button'] {appearance: none; } 
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .numPrice .numBox .spinner-button { position: absolute; cursor: default; border: 0; background: none; color: #000; width: 30px; height: 30px;text-align: center; margin: 0px;  pointer-events: none; padding: 5px;  line-height: 18px; color: #909090; }
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .numPrice .numBox #inc-button { left: 87px; top:0px; }
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .numPrice .numBox #dec-button { left: 0;  top:0; }
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .numPrice .numpriceBox { margin: auto 0 auto auto; font-size: 14px; font-weight: 400; padding: 8px 0;}
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .numPrice .numpriceBox strong {font-weight: 700; vertical-align:baseline ; }
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .txt3 {position: relative;display: flex; margin: 0 0 6px 0; }
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .txt3 .red { font-size: 18px; font-weight: 700; line-height:100%;color: #E7342C;white-space: nowrap;}
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .txt3 .red span{ font-size: 14px; font-weight: 400;vertical-align: baseline;}
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .txt3 .price { margin:auto auto auto 10px; color: #1A1A1A; font-size: 16px; font-weight: 700; line-height:100%;text-align: left; white-space: nowrap;vertical-align: baseline;}
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .txt3 .price .won { vertical-align: baseline; font-weight: 400;}
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .txt3 .soldOut { color: #E7342C; font-size: 14px; font-weight: 400;}
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .txt4  {width: 100%; padding: 0; color:#187AEF ; font-size: 12px; }
+/* 재입고알림 박스 */
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .alarmBox  {  padding: 16px 18px 17px 18px ; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .alarmBox .alarm { color: #E7342C; font-size: 14px; font-weight: 400; width: 100%; padding: 13px 0; text-align: center; line-height: 100%; border-radius:4px;border: 1px solid #E7342C;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .alarmBox .alarm .alarmIcon {width: 13px;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .alarmBox .alarm .alarmIcon img {width: 13px;margin:-6px 5px auto auto;}
+
+
+
+/* input박스 가격 */
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox { display: block; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap { display: flex;padding: 16px 18px 15px 18px; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap div {display: inline-block;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice { position: relative; display: flex;  box-sizing: border-box;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice input {appearance: none; outline:none; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice input[type='text']::-webkit-inner-outer-button,
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice input[type='text']::-webkit-inner-spin-button { appearance: none; outline:none; position: absolute; left: 0; top: 0; width: 109px; height: 30px;  }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice input[type='text'] { position: relative; left: 0;  top: 0; width: 90px; height: 30px; font-size: 14px; border: solid 0.5px #D8D8D8;  border-radius:6px; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice .numBox .spinner-button[type='button'] {appearance: none; } 
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice .numBox .spinner-button { position: absolute; cursor: default; border: 0; background: none; color: #000; width: 30px; height: 30px;text-align: center; margin: 0px;  pointer-events: none; padding: 5px;  line-height: 18px; color: #909090; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice .numBox #inc-button { left: 60px; top:0px; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice .numBox #dec-button { left: 0;  top:0; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice .numpriceBox { margin: auto 0 auto auto; font-size: 14px; font-weight: 400; padding: 8px 0;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice .numpriceBox strong {font-weight: 700; vertical-align:baseline ; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .red {margin: auto auto auto 18px; font-size: 18px; font-weight: 700; line-height:100%;color: #E7342C;white-space: nowrap;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .red span{ font-size: 14px; font-weight: 400;vertical-align: baseline;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .price { margin:auto 0 auto auto ; color: #1A1A1A; font-size: 16px; font-weight: 700; line-height:100%;text-align: left; white-space: nowrap;vertical-align: baseline;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .price .won { vertical-align: baseline; font-weight: 400;}
 /* 장바구니 상품  하단 가격 24,000원 + 배송비 0원 */
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .listBottomBox  {width: 100%; padding: 10px 0;  border-top:1px solid #E2E2E2;  text-align: center; font-weight: 700; color: #565656;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .listBottomBox  {width: 100%; padding: 10px 18px; display: flex; border-top:1px solid #E2E2E2; background: #F9F9F9; text-align: center; font-weight: 700; color: #565656;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .listBottomBox .listBottom2 {margin: auto 0 auto auto;}
 #wrap1> #main> #section1 .container .gap .wrap>ul>li .listBottomBox> div> span { font-weight: 400; vertical-align: baseline;}
 /* totalPriceWrap */
 #wrap1> #main> #section1 .container .gap .wrap .totalPriceWrap { width: 100%;padding:21px 18px ; background: #F9F9F9;}
@@ -131,86 +143,6 @@
 
 
 
-
-
-
-
-
-
-/* 하단 btn Box3 */
-#wrap1> #main>#section1> .btnBoxWrap3 { display:none;   z-index:6;position:fixed;bottom:0; left:0; width:100%;height:auto; opacity:1; transition:all 1s;}
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap {display: block; }
-#wrap1> #main>#section1> .btnBoxWrap3.addhide { display:none;  }
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap {width: 100%;  padding: 0 18px; border-top: 1px solid #E2E2E2; border-radius: 8px 8px 0 0;font-family: 'SUIT';background: #fff;}
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap .arrowBtn {width: 100%;  padding: 4px 0; text-align: center;}
-
-
-
-
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap .selectBox {z-index:5; position: relative; width: 100%; height: 44px; display: block; margin-bottom: 10px; }
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap .selectBox select {   position: relative; -moz-appearance: none;   -webkit-appearance: none;   appearance: none;  width: 100%; outline: 0 none;  border: 1px solid #B3B3B3; font-size: 16px; border-radius: 6px; padding: 10px 16px;  width: inherit; }
-
-
-        /*   탭버튼 화살표 내리면 나오는거 */
-        .mobileTab{display: block;box-sizing: border-box; text-decoration:none;}
-        .tab-wrap{position:relative;z-index:4; display:block;width:100%;box-sizing:border-box;}
-       
-        /* 탭버튼  */
-        .tab-wrap>a{ position:relative;display:block; width:100%; color: #343434; padding:9px 0; font-size:16px; border:1px solid #B3B3B3;text-decoration: none; border-radius: 6px; text-indent:15px; text-align:left; background:#fff url(../img/ico_option_arrow1.svg) no-repeat 98% 50%; }
-        .tab-wrap>a.addFamily{ background: #F9F9F9 url(../img/ico_option_arrow2.svg) no-repeat 98% 50%; color: #909090; }
-        /* 탭버튼 누르면 나오는 메뉴 내용들 */
-        .tab-wrap>ul{display:block;z-index:1; background:#fff;width:100%; padding:0; position:absolute; top:40px; margin:0;text-align:left;  box-sizing:border-box;border:1px solid #B3B3B3; border-top: 0; border-radius: 0 0 6px 6px;}
-        .tab-wrap>ul>li{width:100%;display:block;box-sizing:border-box; border-bottom:1px solid #E2E2E2 ;}
-        .tab-wrap>ul>li:last-child{ border:0 ;}
-        .tab-wrap>ul>li>a{display:flex;  color:#343434; text-indent:15px; font-size:14px; text-decoration: none;}
-        .tab-wrap>ul>li>a:hover{background:#f9f9f96c; }
-        .tab-wrap>ul>li>a div { display: block;   }
-        .tab-wrap>ul>li>a div.optionLeft { margin: 8px auto auto 0;   }
-        .tab-wrap>ul>li>a div.optionRight { margin: 31px 16px 8px auto ;    }
-
-
-
-
-
-
-
-
-
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap .priceBox { position: relative;display: block; background: #F9F9F9; border: 1px solid #E2E2E2; border-radius: 6px;padding:16px 16px 12px 16px ;}
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap .priceBox.addClose {display: none;}
-
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap .priceBox .numPrice { position: relative; display: flex; width: 100%;  margin: 0;}
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap .priceBox .numPrice input[type='number']::-webkit-inner-outer-button,
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap .priceBox .numPrice input[type='number']::-webkit-inner-spin-button { appearance: none; position: absolute;  left: 0; top: 0; width: 120px; height: 35px;  }
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap .priceBox .numPrice input[type='number'] {  position: absolute;  left: 0; top: 0; width: 120px; height: 35px; font-size: 14px; border: solid 0.5px #E2E2E2;  border-radius:3px; }
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap .priceBox .numPrice .numBox .spinner-button[type='button'] {appearance: none; } 
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap .priceBox .numPrice .numBox .spinner-button { position: absolute; cursor: default; border: 0; background: none; color: #000; width: 35px; height: 35px;text-align: center; margin: 0px;  pointer-events: none; padding: 10px;  line-height: 18px; color: #909090; }
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap .priceBox .numPrice .numBox #inc-button { left: 83px; top:-2px;}
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap .priceBox .numPrice .numBox #dec-button { left: 0;  top:-2px; }
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap .priceBox .numPrice .numpriceBox { margin: auto 0 auto auto; font-size: 14px; font-weight: 400; padding: 8px 0;}
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap .priceBox .numPrice .numpriceBox strong {font-weight: 700; vertical-align:baseline ; }
-
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap .goodsTit { display: flex; }
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap .goodsTit li { font-size: 14px;}
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap .goodsTit .PriceCloseBtn { display: inline-block; margin:-10px -10px auto auto;}
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap .goodsTit .PriceCloseBtn a{ padding: 10px;  }
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap .goodsTit .PriceCloseBtn a img{ width: 10px; }
-
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap  .price { display: flex; padding: 24px 0 10px 0; margin:0; }
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap  .price .left { margin: auto auto auto 0; color: #565656; font-size: 14px; }
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap  .price .left strong{  vertical-align: baseline; }
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap  .price .right { margin: auto 0 auto auto;  }
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap  .price .right span {line-height: 180%;   color:#E7342C ;  }
-#wrap1> #main>#section1> .btnBoxWrap3 .priceWrap .priceBoxgap  .price .right span strong { vertical-align: baseline; font-size: 20px; font-weight: 700; }
-
-
-
-#wrap1> #main>#section1> .btnBoxWrap3 .btnBox{display: flex; font-family:'SUIT'; margin: 0; }
-#wrap1> #main>#section1> .btnBoxWrap3 .btnBox li{width:50%; display: inline-block; border-top: 2px solid #E7342C;}
-#wrap1> #main>#section1> .btnBoxWrap3 .btnBox li:last-child a {color: #fff;background: #E7342C; }
-#wrap1> #main>#section1> .btnBoxWrap3 .btnBox li a{ white-space: nowrap; text-align: center; font-size:16px ; font-weight: 700; color: #E7342C; text-decoration:none;padding:18px 20px ;display: block; background: #fff;}
-#wrap1> #main>#section1> .btnBoxWrap3 .btnBox li a span { width:15.51px; display: inline-block; margin:-7px 5px 0 0;}
-#wrap1> #main>#section1> .btnBoxWrap3 .btnBox li a span img { width:15.51px;}
 
 
 
@@ -316,9 +248,11 @@
 
 #footer .container .gap .wrap .content .foot-content .foot2  {color: #606060; font-size: 12px;font-weight: 300; }
 #footer .container .gap .wrap .content .foot-content .foot2 h3 { font-size: 12px;font-weight: 300; margin:26px auto 5px auto; }
-#footer .container .gap .wrap .content .foot-content .foot2 .tel {  display: flex;  }
-#footer .container .gap .wrap .content .foot-content .foot2 .tel img {width:12px; height: 12px;margin: auto 0 auto auto;}
-#footer .container .gap .wrap .content .foot-content .foot2 .tel p {font-size: 16px;font-weight: 700; margin: auto auto auto 0;}
+#footer .container .gap .wrap .content .foot-content .foot2 .tel {display: inline-block; }
+#footer .container .gap .wrap .content .foot-content .foot2 .tel div {  display: flex;  }
+#footer .container .gap .wrap .content .foot-content .foot2 .tel div img {width:12px; height: 12px;margin: 6px 4px auto auto;}
+#footer .container .gap .wrap .content .foot-content .foot2 .tel div p {font-size: 16px;font-weight: 700; margin: auto 0 auto 0; display: inline-block;}
+#footer .container .gap .wrap .content .foot-content .foot2 .tel div span { display: inline-block; margin-left: 6px;  padding:1px 9px; line-height: 160%; height:19px ; font-size: 10px; font-weight: 300; text-decoration:none; border: 1px solid #B5B5B5; border-radius:15px;color: #606060;}
 #footer .container .gap .wrap .content .foot-content .foot2 .email {padding: 12px 0 18px 0;}
 #footer .container .gap .wrap .content .foot-content .foot2 .email li:nth-child(2) span { font-size: 14px;font-weight: 700;}
 #footer .container .gap .wrap .content .foot-content .foot2 .email li a{ margin-left: 6px;  padding:3px 9px; font-size: 10px; font-weight: 300; text-decoration:none; border: 1px solid #B5B5B5; border-radius:15px;color: #606060;} 
