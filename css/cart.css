@@ -68,7 +68,7 @@
 #wrap1> #main> #section1 .container .gap .wrap>ul>li .listTop .inputBox input[type='checkbox']:checked {  background: url(../img/ico_checked_squre_red.svg) no-repeat 50% 50%; margin: 0 10px 0 0; background-size: 22px 22px;}
 /* 장바구니 상품 닫기버튼 */
 #wrap1> #main> #section1 .container .gap .wrap>ul>li .listTop .closeBtn { width: 12.19px; margin: -2px 0 auto auto;}
-#wrap1> #main> #section1 .container .gap .wrap>ul>li .listTop .closeBtn a { width: 12.19px;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .listTop .closeBtn a { width: 12.19px;} 
 #wrap1> #main> #section1 .container .gap .wrap>ul>li .listTop .closeBtn a img {width: 12.19px;}
 /* 장바구니 상품left */
 #wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap { width: 100%; display: flex; padding: 12px 18px 0 18px;}
