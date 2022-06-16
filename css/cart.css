@@ -215,7 +215,8 @@
 /* section3 */		
 #wrap1> #main>#section3{ position:relative; width:100%;  display:block;  padding:0;  border-bottom: 7px solid #E2E2E2;}	
 #wrap1> #main>#section3>.container{position:relative; width:100%;height:auto; padding:0;}	
-#wrap1> #main>#section3>.container>.gap {width:100%;}
+#wrap1> #main>#section3>.container>.gap {width:100%;background: #F2F2F2;}
+#wrap1> #main>#section3>.container>.gap .wrap .content  p {width:100%;  margin:0 0 -10px 0; padding-top:8px; font-size:10px ; color: #9F9F9F; text-align: center;}
 #wrap1> #main>#section3>.container>.gap .wrap{width:100%;}
 #wrap1> #main>#section3>.container>.gap .wrap .content {width:100%;}
 #wrap1> #main>#section3>.container>.gap .wrap .content .sec4-slide-wrap {width:100%;}

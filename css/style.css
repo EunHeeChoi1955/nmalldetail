@@ -324,7 +324,7 @@
 	#section4 .container .gap .wrap{width:100%;}
 	#section4 .container .gap .wrap .content {width:100%;}
 	#section4 .container .gap .wrap .content .sec4-slide-wrap {width:100%;}
-	#section4 .container .gap .wrap .content .sec4-slide-wrap ul {width:100%; display: flex;}
+	#section4 .container .gap .wrap .content .sec4-slide-wrap ul {width:100%; display: flex; margin: 0;}
 	#section4 .container .gap .wrap .content .sec4-slide-wrap ul li {width:100%;}
 	#section4 .container .gap .wrap .content .sec4-slide-wrap ul li a {width:100%;}
 	#section4 .container .gap .wrap .content .sec4-slide-wrap ul li a img{width:100%;}
