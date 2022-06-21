@@ -154,6 +154,12 @@
 #wrap1> #main>#section1>.top-btn>a>img{width:100%; border-radius: 22px; }
 
 /* 장바구니 팝업 */
+.alertNow { z-index:10;display: block;  position: fixed; bottom:0; margin-bottom:75px;left: 50%;margin-left:-108px; transition: all .3;}
+.alertNow p {color: #fff; display: block; background: rgba(0, 0, 0, .9); border-radius: 16px; height: 33px; width: 218px; line-height: 240%; font-size: 14px; font-weight: 400; text-align: center;}
+.alertNow p strong{vertical-align: baseline;}
+
+
+/* 장바구니 팝업 */
 #cart { z-index:6;display: none; opacity:0; position: fixed; top:50%; margin-top:-140px;left: 50%;margin-left:-70px; transition: all .3;}
 #cart.cartShow {display: block; opacity:1; }
 
