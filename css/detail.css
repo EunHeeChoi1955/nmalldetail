@@ -78,7 +78,7 @@
 #wrap1> #main> #section1 .container .gap .wrap .imgContent .time .right { font-weight: 700;font-size: 14px; }
 #wrap1> #main> #section1 .container .gap .wrap .imgContent .time .text { color:#fff; font-weight: 700; font-size: 14px;  }
 /* slide-view */
-#wrap1> #main> #section1 .container .gap .wrap>.imgContent>.slide-view {width:100%;  }
+#wrap1> #main> #section1 .container .gap .wrap>.imgContent>.slide-view {width:100%; overflow: hidden; }
 #wrap1> #main> #section1 .container .gap .wrap>.imgContent>.slide-view ul {width:500%;display: flex;  }
 #wrap1> #main> #section1 .container .gap .wrap>.imgContent>.slide-view ul li{width:100%;  }
 #wrap1> #main> #section1 .container .gap .wrap>.imgContent>.slide-view ul li img{width:100%;  }
