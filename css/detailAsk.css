@@ -110,8 +110,8 @@
 #wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .askTxtBottom .btnmore { width: 26px; }
 #wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .askTxtBottom .btnmore a { width: 100%;}
 #wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .askTxtBottom .btnmore a .ArrowBtn  { width:auto; }
-#wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .askTxtBottom .btnmore a .ArrowBtn i {background: url(../img/arrow_close.svg) no-repeat 50% 50%; background-size: contain; width:100%;height:22px; display: block; }
-#wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .askTxtBottom .btnmore a .ArrowBtn i.addAnswer {background: url(../img/arrow_open.svg) no-repeat 50% 50%; }
+#wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .askTxtBottom .btnmore a .ArrowBtn i {background: url(../img/arrow_open.svg) no-repeat 50% 50%; background-size: contain; width:100%;height:22px; display: block; }
+#wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .askTxtBottom .btnmore a .ArrowBtn i.addAnswer {background: url(../img/arrow_close.svg) no-repeat 50% 50%; }
 /* answerBox */
 #wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .answerBox{ width: 100%; background: #F9F9F9; display: none; margin-top: 16px;}
 #wrap1> #main> #section1 .container .gap .wrap .askbottomBox .askWriteBox .answerBox.addAnswer{ display: block;}
