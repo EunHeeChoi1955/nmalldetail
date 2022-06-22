@@ -10,6 +10,7 @@
             this.section1Fn();
             this.section1BtnFn();
             this.section2Fn();
+            this.section2SwipeFn();            
             this.section3Fn();
             this.section5Fn();
             this.section6Fn();
@@ -136,8 +137,7 @@
                
             });
       
-      
-          
+        
       
             //메인 슬라이드 함수
             function mainSlide(){
@@ -145,17 +145,30 @@
                $('#section1 .slide-wrap li').stop().animate({ left: -slideW*cnt}, 600, function(){
                   cnt>n?cnt=0:cnt;
                   cnt<0?cnt=n:cnt;
+                  
                   $('#section1 .slide-wrap li').stop().animate({ left: -slideW*cnt}, 0);
                   cnt>n?cnt=0:cnt;
+                 
                });
-            
                
+               AniFn();
                
             }
             
-      	
+       //sec1Ani  이벤트 
+       function AniFn(){
+         $('#section1 .slide-wrap li h3').eq(cnt>n?0:cnt).addClass('sec1Ani1');	//이거 여기다 둬야  슬라이드 1번 버튼 addclass 작용
+         $('#section1 .slide-wrap li h3').removeClass('sec1Ani1');	    //초기화
+         $('#section1 .slide-wrap li h4').removeClass('sec1Ani2');	    //초기화
+         cnt>5?cnt=0:cnt;
+         $('#section1 .slide-wrap li h3').eq(cnt>n?0:cnt).addClass('sec1Ani1');	//해당 슬라이드 버튼만 표시 
+         $('#section1 .slide-wrap li h4').eq(cnt>n?0:cnt).addClass('sec1Ani2');	//해당 슬라이드 버튼만 표시 
           
-      
+            
+               
+       }		
+
+       
       
       
             //다음 슬라이드 카운트 함수
@@ -329,7 +342,108 @@
                });
    
         },
+        section2SwipeFn: function(){
+        
+      
+
+         const slideWrap      = $('#wrap #section2 .slide-wrap');
+         const slideContainer = $('#wrap #section2 .slide-view');
+         let   cnt            = 0;
+         let   swipeStart     = null;
+         let   swipeEnd       = null;
+         let   dragStart      = null; // 슬라이드 마지막이 처음에서 왼쪽으로 이동된 상태 값을 빼주고 시작
+         let   mouseDown      = null; // 반드시 마우스가 다우된 상태를판단 다운이면 tru, 업이면 false
+        
+
+        
+
+
+         //1.메인슬라이드 함수
+         function mainSlide(){                
+
+               // btnWrap.stop().animate({left:(-100*cnt) + '%'});       
+            slideWrap.stop().animate( {left:(-162*cnt)}, 'easeInOutSine',function(){
+                 cnt>4?cnt=0:cnt; 
+                 cnt<1?cnt=0:cnt;                   
+                //초기화
+               slideWrap.stop().animate( {left:(-162*cnt)});
+               
+            });
+         }
+
+         //2.다음카운트 함수
+         function nextCount(){
+            cnt++;
+            mainSlide();
+         }
+         //2.이전카운트 함수
+         function prevCount(){
+            cnt--;
+            mainSlide();
+         }
+         
+         
+         //4. 마우스 터치 스와이프
+         slideContainer.on({
+               mousedown: function(event){
+                  //터치스와이프 시작 포지션
+                  swipeStart = event.clientX;
+                  dragStart  = event.clientX - slideWrap.offset().left - 162;
+                  mouseDown  = true;//드래그 시작임을 표시
+                  
+
+               },//mousedown 끝
+               mouseup: function(event){
+                  swipeEnd = event.clientX;
+                  mouseDown  = false; //드래그 끝
+                  
+                  if( swipeStart-swipeEnd > 0 ){//다음슬라이드                     
+                     nextCount();
+                  }
+                  if( swipeStart-swipeEnd < 0 ){   // 이전슬라이드                    
+                     prevCount();
+               }
+            
+            }
+         });
+
+         
+         //5. 마우스 드레그 앤 드롭
+         // mousemove
+
+         //6. 반응형 모바일 손가락 핑거 드래드 앤 드롭(반응형)
+         // 마우스 인식못함 동작안함
+         // 반응형 진행하고 폴리필 touchEvent 추가
+         // touchstart(mousedown) / touchend(mouseup) / touchmove(mousemove)
+         slideContainer.on({
+            touchstart: function(event){
+              
+               swipeStart = event.originalEvent.touches[0].clientX;
+               dragStart  = event.originalEvent.touches[0].clientX - slideWrap.offset().left - 162;
+               mouseDown  = true;//드래그 시작임을 표시 
+                                  
+            },
+            touchend: function(event){                  
+                  swipeEnd   = event.originalEvent.changedTouches[0].clientX;   
+                  mouseDown  = false; //드래그 끝
+                    
+                   
+                  if( swipeStart-swipeEnd > 0 ){//다음슬라이드                     
+                     nextCount();
+                  }
+                  if( swipeStart-swipeEnd < 0 ){   // 이전슬라이드                    
+                     prevCount();
+                  }   
+            }
+         });
+
+
+
+
+        },
         section2Fn: function(){
+
+         
             //    // svg 애니메잉션 선택자 
             //    const circleAni = $('.circleAni');
             //    let   objLength = [];  //4개의 길이를 각각 저장 
@@ -378,6 +492,15 @@
                      countfn(i);
                   }, time[i] );
                }
+
+
+
+
+
+
+               
+
+
 
         },
         section3Fn:  function(){
@@ -706,10 +829,21 @@
          let   swipeEnd       = null;
          let   dragStart      = null; // 슬라이드 마지막이 처음에서 왼쪽으로 이동된 상태 값을 빼주고 시작
          let   mouseDown      = null; // 반드시 마우스가 다우된 상태를판단 다운이면 tru, 업이면 false
-
+         var   heart          = $('#section8 .heart');
 
         
 
+         
+               // heart 클릭 이벤트
+               heart.each(function (idx) {
+                  $(this).on({
+                      click: function () {
+                      
+                        heart.eq(idx).toggleClass('addHeart'); // 클래스 주입
+                         
+                      }
+                  });
+              });
 
          //1.메인슬라이드 함수
          function mainSlide(){ 
@@ -862,7 +996,7 @@
                   cnt>n?cnt=0:cnt;
                   cnt<0?cnt=n:cnt;
                   $('#section9 .screensWrap').stop().animate({ left: -slideW*cnt}, 0);
-                  cnt>5?cnt=0:cnt;
+                  cnt>9?cnt=0:cnt;// 슬라이드랑 nav 갯수 바뀔때마다 갯수 바꿔주기 필수!
                });
             
                navFn();
@@ -1007,7 +1141,7 @@
           var cnt = 0;
           var Btn =$('#section10 .pageBtn ');
           var item =$('#section10 .item');
-        
+         
 
             
              autoPlay('_play');  //자동실행 4초 후에 실행
@@ -1106,6 +1240,16 @@
 
 
         
+               // heart 클릭 이벤트
+               heart.each(function (idx) {
+                  $(this).on({
+                      click: function () {
+                      
+                        heart.eq(idx).toggleClass('addHeart'); // 클래스 주입
+                         
+                      }
+                  });
+              });
 
         }, 
         footerFn:  function(){

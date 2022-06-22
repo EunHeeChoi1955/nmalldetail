@@ -694,7 +694,7 @@
 /* footer */
 #footer {z-index:1;position:relative;width:100%;height:auto; }
 #footer .container {width:100%;max-width:1280px;height:auto;margin:0 auto; padding: 0;background: #F2F2F2;}
-#footer .container .gap {width:100%; padding:20px 0 160px 0;}
+#footer .container .gap {width:100%; padding:20px 0 60px 0;}
 #footer .container .gap .wrap{width:100%;}
 #footer .container .gap .wrap .content {width:100%;  }
 #footer .container .gap .wrap .content .foot-content {width:100%;}
