@@ -661,6 +661,26 @@
                alert('복사가 완료되었습니다.');
             });
    
+
+
+
+            var fArrowBtn =  $('#footer .Registration .fArrowBtn');
+            var footerhide =  $('#footer .Registration .footerhide');
+            
+   
+                  // 화살표 버튼 클릭 이벤트
+                  fArrowBtn.each(function (idx) {
+                     $(this).on({
+                        click: function () {
+                        
+                           fArrowBtn.eq(idx).toggleClass('fArrow'); // 클래스 주입
+                           footerhide.eq(idx).toggleClass('footerShow'); // 클래스 주입
+                           
+                           
+                        }
+                     });
+                  });
+   
         
         }
 

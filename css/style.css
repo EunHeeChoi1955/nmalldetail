@@ -721,7 +721,8 @@
 #footer .container .gap .wrap .content .foot-content .foot2 .Registration { width: 100%;} 
 #footer .container .gap .wrap .content .foot-content .foot2 .Registration .hide{ display: none; } 
 #footer .container .gap .wrap .content .foot-content .foot2 .Registration .hide li {  width: 100%; } 
-#footer .container .gap .wrap .content .foot-content .foot2 .Registration a { color: #565656; font-size: 12px;font-weight: 400; text-decoration:none;background:url(../img/Downarrow.png) no-repeat 100% 50%; width: 130px;display: inline-block;  } 
+#footer .container .gap .wrap .content .foot-content .foot2 .Registration>a { color: #565656; font-size: 12px;font-weight: 400; text-decoration:none;background:url(../img/Downarrow.svg) no-repeat 100% 50%; width: 150px;display: inline-block;  } 
+#footer .container .gap .wrap .content .foot-content .foot2 .Registration>a.fArrow {background:url(../img/Uparrow.svg) no-repeat 100% 50%;   } 
 
 
 #footer .container .gap .wrap .content .foot-content .foot3  { padding:16px 0;}

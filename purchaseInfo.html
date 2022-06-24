@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="publisher" content="eunheeChoi">
+    <title>구매정보 상세페이지</title>
+    <!-- favicon -->
+    <link rel="icon" href="./img/favicon/favicon-32.png" sizes="32x32">
+   
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/purchaseInfo.css">
+    
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- jQuery 오픈소스 -->
+    <script src="./js/lib/jquery.min.js"></script> 
+	<script src='./js/lib/jquery-1.12.4.min.js'></script>
+	<!-- <script src='./js/lib/jquery.mobile-1.4.5.min.js'></script>터치이벤트 웹앱 -->
+	<script src='./js/lib/jquery.easing.1.3.js'></script>
+	<script src='./js/lib/jquery.touchSwipe.min.js'></script>
+	<!-- <script src='./js/lib/slick.min.js'></script> -->
+
+    <!-- 리액트 웹개발 오픈소스 -->    
+    <script src="./js/lib/react.development.js"></script>
+    <script src="./js/lib/react-dom.development.js"></script>
+    <script src="./js/lib/babel.min.js"></script>
+
+</head>
+<body>
+   
+<div id="wrap1">
+    <ul id="skip">
+        <li><a href="#header" class="smoothBtn ">메뉴바로가기</a></li>
+        <li><a href="#main" class="smoothBtn ">메인바로가기</a></li>
+        <li><a href="#footer" class="smoothBtn ">하단바로가기</a></li>
+    </ul>
+    <header id="header"  class="header">
+        <div class="container ">
+
+            <div class="top clearfix">
+
+                <div class="left">
+                    <div class="leftWrap">
+                        <span class="backBtn">
+                            <a  href="#" class="back-btn " title="back">
+                                <span ></span>
+                            </a>
+                        </span>
+                        <span class="logoBtn">
+                            <a  href="./index.html" class="logo-btn " title="Logo">
+                                <span ></span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="right">
+                    <aside id="aside" class="clearfix">
+                        <div class="icon-box-gap">
+                            <div class="icon-box">
+                                <ul class="clearfix ">
+                                    <li >
+                                       <a href='javascript:Function();'><img src="./img/magni.svg" alt=""></a> 
+                                    </li>
+                                    <li >
+                                       <a href='javascript:Function();'><img src="./img/home.svg" alt=""></a> 
+                                    </li>
+                                    <li>
+                                        <a href='javascript:Function();'>
+                                            <em class="badge">5</em>
+                                            <span><img src="./img/cart.svg" alt=""></span> 
+                                            <!-- <span class="glyphicon">&#xe116;</span> -->
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+
+            </div>
+
+
+            <div class="bottom">
+                <div class="bottom-wrap">
+                    <nav id="nav" class="clearfix">
+                        <ul class="clearfix nav-warp ">
+                            <li class="mainbtn addClass" onclick="javascript:void(window.open('detail.html', '_self'))">
+                                <a href='#section1' class="main-btn smoothBtn addClass">상품설명<i></i></a>
+                            </li>
+                            <li class="mainbtn">
+                                <a href='#section6' class="main-btn smoothBtn">구매정보<i></i></a>
+                            </li>
+                            <li class="mainbtn">
+                                <a href='#section9' class="main-btn smoothBtn">리뷰<span>999+</span><i></i></a>     
+                            </li>
+                            <li class="mainbtn" onclick="javascript:void(window.open('detailAsk.html', '_self'))">
+                                <a href="" class="main-btn smoothBtn">문의<span>99</span><i></i></a>      
+                            </li>                   
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main id="main">
+        <section id="section1">
+            
+            <span class="top-btn">
+                <a href="#section1" class="smoothBtn " target="_blank">
+                    <img src="img/topbtn.png" alt="">
+                </a>
+            </span>
+          
+            <!-- 장바구니 팝업 -->
+            <div id="cart" class=""   >
+                <img src="./img/cart_check_popup.svg" alt="">
+            </div>
+            <!-- 찜하기 팝업 -->
+            <div id="myPick" class=""   >
+                <img src="./img/mypick_check_popup.svg" alt="">
+            </div>
+            <!-- 찜하기해제 팝업 -->
+            <div id="removeMyPick" class=""   >
+                <img src="./img/mypick_out_popup.svg" alt="">
+            </div>
+            <!-- 공유하기 팝업 -->
+            <div id="share">
+                <div class="sharewrap">
+                    <div class="share-gap">
+                        
+                        <div class="closeBtn-wrap">
+                            <div class="closeBtn">
+                                <a href="javascript:Function();">
+                                    <img src="./img/btn_x.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="share-content">
+                            <ul>
+                                <li>
+                                    <a href="javascript:Function();" class="kakaotalk" >
+                                        
+                                        <img src="./img/share/ico_kakaotalk.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:Function();"  class="kakaotalk1" >
+                                        <img src="./img/share/ico_kakaotalk-1.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:Function();" class="kakaotalk"  >
+                                        <img src="./img/share/ico_fb.svg" alt="">
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="javascript:Function();"  class="ico_band" >
+                                        <img src="./img/share/ico_band.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:Function();" class="band-1" >
+                                        <img src="./img/share/ico_band-1.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=ko" class="urlCopyBtn" >
+                                        <img src="./img/share/ico_url.svg" alt="">
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            <span class="urlCopytxt" >
+                                URL 주소가 복사되었습니다.
+                            </span>
+                            <input type="text" value="https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=ko" id="urlAddress" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 쿠폰 팝업 -->
+            <div id="coupon">
+                <div class="couponwrap">
+                    <div class="coupon-gap">
+                        
+
+                        <div class="coupon-content">
+                            
+                            <div class="closeBtn-wrap">
+                                <div class="closeBtn">
+                                    <a href="javascript:Function();">
+                                        <img src="./img/btn_x_popup.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <h2>사용 가능 쿠폰</h2>
+
+
+                            <ul class="totalWrap">
+                    
+                                <li class="selectBox1">
+                                    <div class="selectBox">
+                                        <div class="mobileTab">
+                                            <div class="tab-wrap active">
+                                                <ul class="tab ServiceTab" style="  display: none; ">
+                                                    <li class="active">
+                                                        <a href="javascript:" class="service-tab-1" title="전체">
+                                                            <div class="option">전체</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="javascript:" class="service-tab-2" title="상품쿠폰">
+                                                            <div class="option">상품쿠폰</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="javascript:" class="service-tab-2" title="주문쿠폰">
+                                                            <div class="option">주문쿠폰</div>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                                <a href="javascript:" class="tabBtn" title="전체" style="text-decoration: none; font-size:12px; ;  ">전체</a>	
+                                            </div>						
+                                        </div>
+                                    
+                                    </div>
+                                </li>
+            
+                                <li class="selectBox2">
+                                    <div class="selectBox">
+                                        <div class="mobileTab">
+                                            <div class="tab-wrap active">
+                                                <ul class="tab ServiceTab" style="  display: none; ">
+                                                    <li class="active">
+                                                        <a href="javascript:" class="service-tab-1 service" title="최신순">
+                                                            <div class="option">최신순</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="javascript:" class="service-tab-2 service" title="할인금액순">
+                                                            <div class="option">할인금액순</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="javascript:" class="service-tab-2 service" title="남은기간순">
+                                                            <div class="option">남은기간순</div>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                                <a href="javascript:" class="tabBtn" title="최신순" style="text-decoration: none; font-size:12px;">최신순</a>	
+                                            </div>						
+                                        </div>
+                                    
+                                    </div>
+                                </li>
+                            </ul>
+
+
+                            <div class="couponCon">
+                                <div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;">
+                                    <div class="mCSB_draggerContainer">
+                                            <div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; z-index:9;min-height: 30px; display: block; height: 263px; max-height: 310.547px; top: 0;left:0;">
+                                                <div class="mCSB_dragger_bar" style="line-height: 30px;">
+                                                </div>
+                                            </div>
+                                        <div class="mCSB_draggerRail"></div>
+                                    </div>
+                                </div>
+                                    
+                                <ul class="couponImg"  style="position: relative; top:0; left: 0;">
+                               
+                                    <li  class="coupon">
+                                        <a href="javascript:Function();">
+                                           <img src="./img/coupon_popup_per_new_p.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li  class="coupon">
+                                        <a href="javascript:Function();" >
+                                            <img src="./img/coupon_popup_per_p_detail.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li  class="coupon">
+                                        <a href="javascript:Function();" >
+                                            <img src="./img/coupon_popup_pri_p_detail.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+    
+                                
+    
+                            </div>
+
+                          
+                            <!-- <ul>
+                                <h2>사용 가능 쿠폰</h2>
+                                <li  class="coupon">
+                                    <a href="javascript:Function();">
+                                        <div class="couponText">
+                                            <h3 class="coupon">10<span>%</span></h3>
+                                            <div class="txt2">[이벤트]쿠폰명쿠폰명쿠폰명쿠폰명쿠폰…</div>
+                                            <div class="txt3">총 상품 30,000원 이상 구매 시<br>
+                                                유효기간 2022.00.00</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li  class="coupon">
+                                    <a href="javascript:Function();" >
+                                        <div class="couponText">
+                                            <h3 class="coupon">20,000<span>원</span></h3>
+                                            <div class="txt2">[이벤트]쿠폰명쿠폰명쿠폰명쿠폰명쿠폰…</div>
+                                            <div class="txt3">총 상품 30,000원 이상 구매 시<br>
+                                                유효기간 2022.00.00</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li  class="coupon">
+                                    <a href="javascript:Function();" >
+                                        <div class="couponText">
+                                            <h3 class="coupon">10<span>%</span></h3>
+                                            <div class="txt2">[이벤트]쿠폰명쿠폰명쿠폰명쿠폰명쿠폰…</div>
+                                            <div class="txt3">총 상품 30,000원 이상 구매 시<br>
+                                                유효기간 2022.00.00</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul> -->
+                           
+                            <div class="bottomtxt">
+                                <ul class="bottomtxtWrap" >
+                                    <li>쿠폰은 정해진 수량에 따라 선착순 마감될 수 있습니다.</li>
+                                    <li>유의사항 내용</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+           
+
+            <div class="btnBoxWrap1">
+                
+
+                <ul class="btnBox">
+                    <li><a href="javascript:Function();" class="gift"><span><img src="./img/ico_gift.svg" alt=""></span>선물하기</a></li>
+                    <li><a href="javascript:Function();" class="cart" >장바구니</a></li>
+                    <li><a href="javascript:Function();" class="buyNow">바로구매</a></li>
+                </ul>
+            
+            </div>
+
+
+            
+            <div class="btnBoxWrap2">
+
+                <div class="priceWrap">
+                    <div class="priceBoxgap">
+                        <div class="arrowBtn"><a href="javascript:Function();"><img src="./img/arrow_opt_close.svg" alt=""></a></div>
+                        <div class="priceBox">
+                            <ul class="goodsTit">
+                                <li>
+                                    상품명 내용 노출 상품명 내용 노출 상품명 내용
+                                    상품명 내용 노출 상품명 내용 노출 상품명 내용...
+                                </li>
+                                <li class="PriceCloseBtn"><a href="javascript:Function();"><img src="./img/XcloseBtn.svg" alt=""></a></li>
+                            </ul>
+
+                            <ul class="numPrice">
+                                <li class="numBox"> 
+                                    <input type='number' name='amount'min="0" max="100" value="0" style = "text-align:center;" />
+                                    <input type="button" value="+" id="inc-button" class="spinner-button" onClick="javascript:this.form.amount.value++;">
+                                    <input type="button" value="-" id="dec-button" class="spinner-button" onClick="javascript:this.form.amount.value--;">
+                                </li>
+                                <li class="numpriceBox"><strong>119,000</strong>원</li>
+                            </ul>
+                            
+                        </div>
+                        <ul class="price">
+                            <li class="left">총 <strong> 1 </strong>개</li>
+                            <li class="right">총 금액 <span><strong>119,000</strong>원</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <ul class="btnBox">
+                    <li><a href="javascript:Function();" class="cart">장바구니</a></li>
+                    <li><a href="javascript:Function();" class="buyNow">바로구매</a></li>
+                </ul>
+                              
+            </div>
+
+            
+            <div class="btnBoxWrap3">
+
+                <div class="priceWrap">
+                    <div class="priceBoxgap">
+                        <div class="arrowBtn"><a href="javascript:Function();"><img src="./img/arrow_opt_close.svg" alt=""></a></div>
+                      
+                        <div class="selectBox">
+                            <div class="mobileTab">
+                                <div class="tab-wrap active">
+                                    <ul class="tab ServiceTab" style="  display: none; ">
+                                        <li class="active">
+                                            <a href="javascript:" class="service-tab-1" title="1) 옵션내용">
+                                                <div class="optionLeft">1) 옵션내용</div>
+                                                <div class="optionRight"><strong>119,000</strong>원</div>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="javascript:" class="service-tab-2" title="2) 옵션내용">
+                                                <div class="optionLeft">2) 옵션내용</div>
+                                                <div class="optionRight"><strong>140,000</strong>원</div>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="javascript:" class="service-tab-3" title="3) 옵션내용">
+                                                <div class="optionLeft">3) 옵션내용</div>
+                                                <div class="optionRight"><strong>159,000</strong>원</div>
+                                            </a>
+                                        </li>
+                                       				
+                                    </ul>
+                                    <a href="javascript:" class="tabBtn" title="옵션 선택" style="text-decoration: none; ">옵션 선택</a>	
+                                </div>						
+                            </div>
+                          
+                        </div>
+                        
+
+
+
+                        <div class="priceBox">
+                            <ul class="goodsTit">
+                                <li>
+                                    상품명 내용 노출 상품명 내용 노출 상품명 내용
+                                    상품명 내용 노출 상품명 내용 노출 상품명 내용...
+                                </li>
+                                <li class="PriceCloseBtn"><a href="javascript:Function();"><img src="./img/XcloseBtn.svg" alt=""></a></li>
+                            </ul>
+
+                            <ul class="numPrice">
+                                <li class="numBox"> 
+                                    <input type='number' name='amount'min="0" max="100" value="0" style = "text-align:center;" />
+                                    <input type="button" value="+" id="inc-button" class="spinner-button" onClick="javascript:this.form.amount.value++;">
+                                    <input type="button" value="-" id="dec-button" class="spinner-button" onClick="javascript:this.form.amount.value--;">
+                                </li>
+                                <li class="numpriceBox"><strong>119,000</strong>원</li>
+                            </ul>
+                            
+                        </div>
+                        <ul class="price">
+                            <li class="left">총 <strong> 1 </strong>개</li>
+                            <li class="right">총 금액 <span><strong>119,000</strong>원</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="btnBox">
+                    <li><a href="javascript:Function();"  class="cart" >장바구니</a></li>
+                    <li><a href="javascript:Function();" class="buyNow">바로구매</a></li>
+                </ul>
+                              
+            </div>
+
+
+            <div class="btnBoxWrap4">
+
+                <div class="priceWrap">
+                    <div class="priceBoxgap">
+                        <div class="arrowBtn"><a href="javascript:Function();"><img src="./img/arrow_opt_close.svg" alt=""></a></div>
+                      
+                        <div class="selectBox">
+                            <div class="mobileTab">
+                                <div class="tab-wrap active">
+                                    <ul class="tab ServiceTab" style="  display: none; ">
+                                        <li class="active">
+                                            <a href="javascript:" class="service-tab-1" title="1) 옵션내용">
+                                                <div class="optionLeft">1) 옵션내용</div>
+                                                <div class="optionRight"><strong>119,000</strong>원</div>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="javascript:" class="service-tab-2" title="2) 옵션내용">
+                                                <div class="optionLeft">2) 옵션내용</div>
+                                                <div class="optionRight"><strong>140,000</strong>원</div>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="javascript:" class="service-tab-3" title="3) 옵션내용">
+                                                <div class="optionLeft">3) 옵션내용</div>
+                                                <div class="optionRight"><strong>159,000</strong>원</div>
+                                            </a>
+                                        </li>
+                                       				
+                                    </ul>
+                                    <a href="javascript:" class="tabBtn" title="옵션 선택" style="text-decoration: none; ">옵션 선택</a>	
+                                </div>						
+                            </div>
+                          
+                        </div>
+                        
+
+
+
+                        <div class="priceBox ">
+                            <ul class="goodsTit">
+                                <li>
+                                    상품명 내용 노출 상품명 내용 노출 상품명 내용
+                                    상품명 내용 노출 상품명 내용 노출 상품명 내용...
+                                </li>
+                                <li class="PriceCloseBtn"><a href="javascript:Function(); "><img src="./img/XcloseBtn.svg" alt=""></a></li>
+                            </ul>
+
+                            <ul class="numPrice">
+                                <li class="numBox"> 
+                                    <input type='number' name='amount'min="0" max="100" value="0" style = "text-align:center;" />
+                                    <input type="button" value="+" id="inc-button" class="spinner-button" onClick="javascript:this.form.amount.value++;">
+                                    <input type="button" value="-" id="dec-button" class="spinner-button" onClick="javascript:this.form.amount.value--;">
+                                </li>
+                                <li class="numpriceBox"><strong>119,000</strong>원</li>
+                            </ul>
+                            
+                        </div>
+                        <ul class="price">
+                            <li class="left">총 <strong> 1 </strong>개</li>
+                            <li class="right">총 금액 <span><strong>119,000</strong>원</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="btnBox">
+                    <li><a href="javascript:Function();" class="gift"><span><img src="./img/ico_gift.svg" alt=""></span>선물하기</a></li>
+                </ul>
+                              
+            </div>
+
+
+
+        </section>
+        
+        
+        
+       
+        <section id="section6" class="">
+            <div class="container">
+                <div class="gap">
+                    <div class="wrap">
+                        <h5>교환/반품/환불안내<span class="Arrow6Btn"><i></i></span></h5>
+                        
+                        <div class="tableWrap">
+                            <table>
+                                <tr>
+                                    <td class="left">교환 및 반품 비용</td>
+                                    <td class="right">고객부담 (반품 6,000원, 교환 6,000원)<br>
+                                        제주도 및 도서산간지방은 추가 비용이 발생합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td class="left">교환 및 반품 신청</td>
+                                    <td class="right">교환 및 반품은 배송완료 후 7일 이내 가능하며,<br>
+                                        [마이페이지 > 주문내역]에서 신청하시거나<br>
+                                        [1:1 문의] 또는 [고객센터]를 통해 가능합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td class="left">유의사항</td>
+                                    <td class="right">교환 및 반품은 판매처에 따라 달라질 수 있으며,<br>
+                                        반드시 상품 상세페이지 내 안내사항을 확인해주세요.</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section7">
+            <div class="container">
+                <div class="gap">
+                    <div class="wrap">
+                        <h5>판매자 정보<span  class="Arrow7Btn"><i></i></span></h5> 
+                    
+                        <div class="tableWrap ">
+                            <table>
+                                <tr>
+                                    <td class="left">판매자</td>
+                                    <td class="right">항목</td>
+                                </tr>
+                                <tr>
+                                    <td class="left">상호명/대표자</td>
+                                    <td class="right">항목</td>
+                                </tr>
+                                <tr>
+                                    <td class="left">사업자등록번호</td>
+                                    <td class="right">항목</td>
+                                </tr>
+                                <tr>
+                                    <td class="left">통신판매업신고</td>
+                                    <td class="right">항목</td>
+                                </tr>
+                                <tr>
+                                    <td class="left">A/S 전화번호</td>
+                                    <td class="right">항목</td>
+                                </tr>
+                                <tr>
+                                    <td class="left">주소</td>
+                                    <td class="right">항목</td>
+                                </tr>
+                                <tr>
+                                    <td class="left">반품/교환지 주소</td>
+                                    <td class="right">항목</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section8">
+            <div class="container">
+                <div class="gap">
+                    <div class="wrap">
+                        <h5>상품정보제공고시<span class="Arrow8Btn"><i></i></span></h5>
+
+                        <div class="tableWrap">
+                            <table>
+                                <tr>
+                                    <td class="left">품명 및 모델명</td>
+                                    <td class="right">항목</td>
+                                </tr>
+                                <tr>
+                                    <td class="left">제조사</td>
+                                    <td class="right">항목</td>
+                                </tr>
+                                <tr>
+                                    <td class="left">제조국</td>
+                                    <td class="right">항목</td>
+                                </tr>
+                                <tr>
+                                    <td class="left">인증허가</td>
+                                    <td class="right">항목</td>
+                                </tr>
+                                <tr>
+                                    <td class="left" style="letter-spacing: -.5px;">AS책임자/전화번호</td>
+                                    <td class="right">항목</td>
+                                </tr>
+                                
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+       
+    </main>
+
+    
+    <footer id="footer">
+        <div class="container">
+            <div class="gap">
+                <div class="wrap">
+                    <div class="content">
+                        <ul class="foot-content">
+                            <li class="foot1">
+                                <ul class="list">                                    
+                                    <li><a href='javascript:Function();'>휴대폰 인증</a></li>                                    
+                                    <li><a href='javascript:Function();'>즐겨찾기 추가</a></li>                                    
+                                    <li><a href='javascript:Function();'>고객센터</a><i></i></li>                                    
+                                  
+                                </ul>
+                            </li>
+                            <li class="foot2">
+
+                               <h3>고객센터</h3>
+                               <div class="tel">
+                                   <div>
+                                        <img src="./img/ico_footer_call.svg" alt=""><p>1234-5678</p> <span>전화걸기</span>
+                                    </div>
+                                </div>
+                               <div>평일 9시 ~ 18시 30분</div>
+
+
+                               <ul class="email">
+                                    <li>이메일 문의</li> 
+                                    <li >
+                                        <span id="textDiv">cs@kdeal.co.kr</span>                                       
+                                        <a id="copy">주소복사</a>
+                                    </li>
+                               </ul>
+                               
+                               
+                               <div class="Registration">
+                                  
+                                    <a href='javascript:Function();'  class="fArrowBtn">나스미디어 사업자정보</a>
+                                    <ul class="footerhide   ">
+                                        <li class="footerAddress">서울특별시 강남구 도곡로1길 14 삼일프라자 3, 4, 5층<br>
+                                         사업자 등록번호 102-81-42945</li>
+                                         <li class="searchNum"><a href="#">사업자번호조회</a></li>
+                                     </ul>
+                               </div>
+
+                            </li>
+                            
+                            <li class="foot3">
+                                <ul class="list">                                    
+                                    <li><a href='javascript:Function();'>이용약관 </a><i></i></li>                                    
+                                    <li><a href='javascript:Function();'>개인정보처리방침 </a><i></i></li>                              
+                                    <li><a href='javascript:Function();'>입점문의 </a></li>
+                                </ul>
+                            </li>
+                            <li class="foot4">
+                                Copyright ⓒ NASMEDIA Co., LTD. All Rights Reserved.
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</div>
+<script src="./js/detailmall.js"></script>
+
+ 
+</body>
+</html>

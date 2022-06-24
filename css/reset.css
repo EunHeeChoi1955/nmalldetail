@@ -3,7 +3,7 @@
 *{margin:0; padding:0; vertical-align:middle;box-sizing:border-box; }
 html, body {width:100%; max-width:1280px; margin:0 auto; height:auto; background: #EAEAEA;display: block;  }
 html{ overflow-y:scroll; }
-body{  font:14px/1  'SUIT','SUIT Variable','sans-serif', 'Nanum Gothic','Open Sans','Noto Sans KR', 'arial','Roboto','Montserrat'; color:#333; background:#fff;}
+body{  font:14px/1  'SUIT','SUIT Variable','Roboto','sans-serif', 'Noto Sans KR','Open Sans', 'arial','Montserrat'; color:#333; background:#fff;}
 i,em,address{font-style:normal;}
 h1,h2,h3,h4,h5,h6{ font-size:14px; font-weight:400; padding:0; margin:0; }
 a{color:#000; text-decoration:none; }
