@@ -346,11 +346,12 @@
             function mainSlide(){
             
                $('#section1 .slide-wrap li').stop().animate({ left: -slideW*cnt}, 600, function(){
-                  cnt>n?cnt=0:cnt;
-                  cnt<0?cnt=n:cnt;
-                  
+                  // cnt>n?cnt=0:cnt;
+                  // cnt<0?cnt=n:cnt;
+                  if(cnt>5){cnt=0}  //다음슬라이드 롤링
+                  if(cnt<0){cnt=5}  //이전슬라이드 롤링
                   $('#section1 .slide-wrap li').stop().animate({ left: -slideW*cnt}, 0);
-                  cnt>n?cnt=0:cnt;
+                  //cnt>n?cnt=0:cnt;
                  
                });
                
@@ -360,14 +361,14 @@
             
        //sec1Ani  이벤트 
        function AniFn(){
-         $('#section1 .slide-wrap li h3').eq(cnt>n?0:cnt).addClass('sec1Ani1');	//이거 여기다 둬야  슬라이드 1번 버튼 addclass 작용
+        
          $('#section1 .slide-wrap li h3').removeClass('sec1Ani1');	    //초기화
          $('#section1 .slide-wrap li h4').removeClass('sec1Ani2');	    //초기화
-         cnt>5?cnt=0:cnt;
-         $('#section1 .slide-wrap li h3').eq(cnt>n?0:cnt).addClass('sec1Ani1');	//해당 슬라이드 버튼만 표시 
-         $('#section1 .slide-wrap li h4').eq(cnt>n?0:cnt).addClass('sec1Ani2');	//해당 슬라이드 버튼만 표시 
+         cnt>4?cnt=0:cnt;
           
             
+         $('#section1 .slide-wrap li h3').eq(cnt>n?0:cnt).addClass('sec1Ani1');	//해당 슬라이드 버튼만 표시 
+         $('#section1 .slide-wrap li h4').eq(cnt>n?0:cnt).addClass('sec1Ani2');	//해당 슬라이드 버튼만 표시 
                
        }		
 
@@ -556,10 +557,19 @@
          let   swipeEnd       = null;
          let   dragStart      = null; // 슬라이드 마지막이 처음에서 왼쪽으로 이동된 상태 값을 빼주고 시작
          let   mouseDown      = null; // 반드시 마우스가 다우된 상태를판단 다운이면 tru, 업이면 false
-        
+         var   heart          = $('#section2 .heart');
 
         
-
+         // heart 클릭 이벤트
+         heart.each(function (idx) {
+            $(this).on({
+               click: function () {
+               
+                  heart.eq(idx).toggleClass('addHeart'); // 클래스 주입
+                  
+               }
+            });
+         });
 
          //1.메인슬라이드 함수
          function mainSlide(){                
@@ -670,11 +680,10 @@
 
             //   });
 
-
-
-
-
-                // 카운트
+            
+               
+            
+ // 카운트
                 // 3초간 자동증가
                 let cnt   = [0,0,0,0,0,0,0,0,0,0];
                 let setId = [null,null,null,null,null,null,null,null,null,null];
@@ -696,8 +705,6 @@
                       countfn(i);
                    }, time[i] );
                 }
-            
-
                
                   // let timeerId = 0;
            
@@ -1163,6 +1170,7 @@
 
          const slideWrap      = $('#section9 .slide-wrap');
          const slideContainer = $('#section9 .slide-view');
+         
          var setId = 0;
          var t = 0;
          var t2 = 0;
@@ -1227,7 +1235,7 @@
                   cnt>n?cnt=0:cnt;
                   cnt<0?cnt=n:cnt;
                   $('#section9 .screensWrap').stop().animate({ left: -slideW*cnt}, 0);
-                  cnt>9?cnt=0:cnt;// 슬라이드랑 nav 갯수 바뀔때마다 갯수 바꿔주기 필수!
+                  cnt>11?cnt=0:cnt;// 슬라이드랑 nav 갯수 바뀔때마다 갯수 바꿔주기 필수!
                });
             
                navFn();
@@ -1333,6 +1341,7 @@
                }   
          }
       });
+   
 
 
 
