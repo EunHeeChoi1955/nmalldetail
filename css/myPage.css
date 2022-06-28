@@ -34,6 +34,7 @@ html, body {background: #fff; color: #fff;  }
 #myPage >.TopContainer .myPageContents .customList ul li.title {font-weight:700; color: #343434; font-size: 16px;}
 #myPage >.TopContainer .myPageContents .customList ul li {width: 100%; border-bottom:1px solid #E2E2E2 ; padding:11px 22px; display: flex;}
 #myPage >.TopContainer .myPageContents .customList ul li {width: 100%; border-bottom:1px solid #E2E2E2 ; padding:11px 22px; display: flex;}
+#myPage >.TopContainer .myPageContents .customList ul li div {background:url(../img/ico_my_small_openArrow.svg) no-repeat;width: 24px; height: 28px; display: inline-block; }
 #myPage >.TopContainer .myPageContents .customList ul li span {background:url(../img/arr_my_more_right.svg) no-repeat; width: 24px; height: 28px; display: inline-block; }
 #myPage >.TopContainer .myPageContents .customList ul li a {text-decoration: none; color:#343434 ; font-size: 14px; line-height: 180%;}
 #myPage >.TopContainer .myPageContents .customList ul li a img {width: 20px; margin-right: 14px; }

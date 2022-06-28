@@ -3,8 +3,10 @@
     // ECMA Script 5 (이크마 스크립트 5)
     //객체
 
-    var mall = {
+    const mall = {
         init:       function(){ //메서드(리터럴함수)
+
+            this.parallaxFn();   
             this.headerFn();   
             this.smoothScrollFn();         
             this.section1Fn();
@@ -12,6 +14,7 @@
             this.section2Fn();
             this.section2SwipeFn();            
             this.section3Fn();
+            //this.countTimer();
             this.section5Fn();
             this.section6Fn();
             this.section8BtnFn();
@@ -21,43 +24,243 @@
           
     
         },
+        parallaxFn:function(){
+
+            // 객체화 : 패럴럭스의 모든 섹션에서 발생되는 변수 충돌 피하기 위해서
+            const scrollEvent = {
+               init: function(){          
+                 
+                  this.section2();
+                  this.section3();
+                  this.section5();
+                  this.section6();
+                  this.section8();
+                  this.section9();
+               
+               },
+               section2: function(){
+                 
+                     
+                  const section2 = $('#section2');
+                  const titT = $('#main #section2  h2 i').offset().top;
+                  let winH = $(window).height();
+                  let titTop = titT - winH; // 윈도우의 스크롤 탑값이 여기에 도달하면(if ~ then) 애니메이션 구현 
+                  
+
+                  
+                  // 윈도우.스크롤 이벤트  scroll(); 메서드 : 스크롤 값이 발생이 되어야 구현된다.
+                  $(window).scroll(function(){
+                     //console.log('$(window).scrollTop():',$(window).scrollTop());
+                     if( $(window).scrollTop() >= titTop ){  //스크롤탑값이 이상이면 구현해라 애니메이션을  addClass
+                        //섹션2 선택자에 클래스를 추가해라 addClass #section2 .addParallax
+                        section2.addClass('addParallax');
+
+                     }
+                     if( $(window).scrollTop() == 0 ){  // 맨위 스크롤 탑값이 0이면 추가된 클래스 삭제
+                        //섹션2 선택자에 클래스를 추가해라 addClass #section2 .addParallax
+                        section2.removeClass('addParallax'); //초기화 되서 스크롤 넘기면 반복적으로 됌
+
+                     }
+
+                  }); 
+
+
+
+
+               },
+               section3: function(){
+                 
+                  const section3 = $('#section3');
+                  const titT = $('#main #section3 .container .gap .wrap .content').offset().top;
+                  let winH = $(window).height();
+                  let titTop = titT - winH; // 윈도우의 스크롤 탑값이 여기에 도달하면(if ~ then) 애니메이션 구현 
+                  
+                  // 윈도우.스크롤 이벤트  scroll(); 메서드 : 스크롤 값이 발생이 되어야 구현된다.
+                  $(window).scroll(function(){
+                     //console.log('$(window).scrollTop():',$(window).scrollTop());
+                     if( $(window).scrollTop() >= titTop ){  //스크롤탑값이 이상이면 구현해라 애니메이션을  addClass
+                        section3.addClass('addParallax');
+
+                     }
+                     if( $(window).scrollTop() == 0 ){  // 맨위 스크롤 탑값이 0이면 추가된 클래스 삭제
+                        section3.removeClass('addParallax'); //초기화 되서 스크롤 넘기면 반복적으로 됌
+
+                     }
+
+                  }); 
+
+
+
+
+               },
+               section5: function(){
+                 
+                  const section5 = $('#section5');
+                  const titT = $('#main #section5 .container .gap .wrap .content').offset().top;
+                  let winH = $(window).height();
+                  let titTop = titT - winH; // 윈도우의 스크롤 탑값이 여기에 도달하면(if ~ then) 애니메이션 구현 
+                  
+                  // 윈도우.스크롤 이벤트  scroll(); 메서드 : 스크롤 값이 발생이 되어야 구현된다.
+                  $(window).scroll(function(){
+                     //console.log('$(window).scrollTop():',$(window).scrollTop());
+                     if( $(window).scrollTop() >= titTop ){  //스크롤탑값이 이상이면 구현해라 애니메이션을  addClass
+                        section5.addClass('addParallax');
+
+                     }
+                     if( $(window).scrollTop() == 0 ){  // 맨위 스크롤 탑값이 0이면 추가된 클래스 삭제
+                        section5.removeClass('addParallax'); //초기화 되서 스크롤 넘기면 반복적으로 됌
+
+                     }
+
+                  }); 
+
+
+
+
+               },
+               section6: function(){
+                 
+                  const section6 = $('#section6');
+                  const titT = $('#main #section6 .left i').offset().top;
+                  let winH = $(window).height();
+                  let titTop = titT - winH; // 윈도우의 스크롤 탑값이 여기에 도달하면(if ~ then) 애니메이션 구현 
+                  
+                  // 윈도우.스크롤 이벤트  scroll(); 메서드 : 스크롤 값이 발생이 되어야 구현된다.
+                  $(window).scroll(function(){
+                     //console.log('$(window).scrollTop():',$(window).scrollTop());
+                     if( $(window).scrollTop() >= titTop ){  //스크롤탑값이 이상이면 구현해라 애니메이션을  addClass
+                        section6.addClass('addParallax');
+
+                     }
+                     if( $(window).scrollTop() == 0 ){  // 맨위 스크롤 탑값이 0이면 추가된 클래스 삭제
+                        section6.removeClass('addParallax'); //초기화 되서 스크롤 넘기면 반복적으로 됌
+
+                     }
+
+                  }); 
+
+
+
+
+               },
+               section8: function(){
+                 
+                  const section8 = $('#section8');
+                  const titT = $('#main #section8 .container .gap .wrap .content').offset().top;
+                  let winH = $(window).height();
+                  let titTop = titT - winH; // 윈도우의 스크롤 탑값이 여기에 도달하면(if ~ then) 애니메이션 구현 
+                  
+                  // 윈도우.스크롤 이벤트  scroll(); 메서드 : 스크롤 값이 발생이 되어야 구현된다.
+                  $(window).scroll(function(){
+                     //console.log('$(window).scrollTop():',$(window).scrollTop());
+                     if( $(window).scrollTop() >= titTop ){  //스크롤탑값이 130px 이상이면 구현해라 애니메이션을  addClass
+                        section8.addClass('addParallax');
+
+                     }
+                     if( $(window).scrollTop() == 0 ){  // 맨위 스크롤 탑값이 0이면 추가된 클래스 삭제
+                        section8.removeClass('addParallax'); //초기화 되서 스크롤 넘기면 반복적으로 됌
+
+                     }
+
+                  }); 
+
+
+
+
+               },
+               section9: function(){
+                 
+                  const section9 = $('#section9');
+                  const titT = $('#main #section9 .container .gap .wrap .content').offset().top;
+                  let winH = $(window).height();
+                  let titTop = titT - winH; // 윈도우의 스크롤 탑값이 여기에 도달하면(if ~ then) 애니메이션 구현 
+                  
+                  // 윈도우.스크롤 이벤트  scroll(); 메서드 : 스크롤 값이 발생이 되어야 구현된다.
+                  $(window).scroll(function(){
+                     //console.log('$(window).scrollTop():',$(window).scrollTop());
+                     if( $(window).scrollTop() >= titTop ){  //스크롤탑값이 130px 이상이면 구현해라 애니메이션을  addClass
+                        section9.addClass('addParallax');
+
+                     }
+                     if( $(window).scrollTop() == 0 ){  // 맨위 스크롤 탑값이 0이면 추가된 클래스 삭제
+                        section9.removeClass('addParallax'); //초기화 되서 스크롤 넘기면 반복적으로 됌
+
+                     }
+
+                  }); 
+
+
+
+
+               },
+               section10: function(){
+                 
+                  const section10 = $('#section10');
+                  const titT = $('#main #section10 .left i').offset().top;
+                  let winH = $(window).height();
+                  let titTop = titT - winH; // 윈도우의 스크롤 탑값이 여기에 도달하면(if ~ then) 애니메이션 구현 
+                  
+                  // 윈도우.스크롤 이벤트  scroll(); 메서드 : 스크롤 값이 발생이 되어야 구현된다.
+                  $(window).scroll(function(){
+                     //console.log('$(window).scrollTop():',$(window).scrollTop());
+                     if( $(window).scrollTop() >= titTop ){  //스크롤탑값이 130px 이상이면 구현해라 애니메이션을  addClass
+                        section10.addClass('addParallax');
+
+                     }
+                     if( $(window).scrollTop() == 0 ){  // 맨위 스크롤 탑값이 0이면 추가된 클래스 삭제
+                        section10.removeClass('addParallax'); //초기화 되서 스크롤 넘기면 반복적으로 됌
+
+                     }
+
+                  }); 
+
+               }
+
+
+
+               
+            }            
+
+            scrollEvent.init();
+
+        },
         headerFn:   function(){
 
-         //헤더영역 스크롤 이벤트 (페럴럭스)
-         var $window  = $(window);
-         var $header  = $('#header');
-         var $mainBtn = $('#header .mainbtn');
-         var t = 0; // false === 0 같다는 표시   toggle
-         
+                     //헤더영역 스크롤 이벤트 (페럴럭스)
+                     var $window  = $(window);
+                     var $header  = $('#header');
+                     var $mainBtn = $('#header .mainbtn');
+                     var t = 0; // false === 0 같다는 표시   toggle
+                     
 
-             
-             //마우스로 스크롤값이 아래로 30픽셀이상 >= 내려가면 
-             //선택자 헤더영역(#header)에 효과 이벤트가 발생하게 하라 
-             $window.scroll(function(){ //스크롤 이벤트
-                // console.log(  $window.scrollTop() ); //스크롤 탑값 확인
-                 if( $window.scrollTop() >= 30 ){  //마우스로 스크롤값이 아래로 30픽셀이상 내려가면
-                  $header.addClass('addHeader');  //헤더에 클래스 추가
-                 // $appBtn.animate({left :'0px',right: '0px',bottom:'0px',borderRadius: '0px'},.1);
-              }
-              else{
-                  $header.removeClass('addHeader'); //추가된 클래스 삭제
-                 // $appBtn.animate({left :'30px',right: '30px',bottom:'54px',borderRadius: '6px'},.1);  
-              }           
-             });
+                        
+                        //마우스로 스크롤값이 아래로 30픽셀이상 >= 내려가면 
+                        //선택자 헤더영역(#header)에 효과 이벤트가 발생하게 하라 
+                        $window.scroll(function(){ //스크롤 이벤트
+                           // console.log(  $window.scrollTop() ); //스크롤 탑값 확인
+                           if( $window.scrollTop() >= 30 ){  //마우스로 스크롤값이 아래로 30픽셀이상 내려가면
+                              $header.addClass('addHeader');  //헤더에 클래스 추가
+                           // $appBtn.animate({left :'0px',right: '0px',bottom:'0px',borderRadius: '0px'},.1);
+                        }
+                        else{
+                              $header.removeClass('addHeader'); //추가된 클래스 삭제
+                           // $appBtn.animate({left :'30px',right: '30px',bottom:'54px',borderRadius: '6px'},.1);  
+                        }           
+                        });
 
 
-            //  메뉴버튼 addCLass removeClass            
-            $mainBtn.each(function (idx) {
-               $mainBtn.eq(0).addClass('addClass'); 
-               $(this).on({
-                  
-                   mouseenter: function () {
-                     $mainBtn.removeClass('addClass');  // 클래스 삭제
-                     $mainBtn.eq(idx).addClass('addClass'); // 클래스 주입
-                      // countFn(idx);
-                   }
-               });
-           });
+                        //  메뉴버튼 addCLass removeClass            
+                        $mainBtn.each(function (idx) {
+                           $mainBtn.eq(0).addClass('addClass'); 
+                           $(this).on({
+                              
+                              mouseenter: function () {
+                                 $mainBtn.removeClass('addClass');  // 클래스 삭제
+                                 $mainBtn.eq(idx).addClass('addClass'); // 클래스 주입
+                                 // countFn(idx);
+                              }
+                           });
+                     });
 
 
              
@@ -469,31 +672,58 @@
 
 
 
-               // 카운트
-               // 3초간 자동증가
-               let cnt   = [0,0,0,0,0,0,0,0,0,0];
-               let setId = [null,null,null,null,null,null,null,null,null,null];
-               let time  = [60,60,60,60,60,60,60,60,60,60];
-               //let num   = [60,60,60,60,60,60,60,60,60,60];
-
-               function countfn(n){
-                  cnt[n]++;
-                  
-                  if(cnt[n]>time[n]){
-                     clearInterval(setId[n]);
-                  }
-                  else{
-                     $('.time>.right').eq(n).html(`<i>${cnt[n]+`:`+cnt[n]+`:`+cnt[n]}<i>`);
-                  }
-                  cnt[n]=0;
-               }
-               for(let i=0; i<10; i++){
-                  setId[i] = setInterval( function(){
-                     countfn(i);
-                  }, time[i] );
-               }
 
 
+                // 카운트
+                // 3초간 자동증가
+                let cnt   = [0,0,0,0,0,0,0,0,0,0];
+                let setId = [null,null,null,null,null,null,null,null,null,null];
+                let time  = [60,60,60,60,60,60,60,60,60,60];
+                //let num   = [60,60,60,60,60,60,60,60,60,60];
+                function countfn(n){
+                   cnt[n]++;
+                
+                   if(cnt[n]>time[n]){
+                      clearInterval(setId[n]);
+                   }
+                   else{
+                      $('.time>.right').eq(n).html(`<i>${cnt[n]+`:`+cnt[n]+`:`+cnt[n]}<i>`);
+                   }
+                   cnt[n]=0;
+                }
+                for(let i=0; i<10; i++){
+                   setId[i] = setInterval( function(){
+                      countfn(i);
+                   }, time[i] );
+                }
+            
+
+               
+                  // let timeerId = 0;
+           
+                  //     timeerId = setInterval(()=>{
+                  //          this.setState({
+                  //              seconds: this.state.seconds-1
+                  //          })
+                  //          if(this.state.seconds<=0){
+                  //              this.setState({
+                  //                  minutes: this.state.minutes-1,
+                  //                  seconds: 59
+                  //              })
+                  //              if(this.state.minutes<=0){
+                  //                  this.setState({
+                  //                      minutes: 0,
+                  //                      seconds: 0                                       
+                  //                  })                       
+                  //                  clearInterval(this.state.setId);
+                  //                  return;
+                  //              }
+                  //          }
+                  //     }, 1000);
+           
+                      
+              
+                  //   this.setState({setId: timeerId});
 
 
 
@@ -503,6 +733,7 @@
 
 
         },
+        
         section3Fn:  function(){
 
             const slideWrap      = $('#section3 .slide-wrap');
@@ -1126,7 +1357,12 @@
         section10Fn: function(){
 
          
-      
+       
+
+
+
+
+ 
 
 
          const slideWrap      = $('#section10 .slide-wrap');
@@ -1142,7 +1378,7 @@
           var Btn =$('#section10 .pageBtn ');
           var item =$('#section10 .item');
          
-
+         
             
              autoPlay('_play');  //자동실행 4초 후에 실행
          
@@ -1240,16 +1476,6 @@
 
 
         
-               // heart 클릭 이벤트
-               heart.each(function (idx) {
-                  $(this).on({
-                      click: function () {
-                      
-                        heart.eq(idx).toggleClass('addHeart'); // 클래스 주입
-                         
-                      }
-                  });
-              });
 
         }, 
         footerFn:  function(){
@@ -1277,6 +1503,27 @@
             });
    
         
+
+            var fArrowBtn =  $('#footer .Registration .fArrowBtn');
+            var footerhide =  $('#footer .Registration .footerhide');
+            
+   
+                  // 화살표 버튼 클릭 이벤트
+                  fArrowBtn.each(function (idx) {
+                     $(this).on({
+                        click: function () {
+                        
+                           fArrowBtn.eq(idx).toggleClass('fArrow'); // 클래스 주입
+                           footerhide.eq(idx).toggleClass('footerShow'); // 클래스 주입
+                           
+                           
+                        }
+                     });
+                  });
+
+
+
+
         }
 
 
