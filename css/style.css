@@ -96,7 +96,7 @@
 #main>#section1>.container>.gap>.wrap>.slide-container>.slide-view>.slide-wrap>.slide>.slide-text span {display: block;  }
 #main>#section1>.container>.gap>.wrap>.slide-container>.slide-view>.slide-wrap>.slide>.slide-text span button {font-size: 10px;font-weight: 500; font-family: 'SUIT'; background-color: #444; border-radius: 20px; padding:4px 10px;  color:#fff; border: 0; }
 #main>#section1>.container>.gap>.wrap>.slide-container>.slide-view>.slide-wrap>.slide>.date {z-index:1;  position: absolute; bottom:18px; left:25px; color:#BDBDBD;font-weight:400; font-size: 14px;  }
-#main>#section1>.container>.gap>.wrap>.slide-container>.slide-view .cnt { z-index:3; position: absolute; bottom:10px; right: 20px; }
+#main>#section1>.container>.gap>.wrap>.slide-container>.slide-view .cnt { z-index:5; position: absolute; bottom:10px; right: 20px; }
 #main>#section1>.container>.gap>.wrap>.slide-container>.slide-view .cnt h5 { display: inline-block; font-size: 10px; line-height: 160%;  font-weight:200; text-align: center; color:#CCCCCC;border: 1px solid rgba(255, 255, 255, 0.6); border-radius: 20px; width:48px; height:18px; background-color: rgba(68, 68, 68, 0.5);}
 #main>#section1>.container>.gap>.wrap>.slide-container>.slide-view .cnt h5 strong{color:#fff;font-weight:700; vertical-align: baseline; }
 #main>#section1>.container>.gap>.wrap>.slide-container>.slide-view>.slide-wrap .slide>a {width: 100%; border-radius: 6px;}
