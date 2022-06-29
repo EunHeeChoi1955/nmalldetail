@@ -300,8 +300,8 @@
          var cnt = 0;
          let   swipeStart     = null;
          let   swipeEnd       = null;
-
-
+       
+         
 
 
             
@@ -352,7 +352,9 @@
                   if(cnt<0){cnt=5}  //이전슬라이드 롤링
                   $('#section1 .slide-wrap li').stop().animate({ left: -slideW*cnt}, 0);
                   //cnt>n?cnt=0:cnt;
-                 
+                   number = document.querySelector(".number");
+                 console.log(cnt+1);
+                 number.innerHTML=cnt+1;
                });
                
                AniFn();
@@ -558,7 +560,7 @@
          let   dragStart      = null; // 슬라이드 마지막이 처음에서 왼쪽으로 이동된 상태 값을 빼주고 시작
          let   mouseDown      = null; // 반드시 마우스가 다우된 상태를판단 다운이면 tru, 업이면 false
          var   heart          = $('#section2 .heart');
-
+        
         
          // heart 클릭 이벤트
          heart.each(function (idx) {
