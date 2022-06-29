@@ -74,7 +74,7 @@
 /* https://www.figma.com/file/tblbFFmNni1zJgjeEbFGcA/%EB%82%98%EC%8A%A4-%EC%9E%90%EC%82%AC%EB%AA%B0?node-id=26%3A2845 */
 /* fixed 때문에 상단에 여백을 주어 섹션1을 보이게 해준다. */
 /* 메인영역상단 padding-top:120px; */
-#main{z-index:0;position:relative;width:100%; max-width:1280px;overflow:visible; display:block; margin: 0 auto; }
+#main{z-index:2;position:relative;width:100%; max-width:1280px;overflow:visible; display:block; margin: 0 auto; }
 	
 #main>#section1{ position: relative; width:100%;height:auto; padding:0; border-bottom: 7px solid #E2E2E2; overflow: hidden;}
 #main>#section1 .container {position:relative; width:100%;height:100%; margin:0 auto;padding:0;background:#fff ; background-size: cover;}		
@@ -83,9 +83,9 @@
 #main>#section1 .container .gap .wrap {width:100%;  }
 
 #main>#section1 .container .gap .wrap .slide-container{position: relative;width:100%;  padding:147px 0 0 0; }
-#main>#section1 .container .gap .wrap .slide-container>.slide-view{ z-index:0; position: relative;width:100%; display: block; }
+#main>#section1 .container .gap .wrap .slide-container>.slide-view{ z-index:3; position: relative;width:100%; display: block; }
 #main>#section1 .container .gap .wrap .slide-container>.slide-view .slide-wrap{ position: relative; display: flex; width:600%; margin-left:-100%;}
-#main>#section1>.container>.gap>.wrap>.slide-container>.slide-view>.slide-wrap>.slide{ z-index:2; position: relative; width:100%; display: inline-block; padding:0 5px;   }
+#main>#section1>.container>.gap>.wrap>.slide-container>.slide-view>.slide-wrap>.slide{ z-index:4; position: relative; width:100%; display: inline-block; padding:0 5px;   }
 #main>#section1>.container>.gap>.wrap>.slide-container>.slide-view>.slide-wrap>.slide:hover{ cursor:url(../img/icon-move-light.png), move; }
 #main>#section1>.container>.gap>.wrap>.slide-container>.slide-view>.slide-wrap>.slide>.slide-text{ position: absolute; top:20px; left:25px; padding-right:18px; }
 #main>#section1>.container>.gap>.wrap>.slide-container>.slide-view>.slide-wrap>.slide>.white{ color:#fff; }
@@ -122,9 +122,9 @@
 
 	/* #section1 버튼 */
 #main>#section1>.container>.gap>.wrap>.btn-container {width:100%;display: block; padding-bottom:10px ; }
-#main>#section1>.container>.gap>.wrap>.btn-container>.btn-view { z-index: 1; position: relative;width:100%; overflow: hidden; padding:10px 0; }
+#main>#section1>.container>.gap>.wrap>.btn-container>.btn-view { z-index: 3; position: relative;width:100%; overflow: hidden; padding:10px 0; }
 #main>#section1>.container>.gap>.wrap>.btn-container>.btn-view>.btn-wrap  {position: relative;  display: flex;  width:700%;   transition: all 0ms ease 0s;}	/* transition-property: transform; transform: translate3d(0px, 0px, 0px); */
-#main>#section1>.container>.gap>.wrap>.btn-container>.btn-view>.btn-wrap>li { z-index: 2;position: relative; cursor: pointer; box-sizing: border-box; padding-right:6px; width: 80px; display: inline-block; text-align: center;}
+#main>#section1>.container>.gap>.wrap>.btn-container>.btn-view>.btn-wrap>li { z-index: 4;position: relative; cursor: pointer; box-sizing: border-box; padding-right:6px; width: 80px; display: inline-block; text-align: center;}
 #main>#section1>.container>.gap>.wrap>.btn-container>.btn-view>.btn-wrap>li a{width:100%;   display: block;  }
 #main>#section1>.container>.gap>.wrap>.btn-container>.btn-view>.btn-wrap>li a img{width:62px; display: block; height: 62px; }
 #main>#section1>.container>.gap>.wrap>.btn-container>.btn-view>.btn-wrap>li span{margin-left:-10px ; white-space: nowrap;font-size: 12px; text-align: center;padding: 7px 0 0 0; display: inline-block; letter-spacing: -.3px; font-weight: 400; color:#1A1A1A; transition: all .3s;}
@@ -828,7 +828,7 @@
 
 
 /* footer */
-#footer {z-index:1;position:relative;width:100%;height:auto; }
+#footer {z-index:0;position:relative;width:100%;height:auto; }
 #footer .container {width:100%;max-width:1280px;height:auto;margin:0 auto; padding: 0;background: #F2F2F2;}
 #footer .container .gap {width:100%; padding:20px 0 160px 0;}
 #footer .container .gap .wrap{width:100%;}
