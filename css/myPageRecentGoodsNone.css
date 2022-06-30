@@ -77,68 +77,24 @@ html, body {background: #fff; color: #fff;  }
 #myPage >.TopContainer .myPageContents  .refund ul li a span{display: block;text-align: center; font-size: 12px; font-weight: 400; color:#343434 ;}
 #myPage >.TopContainer .myPageContents  .refund ul li img{width: 6px; }
 
-
-
-
-
-
-
 /* 최근 본 상품 */
-#myPage >.TopContainer .myPageContents  .recentGoods {position: relative; padding:16px 18px ; width: 100%; display: block; border-bottom: 7px solid #E2E2E2;}
-#myPage >.TopContainer .myPageContents  .recentGoods .title {width: 100%;}
+#myPage >.TopContainer .myPageContents  .recentGoods {width: 100%; display: block; border-bottom: 7px solid #E2E2E2;}
+#myPage >.TopContainer .myPageContents  .recentGoods .title {width: 100%; padding:16px 18px ;}
 #myPage >.TopContainer .myPageContents  .recentGoods .title .titleBox {display: flex;}
 #myPage >.TopContainer .myPageContents  .recentGoods .title .titleBox .txt1 { font-size: 16px; font-weight: 700; font-family: 'SUIT'; color: #343434;}
 #myPage >.TopContainer .myPageContents  .recentGoods .title .titleBox .arrow {width: 24px; margin:auto 0 auto auto;}
 #myPage >.TopContainer .myPageContents  .recentGoods .title .titleBox .arrow>a {width: 100%; }
 #myPage >.TopContainer .myPageContents  .recentGoods .title .titleBox .arrow>a img {width: 100%;}
-		
 
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container {position: relative; width:100%; padding-top: 16px;}
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view {z-index:3; position: relative; width:100%;   }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap { position:relative; display: flex;   }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap:hover{ cursor: url(../img/icon-move-black.png),move; }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap .slide { position: relative;   padding-right: 10px;  }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap .slide .slide-text { width:124px; height: 237px; overflow: hidden;border-radius: 6px; background: #fff;}
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap .slide .slide-text .img-box .heart { z-index:4;position:absolute; top:50%;margin-top:-28px; right:17px; width:26px; height: 26px; display: block;}
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap .slide .slide-text .img-box .heart a{ width:26px; height: 26px; display: block; border-radius: 15px; background: 	rgba(68, 68, 68, .3);}
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap .slide .slide-text .img-box .heart.addHeart a {  background: rgba(231, 56, 45, .3)  }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap .slide .slide-text .img-box .heart a img.redHeart { display: none; }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap .slide .slide-text .img-box .heart.addHeart>a>img.redHeart { display: block; position: relative; z-index: 4; display: block; width:100%;  padding: 8px 5px 5px 5px;}
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap .slide .slide-text .img-box .heart.addHeart>a>img.blankHeart { display: none;}
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap .slide .slide-text .img-box .heart a img {  width:100%;  padding: 8px 5px 5px 5px;}
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap .slide .slide-text .img-box {width:124px; height: 124px; }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap .slide .slide-text .img-box a { width:124px; text-decoration: none; cursor: pointer; }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap .slide .slide-text .img-box a img {width:100%;border-radius: 6px 6px 0 0;}
-
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap> .circle {  width:58px; display: table; padding-top: 70px; }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap> .circle> .slide-text{  width:58px;  display:table-cell ; }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap> .circle> .slide-text>.text-box h5{ text-align: center; white-space: nowrap; font-size: 12px; color:#434343; background:transparent;margin:5px 0;}
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap> .circle> .slide-text .img-box a { width:58px; }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap> .circle> .slide-text .img-box a img {  width:100%; }
-
-
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap> li >.slide-text .text-box {width:100%;font-family: 'SUIT'; height: auto; padding:0 8px 8px 8px;  }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap> li >.slide-text .text-box h3 {font-size: 12px; font-weight: 400; height: 36px; width: 100%; text-overflow: ellipsis; overflow: hidden; display: block; line-height: 18px; margin:8px 0 0 0; color:#1A1A1A; letter-spacing: -.5px; }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap> li >.slide-text .text-box h4 {display: block; text-align: right; color:#909090;font-weight: 400;  font-size: 10px;  margin:2px 0 0 auto; text-decoration: line-through;}
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap> li >.slide-text .text-box .price {display: flex; }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap> li >.slide-text .text-box .price li {white-space: nowrap; }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap> li >.slide-text .text-box .price li span {font-size: 14px; font-weight: 400;  }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap> li >.slide-text .text-box .price li:first-child{font-size: 18px;  color:#E7342C; margin-right: 2px; font-weight: 700; }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap> li >.slide-text .text-box .price li:last-child{margin:auto 0 auto auto; font-size: 16px;  color:#1A1A1A; font-weight: 700; text-align: right;}
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap> li >.slide-text .text-box .price li:last-child span{ font-size: 12px;  }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap> li >.slide-text .text-box ul { display: flex;font-size: 10px; }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap> li >.slide-text .text-box ul .star   {margin:auto auto auto 0; white-space: nowrap;display: block;  font-size: 10px;font-weight: 700; flex-flow: nowrap;box-sizing: border-box; color: #565656;}
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap> li >.slide-text .text-box ul .star i  {color:#FFC10E; font-size: 10px; margin-top: -2px;width:auto;  }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap> li >.slide-text .text-box ul .star span{ font-size: 10px; font-weight: 400;   }
-#myPage >.TopContainer .myPageContents  .recentGoods .slide-container .slide-view .slide-wrap> li >.slide-text .text-box ul li:last-child{ margin:auto 0 auto auto; width:auto; white-space: nowrap; }
-
-
-
-
-
-
-
-
+#myPage >.TopContainer .myPageContents  .recentGoods .goodsbox {width: 100%;}
+#myPage >.TopContainer .myPageContents  .recentGoods .goodsbox .goodsGap {width: 100%;}
+#myPage >.TopContainer .myPageContents  .recentGoods .goodsbox .goodsGap ul {width: 100%;text-align: center; padding: 16px 15px 14px 15px;font-family: 'SUIT'; margin: 0;}
+#myPage >.TopContainer .myPageContents  .recentGoods .goodsbox .goodsGap ul li{ width:100%; display: block; text-align: center;}
+#myPage >.TopContainer .myPageContents  .recentGoods .goodsbox .goodsGap ul .goodsImg{ display: block; margin: 0 auto; width:80px; }
+#myPage >.TopContainer .myPageContents  .recentGoods .goodsbox .goodsGap ul .goodsImg img{ width:100%;  }
+#myPage >.TopContainer .myPageContents  .recentGoods .goodsbox .goodsGap ul .goodsTxt {padding-top:14px ; text-align: center; font-size: 16px; color: #565656; }
+#myPage >.TopContainer .myPageContents  .recentGoods .goodsbox .goodsGap div {width: 100%; padding: 0 29px 42px 29px;}
+#myPage >.TopContainer .myPageContents  .recentGoods .goodsbox .goodsGap div button {width: 100%; color: #797979; font-size: 16px; font-weight: 400; padding:8px 0; border:1px solid #E2E2E2;background: #fff; border-radius: 6px;}
 
 /* 고객센터 */
 #myPage >.TopContainer .myPageContents .customList {width: 100%;}
