@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./fonts.css);
+
+
+
+*{   width:100%; height: 100%;  font-family: 'SUIT';}
+html, body {background: #fff; color: #fff;    }
+
+
+
+
+
+
+
+/* 모달창 */
+#modal {display:block; z-index:5; position:fixed; top:0; left: 0; background: rgba(0,0,0, .7); width: 100%; height: 100%;}
+#modal.modalShow {display:block; z-index:5; position:fixed; top:0; left: 0; background: rgba(0,0,0, .7); width: 100%; height: 100%;}
+#modal .modalWrap { display: block; position:relative; top:0; margin-top:150px; left: 50%; margin-left:-164px; background:#fff;  width: 328px; height: auto; border-radius: 6px; }
+#modal .modalWrap .modalGap { width: 100%;}
+#modal .modalWrap .modalGap .modalContent{    width: 100%; padding:11px 18px 21px 18px;}
+
+/* xbtn */
+#modal .modalWrap .modalGap .modalContent .xWrap { width: 100%; }
+#modal .modalWrap .modalGap .modalContent .xWrap .xbtn {position: absolute; top: 19.28px; right: 18.35px;  display: inline-block;  width:15.3px; height: 15.21px;}
+#modal .modalWrap .modalGap .modalContent .xWrap .xbtn img { width:15.3px; height: 15.21px;}
+
+/* 배송 이미지  */
+#modal .modalWrap .modalGap .modalContent .imgWrap { width: 100%; display: block; text-align: center; padding: 14px 0 0 0; }
+#modal .modalWrap .modalGap .modalContent .imgWrap .imgbox{ display:block;}
+#modal .modalWrap .modalGap .modalContent .imgWrap .imgbox img { width: 243px; }
+
+
+
+#modal .modalWrap .modalGap .modalContent .txtWrap {margin-top:-20px; text-align: center;color: #1A1A1A;   display: inline-block; padding-bottom: 45px;}
+#modal .modalWrap .modalGap .modalContent .txtWrap h2{ padding-bottom: 17px; text-align: center; display: inline-block;  color: #E7342C; font-size: 20px;  font-weight: 700; white-space: nowrap;}
+#modal .modalWrap .modalGap .modalContent .txtWrap h2 .big{   font-size: 34px; vertical-align: baseline; }
+#modal .modalWrap .modalGap .modalContent .txtWrap h3{ font-size: 20px; display: block ; font-weight: 700; }
+#modal .modalWrap .modalGap .modalContent .txtWrap h4{ font-size: 14px; display: block ; font-weight: 400; margin: 6px 0; }
+#modal .modalWrap .modalGap .modalContent .txtWrap h5{ color: #797979; font-size: 12px; display: block ; font-weight: 400; line-height: 15px; }
+
+
+/* 빨간확인버튼상자 */
+#modal .modalWrap .modalGap .modalContent .redButton {display: block; width: 100%;text-align: center;padding: 12px 0;  line-height: 100%;  border: 1px solid #E7342C; border-radius: 3px; margin-bottom: 10px;}
+#modal .modalWrap .modalGap .modalContent .redButton a  {  font-weight: 700; color: #E7342C;  }
+
+
+/* 검정 확인버튼상자 */
+#modal .modalWrap .modalGap .modalContent .bkBtn {display: block; width: 100%;text-align: center;padding: 12px 0;  line-height: 100%;  border: 1px solid #B3B3B3; border-radius: 3px;}
+#modal .modalWrap .modalGap .modalContent .bkBtn a  {  font-weight: 700; color: #1A1A1A;  }
+
+
+
+
+
+
