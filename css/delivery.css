@@ -40,7 +40,7 @@
 
 
 
-#main  {width: 100%; height: auto;}
+#main  {width: 100%; height: auto; padding-bottom: 15px;}
 
 /* 내용리스트 */
 #main .deliveryCon { position: relative; width: 100%; display:block; padding: 0 18px 0 18px; }
@@ -97,7 +97,7 @@
  #main .deliveryCon .listWrap .box .boxTop .boxRight span { display: inline-block; }
  #main .deliveryCon .listWrap .box .boxTop .boxRight span i { color: #797979;font-size: 15px; font-weight: 400; vertical-align:bottom;}
  /* box하단 */
- #main .deliveryCon .listWrap .box .boxBottom { padding:18px 16px; margin: 0;}
+ #main .deliveryCon .listWrap .box .boxBottom { padding:20px 16px 18px 16px; margin: 0;}
  #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap { width: 100%;  }
  #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .txt1 { display: flex;}
  #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .txt1 .red {color: #E7342C; font-size: 16px; font-weight: 700; }

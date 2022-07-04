@@ -28,19 +28,17 @@ html, body {background: #fff; color: #fff;    }
 /* 배송 이미지  */
 #modal .modalWrap .modalGap .modalContent .imgWrap { width: 100%; display: block; text-align: center; padding: 14px 0; }
 #modal .modalWrap .modalGap .modalContent .imgWrap .imgbox{ display:block;}
-#modal .modalWrap .modalGap .modalContent .imgWrap .imgbox img { width: 70px; }
+#modal .modalWrap .modalGap .modalContent .imgWrap .imgbox img { width: 243px; }
 
 
 
-#modal .modalWrap .modalGap .modalContent h2{ text-align: center;  width: 100%; color: #343434; font-size: 18px; display: block ; font-weight: 400; }
-#modal .modalWrap .modalGap .modalContent .txt {width: 100%; border-bottom:1px solid #E2E2E2; color: #343434; font-size: 14px; display: block ; font-weight: 400;}
-#modal .modalWrap .modalGap .modalContent .txt1 { padding: 20px 0 12px 0 ;}
-#modal .modalWrap .modalGap .modalContent .txt2 { padding: 12px 0 24px 0;}
-#modal .modalWrap .modalGap .modalContent .txt h3 {width: 100%; color: #1A1A1A; font-size: 14px; display: block ; padding: 0 0 6px 0;font-weight: 700;}
-#modal .modalWrap .modalGap .modalContent .txt ul {width: 100%; }
-#modal .modalWrap .modalGap .modalContent .txt ul li {display: flex; color: #565656; font-size: 14px; text-indent: 10px;}
-#modal .modalWrap .modalGap .modalContent .txt ul li .left{ margin:auto auto auto 0;}
-#modal .modalWrap .modalGap .modalContent .txt ul li .right{ margin:auto 0 auto auto; text-align: right; }
+#modal .modalWrap .modalGap .modalContent .txtWrap { text-align: center;color: #1A1A1A;   display: inline-block; padding-bottom: 45px;}
+#modal .modalWrap .modalGap .modalContent .txtWrap h2{ padding-bottom: 17px; text-align: center; display: inline-block;  color: #E7342C; font-size: 20px;  font-weight: 700; white-space: nowrap;}
+#modal .modalWrap .modalGap .modalContent .txtWrap h2 .big{   font-size: 34px; vertical-align: baseline; }
+#modal .modalWrap .modalGap .modalContent .txtWrap h3{ font-size: 20px; display: block ; font-weight: 700; }
+#modal .modalWrap .modalGap .modalContent .txtWrap h4{ font-size: 14px; display: block ; font-weight: 400; margin: 6px 0; }
+#modal .modalWrap .modalGap .modalContent .txtWrap h5{ color: #797979; font-size: 12px; display: block ; font-weight: 400; line-height: 15px; }
+
 
 /* 빨간확인버튼상자 */
 #modal .modalWrap .modalGap .modalContent .redButton {display: block; width: 100%;text-align: center;padding: 12px 0;  line-height: 100%;  border: 1px solid #E7342C; border-radius: 3px;}
