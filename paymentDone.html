@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="publisher" content="eunheeChoi">
-    <title>결제완료</title>
+    <title>주문완료</title>
    
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/paymentDone.css">    
@@ -37,19 +37,19 @@
             <div class="container">
                 <ul class="top clearfix">
                     <li class="left">
-                        
-                    </li>
-                    <li class="medium">
-                        결제완료
-                    </li>
-                    <li class="right">
-                        <div class="xWrap">
-                            <span class="xBtn">
+                        <div class="backWrap">
+                            <span class="backBtn">
                                 <a  href="#" class="x-btn " title="back">
                                     <span ></span>
                                 </a>
                             </span>                       
                         </div>
+                    </li>
+                    <li class="medium">
+                        주문완료
+                    </li>
+                    <li class="right">
+                      
                     </li>
                 </ul>
             </div>   
@@ -59,7 +59,13 @@
                     <div class="paymentWrap"> 
 
                         <div class="topMention">
-                            <h2>결제 완료되었습니다.</h2>
+                            <div class="orderImg"><img src="./img/orderImg.svg" alt=""></div>
+                            <h2>주문이 <span class="red">완료</span>되었습니다.</h2>
+                            <p>주문번호 : ##############</p>
+                            <ul class="btnBoxWrap">
+                                <li class="whBtn"><a href="#">주문내역조회</a></li>
+                                <li class="redBtn"><a href="#">쇼핑 계속하기</a></li>
+                            </ul>
                         </div>
                         
                         
@@ -104,6 +110,96 @@
                                 </div>
 
                            </div>
+
+                           <div class="order">
+                                    <ul class="top">
+                                        <li class="topTxt1">주문상품</li>
+                                        <li class="topTxt3">
+                                            <div class="topTxt2">첫번째 상품명 10글자 노출하고 외 1건</div>
+                                            <div class="topTxt2hid">2건</div>
+                                            <a href="javascript:"  class="arrowBtn"><span></span></a>
+                                        </li>
+                                    </ul>
+                                    <div class="bottom">
+                                        <ul class="boxBottomWrap">
+                                            <li class="box1 box">
+                                                <div class="brandWrap brandWrap1">
+                                                    <div class="txt2">
+                                                        <div class="txt2Left">
+                                                            <a href="javascript:Function();">
+                                                                <img src="./img/delivery_th3.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="txt2Right">                                                    
+                                                            <div class="txt2Right_txt2">
+                                                                상품명 상품명 상품명 상품명 상품명 상품명 상품명 상품명 상품명 
+                                                            </div>
+                                                            <div class="txt2Right_txt2gray">
+                                                                옵션명 한줄 옵션명 한줄 옵션명 한줄 옵션
+                                                            </div>
+                                                        </div>
+                                                    </div>       
+                                                    <div class="txt3">
+                                                        <ul>
+                                                            <li class="txt2Right_left blue">
+                                                                <ul>
+                                                                    <li>무료배송<i class="dot">·</i></li>
+                                                                    <li>쿠폰적용</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="txt2Right_right" >
+                                                                <div class="right_sub1">19,900원</div> <i class="bar"></i>
+                                                                <div class="right_sub2">1개</div>                                                                                            
+                                                            </li> 
+                                                        </ul>
+                                                    </div>                                     
+                                                </div>
+
+                                                <div class="grayBox">
+                                                    <div class="grayTxt1"><strong>9,900</strong>원 + 배송비 <strong>0</strong>원 <span class="red">- 할인 <strong>1,000</strong>원</span> =</div>
+                                                    <div class="grayTxt2">= <strong>7,900</strong>원</div>
+                                                </div>
+                                            </li>
+
+                                            <li class="box2 box">
+                                                <div class="brandWrap brandWrap1">
+                                                    <div class="txt2">
+                                                        <div class="txt2Left">
+                                                            <a href="javascript:Function();">
+                                                                <img src="./img/img_th_bottle.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="txt2Right">                                                    
+                                                            <div class="txt2Right_txt2">
+                                                                상품명 상품명 상품명 상품명 상품명 상품명 상품명 상품명 상품명 
+                                                            </div>
+                                                            <div class="txt2Right_txt2gray">
+                                                                옵션명 한줄 옵션명 한줄 옵션명 한줄 옵션
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div> 
+                                                    <div class="txt3">
+                                                        <ul>
+                                                            <li class="txt2Right_left blue">무료배송</li>
+                                                            <li class="txt2Right_right" >
+                                                                <div class="right_sub1">19,900원</div> <i class="bar"></i>
+                                                                <div class="right_sub2">1개</div>                                                                                            
+                                                            </li> 
+                                                        </ul>
+                                                    </div>                                          
+                                                </div>
+
+                                                <div class="grayBox">
+                                                    <div class="grayTxt1"><strong>19,900</strong>원 + 배송비 <strong>0</strong>원 <span class="red">- 할인 <strong>1,000</strong>원</span> =</div>
+                                                    <div class="grayTxt2">= <strong>18,900</strong>원</div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                            </div>
                                                      
                             <div class="total">
                                 <ul class="top">
@@ -130,8 +226,12 @@
                                     </li>
                                     <li class="topTxt7">
                                         <div class="left black">총 결제금액</div>
-                                        <div class="right red">27,000원</div>
-                                    </li>                                
+                                        <div class="right red">26,200원</div>
+                                    </li>  
+                                    <li class="topTxt8">
+                                        <div class="left bold">결제수단</div>
+                                        <div class="right">신용카드</div>
+                                    </li>                              
                                 </ul>
                             </div>
                            
@@ -351,16 +451,6 @@
                                 </div>
                             </section>
 
-                            <div class="bottomBtn">
-                                <div class="btnWrap">
-                                    <div class="btnGap">
-                                        <a href="#">
-                                            쇼핑 더하기
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
 
                     </div>
             </div>
@@ -381,7 +471,18 @@
     var wirteDown    = $('.wirteDown');  // 직접입력    
      
 
-  
+      //   탭버튼 이벤트
+      
+       var tab8_btn = $('.tab .active');
+       var tab8mobile = $('#section1 .tabBtn');
+       priceBox       = $('#wrap1> #main>#section1 .priceBox');
+
+
+       $('.tabBtn').on({
+          click:	function(){
+             showHideList();
+          }
+       });
    
     // 화살표 버튼 누르면 밑에 notice텍스트 토글
     arrowBtn.each(function (idx) {                   

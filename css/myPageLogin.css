@@ -84,7 +84,7 @@ html, body {background: #fff; color: #fff;  }
 
 
 /* 최근 본 상품 */
-#myPage >.TopContainer .myPageContents  .recentGoods {position: relative; padding:16px 18px ; width: 100%; display: block; border-bottom: 7px solid #E2E2E2;overflow: hidden;}
+#myPage >.TopContainer .myPageContents  .recentGoods {position: relative; padding:16px 18px ; width: 100%; display: block; border-bottom: 7px solid #E2E2E2; overflow: hidden;}
 #myPage >.TopContainer .myPageContents  .recentGoods .title {width: 100%;}
 #myPage >.TopContainer .myPageContents  .recentGoods .title .titleBox {display: flex;}
 #myPage >.TopContainer .myPageContents  .recentGoods .title .titleBox .txt1 { font-size: 16px; font-weight: 700; font-family: 'SUIT'; color: #343434;}
