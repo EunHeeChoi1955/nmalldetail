@@ -44,14 +44,15 @@
 #wrap #header .container .top>.left div {width:100%; }
 #wrap #header .container .top>.left div span { width:63px;   }
 #wrap #header .container .top>.left div span a {width:100%;  }
-#wrap #header .container .top>.left div span a span{  background:  url(../img/logo.svg) no-repeat 0% 100%; background-size:contain; width:63px;height:30px; display: block; }
+#wrap #header .container .top>.left div span a span{  background:  url(../img/logo.svg) no-repeat 0% 100%; background-size:contain; width:82px;height:15px; display: block; }
 #wrap #header .container .top>.left div span a span.addBg {background: url(../img/logo_c.png) no-repeat 0% 100%; background-size:contain;}
 /* header  right */
 #wrap #header .container .top>.right #aside { width:100%;}
 #wrap #header .container .top>.right #aside .icon-box-gap {  padding-top: 20px; }
 #wrap #header .container .top>.right #aside .icon-box-gap .icon-box {  width:100%;  }
 #wrap #header .container .top>.right #aside .icon-box-gap .icon-box ul{float: right; box-sizing: border-box;white-space: nowrap;   }
-#wrap #header .container .top>.right #aside .icon-box-gap .icon-box ul li { padding: 0 5px; text-align: center;display:inline-block;  }
+#wrap #header .container .top>.right #aside .icon-box-gap .icon-box ul li { padding: 0 19px 0 0; text-align: center;display:inline-block;  }
+#wrap #header .container .top>.right #aside .icon-box-gap .icon-box ul li:last-child { padding: 0;   }
 #wrap #header .container .top>.right #aside .icon-box-gap .icon-box ul li a  { width:23.5px;  }
 #wrap #header .container .top>.right #aside .icon-box-gap .icon-box ul li a img { color:#1A1A1A;  }
 #wrap #header .container .top>.right #aside .icon-box-gap .icon-box ul li a em {padding:4.6px 4px;width:20px; height:20px; position:absolute; z-index:2; top:62px; right:14px; font-weight: 200; background-color: #E7342C; border-radius: 50%; font-size: 11px;box-sizing: border-box;line-height: 11px;}
@@ -179,7 +180,7 @@
 #main>#section2 .container .gap .wrap .sec2-slide-container {position: relative;width:100%;  }
 #main>#section2 .container .gap .wrap .sec2-slide-container .slideViewCon  { z-index:3;position: relative;width:100%; overflow: hidden; }
 #main>#section2 .container .gap .wrap .sec2-slide-container .slideViewCon>h2 {z-index: 2; position:relative;color:#343434;font-size: 22px; font-weight: 800; display: inline-block;  font-family: 'SUIT'; }
-#main>#section2 .container .gap .wrap .sec2-slide-container .slideViewCon>h2 i{ z-index: -1; bottom:3px; position:absolute;left: 0; display: inline-block; width: 100%; background:rgba(231, 52, 44, 0.1); height: 12px;	}
+#main>#section2 .container .gap .wrap .sec2-slide-container .slideViewCon>h2 i{ z-index: -1; bottom:3px; position:absolute;left: 0; display: inline-block; width: 100%; background:rgba(231, 52, 44, 0.2); height: 12px;	}
 #main>#section2 .container .gap .wrap .sec2-slide-container .slideViewCon>h3 { font-size: 12px; font-weight: 400;   display: block; font-family: 'SUIT'; margin: 0 0 14px 0;}	
 #main>#section2 .container .gap .wrap .sec2-slide-container .slideViewCon h3 span { font-size: 12px; font-weight: 400; display: inline-block;  float:right; font-family: 'SUIT'; }	
 #main>#section2 .container .gap .wrap .sec2-slide-container .slideViewCon h3 span a{ font-size: 11px; color:#797979; font-weight: 400; }
@@ -194,8 +195,8 @@
 	#section2 .container .gap .wrap .sec2-slide-container .slideViewCon  .sec2-slide-wrap .slide .slide-text .img-box .time>div{  display: inline-block; color:#fff; font-weight: 700; line-height: 150%; }
 	#section2 .container .gap .wrap .sec2-slide-container .slideViewCon  .sec2-slide-wrap .slide .slide-text .img-box .time .left { margin:auto auto auto 10px;}
 	#section2 .container .gap .wrap .sec2-slide-container .slideViewCon  .sec2-slide-wrap .slide .slide-text .img-box .time .left .timeIcon { width:13px;display: inline-block;  vertical-align: baseline;}
-	#section2 .container .gap .wrap .sec2-slide-container .slideViewCon  .sec2-slide-wrap .slide .slide-text .img-box .time .left .timeIcon img {width:13px; height: 13px; margin-top: -3px;}
-	#section2 .container .gap .wrap .sec2-slide-container .slideViewCon  .sec2-slide-wrap .slide .slide-text .img-box .time .right {  margin:auto auto auto auto; vertical-align:baseline; font-weight: 700;font-size: 14px; }
+	#section2 .container .gap .wrap .sec2-slide-container .slideViewCon  .sec2-slide-wrap .slide .slide-text .img-box .time .left .timeIcon img {width:13px; height: 15px; margin-top:-3px; }
+	#section2 .container .gap .wrap .sec2-slide-container .slideViewCon  .sec2-slide-wrap .slide .slide-text .img-box .time .right {  vertical-align:baseline; font-weight: 700;font-size: 14px; }
 	#section2 .container .gap .wrap .sec2-slide-container .slideViewCon  .sec2-slide-wrap .slide .slide-text .img-box .time .text { color:#fff; font-weight: 400; font-size: 14px; line-height: 130%;  }
 	#section2 .container .gap .wrap .sec2-slide-container .slideViewCon  .sec2-slide-wrap .slide .slide-text .img-box a {width: 100%; height:auto;}
 	#section2 .container .gap .wrap .sec2-slide-container .slideViewCon  .sec2-slide-wrap .slide .slide-text .img-box a img {width: 100%; max-width:1280px; border-radius: 6px 6px 0 0;}
@@ -237,8 +238,8 @@
 	#section2 .container .gap .wrap .sec2-slide-container .slideViewCon>.slide-container>.slide-view>.slide-wrap>.slide>.slide-text>.img-box>.redBg {background: rgba(231, 52, 44, 0.6);}
 	#section2 .container .gap .wrap .sec2-slide-container .slideViewCon>.slide-container>.slide-view>.slide-wrap>.slide>.slide-text>.img-box>.time>div{ width: auto; display: inline-block;  }
 	#section2 .container .gap .wrap .sec2-slide-container .slideViewCon>.slide-container>.slide-view>.slide-wrap>.slide>.slide-text>.img-box>.time .left { margin:auto auto auto 10px;}
-	#section2 .container .gap .wrap .sec2-slide-container .slideViewCon>.slide-container>.slide-view>.slide-wrap>.slide>.slide-text>.img-box>.time .left .timeIcon { width:13px; height: 13px;  display: inline-block;  vertical-align: baseline;}
-	#section2 .container .gap .wrap .sec2-slide-container .slideViewCon>.slide-container>.slide-view>.slide-wrap>.slide>.slide-text>.img-box>.time .left .timeIcon img { width:13px; height: 13px; margin-top: -5px;}
+	#section2 .container .gap .wrap .sec2-slide-container .slideViewCon>.slide-container>.slide-view>.slide-wrap>.slide>.slide-text>.img-box>.time .left .timeIcon { width:13px; height: 15px;  display: inline-block;  vertical-align: baseline;}
+	#section2 .container .gap .wrap .sec2-slide-container .slideViewCon>.slide-container>.slide-view>.slide-wrap>.slide>.slide-text>.img-box>.time .left .timeIcon img { width:13px; height: 15px; margin-top: -3px;}
 	#section2 .container .gap .wrap .sec2-slide-container .slideViewCon>.slide-container>.slide-view>.slide-wrap>.slide>.slide-text>.img-box>.time .right {  margin:auto 10px auto auto; vertical-align:baseline; font-weight: 700;font-size: 14px;}
 	#section2 .container .gap .wrap .sec2-slide-container .slideViewCon>.slide-container>.slide-view>.slide-wrap>.slide>.slide-text>.img-box>.time .text { color:#fff; font-weight: 400; font-size: 14px; line-height: 130%;  }
 
@@ -259,7 +260,7 @@
 	
 
 /* 섹션2 패럴럭스 애니메이션 addParallax */
-#main>#section2.addParallax .container .gap .wrap .sec2-slide-container .slideViewCon h2 i {animation:sec2Ani1 2s ease-in-out forwards;}/*forwards : 마지막 수행된거 끝내라*/
+#main>#section2.addParallax .container .gap .wrap .sec2-slide-container .slideViewCon h2 i {animation:sec2Ani1 1.5s ease-in-out forwards;}/*forwards : 마지막 수행된거 끝내라*/
 
 @keyframes sec2Ani1 {
       0% { width:   0%; opacity:0; }
@@ -293,7 +294,7 @@
 #main>#section3>.container> .gap> .wrap { position:relative;width:100%;}
 #main>#section3>.container> .gap> .wrap> .content { position:relative;width:100%; }
 #main>#section3>.container> .gap> .wrap> .content>h2 {position:relative; z-index: 2;margin: 5px 0 0 0; color:#343434;font-size: 22px; font-weight: 800; display: inline-block; font-family: 'SUIT'; }
-#main>#section3>.container> .gap> .wrap> .content>h2 i { z-index: -1; bottom:5px; position:absolute;left: 0; display: inline-block; width: 100%; background:rgba(231, 52, 44, 0.1);  height: 12px;	}
+#main>#section3>.container> .gap> .wrap> .content>h2 i { z-index: -1; bottom:5px; position:absolute;left: 0; display: inline-block; width: 100%; background:rgba(231, 52, 44, 0.2);  height: 12px;	}
 #main>#section3>.container> .gap> .wrap> .content>h3 { font-size: 12px; font-weight: 400;   display: block; font-family: 'SUIT'; margin: 0 0 14px 0;}	
 #main>#section3>.container> .gap> .wrap> .content>h3>span { font-size: 12px; font-weight: 400; display: inline-block;  float:right; font-family: 'SUIT'; }	
 #main>#section3>.container> .gap> .wrap> .content>h3>span>a{ font-size: 11px; color:#797979; font-weight: 400; }
@@ -338,7 +339,7 @@
 
 
 /* 섹션3 패럴럭스 애니메이션 addParallax */
-#main>#section3.addParallax .container> .gap> .wrap> .content h2 i {animation:sec3Ani1 2s ease-in-out forwards;}/*forwards : 마지막 수행된거 끝내라*/
+#main>#section3.addParallax .container> .gap> .wrap> .content h2 i {animation:sec3Ani1 1.5s ease-in-out forwards;}/*forwards : 마지막 수행된거 끝내라*/
 
 @keyframes sec3Ani1 {
       0% { width:   0%; opacity:0; }
@@ -368,12 +369,12 @@
 	#section4 .container{position:relative; width:100%; max-width:1280px; height: auto; padding:0;}	
 	#section4 .container .gap {width:100%;}
 	#section4 .container .gap .wrap{width:100%;}
-	#section4 .container .gap .wrap .content {width:100%;}
-	#section4 .container .gap .wrap .content .sec4-slide-wrap {width:100%;}
+	#section4 .container .gap .wrap .content {width:100%; }
+	#section4 .container .gap .wrap .content .sec4-slide-wrap {width:100%; max-width: 1080px; margin: 0 auto;}
 	#section4 .container .gap .wrap .content .sec4-slide-wrap ul {width:100%; display: flex; margin: 0;}
 	#section4 .container .gap .wrap .content .sec4-slide-wrap ul li {width:100%;}
-	#section4 .container .gap .wrap .content .sec4-slide-wrap ul li a {width:100%;}
-	#section4 .container .gap .wrap .content .sec4-slide-wrap ul li a img{width:100%;}
+	#section4 .container .gap .wrap .content .sec4-slide-wrap ul li a {width:100%; height: auto;}
+	#section4 .container .gap .wrap .content .sec4-slide-wrap ul li a img{width:100%;max-width: 1080px;}
 	
 
 
@@ -389,7 +390,7 @@
 	#section5 .container .gap .wrap { position:relative;width:100%;}
 	#section5 .container .gap .wrap .content { position:relative;width:100%; }
 	#section5 .container .gap .wrap .content>h2 {position:relative; z-index: 2;margin: 5px 0 2px 0; color:#343434;font-size: 22px; font-weight: 800; display: inline-block; font-family: 'SUIT'; }
-	#section5 .container .gap .wrap .content>h2>i { z-index: -1; bottom:3px; position:absolute;left: 0; display: inline-block; width: 100%;background:rgba(231, 52, 44, 0.1);  height: 12px;	}
+	#section5 .container .gap .wrap .content>h2>i { z-index: -1; bottom:3px; position:absolute;left: 0; display: inline-block; width: 100%;background:rgba(231, 52, 44, 0.2);  height: 12px;	}
 	#section5 .container .gap .wrap .content>h3 { font-size: 12px; font-weight: 400;   display: block; font-family: 'SUIT'; margin: 0 0 14px 0;}	
 	#section5 .container .gap .wrap .content>h3>span { font-size: 12px; font-weight: 400; display: inline-block;  float:right; font-family: 'SUIT'; }	
 	#section5 .container .gap .wrap .content>h3>span>a{ font-size: 11px; color:#797979; font-weight: 400; }
@@ -439,7 +440,7 @@
 
 
 /* 섹션5 패럴럭스 애니메이션 addParallax */
-#main>#section5.addParallax .container> .gap> .wrap> .content h2 i {animation:sec5Ani1 2s ease-in-out forwards;}/*forwards : 마지막 수행된거 끝내라*/
+#main>#section5.addParallax .container> .gap> .wrap> .content h2 i {animation:sec5Ani1 1.5s ease-in-out forwards;}/*forwards : 마지막 수행된거 끝내라*/
 
 @keyframes sec5Ani1 {
       0% { width:   0%; opacity:0; }
@@ -479,7 +480,7 @@
 	#section6 .container .gap .wrap .content {width:100%; }
 	#section6 .container .gap .wrap .content .top-textWrap { display: flex; margin:0; }
 	#section6 .container .gap .wrap .content .top-textWrap .left {position:relative; z-index:2; margin: 5px 0 8px 0; color:#343434;font-size: 22px; font-weight: 800; display: inline-block; font-family: 'SUIT'; }
-	#section6 .container .gap .wrap .content .top-textWrap .left i { z-index: -1; bottom:3px; position:absolute;left: 0; display: inline-block; width: 100%; background:rgba(231, 52, 44, 0.1); height: 12px;	}
+	#section6 .container .gap .wrap .content .top-textWrap .left i { z-index: -1; bottom:3px; position:absolute;left: 0; display: inline-block; width: 100%; background:rgba(231, 52, 44, 0.2); height: 12px;	}
 	#section6 .container .gap .wrap .content .top-textWrap .right { display:inline-block;  margin: auto 0 auto auto; font-size: 12px; font-weight: 400;   font-family: 'SUIT';}	
 	#section6 .container .gap .wrap .content .top-textWrap .right span { font-size: 12px; font-weight: 400; display: inline-block; font-family: 'SUIT'; }	
 	#section6 .container .gap .wrap .content .top-textWrap .right span a{ font-size: 11px; color:#797979; font-weight: 400; line-height: 180%;}
@@ -516,7 +517,7 @@
 
 
   	/* 섹션6 패럴럭스 애니메이션 addParallax */
- 	#section6.addParallax .container .gap .wrap .content .top-textWrap .left i  {animation:sec6Ani1 2s ease-in-out forwards;}/*forwards : 마지막 수행된거 끝내라*/
+ 	#section6.addParallax .container .gap .wrap .content .top-textWrap .left i  {animation:sec6Ani1 1.5s ease-in-out forwards;}/*forwards : 마지막 수행된거 끝내라*/
 
 	@keyframes sec6Ani1 {
 		0% { width:   0%; opacity:0; }
@@ -536,15 +537,15 @@
 
 		
 	#section7{width:100%;overflow:hidden;  display:block; border-bottom: 7px solid #E9E9E9; padding:0;}	
-	#section7 .container{position:relative; width:100%; max-width:1280px; height: auto; padding:0;}	
+	#section7 .container{position:relative; width:100%; max-width:1080px; height: auto; padding:0;}	
 	#section7 .container .gap {width:100%;}
 	#section7 .container .gap .wrap{width:100%;}
 	#section7 .container .gap .wrap .content {width:100%;}
 	#section7 .container .gap .wrap .content .sec7Wrap {width:100%;}
 	#section7 .container .gap .wrap .content .sec7Wrap ul { margin:0; padding: 0;width:100%; display: flex;}
-	#section7 .container .gap .wrap .content .sec7Wrap ul li {width:100%;}
-	#section7 .container .gap .wrap .content .sec7Wrap ul li a {width:100%;}
-	#section7 .container .gap .wrap .content .sec7Wrap ul li a img{width:100%;}
+	#section7 .container .gap .wrap .content .sec7Wrap ul li {width:100%;max-width:1080px;}
+	#section7 .container .gap .wrap .content .sec7Wrap ul li a {width:100%;height: auto;}
+	#section7 .container .gap .wrap .content .sec7Wrap ul li a img{width:100%;max-width:1080px;}
 	
 
 
@@ -561,7 +562,7 @@
 	#section8 .container .gap .wrap .content {width:100%; }
 	#section8 .container .gap .wrap .content .top-textWrap { display: flex; margin:0;  }
 	#section8 .container .gap .wrap .content .top-textWrap .left {position:relative; z-index: 2;margin: 5px 0 8px 0; color:#343434;font-size: 22px; font-weight: 800; display: inline-block; font-family: 'SUIT'; }
-	#section8 .container .gap .wrap .content .top-textWrap .left i { z-index: -1; bottom:4px; position:absolute;left: 0; display: inline-block; width: 100%; background:rgba(231, 52, 44, 0.1);  height: 12px;	}
+	#section8 .container .gap .wrap .content .top-textWrap .left i { z-index: -1; bottom:4px; position:absolute;left: 0; display: inline-block; width: 100%; background:rgba(231, 52, 44, 0.2);  height: 12px;	}
 	#section8 .container .gap .wrap .content .top-textWrap .right { display:inline-block;  margin: auto 0 auto auto; font-size: 12px; font-weight: 400;   font-family: 'SUIT';}	
 	#section8 .container .gap .wrap .content .top-textWrap .right span { font-size: 12px; font-weight: 400; display: inline-block; font-family: 'SUIT'; }	
 	#section8 .container .gap .wrap .content .top-textWrap .right span a{ font-size: 11px; color:#797979; font-weight: 400; line-height: 180%;}
@@ -569,31 +570,31 @@
 
 	
 	/* section8 버튼 */
-	#section8 .container .gap .wrap .content .btn-view {position:relative; width:100%; padding:4px 0 14px 0; margin:0;}
-	#section8 .container .gap .wrap .content .btn-view .btn-wrap { width:100%;position:relative;  }
-	#section8 .container .gap .wrap .content .btn-view .btn-wrap>ul { position:relative;   display: flex;}
+	#section8 .container .gap .wrap .content .btn-view {position:relative; width:100%; max-width:1080px;padding:4px 0 14px 0; margin:0 auto;}
+	#section8 .container .gap .wrap .content .btn-view .btn-wrap { width:100%;position:relative; max-width:1080px; }
+	#section8 .container .gap .wrap .content .btn-view .btn-wrap>ul { position:relative; max-width:1080px;  display: flex;}
 	#section8 .container .gap .wrap .content .btn-view .btn-wrap>ul>li{ width:80px; padding-right:14px; text-align: center;  display: inline-block;white-space: nowrap; }
 	#section8 .container .gap .wrap .content .btn-view .btn-wrap>ul>li a { width:80px; text-decoration: none;}
 	#section8 .container .gap .wrap .content .btn-view .btn-wrap>ul>li span{ padding:10px 0 0 0;font-size: 12px; text-align: center; letter-spacing:-.7px; font-weight:400;color:#1A1A1A; display: block; transition: all .3s;}
 	#section8 .container .gap .wrap .content .btn-view .btn-wrap>ul>li:hover>span {color:#E7382D;font-weight: 700; }
 	#section8 .container .gap .wrap .content .btn-view .btn-wrap>ul>li.addSec9>span {color:#E7382D;font-weight: 700;}
-	#section8 .container .gap .wrap .content .btn-view .btn-wrap>ul>li a img{width:62px;  border-radius:25px ; }
+	#section8 .container .gap .wrap .content .btn-view .btn-wrap>ul>li a img{width:62px;  border-radius:50%; background: #f9f9f9; padding:10px;}
 
 
 	#section8 .container .gap .wrap .slide-container {position: relative;width:100%; margin:0;padding:0; }
 	#section8 .container .gap .wrap .slide-container .slide-view  { z-index:3;position: relative;width:100%; overflow: hidden; }
 	#section8 .container .gap .wrap .slide-container .slide-view>h2 {z-index: 2; position:relative;color:#343434;font-size: 22px; font-weight: 800; display: inline-block;  font-family: 'SUIT'; }
-	#section8 .container .gap .wrap .slide-container .slide-view>h2 i{ z-index: -1; bottom:3px; position:absolute;left: 0; display: inline-block; width: 100%; background:rgba(231, 52, 44, 0.1); height: 12px;	}
+	#section8 .container .gap .wrap .slide-container .slide-view>h2 i{ z-index: -1; bottom:3px; position:absolute;left: 0; display: inline-block; width: 100%; background:rgba(231, 52, 44, 0.2); height: 12px;	}
 	#section8 .container .gap .wrap .slide-container .slide-view>h3 { font-size: 12px; font-weight: 400;   display: block; font-family: 'SUIT'; margin: 0 0 14px 0;}	
 	#section8 .container .gap .wrap .slide-container .slide-view>h3>span { font-size: 12px; font-weight: 400; display: inline-block;  float:right; font-family: 'SUIT'; }	
 	#section8 .container .gap .wrap .slide-container .slide-view>h3>span a{ font-size: 11px; color:#797979; font-weight: 400; }
 	#section8 .container .gap .wrap .slide-container .slide-view>h3>span a i{ font-size: 15px; color:#797979; font-weight: 300; }
 
 	#section8 .container .gap .wrap .slide-container .slide-view  .slide-wrap {position: relative; width:100%; /* display: flex;  width:500%; margin-left:-100%;*/}
-	#section8 .container .gap .wrap .slide-container .slide-view  .slide-wrap .slide {width:100%;max-width: 1280px; padding:5px 0; display: block; margin:0 auto;} 
+	#section8 .container .gap .wrap .slide-container .slide-view  .slide-wrap .slide {width:100%;max-width: 966px; padding:5px 0; display: block; margin:0 auto;} 
 	#section8 .container .gap .wrap .slide-container .slide-view  .slide-wrap .slide .slide-text { font-family: 'SUIT'; border: 1px solid #E9E9E9;  border-radius: 6px;} 
-	#section8 .container .gap .wrap .slide-container .slide-view  .slide-wrap .slide .slide-text .img-box  { width:100%;max-width: 1280px; z-index:1; position: relative;}
-	#section8 .container .gap .wrap .slide-container .slide-view  .slide-wrap .slide .slide-text .img-box a {position: relative;width:100%;max-width: 1280px; height:auto;}
+	#section8 .container .gap .wrap .slide-container .slide-view  .slide-wrap .slide .slide-text .img-box  { width:100%;max-width: 966px; z-index:1; position: relative;}
+	#section8 .container .gap .wrap .slide-container .slide-view  .slide-wrap .slide .slide-text .img-box a {position: relative;width:100%;max-width: 966px; height:auto;}
 	#section8 .container .gap .wrap .slide-container .slide-view  .slide-wrap .slide .slide-text .img-box a img {z-index: 1; position:relative; width: 100%; border-radius: 6px 6px 0 0;}
 	
 	#section8 .container .gap .wrap .slide-container .slide-view  .slide-wrap .slide .slide-text .img-box .tag {z-index: 2; width: 21px; position: absolute; top:0; left: 8px; }
@@ -630,7 +631,7 @@
 
 
 /* 섹션8 패럴럭스 애니메이션 addParallax */
-#section8.addParallax .container .gap .wrap .content .top-textWrap .left i  {animation:sec8Ani1 2s ease-in-out forwards;}/*forwards : 마지막 수행된거 끝내라*/
+#section8.addParallax .container .gap .wrap .content .top-textWrap .left i  {animation:sec8Ani1 1.5s ease-in-out forwards;}/*forwards : 마지막 수행된거 끝내라*/
 
 @keyframes sec8Ani1 {
       0% { width:   0%; opacity:0; }
@@ -658,7 +659,7 @@
 	#section9 .container .gap .wrap { position:relative;width:100%;}
 	#section9 .container .gap .wrap .content { position:relative;width:100%; }
 	#section9 .container .gap .wrap .content>h2 {position:relative; z-index: 2;margin: 5px 0 0 0; color:#343434;font-size: 22px; font-weight: 800; display: inline-block; font-family: 'SUIT'; }
-	#section9 .container .gap .wrap .content>h2 i { z-index: -1; bottom:5px; position:absolute;left: 0; display: inline-block; width: 100%; background:rgba(231, 52, 44, 0.1);  height: 12px;	}
+	#section9 .container .gap .wrap .content>h2 i { z-index: -1; bottom:5px; position:absolute;left: 0; display: inline-block; width: 100%; background:rgba(231, 52, 44, 0.2);  height: 12px;	}
 	#section9 .container .gap .wrap .content>h3 { font-size: 12px; font-weight: 400;   display: block; font-family: 'SUIT'; margin: 0 0 23px 0;}	
 	#section9 .container .gap .wrap .content>h3>span { font-size: 12px; font-weight: 400; display: inline-block;  float:right; font-family: 'SUIT'; }	
 	#section9 .container .gap .wrap .content>h3>span>a{ font-size: 11px; color:#797979; font-weight: 400; }
@@ -691,7 +692,7 @@
 	#section9 .container .gap .wrap .content .content-box .slide-container .slide-view .slide-wrap .slide:hover .slide-text .img-box .num-box .num { width:25px; height: 25px; display: block; background: #E7342C; opacity:.9;border-radius: 6px 0 0 0; }
 	#section9 .container .gap .wrap .content .content-box .slide-container .slide-view .slide-wrap .slide .slide-text .img-box .num-box .num div{ color: #fff; text-align: center; line-height: 180%; font-family: 'SUIT'; font-weight: 600; }
 	#section9 .container .gap .wrap .content .content-box .slide-container .slide-view .slide-wrap .slide .slide-text .img-box .heart { z-index:2;position:absolute; top:50%;margin-top:-11px; right:19px; width:26px; height: 26px; display: block;}
-	#section9 .container .gap .wrap .content .content-box .slide-container .slide-view .slide-wrap .slide .slide-text .img-box .heart a { width:26px; height: 26px; display: block; background: #444444; opacity: .7; border-radius: 15px; transition: all .2s, ease-in-out ;}
+	#section9 .container .gap .wrap .content .content-box .slide-container .slide-view .slide-wrap .slide .slide-text .img-box .heart a { width:26px; height: 26px; display: block; background: #444444; opacity: .7; border-radius: 15px; transition: all .1.5s, ease-in-out ;}
 	#section9 .container .gap .wrap .content .content-box .slide-container .slide-view .slide-wrap .slide .slide-text .img-box .heart.addHeart a {  background: rgba(231, 56, 45, .3)  }
 	#section9 .container .gap .wrap .content .content-box .slide-container .slide-view .slide-wrap .slide .slide-text .img-box .heart a img.redHeart { display: none; }
 	#section9 .container .gap .wrap .content .content-box .slide-container .slide-view .slide-wrap .slide .slide-text .img-box .heart.addHeart>a>img.redHeart { display: block; position: relative; z-index: 5; display: block; width:100%;  padding: 8px 5px 5px 5px;}
@@ -726,7 +727,7 @@
 
 
 /* 섹션9 패럴럭스 애니메이션 addParallax */
-#section9.addParallax .container .gap .wrap .content h2 i {animation: sec9Ani1 2s ease-in-out forwards;}/*forwards : 마지막 수행된거 끝내라*/
+#section9.addParallax .container .gap .wrap .content h2 i {animation: sec9Ani1 1.5s ease-in-out forwards;}/*forwards : 마지막 수행된거 끝내라*/
 
 @keyframes sec9Ani1 {
       0% { width:   0%; opacity:0; }
@@ -755,7 +756,7 @@
 	#section10 .container .gap .wrap .content {width:100%; position:relative;}
 	#section10 .container .gap .wrap .content .top-textWrap { display: flex; margin:0; }
 	#section10 .container .gap .wrap .content .top-textWrap .left {position:relative; z-index: 2;margin: 5px 0 8px 0; color:#343434;font-size: 22px; font-weight: 800; display: inline-block; font-family: 'SUIT'; }
-	#section10 .container .gap .wrap .content .top-textWrap .left i { z-index: -1; bottom:3px; position:absolute;left: 0; display: inline-block; width: 100%; background:rgba(231, 52, 44, 0.1); height: 12px;	}
+	#section10 .container .gap .wrap .content .top-textWrap .left i { z-index: -1; bottom:3px; position:absolute;left: 0; display: inline-block; width: 100%; background:rgba(231, 52, 44, 0.2); height: 12px;	}
 	#section10 .container .gap .wrap .content .top-textWrap .right { display:inline-block;  margin: auto 0 auto auto; font-size: 12px; font-weight: 400;   font-family: 'SUIT';}	
 	#section10 .container .gap .wrap .content .top-textWrap .right span { font-size: 12px; font-weight: 400; display: inline-block; font-family: 'SUIT'; }	
 	#section10 .container .gap .wrap .content .top-textWrap .right span a{ font-size: 11px; color:#797979; font-weight: 400; line-height: 180%;}
@@ -789,7 +790,7 @@
 	
 
 /* 섹션10 패럴럭스 애니메이션 addParallax */
-#section10.addParallax .container .gap .wrap .content .top-textWrap .left i {animation:sec10Ani1 2s ease-in-out forwards; }/*forwards : 마지막 수행된거 끝내라*/
+#section10.addParallax .container .gap .wrap .content .top-textWrap .left i {animation:sec10Ani1 1.5s ease-in-out forwards; }/*forwards : 마지막 수행된거 끝내라*/
 
 @keyframes sec10Ani1 {
       0% { width:   0%; opacity:0; }
