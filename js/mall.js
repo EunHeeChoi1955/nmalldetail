@@ -1091,10 +1091,12 @@
 
                // btnWrap.stop().animate({left:(-100*cnt) + '%'});       
             slideWrap.stop().animate( {left:(-80*cnt)}, 'easeInOutSine',function(){
-               cnt>1?cnt=0:cnt;
-               cnt<1?cnt=0:cnt; 
+               cnt>n?cnt=0:cnt;
+               cnt<0?cnt=n:cnt; 
+               
                //초기화설정
                slideWrap.stop().animate( {left:(-80*cnt)});
+              
             });
          }
 
