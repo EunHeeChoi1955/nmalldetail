@@ -154,13 +154,14 @@ html, body {background: #fff; color: #fff;    }
 
 
 
+
 /* 취소 쿠폰적용 버튼 */
-#discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .btncon  {display: block; z-index: 3; position: fixed; bottom:0; left:0;padding: 0 18px; border: 1px solid #E2E2E2; border-radius: 7px; background: #fff;height:auto; }
-#discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .btncon .btnWrap {padding: 20px 0; display: flex;}
-#discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .btncon .btnWrap div {   border-radius: 3px;text-align: center; padding:12px 0 ; height: 48px; }
-#discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .btncon .btnWrap div.wh  { padding-right: 6px; border: 1px solid #B3B3B3; margin-right: 6px; }
+#discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .btncon  {display: block; z-index: 5; position: fixed; bottom:0; left:0;  background: #fff; height:auto; }
+#discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .btncon .btnWrap { display: flex;}
+#discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .btncon .btnWrap div {   text-align: center; padding:12px 0 ;  border-top: 1px solid #E7342C; }
+#discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .btncon .btnWrap div.wh  { width:100%;}
 #discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .btncon .btnWrap div.wh a{  color: #1A1A1A; }
-#discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .btncon .btnWrap div.red {  background: #E7342C; border: 1px solid #E7342C;margin-left: 6px;}
+#discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .btncon .btnWrap div.red { height: 100%; background: #E7342C; border-bottom: 1px solid #E7342C;}
 #discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .btncon .btnWrap div.red a{   color: #fff;  }
 #discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .btncon .btnWrap div a { font-family: 'SUIT'; font-weight: 700; font-size: 16px; }
 
@@ -222,7 +223,7 @@ html, body {background: #fff; color: #fff;    }
 #discountCoupon >.TopContainer .orderCon .orderList .orderWrap> ul> li>.inputBox>a>div input[type=checkbox]:checked {background: url(../img/ico_check_my.svg) no-repeat 50% 50%; width:22px;  }
 
 #discountCoupon >.TopContainer .orderCon .orderList .orderWrap> ul> li>.inputBox>a>div.couponTxt {  margin-left:10px;position: relative;z-index:2; padding:10px 10px 10px 20px; width: 100%; border: 1px solid #E7342C ;  border-radius:6px 0 0 6px; }
-#discountCoupon >.TopContainer .orderCon .orderList .orderWrap> ul> li>.inputBox>a>div.couponTxt::before { content:''; z-index:1;position: absolute; top:50%; margin-top: -12px; left:0; margin-left: -1px; display: block;  width: 12px;  height: 26px; background:#fff url(../img/halfCircle.svg) no-repeat 50% 50%;   }
+#discountCoupon >.TopContainer .orderCon .orderList .orderWrap> ul> li>.inputBox>a>div.couponTxt::before { content:''; z-index:1;position: absolute; top:50%; margin-top: -12px; left:0; margin-left: -2px; display: block;  width: 12px;  height: 26px; background:#fff url(../img/halfCircle.svg) no-repeat 50% 50%;   }
 #discountCoupon >.TopContainer .orderCon .orderList .orderWrap> ul> li>.inputBox>a>div.couponTxt p { margin:0; height: auto; text-align: left; display: block; white-space: nowrap;text-overflow:ellipsis; overflow:hidden }
 #discountCoupon >.TopContainer .orderCon .orderList .orderWrap> ul> li>.inputBox>a>div.couponTxt .redPrice {font-size: 26px; font-weight: 700; color:#E7342C ; }
 #discountCoupon >.TopContainer .orderCon .orderList .orderWrap> ul> li>.inputBox>a>div.couponTxt .redPrice .small { font-size: 20px; }
@@ -238,14 +239,15 @@ html, body {background: #fff; color: #fff;    }
 
 
 /* 취소 쿠폰적용 버튼 */
-#discountCoupon >.TopContainer .orderCon .orderList .orderWrap .btncon  {display: block; z-index: 3; position: fixed; bottom:0; left:0;padding: 0 18px; border: 1px solid #E2E2E2; border-radius: 7px; background: #fff;height:auto; }
-#discountCoupon >.TopContainer .orderCon .orderList .orderWrap .btncon .btnWrap {padding: 20px 0; display: flex;}
-#discountCoupon >.TopContainer .orderCon .orderList .orderWrap .btncon .btnWrap div {   border-radius: 3px;text-align: center; padding:12px 0 ; height: 48px; }
-#discountCoupon >.TopContainer .orderCon .orderList .orderWrap .btncon .btnWrap div.wh  { padding-right: 6px; border: 1px solid #B3B3B3; margin-right: 6px; }
+#discountCoupon >.TopContainer .orderCon .orderList .orderWrap .btncon  {display: block; z-index: 5; position: fixed; bottom:0; left:0; background: #fff;height:auto; }
+#discountCoupon >.TopContainer .orderCon .orderList .orderWrap .btncon .btnWrap { display: flex;}
+#discountCoupon >.TopContainer .orderCon .orderList .orderWrap .btncon .btnWrap div {  text-align: center; padding:12px 0 ;  border-top: 1px solid #E7342C; }
+#discountCoupon >.TopContainer .orderCon .orderList .orderWrap .btncon .btnWrap div.wh  { width:100%; }
 #discountCoupon >.TopContainer .orderCon .orderList .orderWrap .btncon .btnWrap div.wh a{  color: #1A1A1A; }
-#discountCoupon >.TopContainer .orderCon .orderList .orderWrap .btncon .btnWrap div.red {  background: #E7342C; border: 1px solid #E7342C;margin-left: 6px;}
+#discountCoupon >.TopContainer .orderCon .orderList .orderWrap .btncon .btnWrap div.red {  background: #E7342C; }
 #discountCoupon >.TopContainer .orderCon .orderList .orderWrap .btncon .btnWrap div.red a{   color: #fff;  }
 #discountCoupon >.TopContainer .orderCon .orderList .orderWrap .btncon .btnWrap div a { font-family: 'SUIT'; font-weight: 700; font-size: 16px; }
+
 
 
 
