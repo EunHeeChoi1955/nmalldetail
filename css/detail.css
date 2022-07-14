@@ -22,7 +22,7 @@
 
 #wrap1>#header .container .top>.left .leftWrap .logoBtn { width:65px;   }
 #wrap1>#header .container .top>.left .leftWrap .logoBtn a {width:100%;  }
-#wrap1>#header .container .top>.left .leftWrap .logoBtn a span{  background:  url(../img/Nlogo.svg) no-repeat 0% 100%; background-size:contain; width:100%;height:20px; display: inline-block; }
+#wrap1>#header .container .top>.left .leftWrap .logoBtn a span{  background:  url(../img/logo.svg) no-repeat 0% 100%; background-size:contain; width:100%;height:20px; display: inline-block; }
 /* #wrap1>#header .container .top>.left div .logoBtn a span.addBg {background: url(../img/logo_c.png) no-repeat 0% 100%; background-size:contain;} */
 /* header  right */
 #wrap1>#header .container .top>.right  { width:50%; }
