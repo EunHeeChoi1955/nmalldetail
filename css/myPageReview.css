@@ -74,18 +74,20 @@ html, body {background: #fff; color: #fff;  }
 #myPageReview >.TopContainer .reviewCon .listWrap ul li>div{display:block;width: 100%; padding: 0 18px; }
 /* 작성가능한 리뷰left */
 #myPageReview >.TopContainer .reviewCon .listWrap ul li>.top { display: flex;}
-#myPageReview >.TopContainer .reviewCon .listWrap ul li>.top>.left { position: relative; width: 80px;border-radius: 6px;}
-#myPageReview >.TopContainer .reviewCon .listWrap ul li .top .left a  { width: 80px; height:80px; }
-#myPageReview >.TopContainer .reviewCon .listWrap ul li .top .left a img { width: 80px; height:80px; }
+#myPageReview >.TopContainer .reviewCon .listWrap ul li>.top>.left { position: relative; width: 98px;border-radius: 6px;}
+#myPageReview >.TopContainer .reviewCon .listWrap ul li .top .left a  { width: 98px; height:98px; }
+#myPageReview >.TopContainer .reviewCon .listWrap ul li .top .left a img { width: 98px; height:98px; }
 #myPageReview >.TopContainer .reviewCon .listWrap ul li .top .left .imgCap { position: absolute; top: 0;left: 0; border-radius: 6px;background: rgba(0,0,0, .5);}
 #myPageReview >.TopContainer .reviewCon .listWrap ul li .top .left .imgCap a { width: 100%; height:100%;  }
 #myPageReview >.TopContainer .reviewCon .listWrap ul li .top .left .imgCap a img { width: 100%; padding:11px; }
 /*작성가능한 리뷰 right */
 #myPageReview >.TopContainer .reviewCon .listWrap ul li .top .right {  padding: 0 20px 0 12px ; width: 100%;}
 #myPageReview >.TopContainer .reviewCon .listWrap ul li .top .right .txt1 { width: 100%; font-size: 12px; color:#909090 ;}
-#myPageReview >.TopContainer .reviewCon .listWrap ul li .top .right .txt2 { width: 100%;  }
-#myPageReview >.TopContainer .reviewCon .listWrap ul li .top .right .txt2 a{text-decoration: none; font-size: 14px; color: #343434; }
-#myPageReview >.TopContainer .reviewCon .listWrap ul li .top .right .txt3 { color: #187AEF; font-size: 12px;  }
+#myPageReview >.TopContainer .reviewCon .listWrap ul li .top .right .txt2 { width: 100%; padding:0 0 2px 0;  }
+#myPageReview >.TopContainer .reviewCon .listWrap ul li .top .right .txt2 a{text-decoration: none; font-size: 14px; color: #343434; line-height: 100%; }
+#myPageReview >.TopContainer .reviewCon .listWrap ul li .top .right .optionName{  font-size: 12px; color: #565656;width: 100%; padding:0 0 2px 0;  }
+#myPageReview >.TopContainer .reviewCon .listWrap ul li .top .right .txt3 { color: #187AEF; font-size: 14px;  }
+#myPageReview >.TopContainer .reviewCon .listWrap ul li .top .right .txt3 strong{ vertical-align: baseline;  }
 /* 작성가능한 리뷰닫기버튼 */
 #myPageReview >.TopContainer .reviewCon .listWrap ul li .top .closeBtn { width: 12.19px;}
 #myPageReview >.TopContainer .reviewCon .listWrap ul li .top .closeBtn a { width: 12.19px;}

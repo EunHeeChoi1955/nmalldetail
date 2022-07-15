@@ -44,7 +44,7 @@
 #wrap #header .container .top>.left div {width:100%; }
 #wrap #header .container .top>.left div span { width:63px;   }
 #wrap #header .container .top>.left div span a {width:100%;  }
-#wrap #header .container .top>.left div span a span{  background:  url(../img/logo.svg) no-repeat 0% 100%; background-size:contain; width:82px;height:23px; display: block; }
+#wrap #header .container .top>.left div span a span{  background:  url(../img/logo.svg) no-repeat 0% 100%; background-size:contain; width:82px;height:15px; display: block; }
 #wrap #header .container .top>.left div span a span.addBg {background: url(../img/logo_c.png) no-repeat 0% 100%; background-size:contain;}
 /* header  right */
 #wrap #header .container .top>.right #aside { width:100%;}

@@ -107,7 +107,7 @@ html, body {background: #fff; color: #fff;    }
 #discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .selectBoxNone .mobileTabNone {display: block;box-sizing: border-box; text-decoration:none; }
 #discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .selectBoxNone .mobileTabNone .tab-wrapNone{position:relative;z-index:4; display:block;width:100%;box-sizing:border-box;}
 /*  비활성화 탭버튼  */
-#discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .selectBoxNone .mobileTabNone .tab-wrapNone>a{ font-size:14px; position:relative; display:block; white-space: nowrap; padding-top: 2px; color: #909090; text-decoration: none; text-align:left;text-indent: 14px; padding-top: 8px;  border-radius:4px;background:#F9F9F9 url(../img/arrow_open_lightGray.svg) no-repeat 95% 50%; }
+#discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .selectBoxNone .mobileTabNone .tab-wrapNone>a{ font-size:14px; position:relative; display:block;padding-top: 2px; color: #343434; text-decoration: none; text-align:left;text-indent: 14px; padding-top: 8px;  border-radius:4px;background:#F9F9F9 url(../img/arrow_open_lightGray.svg) no-repeat 95% 50%; }
 
 
 
@@ -122,7 +122,7 @@ html, body {background: #fff; color: #fff;    }
 #discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .selectBox .mobileTab{display: block;box-sizing: border-box; text-decoration:none; }
 #discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .selectBox .mobileTab .tab-wrap{position:relative;z-index:4; display:block;width:100%;box-sizing:border-box;}
 /* 탭버튼  */
-#discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .selectBox .mobileTab .tab-wrap>a{ font-size:14px; position:relative; display:block; white-space: nowrap; padding-top: 2px; color: #909090; text-decoration: none; text-align:left;text-indent: 14px; padding-top: 8px; background: url(../img/ico_option_arrow1.svg) no-repeat 95% 50%; }
+#discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .selectBox .mobileTab .tab-wrap>a{ font-size:14px; position:relative; display:block; padding-top: 2px; color: #343434; text-decoration: none; text-align:left;text-indent: 14px; padding-top: 8px; background: url(../img/ico_option_arrow1.svg) no-repeat 95% 50%; text-overflow: ellipsis;}
 #discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .selectBox .mobileTab .tab-wrap>a.addFamily{ background:  url(../img/ico_option_arrow2.svg) no-repeat 98% 50%;  }
 /* 탭버튼 누르면 나오는 메뉴 내용들 */
 #discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .selectBox .mobileTab .tab-wrap>ul.tab{display:block;z-index:1; background:#fff;width:100%; height: auto;  position:absolute; top:37px; margin:0;  box-sizing:border-box;border:1px solid #E2E2E2; border-radius: 6px;}
