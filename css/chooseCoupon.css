@@ -94,7 +94,7 @@ html, body {background: #fff; color: #fff;    }
 
 #discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .txt2Right_txt2 {color: #343434; font-weight: 400; font-size: 14px;  }
 
-#discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .txt2Right_txt3 {width: 100%; padding: 8px 0; display: flex;line-height: 140%;}
+#discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .txt2Right_txt3 {width: 100%; padding: 8px 0; display: flex;line-height: 140%; white-space: nowrap;}
 #discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .txt2Right_txt3 .txt3_sub1{ font-size: 14px; font-weight: 700; color: #343434; padding-right: 6px;  display: inline-block; width: auto; }
 #discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .txt2Right_txt3 .txt3_sub2{ font-size: 12px; font-weight: 400; color: #343434;display: inline-block;vertical-align: baseline; }
 #discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .txt2Right_txt3 .txt3_sub3{margin: auto 0 auto auto; display: inline-block; }
@@ -107,7 +107,7 @@ html, body {background: #fff; color: #fff;    }
 #discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .selectBox .mobileTab{display: block;box-sizing: border-box; text-decoration:none; }
 #discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .selectBox .mobileTab .tab-wrap{position:relative;z-index:4; display:block;width:100%;box-sizing:border-box;}
 /* 탭버튼  */
-#discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .selectBox .mobileTab .tab-wrap>a{ font-size:14px; position:relative; display:block;  padding-top: 2px; color: #343434; text-decoration: none; text-align:left;text-indent: 14px; padding-top: 8px; background: url(../img/ico_option_arrow1.svg) no-repeat 98% 50%; }
+#discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .selectBox .mobileTab .tab-wrap>a{  font-size:14px; position:relative; display:block;  padding-top: 2px; color: #343434; text-decoration: none; text-align:left;text-indent: 14px; padding-top: 8px; background: url(../img/ico_option_arrow1.svg) no-repeat 98% 50%; }
 #discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .selectBox .mobileTab .tab-wrap>a.addFamily{ background:  url(../img/ico_option_arrow2.svg) no-repeat 98% 50%;  }
 /* 탭버튼 누르면 나오는 메뉴 내용들 */
 #discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .brandWrap .txt2 .txt2Right .selectBox .mobileTab .tab-wrap>ul.tab{display:block;z-index:1; background:#fff;width:100%; height: auto;  position:absolute; top:37px; margin:0;  box-sizing:border-box;border:1px solid #E2E2E2; border-radius: 6px;}
@@ -131,7 +131,7 @@ html, body {background: #fff; color: #fff;    }
 
 
 /* 상품할인쿠폰 하단 회색박스 */
-#discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .grayBox {  background: #F9F9F9; border-radius: 6px; text-align: center; padding: 10px 0;  font-family: 'SUIT';}
+#discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .grayBox {  background: #F9F9F9; border-radius: 6px;  text-align: center; padding: 10px 0;  font-family: 'SUIT';}
 #discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .grayBox div { font-size: 14px; color: #797979; font-weight: 400;  line-height: 170%;}
 #discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .grayBox div strong{ vertical-align: baseline; }
 #discountCoupon >.TopContainer .discountCouponCon .discountCouponList .discountCouponWrap .boxBottomWrap .grayBox div .red{color:#E7342C ; vertical-align: baseline;}
