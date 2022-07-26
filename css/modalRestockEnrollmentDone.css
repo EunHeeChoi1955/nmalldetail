@@ -41,10 +41,10 @@ html, body {background: #fff; color: #fff;    }
 #modal .modalWrap .modalGap .modalContent .txt .goodsCon .goodsBox .goodBoxCon .right .txt2 { width: 100%;}
 #modal .modalWrap .modalGap .modalContent .txt .goodsCon .goodsBox .goodBoxCon .right .txt2 a {font-size: 12px; color: #565656; }
 /* 알림받을 이메일 */
-#modal .modalWrap .modalGap .modalContent .txt .goodsCon .goodsBox .emailBox { display: flex;padding-bottom: 12px; }
-#modal .modalWrap .modalGap .modalContent .txt .goodsCon .goodsBox .emailBox input {appearance: none; outline: none; border-bottom: 1px solid #E2E2E2; color: #1A1A1A;  border:0;}
-#modal .modalWrap .modalGap .modalContent .txt .goodsCon .goodsBox .emailBox input[type='text'] {appearance: none; outline: none; border-radius: 3px; font-size: 14px; }
-#modal .modalWrap .modalGap .modalContent .txt .goodsCon .goodsBox .emailBox p {margin: 0; width:auto;font-size: 14px; color: #1A1A1A;padding: 9px 6px; }
+#modal .modalWrap .modalGap .modalContent .txt .goodsCon .goodsBox .phoneBox { display: flex;padding-bottom: 12px; }
+#modal .modalWrap .modalGap .modalContent .txt .goodsCon .goodsBox .phoneBox input {appearance: none; outline: none; border-bottom: 1px solid #E2E2E2; color: #1A1A1A;  border:0;}
+#modal .modalWrap .modalGap .modalContent .txt .goodsCon .goodsBox .phoneBox input[type='text'] {appearance: none; outline: none; border-radius: 3px; font-size: 14px; }
+#modal .modalWrap .modalGap .modalContent .txt .goodsCon .goodsBox .phoneBox p {margin: 0; width:auto;font-size: 14px; color: #1A1A1A;padding: 9px 6px; }
 /* 회색글씨 */
 #modal .modalWrap .modalGap .modalContent .txt .grayTxtWrap {  width: 100%;display: block ; }
 #modal .modalWrap .modalGap .modalContent .txt .grayTxtWrap .grayTxt { padding:12px 0 12px 5px; width: 100%; border-top: 1px solid #E2E2E2; }
