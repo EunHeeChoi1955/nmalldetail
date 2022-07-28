@@ -83,10 +83,38 @@
                                     </div>
                                      <div class="right">
                                         <div class="txt1">[ROYALMINSTER] 2021년형 로얄민스터 
-                                            프리미엄 무선청소기 S10</div>
-                                        <div class="txt2">
-                                            옵션옵션옵션
+                                            프리미엄 무선청소기 S10
                                         </div>
+
+
+
+                                        <div class="selectBoxWrap">
+                                            
+                                                <div class="selectBox">
+                                                    <div class="mobileTab">
+                                                        <div class="tab-wrap active">
+                                                            <ul class="tab ServiceTab" style="  display: none; ">
+                                                                <li class="active">
+                                                                    <a href="javascript:" class="service-tab-1" title="옵션명은 1줄처리">
+                                                                        <div class="option">옵션명은 1줄처리</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="javascript:" class="service-tab-2" title="옵션명은 1줄처리">
+                                                                        <div class="option">옵션명은 1줄처리</div>
+                                                                    </a>
+                                                                </li>
+                                                                                                                                
+                                                            </ul>
+                                                            <a href="javascript:" class="tabBtn" title="옵션옵션옵션옵션최대길이 1줄처리 진행..." style="text-decoration: none; font-size:12px; ;  ">옵션옵션옵션옵션최대길이 1줄처리 진행...</a>	
+                                                        </div>						
+                                                    </div>
+                                                
+                                                </div>
+                                            
+                                        </div>
+
+
                                     </div>
                                 </div>
                             </li>
@@ -228,5 +256,75 @@
    
     
     </script>
+
+
+
+<script>
+
+
+    
+            //   탭버튼 이벤트
+            var t=0;
+              
+              priceBox       = $('#wrap1> #main>#section1 .priceBox');
+
+
+              $('.tabBtn').on({
+                 click:	function(){
+                    showHideList();
+                 }
+              });
+              
+              
+              $(".tab > li > a").click(function(e) {
+              e.preventDefault();	
+              priceBox.removeClass('addClose'); // 탭버튼 누르면 priceBox 다시나타남
+              // 전역변수 조정
+              showHideList();
+              
+              //새로운 클릭일 경우에만 ui 변경
+              if(!$(this).parent().hasClass('active')) { 
+                $('.tabBtn').text($(this).text()); //보여지는 제목 바꾸기
+              }
+              
+              // 액티브 조정 
+              $(this).parent().siblings().removeClass('active').end().addClass('active');
+              
+              });
+              
+              //모바일 & PC 공통 
+              $(".tabs a").click(function(e) {
+                 e.preventDefault();	
+                 $(this).parent().siblings().removeClass('active').end().addClass('active');
+                 
+              //	$(this).parents('ul').next().children().hide().eq($(this).parent().index()).show();
+                 $('.tab').parents('ul').next().children().hide().eq($(this).parent().index()).show();
+              });
+              
+              //현재 active 되어있는 탭 외의 모든 데이터 접기 => 모바일도 적용하기 위해선 공통 class 생성하여 적용 필요
+              $('.ServiceTab > li').on('click', function(e){
+                 e.preventDefault();	
+              // $(".nav").navgoco('toggle', false);
+                 $(".nav > li").removeClass('active');
+                 $(".nav > li").removeClass('open');
+              });
+              
+              function showHideList() {
+                 if(t==0){
+                    t=1;
+                    $('.tab').stop().slideDown();
+                    $('.tabBtn').addClass('addFamily');
+                 }else{
+                    t=0;
+                    $('.tab').hide();
+                    $('.tabBtn').removeClass('addFamily');	
+                    $('.tabBtn').children().stop().slideUp();	
+                 }
+              }
+              
+
+
+
+</script>
 </body>
 </html>
