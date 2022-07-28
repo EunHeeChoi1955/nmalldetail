@@ -28,31 +28,7 @@
 #wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul{float: right; box-sizing: border-box;white-space: nowrap;   }
 #wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li { padding: 0 5px; text-align: center;display:inline-block; }
 #wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li a  { width:23.5px; }
-#wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li a img { color:#1A1A<div class="txt2">
-                                            <li class="selectBox1">
-                                                <div class="selectBox">
-                                                    <div class="mobileTab">
-                                                        <div class="tab-wrap active">
-                                                            <ul class="tab ServiceTab" style="  display: none; ">
-                                                                <li class="active">
-                                                                    <a href="javascript:" class="service-tab-1" title="옵션명은 1줄처리">
-                                                                        <div class="option">옵션명은 1줄처리</div>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="">
-                                                                    <a href="javascript:" class="service-tab-2" title="옵션명은 1줄처리">
-                                                                        <div class="option">옵션명은 1줄처리</div>
-                                                                    </a>
-                                                                </li>
-                                                                                                                                
-                                                            </ul>
-                                                            <a href="javascript:" class="tabBtn" title="옵션옵션옵션옵션최대길이 1줄처리 진행..." style="text-decoration: none; font-size:12px; ;  ">옵션옵션옵션옵션최대길이 1줄처리 진행...</a>	
-                                                        </div>						
-                                                    </div>
-                                                
-                                                </div>
-                                            </li>
-                                        </div>1A;  }
+#wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li a img { color:#1A1A1A;  }
 
 
 
