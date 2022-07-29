@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./fonts.css);
+
+
+
+#wrap1 { position: relative; width:100%; max-width:1280px; margin:0 auto;display: block; border-top:2px solid #000; background: #fff;  }
+#wrap1>#header { width:100%; max-width:1280px; margin:0 auto;  background: #fff;/* #3D3F84; */ }
+
+#wrap1>#header .container{width:100%; padding: 0; } 
+
+#wrap1>#header .container .top { padding:0 18px; display: flex; }
+#wrap1>#header .container .top>li{width: 33.333%; display:inline-block; padding:14px 0 8px 0 ;}
+
+/*  header left */
+#wrap1>#header .container .top>.left {  width: 100%; }
+#wrap1>#header .container .top>.left a { width:100%; }
+#wrap1>#header .container .top>.left a span { background:url(../img/back.svg) no-repeat 0% 100%;  background-size:contain; width:100%;height:18px; display: inline-block;}
+
+/* header medium */
+#wrap1>#header .container .top>.medium {text-align: center; color: #1A1A1A; font-size: 18px; white-space: nowrap; }
+
+/* header  right */
+#wrap1>#header .container .top>.right #aside {width: 100%;  }
+#wrap1>#header .container .top>.right #aside .icon-box-gap { width:100%;  }
+#wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box {  width:100%;  }
+#wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul{float: right; box-sizing: border-box;white-space: nowrap;   }
+#wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li { padding: 0 5px; text-align: center;display:inline-block; }
+#wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li a  { width:23.5px; }
+#wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li a img { color:#1A1A1A;}
+
+
+
+
+/* https://www.figma.com/file/tblbFFmNni1zJgjeEbFGcA/%EB%82%98%EC%8A%A4-%EC%9E%90%EC%82%AC%EB%AA%B0?node-id=26%3A2845 */
+/* fixed 때문에 상단에 여백을 주어 섹션1을 보이게 해준다. */
+/* 메인영역상단 padding-top:120px; */
+#wrap1> #main{width:100%; max-width:1280px; overflow:visible; display:block;margin: 0 auto; padding:0;font-family: 'SUIT'; }
+	
+#wrap1> #main> #section1{  width:100%; height:auto; padding:0; }
+#wrap1> #main> #section1>.container { width:100%;height:100%; margin:0 auto;padding:0;background:#fff ; background-size: cover;}		
+#wrap1> #main> #section1>.container>.gap{  width: 100%; }
+#wrap1> #main> #section1>.container>.gap>.topWrap { position: relative; width:100%; padding:15px 18px 16px 18px; }
+#wrap1> #main> #section1>.container>.gap>.topWrap h2 { font-size: 22px; color: #1A1A1A; line-height: 150%; padding-bottom: 15px;}
+/* 인풋박스 */
+#wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap { position: relative; } 
+#wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap input { position: relative; z-index: 1; font-size: 14px; color: #909090;padding: 10px 0; text-indent: 14px ; width: 100%; border-radius: 4px; border: 1px solid #797979;} 
+#wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap .searchIcon { position: absolute; top:9px; right: 14px; z-index: 2;  width: 18px; height: 18px;} 
+#wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap .searchIcon img { width: 100%; height: 100%; padding: 1px;} 
+
+/* 최근검색어 인기검색어 최근본상품 */
+#wrap1> #main> #section1>.container>.gap>.midWrap { background: #F9F9F9; padding: 12px 0;}
+#wrap1> #main> #section1>.container>.gap>.midWrap .midBtnBox { padding: 0 18px; display: flex;  }
+#wrap1> #main> #section1>.container>.gap>.midWrap .midBtnBox li{ width: 100%;  }
+#wrap1> #main> #section1>.container>.gap>.midWrap .midBtnBox li.hot>a { color: #E7342C; font-weight: 700;  }
+#wrap1> #main> #section1>.container>.gap>.midWrap .midBtnBox li.hot>a .twingkle {width: 16px; height: 17px;  }
+#wrap1> #main> #section1>.container>.gap>.midWrap .midBtnBox li.hot>a .twingkle img {width: 16px; margin-top: -4px; }
+#wrap1> #main> #section1>.container>.gap>.midWrap .midBtnBox li a{ padding: 0 18px; color: #797979; font-size:14px ; font-weight: 400;}
+
+
+/* 검색어 순위 */
+#wrap1> #main> #section1>.container>.gap> .listWrap {width: 100%; padding: 16px 24px;}
+/* 날짜 */
+#wrap1> #main> #section1>.container>.gap> .listWrap .date {color:#909090; font-size: 12px;  }
+/* 1~7번 검색어 리스트  */
+#wrap1> #main> #section1>.container>.gap> .listWrap .listBox { width: 100%; }
+#wrap1> #main> #section1>.container>.gap> .listWrap .listBox li { border-bottom:1px solid #E2E2E2; display: flex; padding: 12px 0;}
+#wrap1> #main> #section1>.container>.gap> .listWrap .listBox li .rate {margin:auto 13px auto auto; font-size: 10px; color: #1A1A1A; font-family: 400;}
+#wrap1> #main> #section1>.container>.gap> .listWrap .listBox li .redRising {color: #E7382D;}
+#wrap1> #main> #section1>.container>.gap> .listWrap .listBox li .blueDes {color: #187AEF;}
+/* 큰 숫자 */
+#wrap1> #main> #section1>.container>.gap> .listWrap .listBox li a .Num {font-size: 16px; font-weight: 700;  margin:auto 20px auto 8px;}
+#wrap1> #main> #section1>.container>.gap> .listWrap .listBox li a .red {color: #E7382D;}
+#wrap1> #main> #section1>.container>.gap> .listWrap .listBox li a .bk {color: #51617D;}
+/* 검색어 리스트 글자색 */
+#wrap1> #main> #section1>.container>.gap> .listWrap .listBox li a  {color: #1A1A1A; display: flex;}
+
+
+
+
+
+
+
