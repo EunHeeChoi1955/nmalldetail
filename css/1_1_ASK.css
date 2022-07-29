@@ -107,7 +107,8 @@ html, body {background: #fff; color: #fff;   }
 #myPageReview >.TopContainer .askCon .askList ul li .addPhotoBtn { margin-top:20px;display: block; background:#51617D ; border-radius: 3px; }
 #myPageReview >.TopContainer .askCon .askList ul li .addPhotoBtn.addhideBtn { display:none; }
 #myPageReview >.TopContainer .askCon .askList ul li .addPhotoBtn a {text-align: center; color: #fff; text-align: center; font-weight: 700;display: block;padding:13px 0;}
-#myPageReview >.TopContainer .askCon .askList ul li .addPhotoBtn a img {width:18px; vertical-align: baseline; margin-right: 7px;}
+#myPageReview >.TopContainer .askCon .askList ul li .addPhotoBtn a span {width:18px; }
+#myPageReview >.TopContainer .askCon .askList ul li .addPhotoBtn a span img {width:18px; vertical-align: baseline; margin-right: 7px;}
 /* 파일첨부하기 버튼 밑에 알림글 */
 #myPageReview >.TopContainer .askCon .askList ul li .noticeText {display: block;}
 #myPageReview >.TopContainer .askCon .askList ul li .noticeText.addhidNotice {display: none;}
