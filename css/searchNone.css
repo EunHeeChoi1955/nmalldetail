@@ -46,7 +46,7 @@
 #wrap1> #main> #section1>.container {  width:100%; margin:0 auto;padding:0;background:#fff ; background-size: cover;}		
 #wrap1> #main> #section1>.container>.gap{ width: 100%;padding-top: 145px;}
 #wrap1> #main> #section1>.container>.gap.addTop{ padding-top: 120px;}
-#wrap1> #main> #section1>.container>.gap>.topWrap { display:block; z-index: 4; position:fixed; top:50px; max-width:1280px; margin:0 auto; width:100%; padding:15px 18px 16px 18px; background: #fff;}
+#wrap1> #main> #section1>.container>.gap>.topWrap { display:block; z-index: 4; position:fixed; top:50px;  width:100%; max-width:1280px; margin:0 auto;padding:15px 18px 16px 18px; background: #fff;}
 #wrap1> #main> #section1>.container>.gap>.topWrap.addTop { border-bottom: 1px solid #E2E2E2; top:0; }
 #wrap1> #main> #section1>.container>.gap>.topWrap h2 { display:inline-block; font-size: 22px; color: #1A1A1A; line-height: 150%; padding-bottom: 15px;}
 #wrap1> #main> #section1>.container>.gap>.topWrap h2.addTop {  display: none;}
