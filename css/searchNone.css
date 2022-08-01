@@ -73,7 +73,7 @@
 #wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap .box-dropDown { width: 100%;} 
 /* 검색어 숨겨진 박스 */
 #wrap1> #main> #section1>.container>.gap .box-dropDown { display: none;  } 
-#wrap1> #main> #section1>.container>.gap .box-dropDown.addshow { display: block; z-index: 1; position: absolute; margin-top:148px; top:0; left:0;width: 100%;  background: #fff; } 
+#wrap1> #main> #section1>.container>.gap .box-dropDown.addshow { display: block; z-index: 1; position: absolute; margin-top:148px; top:0; left:0;width: 100%;  background: #fff; height: 100vh;} 
 #wrap1> #main> #section1>.container>.gap .box-dropDown .selector { width: 100%; padding: 0 18px;} 
 #wrap1> #main> #section1>.container>.gap .box-dropDown .selector li { width: 100%; padding: 12px 14px; border-bottom: 1px solid #E2E2E2; } 
 #wrap1> #main> #section1>.container>.gap .box-dropDown .selector li a {display: flex;} 
