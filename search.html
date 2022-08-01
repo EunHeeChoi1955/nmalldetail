@@ -41,7 +41,7 @@
     <header id="header"  class="header">
         <div class="container ">
 
-            <ul class="top clearfix">
+            <ul class="top clearfix ">
 
                 <li class="left">
                     <a href='#'>
@@ -73,16 +73,45 @@
             <div class="container">
                 <div class="gap">
 
-                    <div class="topWrap">
-                            <h2>
+                    <div class="topWrap ">
+                            <h2 class="">
                                 고객님<br>
                                 어떤 상품을 찾으세요?
                             </h2>
                             <div class="inputWrap">
-                                <input type="text" placeholder="검색어를 입력해주세요."> 
-                                <span class="searchIcon"><img src="./img/customer_ico_search1.svg" alt=""></span>
+                                <div class="inputBox ">                                    
+                                    <span class="backBtn "></span>
+                                    <input type="text" class="inputTxtBox" placeholder="검색어를 입력해주세요."> 
+                                </div>
+                                <span class="searchIcon"><a href="#"><img src="./img/customer_ico_search1.svg" alt=""></a></span>
+
+                                <div class="focusWrap">
+                                    <span class="searchIconhid xbtn"><a href="#"><img src="./img/btn_x_faq.svg" alt=""></a></span>
+                                    <span class="searchIconhid"><a href="#"><img src="./img/redmagni.svg" alt=""></a></span>
+                                </div>
+                                
+                            
+                                
                             </div> 
                     </div>
+
+
+                    <div class="box-dropDown">
+                        <ul class="selector">
+                            <li class="option"><a href="#"><strong>비</strong>비큐<span class="optionArrow"><img src="./img/optionArrow.svg" alt=""></span></a></li>
+                            <li class="option"><a href="#"><strong>비</strong>비랩<span class="optionArrow"><img src="./img/optionArrow.svg" alt=""></span></a></li>
+                            <li class="option"><a href="#"><strong>비</strong>비고<span class="optionArrow"><img src="./img/optionArrow.svg" alt=""></span></a></li>
+                            <li class="option"><a href="#"><strong>비</strong>타민<span class="optionArrow"><img src="./img/optionArrow.svg" alt=""></span></a></li>
+                            <li class="option"><a href="#"><strong>비</strong>빔면<span class="optionArrow"><img src="./img/optionArrow.svg" alt=""></span></a></li>
+                            <li class="option"><a href="#"><strong>비</strong>알엘<span class="optionArrow"><img src="./img/optionArrow.svg" alt=""></span></a></li>
+                            <li class="option"><a href="#">냄<strong>비</strong><span class="optionArrow"><img src="./img/optionArrow.svg" alt=""></span></a></li>
+                        </ul>
+                    </div>
+
+
+
+
+                  
 
                     <div class="midWrap">
                         <ul class="midBtnBox">
@@ -105,6 +134,14 @@
                             <li><a href="#"><span class="bk  Num">7</span>유산균</a> <span class="bkStag rate">-</span></li>
                         </ul>
 
+
+                        <div class="barWrap">
+                            <div class="bar">
+
+                            </div>
+                        </div>
+
+                        
                     </div>
 
                     <div class="serviceTab">
@@ -152,110 +189,104 @@
 
 <script>
 
+    //헤더영역 스크롤 이벤트 (페럴럭스)
+    var $window  = $(window);
+    var $header  = $('#wrap1 #header .container');
+    var $topWrap = $('#wrap1 #main> #section1>.container>.gap>.topWrap');
+    var $toph2   = $('#wrap1 #main> #section1>.container>.gap>.topWrap h2');
+    var $gaptop   = $('#wrap1 #main> #section1>.container>.gap');
+    var $backBtn = $('#wrap1 #main> #section1>.container>.gap>.topWrap .inputWrap .inputBox .backBtn');
+    
+    var t = 0; // false === 0 같다는 표시   toggle
+    
+
+    
+    //마우스로 스크롤값이 아래로 30픽셀이상 >= 내려가면 
+    //선택자 헤더영역(#header)에 효과 이벤트가 발생하게 하라 
+    $window.scroll(function(){ //스크롤 이벤트
+        // console.log(  $window.scrollTop() ); //스크롤 탑값 확인
+        if( $window.scrollTop() >= 30 ){  //마우스로 스크롤값이 아래로 30픽셀이상 내려가면
+            $header.addClass('addTop');  //헤더에 클래스 추가
+            $topWrap.addClass('addTop'); 
+            $toph2.addClass('addTop'); 
+            $gaptop.addClass('addTop'); 
+            $backBtn.addClass('addTop');  
  
-    var arrowBtn         = $('.arrowBtn');    // 화살표 버튼
-    var noticeText       = $('.noticeText');  // noticeText    
-    var picBtn           = $('.picBtn');      // 사진첨부하기버튼    
-    var bottomTextBox    = $('.bottomTextBox');      // 버튼 밑 텍스트 10MB 이하의 png....~   
-    var galleryBox       = $('.galleryBox');      // galleryBox 사진들   
+        }
+        else{
+                $header.removeClass('addTop'); //추가된 클래스 삭제
+                $topWrap.removeClass('addTop'); 
+                $toph2.removeClass('addTop'); 
+                $gaptop.removeClass('addTop'); 
+                $backBtn.removeClass('addTop'); 
+          
+        }           
+    });
 
-  
-   
-    // 화살표 버튼 누르면 밑에 notice텍스트 토글
-    arrowBtn.each(function (idx) {                   
-        $(this).on({
-            click: function () {
-                noticeText.toggleClass('clickBtn'); //보여줌 
-                arrowBtn.toggleClass('clickBtn'); //보여줌 
-            }
-            
-        });
-    });
-    
-    //사진첨부하기버튼 누르면 사진추가상자 나타남
-    picBtn.each(function (idx) {                   
-        $(this).on({
-            click: function () {
-                picBtn.addClass('addPic');      // 버튼사라짐
-                bottomTextBox.addClass('addPic'); //사라짐
-                galleryBox.addClass('picBtn'); //보여줌 
-            }
-            
-        });
-    });
-    
+
+
+
    
     
-    </script>
-
-
+</script>
 
 <script>
+    var focusInput  = $('.focusWrap');
+    var inputTxtBox = $('.inputTxtBox');
+    var searchIcon  = $('.searchIcon');
+    var dropDown    = $('.box-dropDown');
+    var xbtn        = $('.xbtn');
+
+  
+
+   
+
+    inputTxtBox.each(function(idx) {                   
+        $(this).on({
+            click: function () {
+                focusInput.eq(idx).toggleClass('addInput'); //빨간새 돋보기 보여줌 
+                searchIcon.eq(idx).toggleClass('addhide'); //회색 돋보기 안보여줌 
+                dropDown.eq(idx).toggleClass('addshow'); //드롭다운리스트 감춤
+                
+            }
+            
+        });
+     });
+
+     xbtn.each(function(idx) {                   
+        $(this).on({
+            click: function () {
+                focusInput.eq(idx).toggleClass('addInput'); //빨간새 돋보기 보여줌 
+                dropDown.eq(idx).removeClass('addshow'); // 드롭다운리스트 감춤 
+              
+                
+            }
+            
+        });
+     });
 
 
-    
-            //   탭버튼 이벤트
-            var t=0;
-              
-              priceBox       = $('#wrap1> #main>#section1 .priceBox');
+
+    var btn    = document.querySelector('input');
+
+        btn.addEventListener('click', updateBtn);
 
 
-              $('.tabBtn').on({
-                 click:	function(){
-                    showHideList();
-                 }
-              });
+        function updateBtn() {
+            if (btn.value === '비') {
+                btn.value = '';
               
-              
-              $(".tab > li > a").click(function(e) {
-              e.preventDefault();	
-              priceBox.removeClass('addClose'); // 탭버튼 누르면 priceBox 다시나타남
-              // 전역변수 조정
-              showHideList();
-              
-              //새로운 클릭일 경우에만 ui 변경
-              if(!$(this).parent().hasClass('active')) { 
-                $('.tabBtn').text($(this).text()); //보여지는 제목 바꾸기
-              }
-              
-              // 액티브 조정 
-              $(this).parent().siblings().removeClass('active').end().addClass('active');
-              
-              });
-              
-              //모바일 & PC 공통 
-              $(".tabs a").click(function(e) {
-                 e.preventDefault();	
-                 $(this).parent().siblings().removeClass('active').end().addClass('active');
-                 
-              //	$(this).parents('ul').next().children().hide().eq($(this).parent().index()).show();
-                 $('.tab').parents('ul').next().children().hide().eq($(this).parent().index()).show();
-              });
-              
-              //현재 active 되어있는 탭 외의 모든 데이터 접기 => 모바일도 적용하기 위해선 공통 class 생성하여 적용 필요
-              $('.ServiceTab > li').on('click', function(e){
-                 e.preventDefault();	
-              // $(".nav").navgoco('toggle', false);
-                 $(".nav > li").removeClass('active');
-                 $(".nav > li").removeClass('open');
-              });
-              
-              function showHideList() {
-                 if(t==0){
-                    t=1;
-                    $('.tab').stop().slideDown();
-                    $('.tabBtn').addClass('addFamily');
-                 }else{
-                    t=0;
-                    $('.tab').hide();
-                    $('.tabBtn').removeClass('addFamily');	
-                    $('.tabBtn').children().stop().slideUp();	
-                 }
-              }
-              
+            
+            } else {
+                btn.value = '비';
+                
+            }
+        } 
 
 
 
 </script>
+
+
 </body>
 </html>
