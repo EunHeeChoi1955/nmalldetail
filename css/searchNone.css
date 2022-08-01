@@ -55,7 +55,7 @@
 
 
 /* section2 */
-#section2{z-index: 5; position:fixed; bottom: 0; left: 0; width:100%;overflow:hidden;background:#fff; padding:20px 0 20px 0;display:block; }	
+#section2{z-index: 5; position:fixed; bottom: 0; max-width:1280px;  width:100%;overflow:hidden;background:#fff; padding:20px 0 20px 0;display:block; }	
 #section2>.container{width:100%;}	
 #section2>.container>.gap { position:relative; width:100%;margin:0; }
 #section2>.container>.gap> .wrap { position:relative;width:100%;}
