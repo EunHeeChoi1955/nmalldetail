@@ -134,8 +134,13 @@ html, body {background: #fff; color: #fff;   }
 #myPageReview >.TopContainer .askCon .askList .askBtn.addred {display: block; background:#E7342C ; border-radius: 6px; }
 #myPageReview >.TopContainer .askCon .askList .askBtn a{text-align: center; color: #fff;  font-weight: 700;display: block;padding:13px 0;}
 
-
-
+/*  취소 ,수정버튼  */
+#myPageReview >.TopContainer .askCon .askList .btnCon {display: flex;}
+#myPageReview >.TopContainer .askCon .askList .btnCon div {display: block;border-radius: 6px;margin: 30px 0 24px 0;}
+#myPageReview >.TopContainer .askCon .askList .btnCon div.cancleBtn {background:#FFFFFF; border:1px solid #B3B3B3;margin-right: 6px; }
+#myPageReview >.TopContainer .askCon .askList .btnCon div.cancleBtn a {color: #1A1A1A; }
+#myPageReview >.TopContainer .askCon .askList .btnCon div.fixBtn {background:#E7342C ; margin-left: 6px;border:1px solid #E7342C;}
+#myPageReview >.TopContainer .askCon .askList .btnCon div a {text-align: center; color: #fff;  font-weight: 700;display: block; padding:13px 0;}
 
 
 
@@ -161,13 +166,24 @@ html, body {background: #fff; color: #fff;   }
 #myPageReview >.TopContainer .myAskCon .totalWrap>li>.selectBox {margin: 0 auto ;  position: relative; width: 100%; height:42px; display: block; }
 /*   탭버튼 화살표 내리면 나오는거 */
 #myPageReview >.TopContainer .myAskCon .totalWrap>li>.selectBox .mobileTab{display: block;box-sizing: border-box; text-decoration:none; }
-#myPageReview >.TopContainer .myAskCon .totalWrap>li>.selectBox .mobileTab .tab-wrap{position:relative;z-index:4; display:block;width:100%;box-sizing:border-box;}
-/* 탭버튼 selectBox1  */
-#myPageReview >.TopContainer .myAskCon .totalWrap>li.selectBox1>.selectBox .mobileTab .tab-wrap>a{ font-size:12px; position:relative; display:block; white-space: nowrap; padding-top: 2px; color: #343434; text-decoration: none; text-align:left; padding-top: 10px; background: url(../img/ico_option_arrow1.svg) no-repeat 50% 40%; }
-#myPageReview >.TopContainer .myAskCon .totalWrap>li.selectBox1>.selectBox .mobileTab .tab-wrap>a.addFamily{ background:  url(../img/ico_option_arrow2.svg) no-repeat 50% 40%;  }
+
+
+/* 수정한부분 171번째줄~182번째줄 */
+#myPageReview >.TopContainer .myAskCon .totalWrap>li>.selectBox .mobileTab .tab-wrap{position:relative;z-index:4; display:block;width: 75px; box-sizing:border-box;}
+/* 탭버튼 selectBox1    */
+#myPageReview >.TopContainer .myAskCon .totalWrap>li.selectBox1>.selectBox .mobileTab .tab-wrap .inputBoxTab {display: flex; text-align: left; }
+#myPageReview >.TopContainer .myAskCon .totalWrap>li.selectBox1>.selectBox .mobileTab .tab-wrap .inputBoxTab a{position:relative;text-align: left; padding: 12px 0; width:auto; font-size:12px;  white-space: nowrap;  color: #1A1A1A; text-decoration: none;   }
+#myPageReview >.TopContainer .myAskCon .totalWrap>li.selectBox1>.selectBox .mobileTab .tab-wrap .inputBoxTab span{ display: block; margin: auto 0 auto 5px; background:url(../img/ico_option_arrow1.svg) no-repeat 50% 50%; height: 12px; width: 14px; }
+#myPageReview >.TopContainer .myAskCon .totalWrap>li.selectBox1>.selectBox .mobileTab .tab-wrap .inputBoxTab span.addFamily{ background:url(../img/ico_option_arrow2.svg) no-repeat 50% 50%; height: 12px; width: 14px; }
 /* 탭버튼 selectBox2  */
-#myPageReview >.TopContainer .myAskCon .totalWrap>li.selectBox2>.selectBox .mobileTab .tab-wrap>a{float: right; font-size:12px; position:relative; display:block; white-space: nowrap; padding-top: 2px; color: #343434; text-decoration: none; text-align:left; padding-top: 10px; background: url(../img/ico_option_arrow1.svg) no-repeat 100% 40%; }
-#myPageReview >.TopContainer .myAskCon .totalWrap>li.selectBox2>.selectBox .mobileTab .tab-wrap>a.addFamily{ background:  url(../img/ico_option_arrow2.svg) no-repeat 100% 40%;  }
+#myPageReview >.TopContainer .myAskCon .totalWrap>li.selectBox2>.selectBox .mobileTab .tab-wrap .inputBoxTab {display: flex; text-align: right; }
+#myPageReview >.TopContainer .myAskCon .totalWrap>li.selectBox2>.selectBox .mobileTab .tab-wrap .inputBoxTab a{position:relative;text-align: right; padding: 12px 0; width:100%; font-size:12px;  white-space: nowrap;  color: #1A1A1A; text-decoration: none;   }
+#myPageReview >.TopContainer .myAskCon .totalWrap>li.selectBox2>.selectBox .mobileTab .tab-wrap .inputBoxTab span{ display: block; margin: auto 0 auto 5px; background:url(../img/ico_option_arrow1.svg) no-repeat 50% 50%; height: 12px; width: 14px; }
+#myPageReview >.TopContainer .myAskCon .totalWrap>li.selectBox2>.selectBox .mobileTab .tab-wrap .inputBoxTab span.addFamily{ background:url(../img/ico_option_arrow2.svg) no-repeat 50% 50%; height: 12px; width: 14px; }
+/* 수정한부분 170번째줄~180번째줄 */
+
+
+
 /* 탭버튼 누르면 나오는 메뉴 내용들 */
 #myPageReview >.TopContainer .myAskCon .totalWrap>li>.selectBox .mobileTab .tab-wrap>ul.tab{display:block;z-index:1; background:#fff;width:100%; height: auto; padding:5px 0; position:absolute; top:35px; margin:0;  box-sizing:border-box;border:1px solid #E2E2E2; border-radius: 6px;}
 #myPageReview >.TopContainer .myAskCon .totalWrap>li>.selectBox .mobileTab .tab-wrap>ul.tab>li{width:100%;display:block;box-sizing:border-box; padding: 5px 0;font-size:12px; }
@@ -178,7 +194,7 @@ html, body {background: #fff; color: #fff;   }
 /* 탭버튼 selectBox1  option  */
 #myPageReview >.TopContainer .myAskCon .totalWrap>li.selectBox1>.selectBox .mobileTab .tab-wrap>ul.tab>li>a div.option {text-align: left;text-indent: 12px;  letter-spacing: -.3px;}
 /* 탭버튼 selectBox2  option  */
-#myPageReview >.TopContainer .myAskCon .totalWrap>li.selectBox2>.selectBox .mobileTab .tab-wrap>ul.tab>li>a div.option {text-align: right;padding-right:14px;  letter-spacing: -.3px;}
+#myPageReview >.TopContainer .myAskCon .totalWrap>li.selectBox2>.selectBox .mobileTab .tab-wrap>ul.tab>li>a div.option {text-align: right;padding-right:9px;  letter-spacing: -.3px;}
 
 
 

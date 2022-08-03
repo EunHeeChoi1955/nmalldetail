@@ -208,9 +208,19 @@
                             </div>
                         </div>
 
-                        <div class="askBtn">
-                            <a href="javascript:Function();">문의하기</a>
+                        <!-- 취소 수정버튼 -->
+                        <div class="btnCon">
+                            <div class="cancleBtn">
+                                <a href="javascript:Function();">취소</a>
+                            </div>
+                            <div class="fixBtn">
+                                <a href="javascript:Function();">수정</a>
+                            </div>
                         </div>
+                        
+                        <!-- <div class="askBtn">
+                            <a href="javascript:Function();">문의하기</a>
+                        </div> -->
                       
                     </div>
                 </div>              
@@ -259,7 +269,15 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    <a href="javascript:" class="tabBtn" title="전체" style="text-decoration: none; ">전체</a>	
+                                    <!-- <a href="javascript:" class="tabBtn" title="전체" style="text-decoration: none; ">전체</a>	 -->
+
+                                    <div class="inputBoxTab">
+                                        <a href="javascript:" class="tabBtn" title="전체" style="text-decoration: none; ">전체</a>
+                                        <span class="arrow"><a href="#" class="arrowBtn"></a></span>	
+                                    </div>
+
+
+
                                 </div>						
                             </div>
                         
@@ -293,7 +311,11 @@
                                         </li>
                                         
                                     </ul>
-                                    <a href="javascript:" class="tabBtn" title="최근 3개월" style="text-decoration: none; ">최근 3개월</a>	
+                                    <!-- <a href="javascript:" class="tabBtn" title="최근 3개월" style="text-decoration: none; ">최근 3개월</a>	 -->
+                                    <div class="inputBoxTab">
+                                        <a href="javascript:" class="tabBtn" title="최근 3개월" style="text-decoration: none; ">최근 3개월</a>
+                                        <span class="arrow"><a href="#" class="arrowBtn"></a></span>	
+                                    </div>
                                 </div>						
                             </div>
                         
@@ -575,7 +597,7 @@ okBtn.each(function (idx) {
        priceBox       = $('#wrap1> #main>#section1 .priceBox');
 
 
-       $('.tabBtn').on({
+       $('.tabBtn, .arrow').on({
           click:	function(){
              showHideList();
           }
@@ -620,10 +642,12 @@ okBtn.each(function (idx) {
              t=1;
              $('.tab').stop().slideDown();
              $('.tabBtn').addClass('addFamily');
+             $('.arrow').addClass('addFamily');
           }else{
              t=0;
              $('.tab').hide();
              $('.tabBtn').removeClass('addFamily');	
+             $('.arrow').removeClass('addFamily');	
              $('.tabBtn').children().stop().slideUp();	
           }
        }
