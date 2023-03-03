@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="publisher" content="eunheeChoi">
+    <title>검색결과</title>
+    <!-- favicon -->
+    <link rel="icon" href="./img/favicon/favicon-57.png" sizes="57x57">
+   
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/searchResult.css">
+    
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- jQuery 오픈소스 -->
+    <script src="./js/lib/jquery.min.js"></script> 
+	<script src='./js/lib/jquery-1.12.4.min.js'></script>
+	<!-- <script src='./js/lib/jquery.mobile-1.4.5.min.js'></script>터치이벤트 웹앱 -->
+	<script src='./js/lib/jquery.easing.1.3.js'></script>
+	<script src='./js/lib/jquery.touchSwipe.min.js'></script>
+	<!-- <script src='./js/lib/slick.min.js'></script> -->
+
+    <!-- 리액트 웹개발 오픈소스 -->    
+    <script src="./js/lib/react.development.js"></script>
+    <script src="./js/lib/react-dom.development.js"></script>
+    <script src="./js/lib/babel.min.js"></script>
+
+</head>
+<body>
+   
+<div id="wrap1">
+    
+    
+    <main id="main">
+        <section id ="section1">
+            <div class="container">
+                <div class="gap">
+
+                    <div class="topWrap ">
+                            
+                            <div class="inputWrap">
+                                <div class="inputBox ">                                    
+                                    <span class="backBtn addTop"></span>
+                                    <input type="text" class="inputTxtBox" placeholder="검색어를 입력해주세요."> 
+                                </div>
+                                <span class="searchIcon"><a href="#"><img src="./img/customer_ico_search1.svg" alt=""></a></span>
+
+                                <div class="focusWrap">
+                                    <span class="searchIconhid xbtn"><a href="#"><img src="./img/btn_x_faq.svg" alt=""></a></span>
+                                    <span class="searchIconhid"><a href="#"><img src="./img/redmagni.svg" alt=""></a></span>
+
+                                </div>                                
+                            </div> 
+
+                    </div>
+
+
+                    <div class="contentsWrap addTop">
+                        <div class="contentsGap">
+                            <div class="contentsBox">
+
+                               <!-- 상단 연관 카테고리 브랜드 스와이프 모음 -->
+
+                                <div class="relation-container addTop">
+                                    <div class="relation-view">
+                                        <h3>연관</h3>
+                                        <ul class="relationWrap">
+                                            <li class="relation"><a href="#">비비큐</a></li>
+                                            <li class="relation"><a href="#">비비랩</a></li>
+                                            <li class="relation"><a href="#">비비고</a></li>
+                                            <li class="relation"><a href="#">비타민</a></li>
+                                            <li class="relation"><a href="#">비빔면</a></li>
+                                            <li class="relation"><a href="#">비알엘</a></li>
+                                            <li class="relation"><a href="#">냄비</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                 <!-- #연관 -->
+                                <div class="category-container addTop">
+                                    <div class="category-view">
+                                        <h3>카테고리</h3>
+                                        <ul class="categoryWrap">
+                                            <li class="category"><a href="#">식선식품</a></li>
+                                            <li class="category"><a href="#">건강기능식품</a></li>
+                                            <li class="category"><a href="#">주방/가전</a></li>
+                                            <li class="category"><a href="#">가공식품</a></li>
+                                            <li class="category"><a href="#">화장품</a></li>
+                                            <li class="category"><a href="#">영양제</a></li>
+                                            <li class="category"><a href="#">패션</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #카테고리 -->
+                                <div class="brand-container addTop">
+                                    <div class="brand-view">
+                                        <h3>브랜드</h3>
+                                        <ul class="brandWrap">
+                                            <li class="brand"><a href="#">뉴트리디데이</a></li>
+                                            <li class="brand"><a href="#">뉴트리원</a></li>
+                                            <li class="brand"><a href="#">비비고</a></li>
+                                            <li class="brand"><a href="#">종근당건강</a></li>
+                                            <li class="brand"><a href="#">한미양행</a></li>
+                                            <li class="brand"><a href="#">셀트리온</a></li>
+                                            <li class="brand"><a href="#">녹십자</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #브랜드 -->
+                             
+
+
+
+                            </div>
+                        </div>
+                    </div>
+<!-- #contentsWrap -->
+                    <div class="optionContainer addTop">
+                        <div class="optionView">
+                            <div class="title">총 50건</div>
+                            <div class="optionWrap">
+                                <!-- 셀렉트박스 -->
+                                <div class="selectBox">
+                                    <div class="mobileTab">
+                                        <div class="tab-wrap active">
+                                            <ul class="tab ServiceTab" style="  display: none; ">
+                                                <li class="active">
+                                                    <a href="javascript:" class="service-tab-1" title="인기순">
+                                                        <div class="option">인기순</div>
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="javascript:" class="service-tab-2" title="최근등록순">
+                                                        <div class="option">최근등록순</div>
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="javascript:" class="service-tab-3" title="판매수량순">
+                                                        <div class="option">판매수량순</div>
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="javascript:" class="service-tab-4" title="리뷰 많은 순">
+                                                        <div class="option">리뷰 많은 순</div>
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="javascript:" class="service-tab-5" title="낮은 가격순">
+                                                        <div class="option">낮은 가격순</div>
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="javascript:" class="service-tab-6" title="높은 가격순">
+                                                        <div class="option">높은 가격순</div>
+                                                    </a>
+                                                </li>   
+                                            </ul>
+                                            <div class="inputBoxTab">
+                                                <a href="javascript:" class="tabBtn" title="인기순" style="text-decoration: none; ">인기순</a>
+                                                <span class="arrow"><a href="#" class="arrowBtn"></a></span>	
+                                            </div>
+                                        </div>						
+                                    </div>
+                                  
+                                </div>
+                                <div class="filter">
+                                    <a href="javascript:Function();">
+                                        <img src="./img/ico_filter.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="bar"></div>
+                                <div class="cardUI">
+                                    <a href="javascript:Function();">
+                                        <span class="uiIcon"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- # 총~~건 필터 옵션영역 -->
+                    <div class="goodsContainer ">
+                        <div class="goodsView">
+                           
+                                <ul class="goodsWrap dep1">
+                                    <li class="goods goods1 line1 " data-intent="column-02">
+                                        <div class="goodsBox">
+                                            <div class="goodsText">
+                                                  
+                                                <div class="media" style="overflow: hidden;">
+                                                   
+                                                    <div class="heart">
+                                                        <a href='javascript:Function();'>
+                                                            <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                            <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                        </a>
+                                                    </div>  
+                                                 
+                                                    <a href='javascript:Function();' class="img-box">
+                                                        <img src="./img/sec6-img1.png" alt="">
+                                                    </a>
+                                                </div>
+
+                                                <div class="txtBox " >
+                                                    <h3>
+                                                        [바이탈헬스] 면역밸런스 프로폴리스/루테인/밀...
+                                                    </h3>
+                                                    <h4>135,000원</h4>
+                                                    <ul class="price">
+                                                        <li>90<span>%</span></li>
+                                                        <li>13,900<span>원</span></li>                                                        
+                                                    </ul>
+                                                    <ul class="starDelivery">
+                                                        <li class="star">
+                                                            <i class="fa fa-star"></i>
+                                                            4.0 <span>(999)</span>
+                                                        </li>
+                                                        <li class="delivery">
+                                                            
+                                                                무료배송
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="goods goods2 line2" data-intent="column-02">
+                                        <div class="goodsBox">
+                                            <div class="goodsText">   
+                                                
+                                                <div class="media"  style="overflow: hidden;">
+
+                                                    <div class="heart">
+                                                        <a href='javascript:Function();'>
+                                                            <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                            <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                        </a>
+                                                    </div>  
+
+                                                    <a href='javascript:Function();' class="img-box" style="position:relative; z-index:1;">
+                                                        <img src="./img/goods_img_th2.png" alt="">
+                                                    </a>
+                                                    
+                                                </div>
+
+                                                <div class="txtBox">
+                                                    <h3>
+                                                        제목한줄 영역
+                                                    </h3>
+                                                    <h4>135,000원</h4>
+                                                    <ul class="price">
+                                                        <li>90<span>%</span></li>
+                                                        <li>13,900<span>원</span></li>                                                        
+                                                    </ul>
+                                                    <ul class="starDelivery">
+                                                        <li class="star">
+                                                            <i class="fa fa-star"></i>
+                                                            4.0 <span>(999)</span>
+                                                        </li>
+                                                        <li class="delivery">
+                                                            
+                                                                무료배송
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="goods goods1 line1 " data-intent="column-02">
+                                    
+                                        <div class="goodsBox">
+                                            
+                                            <div class="goodsText">  
+                                           
+                                                <div  class="media" style="overflow: hidden;">
+                                                    <div class="heart">
+                                                        <a href='javascript:Function();'>
+                                                            <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                            <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                        </a>
+                                                    </div>
+
+                                                    <a href='javascript:Function();' class="img-box">
+                                                        <img src="./img/goods_img_th3.png" alt="">
+                                                    </a>
+                                                
+                                                </div>
+
+                                                <div class="txtBox">
+                                                    <h3>
+                                                        [바이탈헬스] 면역밸런스 프로폴리스/루테인/밀...
+                                                    </h3>
+                                                    <h4>135,000원</h4>
+                                                    <ul class="price">
+                                                        <li>90<span>%</span></li>
+                                                        <li>13,900<span>원</span></li>                                                        
+                                                    </ul>
+                                                    <ul class="starDelivery">
+                                                        <li class="star">
+                                                            <i class="fa fa-star"></i>
+                                                            4.0 <span>(999)</span>
+                                                        </li>
+                                                        <li class="delivery">
+                                                            
+                                                                무료배송
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="goods goods2 line2" data-intent="column-02">
+                                        <div class="goodsBox">
+                                            <div class="goodsText">
+
+                                                <div class="media"  style="overflow: hidden;">
+                                                    
+                                                    <div class="heart">
+                                                        <a href='javascript:Function();'>
+                                                            <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                            <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                        </a>
+                                                    </div>  
+
+                                                    <a href='javascript:Function();' class="img-box">
+                                                        <img src="./img/goods_img_th4.png" alt="">
+                                                    </a>
+                                                </div>
+
+                                                <div class="txtBox">
+                                                    <h3>
+                                                        제목한줄 영역
+                                                    </h3>
+                                                    <h4>135,000원</h4>
+                                                    <ul class="price">
+                                                        <li>90<span>%</span></li>
+                                                        <li>13,900<span>원</span></li>                                                        
+                                                    </ul>
+                                                    <ul class="starDelivery">
+                                                        <li class="star">
+                                                            <i class="fa fa-star"></i>
+                                                            4.0 <span>(999)</span>
+                                                        </li>
+                                                        <li class="delivery">
+                                                            
+                                                                무료배송
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="goods goods1 line1 " data-intent="column-02">
+                                        <div class="goodsBox">
+                                            <div class="goodsText">  
+
+                                                <div class="media"  style="overflow: hidden;">
+                                                    
+                                                    <div class="heart">
+                                                        <a href='javascript:Function();'>
+                                                            <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                            <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                        </a>
+                                                    </div>  
+
+                                                    <a href='javascript:Function();' class="img-box">
+                                                        <img src="./img/goods_img_th5.png" alt="">
+                                                    </a>
+                                                </div>
+
+                                                <div class="txtBox">
+                                                    <h3>
+                                                        [바이탈헬스] 면역밸런스 프로폴리스/루테인/밀...
+                                                    </h3>
+                                                    <h4>135,000원</h4>
+                                                    <ul class="price">
+                                                        <li>90<span>%</span></li>
+                                                        <li>13,900<span>원</span></li>                                                        
+                                                    </ul>
+                                                    <ul class="starDelivery">
+                                                        <li class="star">
+                                                            <i class="fa fa-star"></i>
+                                                            4.0 <span>(999)</span>
+                                                        </li>
+                                                        <li class="delivery">
+                                                            
+                                                                무료배송
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="goods goods2 line2" data-intent="column-02">
+                                        <div class="goodsBox">
+                                            <div class="goodsText"> 
+                                                
+                                                <div class="media"  style="overflow: hidden;">
+                                                    
+                                                    <div class="heart">
+                                                        <a href='javascript:Function();'>
+                                                            <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                            <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                        </a>
+                                                    </div>  
+
+                                                    <a href='javascript:Function();' class="img-box">
+                                                        <img src="./img/goods_img_th6.png" alt="">
+                                                    </a>
+                                                </div>
+
+                                                <div class="txtBox">
+                                                    <h3>
+                                                        제목한줄 영역
+                                                    </h3>
+                                                    <h4>135,000원</h4>
+                                                    <ul class="price">
+                                                        <li>90<span>%</span></li>
+                                                        <li>13,900<span>원</span></li>                                                        
+                                                    </ul>
+                                                    <ul class="starDelivery">
+                                                        <li class="star">
+                                                            <i class="fa fa-star"></i>
+                                                            4.0 <span>(999)</span>
+                                                        </li>
+                                                        <li class="delivery">
+                                                            
+                                                                무료배송
+                                                            
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                              
+                            
+                        </div>
+                    </div>
+                    <!-- #디폴트 2단형 -->
+                    <div class="cardCon">
+                        <div class="cardView">
+
+                            <ul class="slide-wrap" >
+                                <li class="slide slide0">
+                                    <div class="slide-text">
+                                        <div class="img-box">
+                                            <div class="heart ">
+                                                <a href='javascript:Function();'>
+                                                    <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                    <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                </a>
+                                            </div>
+                                            <a href='javascript:Function();'>
+                                                <img src="./img/sec8-slide1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="text-box">
+                                            <h3>
+                                                [LG전자] 그램 15인치 노트북 (15Z95N-GRFMK) / <br>
+                                                i5 / 윈도우 10 홈 / 메모리 8GB / SSD 256GB
+                                            </h3>
+                                            <ul class="text2">
+                                                <li>42<span>%</span></li>
+                                                <li>1,329,900<span>원</span></li>
+                                                <li>2,290,000원</li>
+                                            </ul>
+                                            <hr>
+                                            <ul class="text3">                                    
+                                                <li class="star">
+                                                    <i class="fa fa-star"></i>
+                                                    4.0 <span>(6)</span>
+                                                </li>
+                                                <li>
+                                                   <span>
+                                                       무료배송<i> ·</i>
+                                                       K딜추천<i> ·</i>
+                                                       단독특가
+                                                   </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    
+                                    </div>
+                                </li>
+                                <li class="slide slide1">
+                                    <div class="slide-text">
+                                        <div class="img-box">
+                                            <div class="heart">
+                                                <a href='javascript:Function();'>
+                                                    <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                    <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                </a>
+                                            </div>
+                                            <a href='javascript:Function();'>
+                                                <img src="./img/sec8-slide2.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="text-box">
+                                            <h3>
+                                                [LG전자] 그램 15인치 노트북 (15Z95N-GRFMK) / <br>
+                                                i5 / 윈도우 10 홈 / 메모리 8GB / SSD 256GB
+                                            </h3>
+                                            <ul class="text2">
+                                                <li>42<span>%</span></li>
+                                                <li>1,329,900<span>원</span></li>
+                                                <li>2,290,000원</li>
+                                            </ul>
+                                            <hr>
+                                            <ul class="text3">                                    
+                                                <li class="star">
+                                                    <i class="fa fa-star"></i>
+                                                    4.0 <span>(6)</span>
+                                                </li>
+                                                <li>
+                                                   <span>
+                                                       무료배송<i> ·</i>
+                                                       K딜추천<i> ·</i>
+                                                       단독특가
+                                                   </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    
+                                    </div>
+                                </li>
+                                <li class="slide slide2">
+                                    <div class="slide-text">
+                                        <div class="img-box">
+                                            <div class="heart">
+                                                <a href='javascript:Function();'>
+                                                    <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                    <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                </a>
+                                            </div>
+                                            <a href='javascript:Function();'>
+                                                <img src="./img/sec8-slide3.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="text-box">
+                                            <h3>
+                                                [LG전자] 그램 15인치 노트북 (15Z95N-GRFMK) / <br>
+                                                i5 / 윈도우 10 홈 / 메모리 8GB / SSD 256GB
+                                            </h3>
+                                            <ul class="text2">
+                                                <li>42<span>%</span></li>
+                                                <li>1,329,900<span>원</span></li>
+                                                <li>2,290,000원</li>
+                                            </ul>
+                                            <hr>
+                                            <ul class="text3">                                    
+                                                <li class="star">
+                                                    <i class="fa fa-star"></i>
+                                                    4.0 <span>(6)</span>
+                                                </li>
+                                                <li>
+                                                   <span>
+                                                       무료배송<i> ·</i>
+                                                       K딜추천<i> ·</i>
+                                                       단독특가
+                                                   </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    
+                                    </div>
+                                </li>
+                                <li class="slide slide3">
+                                    <div class="slide-text">
+                                        <div class="img-box">
+                                            <div class="heart">
+                                                <a href='javascript:Function();'>
+                                                    <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                    <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                </a>
+                                            </div>
+                                            <a href='javascript:Function();'>
+                                                <img src="./img/sec8-slide4.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="text-box">
+                                            <h3>
+                                                [LG전자] 그램 15인치 노트북 (15Z95N-GRFMK) / <br>
+                                                i5 / 윈도우 10 홈 / 메모리 8GB / SSD 256GB
+                                            </h3>
+                                            <ul class="text2">
+                                                <li>42<span>%</span></li>
+                                                <li>1,329,900<span>원</span></li>
+                                                <li>2,290,000원</li>
+                                            </ul>
+                                            <hr>
+                                            <ul class="text3">                                    
+                                                <li class="star">
+                                                    <i class="fa fa-star"></i>
+                                                    4.0 <span>(6)</span>
+                                                </li>
+                                                <li>
+                                                   <span>
+                                                       무료배송<i> ·</i>
+                                                       K딜추천<i> ·</i>
+                                                       단독특가
+                                                   </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    
+                                    </div>
+                                </li>
+                                <li class="slide slide4">
+                                    <div class="slide-text">
+                                        <div class="img-box">
+                                            <div class="heart">
+                                                <a href='javascript:Function();'>
+                                                    <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                    <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                </a>
+                                            </div>
+                                            <a href='javascript:Function();'>
+                                                <img src="./img/sec8-slide5.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="text-box">
+                                            <h3>
+                                                [LG전자] 그램 15인치 노트북 (15Z95N-GRFMK) / <br>
+                                                i5 / 윈도우 10 홈 / 메모리 8GB / SSD 256GB
+                                            </h3>
+                                            <ul class="text2">
+                                                <li>42<span>%</span></li>
+                                                <li>1,329,900<span>원</span></li>
+                                                <li>2,290,000원</li>
+                                            </ul>
+                                            <hr>
+                                            <ul class="text3">                                    
+                                                <li class="star">
+                                                    <i class="fa fa-star"></i>
+                                                    4.0 <span>(6)</span>
+                                                </li>
+                                                <li>
+                                                   <span>
+                                                       무료배송<i> ·</i>
+                                                       K딜추천<i> ·</i>
+                                                       단독특가
+                                                   </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    
+                                    </div>
+                                </li>
+                                <li class="slide slide5">
+                                    <div class="slide-text">
+                                        <div class="img-box">
+                                            <div class="heart">
+                                                <a href='javascript:Function();'>
+                                                    <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                    <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                </a>
+                                            </div>
+                                            <a href='javascript:Function();'>
+                                                <img src="./img/sec8-slide6.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="text-box">
+                                            <h3>
+                                                [LG전자] 그램 15인치 노트북 (15Z95N-GRFMK) / <br>
+                                                i5 / 윈도우 10 홈 / 메모리 8GB / SSD 256GB
+                                            </h3>
+                                            <ul class="text2">
+                                                <li>42<span>%</span></li>
+                                                <li>1,329,900<span>원</span></li>
+                                                <li>2,290,000원</li>
+                                            </ul>
+                                            <hr>
+                                            <ul class="text3">                                    
+                                                <li class="star">
+                                                    <i class="fa fa-star"></i>
+                                                    4.0 <span>(6)</span>
+                                                </li>
+                                                <li>
+                                                   <span>
+                                                       무료배송<i> ·</i>
+                                                       K딜추천<i> ·</i>
+                                                       단독특가
+                                                   </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    
+                                    </div>
+                                </li>
+                                <li class="slide slide6">
+                                    <div class="slide-text">
+                                        <div class="img-box">
+                                            <div class="heart">
+                                                <a href='javascript:Function();'>
+                                                    <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                    <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                </a>
+                                            </div>
+                                            <a href='javascript:Function();'>
+                                                <img src="./img/sec8-slide7.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="text-box">
+                                            <h3>
+                                                [LG전자] 그램 15인치 노트북 (15Z95N-GRFMK) / <br>
+                                                i5 / 윈도우 10 홈 / 메모리 8GB / SSD 256GB
+                                            </h3>
+                                            <ul class="text2">
+                                                <li>42<span>%</span></li>
+                                                <li>1,329,900<span>원</span></li>
+                                                <li>2,290,000원</li>
+                                            </ul>
+                                            <hr>
+                                            <ul class="text3">                                    
+                                                <li class="star">
+                                                    <i class="fa fa-star"></i>
+                                                    4.0 <span>(6)</span>
+                                                </li>
+                                                <li>
+                                                   <span>
+                                                       무료배송<i> ·</i>
+                                                       K딜추천<i> ·</i>
+                                                       단독특가
+                                                   </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    
+                                    </div>
+                                </li>
+                                <li class="slide slide7">
+                                    <div class="slide-text">
+                                        <div class="img-box">
+                                            <div class="heart">
+                                                <a href='javascript:Function();'>
+                                                    <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                    <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                </a>
+                                            </div>
+                                            <a href='javascript:Function();'>
+                                                <img src="./img/sec8-slide8.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="text-box">
+                                            <h3>
+                                                [LG전자] 그램 15인치 노트북 (15Z95N-GRFMK) / <br>
+                                                i5 / 윈도우 10 홈 / 메모리 8GB / SSD 256GB
+                                            </h3>
+                                            <ul class="text2">
+                                                <li>42<span>%</span></li>
+                                                <li>1,329,900<span>원</span></li>
+                                                <li>2,290,000원</li>
+                                            </ul>
+                                            <hr>
+                                            <ul class="text3">                                    
+                                                <li class="star">
+                                                    <i class="fa fa-star"></i>
+                                                    4.0 <span>(6)</span>
+                                                </li>
+                                                <li>
+                                                   <span>
+                                                       무료배송<i> ·</i>
+                                                       K딜추천<i> ·</i>
+                                                       단독특가
+                                                   </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    
+                                    </div>
+                                </li>
+                                <li class="slide slide8">
+                                    <div class="slide-text">
+                                        <div class="img-box">
+                                            <div class="heart">
+                                                <a href='javascript:Function();'>
+                                                    <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                    <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                </a>
+                                            </div>
+                                            <a href='javascript:Function();'>
+                                                <img src="./img/sec8-slide9.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="text-box">
+                                            <h3>
+                                                [LG전자] 그램 15인치 노트북 (15Z95N-GRFMK) / <br>
+                                                i5 / 윈도우 10 홈 / 메모리 8GB / SSD 256GB
+                                            </h3>
+                                            <ul class="text2">
+                                                <li>42<span>%</span></li>
+                                                <li>1,329,900<span>원</span></li>
+                                                <li>2,290,000원</li>
+                                            </ul>
+                                            <hr>
+                                            <ul class="text3">                                    
+                                                <li class="star">
+                                                    <i class="fa fa-star"></i>
+                                                    4.0 <span>(6)</span>
+                                                </li>
+                                                <li>
+                                                   <span>
+                                                       무료배송<i> ·</i>
+                                                       K딜추천<i> ·</i>
+                                                       단독특가
+                                                   </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    
+                                    </div>
+                                </li>
+                                <li class="slide slide9">
+                                    <div class="slide-text">
+                                        <div class="img-box">
+                                            <div class="heart">
+                                                <a href='javascript:Function();'>
+                                                    <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                    <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                </a>
+                                            </div>
+                                            <a href='javascript:Function();'>
+                                                <img src="./img/sec8-slide10.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="text-box">
+                                            <h3>
+                                                [LG전자] 그램 15인치 노트북 (15Z95N-GRFMK) / <br>
+                                                i5 / 윈도우 10 홈 / 메모리 8GB / SSD 256GB
+                                            </h3>
+                                            <ul class="text2">
+                                                <li>42<span>%</span></li>
+                                                <li>1,329,900<span>원</span></li>
+                                                <li>2,290,000원</li>
+                                            </ul>
+                                            <hr>
+                                            <ul class="text3">                                    
+                                                <li class="star">
+                                                    <i class="fa fa-star"></i>
+                                                    4.0 <span>(6)</span>
+                                                </li>
+                                                <li>
+                                                   <span>
+                                                       무료배송<i> ·</i>
+                                                       K딜추천<i> ·</i>
+                                                       단독특가
+                                                   </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+
+                
+
+                    <!-- 필터버튼 누르면 필터열림 -->
+                    <div class="filterWrap">
+                        <div class="filterGap">
+                            <div class="filterCon">
+
+                                <div class="submenuTitle">
+                                    <div class="submenuTitleGap">
+                                        <div class="leftTit">
+                                            <h3>상세검색</h3>
+                                        </div>
+                                        <div class="rightBtn">
+                                            <div class="resetBtn">
+                                                <a href="#">초기화 
+                                                    <span class="resetIco">
+                                                        <img src="./img/ico_re.svg" alt="">
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="xBtn">
+                                                <a href="#">
+                                                    <img src="./img/btn_x_title_popup.svg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- #상세검색, 초기화, xbtn -->
+
+
+
+
+
+                                <div class="chooseOption">
+                                    <div class="chooseOptionGap">
+                                        <ul class="chooseOptionCon">
+                                            <li class="option">
+                                                인기순 
+                                                <span class="optionXBtn">
+                                                    <a href="javascript:Function();"><img src="./img/ico_white_x.svg" alt=""></a>
+                                                </span>
+                                            </li>
+                                            <li class="option">
+                                                건강기능 
+                                                <span class="optionXBtn">
+                                                    <a href="javascript:Function();"><img src="./img/ico_white_x.svg" alt=""></a>
+                                                </span>
+                                            </li>
+                                            <li class="option">
+                                                가공/신선
+                                                <span class="optionXBtn">
+                                                    <a href="javascript:Function();"><img src="./img/ico_white_x.svg" alt=""></a>
+                                                </span>
+                                            </li>
+                                            <li class="option">
+                                                생활/건강
+                                                <span class="optionXBtn">
+                                                    <a href="javascript:Function();"><img src="./img/ico_white_x.svg" alt=""></a>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--# 옵션선택 -->
+
+
+
+
+                                <div class="line_Option">
+                                    <div class="line_OptionGap">
+                                        <div class="leftOptTit">
+                                            <h3>정렬</h3>
+                                        </div>
+                                        <div class="rightOptBtn">
+                                            <div class="optTit">
+                                                인기순
+                                            </div>
+                                            <div class="arrowBtn">
+                                                <a href="#">
+                                                    <span class="f_arrow"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- #정렬 인기순 화살표 -->
+
+
+
+
+                                <div class="line_input">
+                                    <div class="line_inputGap">
+                                        <ul class="clearfix">
+                                            <li><div><a href="#"><input type="checkbox" checked>인기순</a></div></li><!-- 디폴트 체크 필수 -->
+                                            <li><div><a href="#"><input type="checkbox">최근등록순</a></div></li>
+                                            <li><div><a href="#"><input type="checkbox">판매수량순</a></div></li>
+                                            <li><div><a href="#"><input type="checkbox">리뷰많은순</a></div></li>
+                                            <li><div><a href="#"><input type="checkbox">판매수량순</a></div></li>
+                                            <li><div><a href="#"><input type="checkbox">낮은 가격순</a></div></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #정렬 인기순 input -->
+
+
+                                <div class="line_Option">
+                                    <div class="line_OptionGap">
+                                        <div class="leftOptTit">
+                                            <h3>카테고리</h3>
+                                        </div>
+                                        <div class="rightOptBtn">
+                                            <div class="optTit">
+                                                    3개 선택됨
+                                            </div>
+                                            <div class="arrowBtn">
+                                                <a href="#">
+                                                    <span class="f_arrow"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- # 카테고리  화살표 -->
+
+                                
+
+                                <div class="line_input">
+                                    <div class="line_inputGap">
+                                        <ul class="clearfix">
+                                            <li><div><a href="#"><input type="checkbox" checked>건강기능</a></div></li><!-- 디폴트 체크 필수아님 -->
+                                            <li><div><a href="#"><input type="checkbox" checked>가공/신선</a></div></li><!-- 디폴트 체크 필수아님 -->
+                                            <li><div><a href="#"><input type="checkbox" checked>생활/건강</a></div></li><!-- 디폴트 체크 필수아님 -->
+                                            <li><div><a href="#"><input type="checkbox">디지털/가전</a></div></li>
+                                            <li><div><a href="#"><input type="checkbox">패션/뷰티</a></div></li>
+                                            <li><div><a href="#"><input type="checkbox">스포츠/레저</a></div></li>
+                                            <li><div><a href="#"><input type="checkbox">출산/육아</a></div></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #건강기능 input -->
+
+
+
+
+                                <div class="line_Option">
+                                    <div class="line_OptionGap">
+                                        <div class="leftOptTit">
+                                            <h3>혜택</h3>
+                                        </div>
+                                        <div class="rightOptBtn">
+                                            <div class="optTit">
+                                                무료배송
+                                            </div>
+                                            <div class="arrowBtn">
+                                                <a href="#">
+                                                    <span class="f_arrow"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- # 혜택  화살표 -->
+
+                                
+
+                                <div class="line_input">
+                                    <div class="line_inputGap">
+                                        <ul class="clearfix">
+                                            <li><div><a href="#"><input type="checkbox" checked>무료배송</a></div></li><!-- 디폴트 체크 필수아님 -->
+                                            <li><div><a href="#"><input type="checkbox">스포츠/레저</a></div></li>
+                                            <li><div><a href="#"><input type="checkbox">쿠폰적용</a></div></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- #건강기능 input -->
+
+
+
+
+
+
+
+
+
+                                <div class="line_Option">
+                                    <div class="line_OptionGap">
+                                        <div class="leftOptTit">
+                                            <h3>가격</h3>
+                                        </div>
+                                        <div class="rightOptBtn">
+                                            <div class="optTit">
+                                                2~4만원 대
+                                            </div>
+                                            <div class="arrowBtn">
+                                                <a href="#">
+                                                    <span class="f_arrow hideArrow"></span>
+                                                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- # 가격  화살표 -->
+
+                                
+
+                                <div class="line_input addhid">
+                                    <div class="line_inputGap">
+
+
+                                        <ul class="clearfix">
+                                            <li><div><a href="#"><input type="checkbox">2만원 미만</a></div></li>
+                                            <li><div><a href="#"><input type="checkbox" checked>2~4만원 대</a></div></li><!-- 디폴트 체크 필수아님 -->
+                                            <li><div><a href="#"><input type="checkbox">5~6만원 대</a></div></li>
+                                            <li><div><a href="#"><input type="checkbox">7~10만원 대</a></div></li>
+                                            <li><div><a href="#"><input type="checkbox">11만원 이상</a></div></li>
+                                        </ul>
+
+
+
+                                        <div class="price_input">
+                                            <div class="price_inputGap">
+                                                <div class="price_inputCon">
+                                                    <div><input type="text" placeholder="최저가"></div>
+                                                    <div class="text" > ~ </div>
+                                                    <div><input type="text" placeholder="최고가"></div>
+                                                    <div class="apply"><a href="#">적용</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- #price input -->
+
+
+
+
+                                    </div>
+                                </div>
+                                <!-- #가격 input -->
+
+
+
+
+                                <div class="bottomBtn">
+                                    <div class="resultBtn">
+                                        <a href="#">결과보기</a>
+                                    </div>
+                                </div>
+                                <!-- #결과보기 -->
+
+                      
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>       <!-- #filterWrap -->    
+
+
+
+
+
+
+                </div>   <!-- #gap -->
+            </div>
+        </section>
+
+
+  
+    </main>
+
+ 
+ 
+</div>
+
+
+<script>
+
+    //헤더영역 스크롤 이벤트 (페럴럭스)
+    var $window  = $(window);
+    var $topWrap = $('#wrap1 #main> #section1>.container>.gap>.topWrap');
+    var $contentsWrap = $('.contentsWrap');
+    var $relation = $('.relation-container');
+    var $category = $('.category-container');
+    var $brand    = $('.brand-container');
+    var $option   = $('.optionContainer');
+    var $resultBtn   = $('.resultBtn');//결과보기 버튼
+    
+    
+    var t = 0; // false === 0 같다는 표시   toggle
+    
+
+    
+    //마우스로 스크롤값이 아래로 30픽셀이상 >= 내려가면 
+    //선택자 헤더영역(#header)에 효과 이벤트가 발생하게 하라 
+    $window.scroll(function(){ //스크롤 이벤트
+        // console.log(  $window.scrollTop() ); //스크롤 탑값 확인
+        if( $window.scrollTop() >= 30 ){  //마우스로 스크롤값이 아래로 30픽셀이상 내려가면
+          
+            $topWrap.addClass('addTop'); 
+            $contentsWrap.addClass('addTop'); 
+            $relation.addClass('addTop'); 
+            $category.addClass('addTop'); 
+            $brand.addClass('addTop'); 
+            $option.addClass('addTop'); 
+            $resultBtn.addClass('addTop'); //
+            
+ 
+        }
+        else{
+                
+                $topWrap.removeClass('addTop'); 
+                $contentsWrap.removeClass('addTop'); 
+                $relation.removeClass('addTop'); 
+                $category.removeClass('addTop'); 
+                $brand.removeClass('addTop'); 
+                $option.removeClass('addTop'); 
+                $resultBtn.removeClass('addTop'); 
+               
+        }           
+    });
+
+
+
+
+   
+    
+</script>
+
+
+<script>
+    
+ 
+    
+ 
+    var filterWrap        = $('.filterWrap');//필터메뉴 dim 
+    var subxBtn           =$('.xBtn');       //서브메뉴 xBtn
+    var filter           =$('.filter');      // filterBtn
+
+   
+
+    //  필터창 닫기버튼 
+    subxBtn.each(function(idx) {                   
+        $(this).on({
+            click: function () {
+                filterWrap.eq(idx).removeClass('filtershow'); // x버튼 누르면 필터창 사라짐
+                
+            }
+            
+        });
+     });
+
+
+    //  필터창 open 
+    filter.each(function(idx) {                   
+        $(this).on({
+            click: function () {
+                filterWrap.eq(idx).addClass('filtershow'); // x버튼 누르면 필터창 사라짐
+                
+            }
+            
+        });
+     });
+
+
+
+// 화살표 버튼 
+    var f_arrow          = $('.f_arrow');        //화살표 show 버튼
+    var input            = $('.line_input');     //line_input 
+  
+
+
+    // 화살표 버튼 을 누르면 
+    f_arrow.each(function(idx) {                   
+        $(this).on({
+            click: function () {
+                input.eq(idx).toggleClass('addhid'); //input 보여줌 안보여줌 
+                f_arrow.eq(idx).toggleClass('hideArrow');    //카드형 보여줌 
+              
+                
+            }
+            
+        });
+     });
+
+
+   
+    var cardUI = $('.cardUI');            //카드버튼 
+    var goodsCon = $('.goodsContainer');  //2단형 디폴트 상품리스트
+    var cardCon = $('.cardCon');          //카드형 컨텐츠 상품리스트
+    
+    var uiIcon = $('.uiIcon');            //카드형, 2단형 아이콘 토글하기
+    
+    // 카드버튼을 누르면 
+    cardUI.each(function(idx) {                   
+        $(this).on({
+            click: function () {
+                goodsCon.eq(idx).toggleClass('addCardhid'); //2단형 안보여줌 
+                cardCon.eq(idx).toggleClass('cardshow');    //카드형 보여줌 
+                uiIcon.eq(idx).toggleClass('cardUI');      // 2단형 아이콘 보여줌 감춤
+              
+            }
+            
+        });
+     });
+
+
+
+    
+
+     
+
+
+
+
+
+
+
+</script>
+
+<script>
+        
+
+
+    const slideWrap       = $('#section2 .slide-wrap');
+     const slideContainer = $('#section2 .slide-view');
+     let   cnt            = 0;
+     let   swipeStart     = null;
+     let   swipeEnd       = null;
+     let   dragStart      = null; // 슬라이드 마지막이 처음에서 왼쪽으로 이동된 상태 값을 빼주고 시작
+     let   mouseDown      = null; // 반드시 마우스가 다우된 상태를판단 다운이면 tru, 업이면 false
+    
+     //1.메인슬라이드 함수
+     function mainSlide(){                
+
+           // btnWrap.stop().animate({left:(-100*cnt) + '%'});       
+        slideWrap.stop().animate( {left:(-124*cnt)}, 'easeInOutSine',function(){
+             cnt>3?cnt=0:cnt; 
+             cnt<1?cnt=0:cnt;                   
+            //초기화
+           slideWrap.stop().animate( {left:(-124*cnt)});
+           
+        });
+     }
+
+     //2.다음카운트 함수
+     function nextCount(){
+        cnt++;
+        mainSlide();
+     }
+     //2.이전카운트 함수
+     function prevCount(){
+        cnt--;
+        mainSlide();
+     }
+     
+     
+     //4. 마우스 터치 스와이프
+     slideContainer.on({
+           mousedown: function(event){
+              //터치스와이프 시작 포지션
+              swipeStart = event.clientX;
+              dragStart  = event.clientX - slideWrap.offset().left - 124;
+              mouseDown  = true;//드래그 시작임을 표시
+              
+
+           },//mousedown 끝
+           mouseup: function(event){
+              swipeEnd = event.clientX;
+              mouseDown  = false; //드래그 끝
+              
+              if( swipeStart-swipeEnd > 0 ){//다음슬라이드                     
+                 nextCount();
+              }
+              if( swipeStart-swipeEnd < 0 ){   // 이전슬라이드                    
+                 prevCount();
+           }
+        
+        }
+     });
+
+     
+     //5. 마우스 드레그 앤 드롭
+     // mousemove
+
+     //6. 반응형 모바일 손가락 핑거 드래드 앤 드롭(반응형)
+     // 마우스 인식못함 동작안함
+     // 반응형 진행하고 폴리필 touchEvent 추가
+     // touchstart(mousedown) / touchend(mouseup) / touchmove(mousemove)
+     slideContainer.on({
+        touchstart: function(event){
+          
+           swipeStart = event.originalEvent.touches[0].clientX;
+           dragStart  = event.originalEvent.touches[0].clientX - slideWrap.offset().left - 124;
+           mouseDown  = true;//드래그 시작임을 표시 
+                              
+        },
+        touchend: function(event){                  
+              swipeEnd   = event.originalEvent.changedTouches[0].clientX;   
+              mouseDown  = false; //드래그 끝
+                
+               
+              if( swipeStart-swipeEnd > 0 ){//다음슬라이드                     
+                 nextCount();
+              }
+              if( swipeStart-swipeEnd < 0 ){   // 이전슬라이드                    
+                 prevCount();
+              }   
+        }
+     });
+
+
+
+
+</script>
+
+<script>
+    var focusInput  = $('.focusWrap');
+    var inputTxtBox = $('.inputTxtBox'); //인풋박스
+    var searchIcon  = $('.searchIcon');
+    var xbtn        = $('.xbtn');
+    var t           = 0;
+   
+
+    inputTxtBox.each(function(idx) {  //인풋박스클릭했을때                  
+        $(this).on({
+            click: function () {
+                if(t==0){
+                    t=1;
+                     focusInput.eq(idx).addClass('addInput'); //빨간새 돋보기 보여줌 
+                     searchIcon.eq(idx).addClass('addhide'); //회색 돋보기 안보여줌 
+                }
+               else{
+                    t=0;
+                    focusInput.eq(idx).removeClass('addInput'); //빨간새 돋보기 안보여줌 
+                    searchIcon.eq(idx).removeClass('addhide'); //회색 돋보기 보여줌 
+
+               }
+                
+            }
+            
+        });
+     });
+
+     xbtn.each(function(idx) {                   
+        $(this).on({
+            click: function () {
+                focusInput.eq(idx).toggleClass('addInput'); //빨간새 돋보기 보여줌 
+                 
+              
+                
+            }
+            
+        });
+     });
+
+
+
+    var btn    = document.querySelector('input');
+
+        btn.addEventListener('click', updateBtn);
+
+
+        function updateBtn() {
+            if (btn.value === '비') {
+                btn.value = '';
+              
+            
+            } else {
+                btn.value = '비';
+                
+            }
+        } 
+
+
+
+</script>
+
+<script>
+    
+            //   탭버튼 이벤트
+            var t=0;
+              
+              priceBox       = $('.selectBox');
+
+
+              $('.tabBtn , .arrow' ).on({
+                 click:	function(){
+                    showHideList();
+                 }
+              });
+              
+              
+              $(".tab > li > a").click(function(e) {
+              e.preventDefault();	
+              priceBox.removeClass('addClose'); // 탭버튼 누르면 priceBox 다시나타남
+              // 전역변수 조정
+              showHideList();
+              
+              //새로운 클릭일 경우에만 ui 변경
+              if(!$(this).parent().hasClass('active')) { 
+                $('.tabBtn').text($(this).text()); //보여지는 제목 바꾸기
+                
+              }
+              
+              // 액티브 조정 
+              $(this).parent().siblings().removeClass('active').end().addClass('active');
+              
+              });
+              
+              //모바일 & PC 공통 
+              $(".tabs a").click(function(e) {
+                 e.preventDefault();	
+                 $(this).parent().siblings().removeClass('active').end().addClass('active');
+          
+                 $('.tab').parents('ul').next().children().hide().eq($(this).parent().index()).show();
+              
+                 
+              });
+              
+              //현재 active 되어있는 탭 외의 모든 데이터 접기 => 모바일도 적용하기 위해선 공통 class 생성하여 적용 필요
+              $('.ServiceTab > li').on('click', function(e){
+                 e.preventDefault();	
+              // $(".nav").navgoco('toggle', false);
+                 $(".nav > li").removeClass('active');
+                 $(".nav > li").removeClass('open');
+              });
+              
+              function showHideList() {
+                 if(t==0){
+                    t=1;
+                    $('.tab').stop().slideDown();
+                    $('.arrow').addClass('addFamily');
+                   
+                 }else{
+                    t=0;
+                    $('.tab').hide();
+                    $('.arrow').removeClass('addFamily');	
+                    $('.tabBtn').children().stop().slideUp();	
+                   
+                 }
+              }
+              
+</script>
+
+<script>
+
+    var heart  = $('.heart'); //하트버튼
+
+
+    // heart 클릭 이벤트
+    heart.each(function (idx) {
+            $(this).on({
+            click: function () {
+            
+                heart.eq(idx).toggleClass('addHeart'); // 클래스 주입
+                
+            }
+            });
+    });
+
+
+
+</script>
+
+
+</body>
+</html>

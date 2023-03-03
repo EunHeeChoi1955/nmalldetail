@@ -1,0 +1,128 @@
+
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./fonts.css);
+
+
+
+#wrap1 { position: relative; width:100%; max-width:450px; margin:0 auto;display: block;  background: #fff;  }
+#wrap1>#header { width:100%; max-width:450px; margin:0 auto;  background: #fff;/* #3D3F84; */  }
+
+#wrap1>#header .container{width:100%; padding: 0; } 
+
+#wrap1>#header .container .top { padding:0 18px; display: flex; }
+#wrap1>#header .container .top>li{width: 33.333%; display:inline-block; padding:14px 0 0 0 ; }
+/*  header left */
+#wrap1>#header .container .top>.left .leftWrap {  width: 100%; }
+#wrap1>#header .container .top>.left .leftWrap .backBtn { width:25px;   }
+#wrap1>#header .container .top>.left .leftWrap .backBtn a { width:100%;  padding:1px 0; }
+#wrap1>#header .container .top>.left .leftWrap .backBtn a span { background:  url(../img/back.svg) no-repeat 0% 100%;  background-size:contain; width:100%;height:18px; display: inline-block;}
+
+/* header medium */
+#wrap1>#header .container .top>.medium {text-align: center; color: #1A1A1A; font-size: 18px;font-weight: 400; white-space: nowrap; }
+
+/* header  right */
+#wrap1>#header .container .top>.right #aside {width: 100%;  }
+#wrap1>#header .container .top>.right #aside .icon-box-gap { width:100%;  }
+#wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box {  width:100%;  }
+#wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul{float: right; box-sizing: border-box;white-space: nowrap;   }
+#wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li { padding: 0 5px; text-align: center;display:inline-block; }
+#wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li a  { width:23.5px; }
+#wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li a img { color:#1A1A1A;  }
+
+
+
+
+
+
+
+
+
+
+#main  {width: 100%; height: auto;}
+
+/* 내용리스트 */
+#main .deliveryCon { position: relative; width: 100%; height:auto ;display:block;}
+#main .deliveryCon.tab1Delect { display:block;  }
+#main .deliveryCon .listWrap { width: 100%; font-family: 'SUIT';   }
+ /* box  아이콘박스*/
+ #main .deliveryCon .listWrap .box { width: 100%;   font-family: 'SUIT';  border-bottom: 7px solid #E2E2E2; padding: 0 18px 20px 18px;}
+ #main .deliveryCon .listWrap .box h2 { width: 100%; text-align: center; font-size: 16px; color: #1a1a1a; font-weight: 700; padding: 20px 0; margin:0;}
+ #main .deliveryCon .listWrap .box .iconBox {width: 100%;text-align: center; padding: 0 0 17px 0; display: flex;font-family: 'SUIT'; margin: 0;}
+ #main .deliveryCon .listWrap .box .iconBox li{position:relative;width:20%; display: inline-block; text-align: center;}
+ #main .deliveryCon .listWrap .box .iconBox li:before { position:absolute; top:50%; margin-top:-8px; right:0; margin-right:-2px; content:''; display:block; border:5px solid #C4C4C4; border-top:3px solid transparent; border-bottom:3px solid transparent;  border-right:3px solid transparent;  }
+ #main .deliveryCon .listWrap .box .iconBox li:last-child:before { border:0;  }
+ #main .deliveryCon .listWrap .box .iconBox li a{display: block;color: #187AEF; font-size: 18px; font-weight: 700; }
+ #main .deliveryCon .listWrap .box .iconBox li a span{padding-top: 10px; display: block;text-align: center; font-size: 12px; font-weight: 400; color:#1a1a1a ;}
+ #main .deliveryCon .listWrap .box .iconBox li.addBtn a span{  font-weight: 700; color:#E7342C  ;}
+ #main .deliveryCon .listWrap .box .iconBox li img {width: 24px; margin:0 auto; }
+ #main .deliveryCon .listWrap .box .iconBox li img.block1 {display: none;  }
+ #main .deliveryCon .listWrap .box .iconBox li img.block { display: block; }
+ #main .deliveryCon .listWrap .box .iconBox li.addBtn img.block1 {display: block; }
+ #main .deliveryCon .listWrap .box .iconBox li.addBtn img.block {display: none; }
+ /* 텍스트 박스  */
+ #main .deliveryCon .listWrap .box .txtBox {width:100%; display: block;padding: 0 0 20px 0; }
+ #main .deliveryCon .listWrap .box .txtBox div { display: flex; margin: 0;}
+ #main .deliveryCon .listWrap .box .txtBox div .BoxLeft {width: 77px; min-width: 77px;}
+ #main .deliveryCon .listWrap .box .txtBox .BoxTxt1  { padding:0 0 18px 0;}
+ #main .deliveryCon .listWrap .box .txtBox .BoxTxt1 .BoxRight span { margin-left: 6px; vertical-align:auto;}
+ #main .deliveryCon .listWrap .box .txtBox .BoxTxt2 .BoxRight { display: flex; }
+ #main .deliveryCon .listWrap .box .txtBox .BoxTxt2 .BoxRight span{ display: inline-block; }
+ #main .deliveryCon .listWrap .box .txtBox .BoxTxt2 .BoxRight a{ display: inline-block; font-size: 10px; height:19px; width:38px; color: #565656; border: 1px solid #B3B3B3; text-align:center;  line-height: 180%; border-radius: 10px; text-decoration: none;margin-left: 6px; transition: all .2s;}
+ #main .deliveryCon .listWrap .box .txtBox .BoxTxt2 .BoxRight a:hover{ background: rgba(241, 241, 241, 0.5); }
+
+
+
+
+ /* box하단 */
+ #main .deliveryCon .listWrap .box .boxBottom {/*  padding:18px 16px; */ margin: 0; }
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap { width: 100%; }
+
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap {display: block; padding:20px 0 0 0; }
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap1 { width: 100%; border-top:1px solid #E2E2E2; }
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 {display: flex;  }
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Left{ position:relative; margin-right: 12px;}
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Left a{ width: 100%; position:relative; }
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Left a img{ width: 100%;min-width: 80px; }
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Left .imgCap { position: absolute; top: 0;left: 0; border-radius: 6px;background: rgba(0,0,0, .5);}
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Left .imgCap a { width: 100%; max-width: 80px; }
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Left .imgCap a img { padding:11px; }
+ 
+
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Right{display: block; width: 100%;}
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Right .txt2Right_txt1 {width: 100%; }
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Right .txt2Right_txt1 a {line-height: 120%; font-size: 12px; color: #187AEF; text-decoration: none;}
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Right .txt2Right_txt1 a span {display: inline-block; }
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Right .txt2Right_txt1 a span i { font-size: 15px; font-weight: 400; vertical-align: bottom; }
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Right .txt2Right_txt2 {color: #1a1a1a; font-weight: 400; font-size: 14px; margin:4px 0; }
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Right .txt2Right_txt3 {width: 100%; display: flex;line-height: 140%;}
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Right .txt2Right_txt3 .txt3_sub1{ font-size: 14px; font-weight: 700; color: #1a1a1a; padding-right: 6px;  display: inline-block; }
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Right .txt2Right_txt3 .txt3_sub2{ font-size: 12px; font-weight: 400; color: #1a1a1a;display: inline-block;vertical-align: baseline; }
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Right .txt2Right_txt3 .txt3_sub3{margin: auto 0 auto auto; display: inline-block; }
+ #main .deliveryCon .listWrap .box .boxBottom .boxBottomWrap .brandWrap .txt2 .txt2Right .txt2Right_txt3 .txt3_sub3 a{   text-decoration: none;font-size: 12px; font-weight: 400; color: #1a1a1a; padding:5px 8px ; border-radius: 4px; border: 1px solid #E2E2E2;}
+ 
+
+
+ /* 배송상세현황 */
+ #main .deliveryCon .listWrap .deliveryListWrap {padding:18px 16px;}
+ #main .deliveryCon .listWrap .deliveryListWrap h2 { font-size:16px; font-weight: 700; color: #1a1a1a; }
+ #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox {  display: flex;}
+ #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .nav-container { width: auto; }
+ #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .nav-container .nav-view { padding:25px 34px 0 2px; }
+ #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .nav-container .nav-view .nav-wrap {position: relative; width:auto; height: 258px; overflow: hidden;  }
+ #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .nav-container .nav-view .nav-wrap li { padding-bottom:55px ;}
+ #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .nav-container .nav-view .nav-wrap li::after {content: "";position: absolute;left:0 ; margin-left:3px; display: inline-block;  width:1px; height:55px; display:block;background: #CCCCCC;}
+ #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .nav-container .nav-view .nav-wrap li:last-child:after { height:0; }
+ #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .nav-container .nav-view .nav-wrap li span { border-radius: 50%; background: #CCCCCC; width: 7px; height: 7px; display: block; }
+ #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .nav-container .nav-view .nav-wrap li.addBtn span { background: #E7342C; width: 9px; height: 9px; }
+ #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .delivery-container { }
+ #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .delivery-container .delivery-view { }
+ #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .delivery-container .delivery-view .list_state{ }
+ #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .delivery-container .delivery-view .list_state li{ display: flex;  color: #797979; padding: 15px 0; font-size: 12px;}
+ #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .delivery-container .delivery-view .list_state li div {font-weight: 400;line-height: 130%; }
+ #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .delivery-container .delivery-view .list_state li.addBtn div {color: #1a1a1a; }
+ #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .delivery-container .delivery-view .list_state li div.stateNow { font-weight: 700; padding-left: 23px;line-height: 120%;}
+ #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .delivery-container .delivery-view .list_state li.addBtn div.stateNow { color: #E7342C;  }
+ #main .deliveryCon .listWrap .deliveryListWrap .deliveryListBox .delivery-container .delivery-view .list_state li div.stateNow span { font-weight: 400; }
+
+

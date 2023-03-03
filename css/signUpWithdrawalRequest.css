@@ -1,0 +1,88 @@
+
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./fonts.css);
+*{font-family: 'SUIT';}
+
+
+#wrap1 { position: relative; width:100%; max-width:450px; margin:0 auto;display: block; height:100%; background: #fff;  }
+#wrap1>#header { width:100%; max-width:450px; margin:0 auto;height:52px;  background: #fff;/* #3D3F84; */  }
+#wrap1>#header.addHeader {  border-bottom: 1px solid #E6E6E6; }
+#wrap1>#header .container{width:100%; padding: 0; } 
+
+#wrap1>#header .container .top { padding:14px 18px 8px 18px;  display: flex; }
+#wrap1>#header .container .top>li{width: 33.333%; display:inline-block; }
+/*  header left */
+#wrap1>#header .container .top>.left .leftWrap {  width: 100%; }
+#wrap1>#header .container .top>.left .leftWrap .backBtn { width:25px;   }
+#wrap1>#header .container .top>.left .leftWrap .backBtn a { width:100%;  padding:1px 0; }
+#wrap1>#header .container .top>.left .leftWrap .backBtn a span { background:  url(../img/back.svg) no-repeat 0% 100%;  background-size:contain; width:100%;height:18px; display: inline-block;}
+
+/* header medium */
+#wrap1>#header .container .top>.medium {text-align: center; color: #1A1A1A; font-size: 18px;font-weight: 400; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+
+/* header  right */
+#wrap1>#header .container .top>.right #aside {width: 100%;  }
+#wrap1>#header .container .top>.right #aside .icon-box-gap { width:100%;  }
+#wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box {  width:100%;  }
+#wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul{float: right; box-sizing: border-box;white-space: nowrap;   }
+#wrap1>#header .container .top>.right #aside .icon-box-gap .icon-box ul li { padding: 0 5px; text-align: center;display:inline-block; }
+
+
+
+
+
+
+
+#main  {width: 100%; height: 100vh;  font-family: 'SUIT'; }
+
+
+/* 주문이 완료되었습니다. */
+.topMention {width: 100%; text-align: center; padding:20px 0 30px 0; }
+.topMention .orderImg {width: 100%; text-align: center; padding-bottom: 16px;}
+.topMention .orderImg img {width: 74px;  }
+.topMention h2 { font-size:20px ; font-weight: 700; width: 100%; text-align: center;  line-height: 31px;}
+
+
+/* 내용리스트 */
+#main .paymentCon { position: relative; width: 100%; height:auto ;display:block;  }
+#main .paymentCon .paymentWrap { width: 100%; font-family: 'SUIT'; }
+
+
+
+
+
+/* 서비스탭 */
+.serviceTab { max-width:450px; width: 100%; padding: 0 18px; overflow: hidden; background: #fff; }
+
+/* 서비스 이미지들 */
+.serviceTab .serviceImgWrap {  width: 100%; padding: 20px ; cursor: pointer; border-bottom: 1px solid #B3B3B3;border-top: 1px solid #B3B3B3;}
+.serviceTab .serviceImgWrap .serviceImgGap {  width: 100%; }
+.serviceTab .serviceImgWrap .serviceImgGap .serviceImgBox { display: block; }
+.serviceTab .serviceImgWrap .serviceImgGap .serviceImgBox li { width: 100%;text-align: center; display: inline-block; margin-bottom:16px; }
+.serviceTab .serviceImgWrap .serviceImgGap .serviceImgBox li:last-child {  margin-bottom:0; }
+.serviceTab .serviceImgWrap .serviceImgGap .serviceImgBox li a { width: 100%; display: flex; }
+.serviceTab .serviceImgWrap .serviceImgGap .serviceImgBox li a img { width: 68px;  }
+.serviceTab .serviceImgWrap .serviceImgGap .serviceImgBox li a .name { font-size: 18px; color: #1A1A1A; line-height: 27px; padding: 20.5px 16px; }
+
+
+
+/* 버튼 */
+.btnBoxWrap { display: block; padding: 0 18px; margin-top: 30px; }
+.btnBoxWrap .redBtn { background:#E7342C;margin: 0 auto;border-radius: 6px; width:100%; margin-bottom: 14px;}
+.btnBoxWrap .redBtn a{  color: #fff;  display: inline-block; text-align: center;  width:100%; height: 48px; padding: 12px 57px; font-weight: 400; font-size: 16px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+
+.btnBoxWrap .greyBtn { background:#CCCCCC;margin: 0 auto;border-radius: 6px; width:100%;}
+.btnBoxWrap .greyBtn a{  color: #fff;  display: inline-block; text-align: center;  width:100%; height: 48px; padding: 12px 57px; font-weight: 400; font-size: 16px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+
+
+
+
+
+
+
+
+
+
+
+

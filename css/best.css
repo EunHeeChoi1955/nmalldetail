@@ -1,0 +1,334 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./fonts.css);
+
+
+
+#wrap1 { position: relative; width:100%; max-width:450px; margin:0 auto;display: block; height: 100vh; font-family: 'SUIT'; background: #fff;   }
+
+
+
+    #header { z-index:4; position:fixed; top:0; width:100%; max-width:450px; margin:0 auto;  background: #fff;/* #3D3F84; */ }
+    /* #header.addHeader {  border-bottom: 1px solid #E6E6E6; } */
+    #header .container{width:100%; } 
+
+    #header .container .top { padding-bottom: 5px; display: flex; height: 38px;padding: 0 18px; }
+    #header .container .top.addHeader { display: none; }
+    #header .container .top>div{ width:50%;  }
+
+    /*  header left */
+     #header .container .top>.left {width:50%; margin:auto auto 8px 0;  }
+     #header .container .top>.left div {width:100%; }
+     #header .container .top>.left div span { width:63px;   }
+     #header .container .top>.left div span a {width:100%;  }
+     #header .container .top>.left div span a span{  background:  url(../img/logo.svg) no-repeat 0% 100%; background-size:contain; width:82px;height:22px; display: block; }
+     #header .container .top>.left div span a span.addBg {background: url(../img/logo_c.png) no-repeat 0% 100%; background-size:contain;}
+    /* header  right */
+     #header .container .top>.right #aside { width:100%;}
+     #header .container .top>.right #aside .icon-box-gap {  padding-top: 20px; }
+     #header .container .top>.right #aside .icon-box-gap .icon-box {  width:100%;  }
+     #header .container .top>.right #aside .icon-box-gap .icon-box ul{float: right; box-sizing: border-box;white-space: nowrap;   }
+     #header .container .top>.right #aside .icon-box-gap .icon-box ul li { padding: 0 19px 0 0; text-align: center;display:inline-block;  }
+     #header .container .top>.right #aside .icon-box-gap .icon-box ul li:last-child { padding:0 5px 0 0;   }
+     #header .container .top>.right #aside .icon-box-gap .icon-box ul li a  { width:23.5px;  }
+     #header .container .top>.right #aside .icon-box-gap .icon-box ul li a img { color:#1A1A1A;  }
+     #header .container .top>.right #aside .icon-box-gap .icon-box ul li a em {padding:4.6px 4px;width:20px; height:20px; position:absolute; z-index:2; top:12px; right:14px; font-weight: 200; background-color: #E7342C; border-radius: 50%; font-size: 11px;box-sizing: border-box;line-height: 11px;}
+
+    /* 메뉴 */
+     #header .container .bottom{ width:100%;  display: block; padding:10px 0 0 0; height: 42px;}
+     #header .container .bottom .bottom-wrap{ width:100%;}
+     #header .container .bottom .bottom-wrap nav{ width:100%; padding: 0 18px;}
+     #header .container .bottom .bottom-wrap nav>ul{ display: flex;}
+     #header .container .bottom .bottom-wrap nav>ul>li{ text-align: center; width:25%; padding:0 18px; display: inline-block; font-family: 'SUIT'; white-space: nowrap; } 
+     #header .container .bottom .bottom-wrap nav>ul>li:first-child{ margin:auto auto auto  0 ; padding-left:0;}
+     #header .container .bottom .bottom-wrap nav>ul>li:last-child{ padding-right:0;margin:auto 0 auto auto; }
+     #header .container .bottom .bottom-wrap nav>ul>li a { white-space: nowrap; display: inline-block; color:#1A1A1A; text-decoration: none;  font-size: 16px; font-weight: 300; line-height: 155%;transition: all .3s ease-in-out; }
+     #header .container .bottom .bottom-wrap nav>ul>li:hover a { font-weight: 700; text-decoration: none; border-width: 0px 0px 2px 0px; white-space: nowrap;border-style: solid; color:#E7342C;  border-color: #E7342C; }
+     #header .container .bottom .bottom-wrap nav>ul>li.addClass a {font-weight: 700; text-decoration: none; border-width: 0px 0px 2px 0px; white-space: nowrap;border-style: solid; border-color: #E7342C; }
+     #header .container .bottom .bottom-wrap nav>ul>li.addClass a {color:#E7342C;  border-color: #E7342C; }
+
+
+        .bottomBtnWrap.addTop  {display: none;}
+        .bottomBtnWrap {display:block;display: flex; background: #fff; padding:12px 18px; }
+        .bottomBtnWrap .lankBtnItem  {padding: 12px 0 10px 0; display:inline-block; width:50%; text-align:center;background: #E9E9E9; border-radius: 10px; font-family:'SUIT';}
+        .bottomBtnWrap .lankBtnItem.weeklyBtn { margin-right:5px; overflow: hidden; text-overflow:ellipsis ;}
+        .bottomBtnWrap .lankBtnItem.lankBtn { margin-left:5px; overflow: hidden; text-overflow:ellipsis ;padding: 12px 0 10px 0; }
+        .bottomBtnWrap .lankBtnItem a { color: #1A1A1A; font-size: 14px; font-weight: 400; white-space: nowrap; line-height: 21px;}
+        /* 버튼 클릭했을때 이벤트 */
+        .bottomBtnWrap .lankBtnItem.pressedBtnRed { background: #fff; border: 2px solid #E7342C; padding: 10px 0 10px 0; }
+        .bottomBtnWrap .lankBtnItem.pressedBtnRed a { color: #E7342C; font-weight: 700; font-size: 14px;  white-space: nowrap;}
+        .bottomBtnWrap .lankBtnItem.pressedBtnRed a img.bkIcon { display: none; }
+        .bottomBtnWrap .lankBtnItem.pressedBtnRed a img.redIcon { display: inline-block; margin-top: -4px; }
+        .bottomBtnWrap .lankBtnItem a img.redIcon { display: none; }
+        .bottomBtnWrap .lankBtnItem a img { display: inline-block; height: 14px; width:15px; margin: -4px 2px auto auto;}
+
+
+        /* 카테고리 */
+        .categoryWrap { position: relative;  width: 100%;display: block;}
+        .categoryWrap .category { position: relative;  width: 100%;display: block;}
+        
+
+                        /* 전체~ 건강식품 , 건강용품, 디지털/가전      카테고리 스크롤 내리면 회색 nav 나타남 */
+                        .navContainer.addTop { z-index:4; position: fixed;  top:37px;  }
+                        .navContainer {height: 53px; position: relative; top:0; width:100%; max-width: 450px; overflow:hidden ;background: #F4F4F4;}
+                        .navContainer .navView {width:100%;overflow:hidden ;}
+                        /* 터치슬라이드  */
+                        .navContainer .navView .seconDepWrap { position: relative; width:100%;padding:17px 0 15px 18px ;height: 53px; }
+                        .navContainer .navView .seconDepWrap .seconDepGap {  z-index:3; position: relative; width:100%; }
+                        .navContainer .navView .seconDepWrap .seconDepGap .seconDep {   position: relative; display: flex; }
+                        .navContainer .navView .seconDepWrap .seconDepGap .seconDep .item { position: relative;  display: inline-block;  }
+                        .navContainer .navView .seconDepWrap .seconDepGap .seconDep:hover { cursor: url(../img/icon-move-black.png),move;  }
+                        .navContainer .navView .seconDepWrap .seconDepGap .seconDep .item a {color:#1A1A1A ; padding:5px 12px; font-size: 14px;line-height:21px; white-space: nowrap; }
+                        .navContainer .navView .seconDepWrap .seconDepGap .seconDep .item.clickBtn a { border-radius: 25px;  color:#fff ; line-height:21px;background: #000; }
+                        /* 화살표 버튼 */
+                        .navContainer .navView .btnArrow { z-index:4; position: absolute; top:0;right:0; display:inline-block;  width: 90px; background: linear-gradient(to left, rgba(250, 251, 252, 1) 60% , rgba(255, 255, 255, 0) ); }
+                        .navContainer .navView .btnArrow .bar { z-index:5;position: absolute; top:20px;right:45px;  display:inline-block; height: 14px; width: 1px;background: #B3B3B3;}
+                        .navContainer .navView .btnArrow a {display:inline-block;padding: 16px 9px 16px 10px; height: 53px;background: #FAFBFC; float: right;}
+                        .navContainer .navView .btnArrow a img {width: 26px; height: 22px;background: #FAFBFC; }
+
+
+
+
+
+                        /* 전체~ 건강식품 , 건강용품, 디지털/가전      카테고리 스크롤 내리면 회색 nav 나타남 */
+                        .navConOpen.addTop { display: none; z-index:4; position: absolute;  top:0;  background: #F4F4F4; border-top: 1px solid #E9E9E9;  border-bottom: 1px solid #E9E9E9;}
+                        .navConOpen.navOpen { display: block;}
+                        .navConOpen {position: relative;  width:100%; max-width: 450px; overflow:hidden ;}
+                        .navConOpen .navView {padding:11px 0 11px 18px ; }
+                        .navConOpen .navView .navTop {position: relative; display: flex; display: block; height: 35px;}
+                        .navConOpen .navView .navTop .title { margin: auto auto auto 0; font-size: 16px; color: #1A1A1A; font-weight: 700; padding: 5px 0;}
+                        /* x 버튼 */
+                        .navConOpen .navView .navTop .xBtn { z-index:5; position: absolute; top:0;right:0; display:inline-block;  width:auto;  }
+                        .navConOpen .navView .navTop .xBtn a {display:inline-block; margin:-2px 18px auto auto;}
+                        .navConOpen .navView .navTop .xBtn a img {width: 32px; height: 35px; }
+
+
+
+
+                        .navConOpen .navView .nav { position: relative;float: left; display: block; padding: 10px 0;}
+                        .navConOpen .navView .nav .item { display: inline-block; background: #fff; border-radius: 25px;margin:0 10px 12px 0; border: 1px solid #E2E2E2;}
+                        .navConOpen .navView .nav .item a { color:#1A1A1A ; padding:5px 12px; font-size: 14px; white-space: nowrap; }
+                        .navConOpen .navView .nav .item.clickBtn a { border-radius: 25px; color:#fff ; line-height:21px;background: #000; }
+
+
+
+
+
+
+
+/* https://www.figma.com/file/tblbFFmNni1zJgjeEbFGcA/%EB%82%98%EC%8A%A4-%EC%9E%90%EC%82%AC%EB%AA%B0?node-id=26%3A2845 */
+/* fixed 때문에 상단에 여백을 주어 섹션1을 보이게 해준다. */
+/* 메인영역상단 padding-top:120px; */
+#wrap1> #main{  position: relative;  width:100%; max-width:450px; overflow:visible; display:block;margin: 0 auto; padding:50px 0 0 0;font-family: 'SUIT'; }
+	
+#wrap1> #main> #section1{  width:100%; height:100%; padding:0; }
+#wrap1> #main> #section1>.container {  width:100%; margin:0 auto;padding:0;background:#fff ; background-size: cover;}		
+#wrap1> #main> #section1>.container>.gap{ width: 100%;}
+/* #wrap1> #main> #section1>.container>.gap>.topWrap { display:block; z-index: 4; position:fixed; top:0; width:100%; max-width:450px; margin:0 auto;padding:15px 18px 10px 18px; border-top: 2px solid #000;background: #fff;}
+#wrap1> #main> #section1>.container>.gap>.topWrap.addTop { border-bottom: 1px solid #E2E2E2; top:0; } */
+
+
+
+
+
+/* 전체 주간 판매많은순 영역 */
+.optionContainer { height:46px; width:100%; max-width: 450px; }
+.optionContainer .optionView { display: flex; padding:12.5px 0;}
+.optionContainer .optionView .title { font-size: 14px; color: #1A1A1A; font-weight: 700; }
+.optionContainer .optionView .optionWrap { display: flex;margin:auto 0 auto auto; }
+
+
+/* 필터 */
+.optionContainer .optionView .optionWrap>.sort {width:20px; height: 20px; margin:auto 0 auto auto; }
+
+                                        /* 셀렉트박스 */
+                                        .selectBox1 {margin:auto  0; z-index:2; position: relative; width: auto; height:20px; display: block;  }
+                                        /*   탭버튼 화살표 내리면 나오는거 */
+                                        .selectBox1 .mobileTab{display: block;box-sizing: border-box; text-decoration:none; }
+                                        .selectBox1 .mobileTab .tab-wrap{position:relative;z-index:3; display:block;width: 21px; box-sizing:border-box; }
+                                        /* 탭버튼  */
+                                        .selectBox1 .mobileTab .tab-wrap .inputBoxTab {display: flex; text-align: right; }
+                                        .selectBox1 .mobileTab .tab-wrap .inputBoxTab a{position:relative;text-align: right; padding: 3px 0; width:100%; font-size:12px;  white-space: nowrap;  color: #797979; text-decoration: none;   }
+                                        /* 탭버튼 누르면 나오는 메뉴 내용들 */
+                                        .selectBox1 .mobileTab .tab-wrap>ul.tab{display:block;z-index:3; background:#fff;width: 45px; height: auto; padding:5px 0; position:absolute; top:29px; right:0;  margin-right:-8px;  box-sizing:border-box;border:1px solid #E2E2E2; border-radius: 6px;}
+                                        .selectBox1 .mobileTab .tab-wrap>ul.tab>li{width:100%;display:block;box-sizing:border-box; padding: 5px 0;font-size:12px; }
+                                        .selectBox1 .mobileTab .tab-wrap>ul.tab>li:last-child{ border:0 ;}
+                                        .selectBox1 .mobileTab .tab-wrap>ul.tab>li>a{ color:#797979; font-size:12px; text-decoration: none; }
+                                        .selectBox1 .mobileTab .tab-wrap>ul.tab>li>a:hover{color:#e7382d;}
+                                        .selectBox1 .mobileTab .tab-wrap>ul.tab>li>a div { display: block;   }
+                                        .selectBox1 .mobileTab .tab-wrap>ul.tab>li>a div.option {text-align: center; }
+
+/* bar */
+.optionContainer .optionView .optionWrap>.bar { background: #B3B3B3;display: inline-block; margin: 5px 14px auto 14px; height: 14px; width: 1px; }
+
+
+
+
+                                        /* 셀렉트박스 */
+                                        .selectBox2 {margin: auto 0 auto 0; z-index:2; position: relative; width: auto; height:20px; display: block;  }
+                                        /*   탭버튼 화살표 내리면 나오는거 */
+                                        .selectBox2 .mobileTab{display: block;box-sizing: border-box; text-decoration:none; }
+                                        .selectBox2 .mobileTab .tab-wrap{position:relative;z-index:3; display:block;width: 75px; box-sizing:border-box; }
+                                        /* 탭버튼  */
+                                        .selectBox2 .mobileTab .tab-wrap .inputBoxTab {display: flex; text-align: right; }
+                                        .selectBox2 .mobileTab .tab-wrap .inputBoxTab a{position:relative;text-align: right; padding: 3px 0; width:100%; font-size:12px;  white-space: nowrap;  color: #797979; text-decoration: none;   }
+                                        .selectBox2>.mobileTab .tab-wrap .inputBoxTab span{ display: block; margin: auto 0 auto 5px; background:url(../img/ico_option_arrow1.svg) no-repeat 50% 50%; height: 12px; width: 14px; }
+                                        .selectBox2>.mobileTab .tab-wrap .inputBoxTab span.addFamily{ background:url(../img/ico_option_arrow2.svg) no-repeat 50% 50%; height: 12px; width: 14px; }
+                                        /* 탭버튼 누르면 나오는 메뉴 내용들 */
+                                        .selectBox2 .mobileTab .tab-wrap>ul.tab{display:block;z-index:3; background:#fff;width: 77px; height: auto; padding:5px 0; position:absolute; top:29px; right:0; margin-right:-3px;  box-sizing:border-box;border:1px solid #E2E2E2; border-radius: 6px;}
+                                        .selectBox2 .mobileTab .tab-wrap>ul.tab>li{width:100%;display:block;box-sizing:border-box; padding: 5px 0;font-size:12px; }
+                                        .selectBox2 .mobileTab .tab-wrap>ul.tab>li:last-child{ border:0 ;}
+                                        .selectBox2 .mobileTab .tab-wrap>ul.tab>li>a{ color:#797979; font-size:12px; text-decoration: none; }
+                                        .selectBox2 .mobileTab .tab-wrap>ul.tab>li>a:hover{color:#e7382d;}
+                                        .selectBox2 .mobileTab .tab-wrap>ul.tab>li>a div { display: block;   }
+                                        .selectBox2 .mobileTab .tab-wrap>ul.tab>li>a div.option {text-align: center; }
+
+
+
+
+
+
+
+
+/* 디폴트 2단형  상품리스트  */
+.goodsContainer { display: block; padding-top: 135px; }
+.goodsContainer.addCardhid { display: none; }
+.goodsContainer .goodsView { width:100%;  padding: 10px 18px; }
+.goodsContainer .goodsView .goodsWrap { margin-bottom: 24px; position: relative; display: flex; justify-content: space-between;  flex-wrap: wrap;}
+.goodsContainer .goodsView .goodsWrap .goods[data-intent='column-02'] { position: relative; width:50%; display:inline-block;  }
+.goodsContainer .goodsView .goodsWrap .goods[data-intent='column-02'] a { display: block;   }
+.goodsContainer .goodsView .goodsWrap .line1[data-intent='column-02']{ padding:0 6px 24px 0; }
+.goodsContainer .goodsView .goodsWrap .line2[data-intent='column-02']{ padding:0 0 24px 6px;  }
+
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText { position: relative; width:100%; border-radius: 6px; background: #fff;}
+/* 2단형이미지 */
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText .media { z-index:1; position: relative;  overflow: hidden; width:  100%;height:auto; }
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText .media .img-box { position: relative;  height:auto;  width: 100%;  overflow: hidden;text-align:center;}
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText .media .img-box img {z-index: 1; position:relative;  height:201px; width: 100%;  object-fit: cover; display: block;overflow: hidden; margin:auto; border-radius: 6px 6px 0 0;}
+
+
+/* 2단형 이미지 위 하트  */
+.goodsContainer .goodsView .goodsWrap .goods .heart {  z-index:2; position:absolute; bottom:0;margin-bottom:8px; right:8px; width:26px; height: 26px; display: block;}
+.goodsContainer .goodsView .goodsWrap .goods .heart a{ width:26px; height: 26px; display: block; border-radius: 15px; background: 	rgba(68, 68, 68, .3); }
+.goodsContainer .goodsView .goodsWrap .goods .heart.addHeart a {  background: rgba(231, 56, 45, .3);  }
+.goodsContainer .goodsView .goodsWrap .goods .heart a img.redHeart { display: none; }
+.goodsContainer .goodsView .goodsWrap .goods .heart.addHeart>a>img.redHeart { display: block; position: relative; z-index: 5; display: block; width:100%;  padding: 8px 5px 5px 5px;}
+.goodsContainer .goodsView .goodsWrap .goods .heart.addHeart>a>img.blankHeart { display: none;}
+.goodsContainer .goodsView .goodsWrap .goods .heart a img {  width:100%;  padding: 8px 5px 5px 5px;}
+
+/* tag */
+.goodsContainer .goodsView .goodsWrap .goods .tag {  z-index:2; position:absolute; top:0; left:0; margin-left:8px;  width:21px; height: 24px; display: block;}
+.goodsContainer .goodsView .goodsWrap .goods .tag .tagBox {  width:21px; height: 24px;}
+.goodsContainer .goodsView .goodsWrap .goods .tag .tagBox .num { z-index: 3; position:absolute; top:0; left:7px; display: inline-block;  color: #fff; font-family: 'SUIT';  font-size:14px; font-weight: 700;}
+.goodsContainer .goodsView .goodsWrap .goods .tag .tagBox .num2 { z-index: 3; position:absolute; top:0; left:4px; display: inline-block;  color: #fff; font-family: 'SUIT';  font-size:14px; font-weight: 700;}
+.goodsContainer .goodsView .goodsWrap .goods .tag.redNum .tagBox .redTag { display: block;}           
+.goodsContainer .goodsView .goodsWrap .goods .tag.redNum .tagBox .greyTag { display: none;}           
+.goodsContainer .goodsView .goodsWrap .goods .tag.greyNum .tagBox .redTag { display: none;}           
+.goodsContainer .goodsView .goodsWrap .goods .tag.greyNum .tagBox .greyTag { display: block;}           
+
+
+
+
+
+
+
+             @media screen and (max-width: 412px){
+                .goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText .media .img-box img { height: 182px; }
+
+            }
+            @media screen and (max-width: 375px){
+                .goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText .media .img-box img  { height: 163.67px; }
+
+            }
+            @media screen and (max-width: 360px){
+                .goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText .media .img-box img  { height: 156px; }
+
+            }
+            @media screen and (max-width: 280px){
+                .goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText .media .img-box img  { height: 116px; }
+
+            }
+            @media screen and (max-width: 220px){
+                .goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText .media .img-box img  { height: 86px; }
+
+            }
+
+             
+/* 2단형 txt박스 */
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox {width:100%;font-family: 'SUIT';  padding:0 8px 8px 8px;  display: block; }
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>h3 {font-size: 14px; font-weight: 400; height: 36px; width: 100%; text-overflow: ellipsis; overflow: hidden; display: block; line-height: 18px; margin:8px 0 0 0; color:#1A1A1A; letter-spacing: -.5px; }
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>h4 {display: block; text-align: right; color:#909090;font-weight: 400;  font-size: 12px;  margin:5px 0 0 auto; text-decoration: line-through;}
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>.price {display: flex; margin: 0; overflow-x:hidden ;}
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>.price li {white-space: nowrap; }
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>.price li span {font-size: 14px; font-weight: 400; vertical-align: baseline;  }
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>.price li:first-child{font-size: 16px;  color:#E7342C; margin-right: 2px; font-weight: 700; }
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>.price li:last-child{margin:auto 0 auto auto; font-size: 18px;  color:#1A1A1A; font-weight: 700; text-align: right;}
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>.price li:last-child span{ font-size: 14px;vertical-align: baseline;  }
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>.starDelivery { display: flex;font-size: 12px; padding-top: 6.5px; }
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>.starDelivery .star   {margin:auto auto auto 0 ; display: block;  font-size: 12px;font-weight: 700; flex-flow: nowrap;box-sizing: border-box; color: #565656;}
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>.starDelivery .star i  {color:#FFC10E; font-size: 13px; margin-top: -2px;vertical-align: baseline;  }
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>.starDelivery .star span{ font-size: 12px; font-weight: 400;vertical-align: baseline;   }
+
+
+
+
+
+
+
+
+
+/* 카드형   상품리스트 */
+.cardCon  { display: none; }
+.cardCon.cardshow  { display: block; padding-top: 135px;}
+.cardCon .cardView { width:100%;  padding: 10px 18px; }
+
+.cardCon .cardView  .slide-wrap {position: relative; width:100%; /* display: flex;  width:500%; margin-left:-100%;*/}
+.cardCon .cardView  .slide-wrap .slide {width:100%;max-width: 966px; padding:8px 0; display: block; margin:0 auto;} 
+.cardCon .cardView  .slide-wrap .slide:first-child { padding:0 0 8px 0;} 
+.cardCon .cardView  .slide-wrap .slide .slide-text { font-family: 'SUIT'; border: 1px solid #E9E9E9;  border-radius: 6px;} 
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box  { width:100%;max-width: 966px; z-index:1; position: relative;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box a {position: relative;width:100%;max-width: 966px; height:auto;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box a img {z-index: 1; position:relative; width: 100%; border-radius: 6px 6px 0 0;}
+
+/* tag */
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .tag {  z-index:2; position:absolute; top:0; left:0; margin-left:8px;  width:21px; height: 24px; display: block;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .tag .tagBox {  width:21px; height: 24px;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .tag .tagBox .num { z-index: 3; position:absolute; top:0; left:7px; display: inline-block;  color: #fff; font-family: 'SUIT';  font-size:14px; font-weight: 700;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .tag .tagBox .num2 { z-index: 3; position:absolute; top:0; left:3px; display: inline-block;  color: #fff; font-family: 'SUIT';  font-size:14px; font-weight: 700;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .tag.redNum .tagBox .redTag { display: block;}           
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .tag.redNum .tagBox .greyTag { display: none;}           
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .tag.greyNum .tagBox .redTag { display: none;}           
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .tag.greyNum .tagBox .greyTag { display: block;}           
+
+/* heart */
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .heart { z-index:2;position:absolute; bottom:0;margin-bottom:8px; right:8px; width:26px; height: 26px; display: block;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .heart a{ width:26px; height: 26px; display: block; border-radius: 15px; background: 	rgba(68, 68, 68, .3); }
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .heart.addHeart a {  background: rgba(231, 56, 45, .3)  }
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .heart a img.redHeart { display: none; }
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .heart.addHeart>a>img.redHeart { display: block; position: relative; z-index: 5; display: block; width:100%;  padding: 8px 5px 5px 5px;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .heart.addHeart>a>img.blankHeart { display: none;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .heart a img {  width:100%;  padding: 8px 5px 5px 5px;}
+
+
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box {display: block; padding: 10px 0 0 0;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box>h3 {  padding:  0 10px 7px 10px; color:#1A1A1A; letter-spacing: -.1px; font-size:14px; line-height: 140%; margin: 0; font-weight: 400; }
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box ul {display: flex; padding:  0 10px ;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text2  {  font-size: 14px; margin:0;font-family: 'SUIT'; }
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text2 li:nth-child(1) { font-weight:700;color:#E7342C; font-size: 16px; line-height: 180%;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text2 li:nth-child(1)>span {color:#E7342C;font-size: 12px; font-weight: 400;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text2 li:nth-child(2) { padding:0 4px ; color:#1A1A1A;font-weight:700; font-size: 20px;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text2 li:nth-child(2)>span {color:#1A1A1A;font-size: 12px; font-weight: 400;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text2 li:nth-child(3) {font-size: 12px; margin: auto  auto 6px 4px; line-height: 130%;color:#909090; text-decoration: line-through;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text2 li span{font-size:12px; color:#1A1A1A; }
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box hr { padding: 0; margin: 7px 10px 8px 10px ; color: #E2E2E2;/* IE */border-color: #E2E2E2;  /* 사파리 */background-color: #E2E2E2;   /* 크롬, 모질라 등, 기타 브라우저 */ height: 0.01px; }
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text3  { display: flex;padding:0 10px 10px 10px; font-size: 12px;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text3 li span { color:#565656;  font-size:12px; }
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text3 li span i { color:#D8D8D8;  }
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text3 li.star { font-weight: 700; color:#565656; margin:auto  auto auto 0; display: block; flex-flow: nowrap; box-sizing: border-box; }
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text3 li.star span{display: inline-block;  margin-top:-1px; font-weight: 400;vertical-align: baseline;  }
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text3 li.star i {color:#FFC10E; font-size: 12px; margin-top: -2px; }
+
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .reviewTxt {display: flex; background: #F9F9F9; padding: 10px;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .reviewTxt .thumb {width: 12px; height: 12px; display: inline-block;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .reviewTxt .thumb img {width: 12px; height: 12px; display: inline-block; margin:-6px auto auto auto;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .reviewTxt .revewText {color: #565656; font-size: 12px;padding-left: 4px; overflow: hidden; text-overflow: ellipsis; width: 100%; white-space: nowrap;}

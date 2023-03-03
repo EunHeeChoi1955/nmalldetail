@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./fonts.css);
+
+
+
+*{   width:100%; height: 100%;  font-family: 'SUIT';}
+html, body {background: #fff; color: #fff;    }
+
+
+
+
+
+
+
+/* 모달창 */
+#modal {display:block; z-index:5; position:fixed; top:0; left: 0; background: rgba(0,0,0, .7); width: 100%; height: 100%;}
+#modal.modalShow {display:block; z-index:5; position:fixed; top:0; left: 0; background: rgba(0,0,0, .7); width: 100%; height: 100%;}
+#modal .modalWrap { display: block; position:relative; top:0; margin-top:5%; left: 50%; margin-left:-164px; background:#fff;  width: 328px; height: auto; border-radius: 6px; }
+#modal .modalWrap .modalGap { width: 100%;}
+#modal .modalWrap .modalGap .modalContent{width: 100%; padding:25px 18px 14px 18px;}
+/* 알림이미지 */
+#modal .modalWrap .modalGap .modalContent .imgAlertCon {display: block;  }
+#modal .modalWrap .modalGap .modalContent .imgAlertCon .imgAlert {width: 70px; margin: 0 auto; }
+#modal .modalWrap .modalGap .modalContent .imgAlertCon .imgAlert img {width: 100%; }
+/* 타이틀 */
+#modal .modalWrap .modalGap .modalContent h2{ text-align: center;  width: 100%; color: #1A1A1A; font-size: 18px; display: block ; padding: 20px 0 20px 0;font-weight: 700; }
+
+
+#modal .modalWrap .modalGap .modalContent .txt {width: 100%; color: #1a1a1a; font-size: 14px; display: block ; font-weight: 400;padding: 12px 0 0 0;border-top: 1px solid #E2E2E2;}
+/* 회색글씨 */
+#modal .modalWrap .modalGap .modalContent .txt .grayTxtWrap {  width: 100%;display: block ; }
+#modal .modalWrap .modalGap .modalContent .txt .grayTxtWrap  h4 { font-size: 10px; color: #797979;  width: 100%;display: block ; margin: 0;}
+#modal .modalWrap .modalGap .modalContent .txt .grayTxtWrap .grayTxt { padding:0 0 12px 12px; width: 100%; margin: 0;  }
+#modal .modalWrap .modalGap .modalContent .txt .grayTxtWrap .dot { padding:0 0 0 12px;  }
+#modal .modalWrap .modalGap .modalContent .txt .grayTxtWrap .grayTxt li { position:relative; width: 100%; font-size: 10px; color: #797979; font-weight: 400; }
+#modal .modalWrap .modalGap .modalContent .txt .grayTxtWrap .dot>li::before{ content:''; width:3px; height:3px; position:absolute; top:6px; left:-10px; border-radius: 3px; background:#797979; display: block ; }
+#modal .modalWrap .modalGap .modalContent .txt .grayTxtWrap .bar>li::before{ content:''; width:5px; height:1px; position:absolute; top:6px; left:-10px; border-radius: 3px; background:#797979; display: block ; }
+/* 확인 버튼 */
+#modal .modalWrap .modalGap .modalContent .txt .btnWrap {width: 100%; padding-top: 34px;}
+#modal .modalWrap .modalGap .modalContent .txt .btnWrap .btnCon {display:block;}
+#modal .modalWrap .modalGap .modalContent .txt .btnWrap .btnCon li {display: block;border-radius: 3px; text-align: center; }
+#modal .modalWrap .modalGap .modalContent .txt .btnWrap .btnCon li.ok {background: #E7342C;padding: 12px 0;border:1px solid #E7342C;}
+#modal .modalWrap .modalGap .modalContent .txt .btnWrap .btnCon li.ok a { color: #fff; }
+
+/* 닫기버튼 */
+#modal .modalWrap .modalGap .modalContent .closeBtn {display: inline-block; float: right; width: 32px; margin:-18px -6px auto auto;}
+#modal .modalWrap .modalGap .modalContent .closeBtn a img { width: 32px; }
+
+
+
+
+
+

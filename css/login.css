@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./fonts.css);
+
+
+/* 이미지 클릭시 확대 */
+*{   width:100%; height: 100%;}
+html, body {background: #fff; color: #fff;  }
+
+#login { max-width:450px;width:100%; height: 100%; background: #fff; margin: 0 auto;display: block; }
+#login >.TopContainer {position: relative; width:100%; max-width:450px; padding-top: 78px; margin: 0 auto;display: block;font-family: 'SUIT';}
+/* 상단 로그인top */
+#login >.TopContainer .topWrap{ position: absolute; top: 0; left: 0; display: flex; height: 52px; width:100%;  display: flex;color: #1A1A1A;  padding: 10px ;  }
+#login >.TopContainer .topWrap .Top { text-align: center;}
+#login >.TopContainer .topWrap .Top .TopTxt {font-size: 18px; line-height: 190%; font-weight: 400; }
+#login >.TopContainer .topWrap .Back {  width:30px; }
+#login >.TopContainer .topWrap .Back a { width: 100%; }
+#login >.TopContainer .topWrap .Back a img { width: 100%; }
+/* 상단 로고 */
+#login >.TopContainer .loginContents {text-align: center; }
+#login >.TopContainer .loginContents .logoBox {  display: block;  }
+#login >.TopContainer .loginContents .logoBox div { width: 114px; margin: 0 auto ;}
+#login >.TopContainer .loginContents .logoBox div img { width: 100%; }
+#login >.TopContainer .loginContents h2 {font-size: 16px;font-weight: 200;  margin: 19px 0 24px 0; color: #1A1A1A; font-family: 'SCoreDream'; font-weight: 200;}
+#login >.TopContainer .loginContents h2 span {width: 100%;height: 10px;position:relative; z-index: 2;   }
+#login >.TopContainer .loginContents h2 span i {  z-index: -1; bottom:0; position:absolute;left: 0;background: rgba(255, 92, 56, 0.3); width: 100%;height: 10px; display: inline-block;   }
+
+/* input박스 인증하기 인증번호 */
+#login >.TopContainer .loginContents ul {width: 100%;padding:0 18px;}
+#login >.TopContainer .loginContents ul li {display: flex; padding: 7px 0;}
+#login >.TopContainer .loginContents ul li .left { position: relative; width: 100%; height: 38px; padding-right: 10px; white-space: nowrap; }
+#login >.TopContainer .loginContents ul li .left .time {position: absolute; top:0; right: 0;  margin-right: 35px; height:auto;width: auto; margin-top:11px; font-size:  12px;}
+#login >.TopContainer .loginContents ul li .left input {appearance: none; outline: none; width: 100%;border: 1px solid #E2E2E2; border-radius: 6px;  }
+#login >.TopContainer .loginContents ul li .left input[type='text']::placeholder {  color: #CCCCCC;  font-size: 12px; }
+#login >.TopContainer .loginContents ul li .left input[type='text'] {  color: #1a1a1a; padding: 11px 14px; }
+#login >.TopContainer .loginContents ul li .right { width: 69px; }
+#login >.TopContainer .loginContents ul li .right button { font-size:14px ; color: #1a1a1a; border: 0; padding: 9px 10px; background: #F4F4F4;  border-radius: 6px; white-space: nowrap;}
+#login >.TopContainer .loginContents ul li .right button.addBtn  {background-color: #E7342C; color: #fff;}
+/* 간편로그인 텍스트 밑줄 */
+#login >.TopContainer .loginContents> .loginStart { display: block; padding: 10px 0;}
+#login >.TopContainer .loginContents> .loginStart>div {display: inline-block; position: relative;}
+#login >.TopContainer .loginContents> .loginStart>div> div {z-index: 1; position:absolute; left:0; margin-left: -5px;  top:0; margin-top:-10px;  line-height: 150%;   height:15px;color: #797979; font-size: 14px;   }
+#login >.TopContainer .loginContents> .loginStart>div> div >i{ display: block; background: #fff;  width:100px;height: auto;  display: inline-block; }
+#login >.TopContainer .loginContents> .loginStart>div> span { z-index:- 1; position: relative; display: block; background: #E2E2E2;  width: 100%; height: 1px;  }
+
+/* 버튼 */
+#login >.TopContainer .loginContents> .loginStart ul {width: 100%;padding:25px 32px 0 32px;} 
+#login >.TopContainer .loginContents> .loginStart ul li { width: 100% ; }
+#login >.TopContainer .loginContents> .loginStart ul li:nth-child(1) {display: inline-block; z-index: 1; font-weight: 400; position: relative; bottom:-4px;background:#187AEF ; border-radius: 15px; padding: 5px 10px;  font-size: 12px; color: #FFFFFF; text-align: center;  width: 136.25px; height:27.08px; }
+#login >.TopContainer .loginContents> .loginStart ul li:nth-child(1):before { position:absolute; bottom:0; margin-bottom:-8px; left:50%; margin-left:-2px; content:''; display:block; border:4px solid #187AEF; border-bottom:4px solid transparent; border-right:4px solid transparent;  border-left:4px solid transparent;  }
+#login >.TopContainer .loginContents> .loginStart ul li:nth-child(2) a { white-space: nowrap;background: #FFDE00;  padding: 12px 0; border-radius: 3px; font-size:16px; font-weight: 700; color: #3B1D1A; line-height: 180%; vertical-align: baseline; }
+#login >.TopContainer .loginContents> .loginStart ul li:nth-child(2) a img{width: 21px; margin:-3px 10px 0 0; }
+#login >.TopContainer .loginContents> .loginStart ul li:last-child a { white-space: nowrap; background: #01C73C;  padding: 12px 0; border-radius: 3px; font-size:16px; font-weight: 700; color: #fff; line-height: 180%; vertical-align: baseline; }
+#login >.TopContainer .loginContents> .loginStart ul li:last-child a img { width: 21px; margin:-3px 10px 0 0;}
+
+

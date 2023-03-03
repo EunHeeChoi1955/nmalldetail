@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="publisher" content="eunheeChoi">
+    <title>검색 인기검색어</title>
+    <!-- favicon -->
+    <link rel="icon" href="./img/favicon/favicon-57.png" sizes="57x57">
+   
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/search.css">
+    
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- jQuery 오픈소스 -->
+    <script src="./js/lib/jquery.min.js"></script> 
+	<script src='./js/lib/jquery-1.12.4.min.js'></script>
+	<!-- <script src='./js/lib/jquery.mobile-1.4.5.min.js'></script>터치이벤트 웹앱 -->
+	<script src='./js/lib/jquery.easing.1.3.js'></script>
+	<script src='./js/lib/jquery.touchSwipe.min.js'></script>
+	<!-- <script src='./js/lib/slick.min.js'></script> -->
+
+    <!-- 리액트 웹개발 오픈소스 -->    
+    <script src="./js/lib/react.development.js"></script>
+    <script src="./js/lib/react-dom.development.js"></script>
+    <script src="./js/lib/babel.min.js"></script>
+
+</head>
+<body>
+   
+<div id="wrap1">
+    
+    <header id="header"  class="header">
+        <div class="container ">
+
+            <ul class="top clearfix ">
+
+                <li class="left">
+                    <a href='#'>
+                        <span ></span>
+                    </a> 
+                </li>
+                <li class="medium">
+                    
+                </li>
+                <li class="right">
+                    <aside id="aside" class="clearfix">
+                        <div class="icon-box-gap">
+                            <div class="icon-box">
+                                <ul class="clearfix ">
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                </li>
+            </ul>
+            
+
+           
+        </div>
+    </header>
+    <main id="main">
+        <section id ="section1">
+            <div class="container">
+                <div class="gap">
+
+                    <div class="topWrap ">
+                            <h2 class="">
+                                고객님<br>
+                                어떤 상품을 찾으세요?
+                            </h2>
+                            <div class="inputWrap">
+                                <div class="inputBox ">                                    
+                                    <span class="backBtn "></span>
+                                    <input type="text" class="inputTxtBox" placeholder="검색어를 입력해주세요."> 
+                                </div>
+                                <span class="searchIcon"><a href="#"><img src="./img/customer_ico_search1.svg" alt=""></a></span>
+
+                                <div class="focusWrap">
+                                    <span class="searchIconhid xbtn"><a href="#"><img src="./img/btn_x_faq.svg" alt=""></a></span>
+                                    <span class="searchIconhid"><a href="#"><img src="./img/redmagni.svg" alt=""></a></span>
+                                </div>
+                                
+                            
+                                
+                            </div> 
+                    </div>
+
+
+                    <div class="box-dropDown">
+                        <ul class="selector">
+                            <li class="option"><a href="#"><strong>비</strong>비큐<span class="optionArrow"><img src="./img/optionArrow.svg" alt=""></span></a></li>
+                            <li class="option"><a href="#"><strong>비</strong>비랩<span class="optionArrow"><img src="./img/optionArrow.svg" alt=""></span></a></li>
+                            <li class="option"><a href="#"><strong>비</strong>비고<span class="optionArrow"><img src="./img/optionArrow.svg" alt=""></span></a></li>
+                            <li class="option"><a href="#"><strong>비</strong>타민<span class="optionArrow"><img src="./img/optionArrow.svg" alt=""></span></a></li>
+                            <li class="option"><a href="#"><strong>비</strong>빔면<span class="optionArrow"><img src="./img/optionArrow.svg" alt=""></span></a></li>
+                            <li class="option"><a href="#"><strong>비</strong>알엘<span class="optionArrow"><img src="./img/optionArrow.svg" alt=""></span></a></li>
+                            <li class="option"><a href="#">냄<strong>비</strong><span class="optionArrow"><img src="./img/optionArrow.svg" alt=""></span></a></li>
+                        </ul>
+                    </div>
+
+
+
+
+                  
+
+                    <div class="midWrap">
+                        <ul class="midBtnBox">
+                            <li class="recSeacrch"><a href="#" class="red"> <span class="search hideSearch"></span> 최근 검색어</a></li>
+                            <li class="hot"><a href="#"> <span class="twingkle"></span> 인기 검색어</a></li>
+                            <li class="recLook"><a href="#"> <span class="recent "></span> 최근 본 상품</a></li>
+                        </ul>
+                    </div>
+
+
+
+
+
+
+                    <div class="listWrap1 ">
+                        <div class="listWrap1Gap">
+                            <div class="topSearchRemoveCon">
+
+                                <ul class="listBox1 clearfix">
+                                    <li>비비큐<span class="xbtn"><a href="#"><img src="./img/search_ico_x.svg" alt=""></a></span></li>
+                                    <li>비타민<span class="xbtn"><a href="#"><img src="./img/search_ico_x.svg" alt=""></a></span></li>
+                                    <li>kf94마스크<span class="xbtn"><a href="#"><img src="./img/search_ico_x.svg" alt=""></a></span></li>
+                                    <li>홍삼<span class="xbtn"><a href="#"><img src="./img/search_ico_x.svg" alt=""></a></span></li>
+                                    <li>동의삼<span class="xbtn"><a href="#"><img src="./img/search_ico_x.svg" alt=""></a></span></li>
+                                    <li>추석<span class="xbtn"><a href="#"><img src="./img/search_ico_x.svg" alt=""></a></span></li>
+                                    <li>여름샌들<span class="xbtn"><a href="#"><img src="./img/search_ico_x.svg" alt=""></a></span></li>
+                                </ul>
+
+                                
+        
+                                <div class="topRemoveCon">
+                                    <p class="topRemove">
+                                        <a href="#">검색어 전체삭제</a> 
+                                    </p>
+                                </div>
+        
+                            </div>
+
+
+                           <!-- 검색어 전체삭제 버튼 누르면 나옴 -->
+                           <div class="resultNone"> 
+                                <p>
+                                    최근 검색한 기록이 없습니다.<br>
+                                    상품을 검색해보세요.
+                                </p>
+                            </div>
+    
+    
+                            <div class="recommendWrap">
+                                
+                                <div class="recommendCon">
+                                    <h2>추천 검색어</h2>
+                                    <ul class="searchWord clearfix">
+                                        <li><a href="#">비비큐</a></li>
+                                        <li><a href="#">마스크</a></li>
+                                        <li><a href="#">리퍼상품</a></li>
+                                        <li><a href="#">노트북</a></li>
+                                        <li><a href="#">비타민</a></li>
+                                        <li><a href="#">레모나</a></li>
+                                        <li><a href="#">바이마르</a></li>
+                                        <li><a href="#">써큘레이터</a></li>
+                                        <li><a href="#">창문형에어컨</a></li>
+                                        <li><a href="#">장우산</a></li>
+                                        <li><a href="#">복날음식</a></li>
+                                        <li><a href="#">녹용단</a></li>
+                                    </ul>
+    
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div><!-- #listWrap1 -->
+
+
+     
+                    <div class=" listWrap2">
+                        <div class=" listWrap2Gap">
+                            <div class="date">22.07.12. 00:00 기준</div>
+
+                            <ul class="listBox">
+                                <li><a href="#"><span class="red Num">1</span>kf94  마스크</a> <span class="redRising rate">3 ▲</span></li>
+                                <li><a href="#"><span class="red Num">2</span>바디워시</a> <span class="bkStag rate">-</span></li>
+                                <li><a href="#"><span class="red Num">3</span>선풍기</a> <span class="bkStag rate">-</span></li>
+                                <li><a href="#"><span class="bk  Num">4</span>생수 2리터</a> <span class="blueDes rate">1 ▼</span></li>
+                                <li><a href="#"><span class="bk  Num">5</span>세제</a> <span class="blueDes rate">1 ▼</span></li>
+                                <li><a href="#"><span class="bk  Num">6</span>서큘레이터</a> <span class="bkStag rate">-</span></li>
+                                <li><a href="#"><span class="bk  Num">7</span>유산균</a> <span class="bkStag rate">-</span></li>
+                                <li><a href="#"><span class="bk  Num">8</span>물티슈</a> <span class="bkStag rate">-</span></li>
+                                <li><a href="#"><span class="bk  Num">9</span>GUINNESS 맥주</a> <span class="bkStag rate">-</span></li>
+                                <li><a href="#"><span class="bk  Num">10</span>상주곶감</a> <span class="bkStag rate">-</span></li>
+                                <li><a href="#"><span class="bk  Num">11</span>나주배</a> <span class="bkStag rate">-</span></li>
+                                <li><a href="#"><span class="bk  Num">12</span>사과</a> <span class="bkStag rate">-</span></li>
+                                <li><a href="#"><span class="bk  Num">13</span>명절선물</a> <span class="bkStag rate">-</span></li>
+                                <li><a href="#"><span class="bk  Num">14</span>갤럭시20</a> <span class="bkStag rate">-</span></li>
+                                <li><a href="#"><span class="bk  Num">15</span>아이팟</a> <span class="bkStag rate">-</span></li>
+                                <li><a href="#"><span class="bk  Num">16</span>랩탑</a> <span class="bkStag rate">-</span></li>
+                                <li><a href="#"><span class="bk  Num">17</span>마우스</a> <span class="bkStag rate">-</span></li>
+                                <li><a href="#"><span class="bk  Num">18</span>원두커피</a> <span class="bkStag rate">-</span></li>
+                                <li><a href="#"><span class="bk  Num">19</span>물컵</a> <span class="bkStag rate">-</span></li>
+                                <li><a href="#"><span class="bk  Num">20</span>토마토</a> <span class="bkStag rate">-</span></li>
+                            </ul>
+
+                            <!-- draggerRail 스크롤링 
+                            <div class="barWrap">
+                                <div class="bar">
+
+                                </div>
+                            </div>
+                            -->
+                            
+                        </div>
+                    </div><!-- #listWrap2 -->
+
+                   
+
+
+                    <div class=" listWrap3 hide_listWrap3">
+                        <div class="listGap">
+                        
+                            <div class="grayMention">
+                                <div class="grayTxt">최근본 상품은 최대 90일까지 저장됩니다.</div>
+                                <div class="seeMore"><a href="#">전체보기<i class="material-icons">&#xe315;</i></a></div>
+                            </div>
+
+                            <ul class="listGoodsBox">
+                                <li>
+                                    <a href="#">
+                                        <div class="left">
+                                            <div class="imgBox">
+                                                <img src="./img/recent_img_th1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="txtBox">
+                                                <div class="goodsTit">
+                                                    상품명 두줄처리 상품명 두줄처리명 상품
+                                                    상품명 두줄처리 상품명 두줄처리...
+                                                </div>
+                                                <div class="priceBox">
+                                                    <div class="percent">50<small>%</small></div>
+                                                    <div class="price">19,900<small>원</small></div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="left">
+                                            <div class="imgBox">
+                                                <img src="./img/recent_img_th2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="txtBox">
+                                                <div class="goodsTit">
+                                                    상품명 두줄처리 상품명 두줄처리명 상품
+                                                    상품명 두줄처리 상품명 두줄처리...
+                                                </div>
+                                                <div class="priceBox">
+                                                    <div class="percent">50<small>%</small></div>
+                                                    <div class="price">19,900<small>원</small></div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="left">
+                                            <div class="imgBox">
+                                                <img src="./img/recent_img_th3.png" alt="">
+                                            </div>
+                                            <div class="imgCap opacity-medium bg-extra-dark-gray">
+                                               <img src="./img/sold_out_mark.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="txtBox">
+                                                <div class="goodsTit">
+                                                    상품명 두줄처리 상품명 두줄처리명 상품
+                                                    상품명 두줄처리 상품명 두줄처리...
+                                                </div>
+                                                <div class="priceBox">
+                                                    <div class="percent">50<small>%</small></div>
+                                                    <div class="price">19,900<small>원</small></div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="left">
+                                            <div class="imgBox">
+                                                <img src="./img/recent_img_th2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="txtBox">
+                                                <div class="goodsTit">
+                                                    상품명 두줄처리 상품명 두줄처리명 상품
+                                                    상품명 두줄처리 상품명 두줄처리...
+                                                </div>
+                                                <div class="priceBox">
+                                                    <div class="percent">50<small>%</small></div>
+                                                    <div class="price">19,900<small>원</small></div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>  
+
+                        </div>                      
+                    </div><!-- #listWrap2 -->
+
+
+
+                   
+               
+                </div>   
+            </div>
+       
+
+                     
+
+            
+
+
+         
+        
+
+            <footer id="footer">
+                <div class="container">
+                    <div class="gap">
+                        <div class="wrap">
+                            <div class="content">
+                                <ul class="foot-content">
+                                    
+                                    <li class="foot1">
+                                        <ul class="list">                                    
+                                            <li><a href='javascript:Function();'>입점문의</a></li>                                    
+                                            <li><a href='javascript:Function();'>즐겨찾기 추가</a></li>                                    
+                                            <li><a href='javascript:Function();'>고객센터</a><i></i></li>                                    
+                                          
+                                        </ul>
+                                    </li>
+        
+        
+                                    <li class="foot2">
+        
+                                        <div class="customerBox">
+                                            <h3>고객센터</h3>
+                                            <p class="bold">1234-5678</p>                                     
+                                            <div class="worktime">평일 9시 ~ 18시 30분</div>
+                                            <span><a href="#">전화걸기</a></span>
+                                        </div>
+                                       
+        
+                                        <div class="emailBox">
+                                            <ul class="email">
+                                                <li>이메일 문의</li> 
+                                                <li >
+                                                    <span id="textDiv">cs@kdeal.co.kr</span>                                       
+                                                    <small>(또는 1:1문의)</small>                                       
+                                                    <a id="copy">주소복사</a>
+                                                </li>
+                                           </ul>
+                                        </div>
+        
+                                    </li>
+                                    
+                                    <li class="foot3">
+                                        <div class="Registration">
+                                          
+                                            <a href='javascript:Function();'  class="fArrowBtn">나스미디어 사업자정보</a>
+                                            <ul class="footerhide   ">
+                                                <li class="footerInfo">
+                                                    <div class="left">
+                                                        대표이사
+                                                    </div>
+                                                    <div class="right">
+                                                        박평권
+                                                    </div>
+                                                </li>
+                                                <li class="footerInfo">
+                                                    <div class="left">
+                                                        사업자등록번호
+                                                    </div>
+                                                    <div class="right">
+                                                        220-81-80363
+                                                    </div>
+                                                </li>
+                                                <li class="footerInfo">
+                                                    <div class="left">
+                                                        호스팅사업자
+                                                    </div>
+                                                    <div class="right">
+                                                        나스미디어
+                                                    </div>
+                                                </li>
+                                                <li class="footerInfo">
+                                                    <div class="left">
+                                                        통신판매업신고번호
+                                                    </div>
+                                                    <div class="right">
+                                                        2021-서울강남-00534
+                                                    </div>
+                                                </li>
+                                                <li class="footerInfo">
+                                                    <div class="left">주소</div>
+                                                    <div class="right">
+                                                        서울특별시 강남구 도곡로1길 14<br>
+                                                        (역삼동, 삼일프라자오피스텔 3~5층)
+                                                    </div>
+                                                </li>
+        
+        
+        
+                                                 <li class="searchNum">
+                                                    <div class="left"></div>
+                                                    <div class="right">
+                                                        <a href="#">사업자번호조회</a>
+                                                    </div>
+                                                 </li>
+                                             </ul>
+                                       </div>
+        
+                                        <ul class="list">                                    
+                                            <li><a href='javascript:Function();'>로그인 </a><i></i></li>                                    
+                                            <li><a href='javascript:Function();'>이용약관 </a><i></i></li>                                    
+                                            <li><a href='javascript:Function();'>개인정보처리방침 </a><i></i></li>                              
+                                            <li><a href='javascript:Function();'>청소년보호방침 </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="foot4">
+                                        Copyright ⓒ NASMEDIA Co., LTD. All Rights Reserved.
+                                    </li>
+                                </ul>
+        
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </footer>
+            <!-- #footer -->
+
+        </section>
+     
+  
+  
+    </main>
+
+
+
+
+    <div class="serviceTab">
+
+        <h3>서비스</h3>
+
+        <div class="serviceImgWrap">
+            <div class="serviceImgGap">
+                <ul class="serviceImgBox">
+                    <li class="slide"><a href="#"><img src="./img/service_img1.svg" alt=""><span class="name">쿠폰</span></a></li>
+                    <li class="slide"><a href="#"><img src="./img/service_img2.svg" alt=""><span class="name">이벤트</span></a></li>
+                    <li class="slide"><a href="#"><img src="./img/service_img3.svg" alt=""><span class="name">적립금</span></a></li>
+                    <li class="slide"><a href="#"><img src="./img/service_img4.svg" alt=""><span class="name">타임딜</span></a></li>
+                    <li class="slide"><a href="#"><img src="./img/service_img5.svg" alt=""><span class="name">기획전</span></a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div><!-- #serviceTab -->
+
+ 
+</div>
+
+<script>
+               const btnWrap      = $('.serviceImgBox');
+               const btnContainer = $('.serviceImgGap');
+               let   cnt            = 0;
+               let   swipeStart     = null;
+               let   swipeEnd       = null;
+               let   dragStart      = null; // 슬라이드 마지막이 처음에서 왼쪽으로 이동된 상태 값을 빼주고 시작
+               let   mouseDown      = null; // 반드시 마우스가 다우된 상태를판단 다운이면 tru, 업이면 false
+   
+   
+   
+               //1.메인슬라이드 함수
+               function mainSlide(){   
+                  // btnWrap.stop().animate({left:(-100*cnt) + '%'});       
+                  btnWrap.stop().animate( {left:(-80*cnt)}, 'easeInOutSine',function(){
+                     cnt>3?cnt=0:cnt;  
+                     cnt<1?cnt=0:cnt;                 
+                   //초기화
+                     btnWrap.stop().animate( {left:(-80*cnt)});
+                     
+                  });
+               }
+   
+               //2.다음카운트 함수
+               function nextCount(){
+                  cnt++;
+                  mainSlide();
+               }
+               //2.이전카운트 함수
+               function prevCount(){
+                  cnt--;
+                  mainSlide();
+               }
+               
+               
+               //4. 마우스 터치 스와이프
+               btnContainer.on({
+                     mousedown: function(event){
+                        //터치스와이프 시작 포지션
+                        swipeStart = event.clientX;
+                       
+                        dragStart  = event.clientX - btnWrap.offset().left - 80;
+                        mouseDown  = true;//드래그 시작임을 표시
+                        
+   
+                     },//mousedown 끝
+                     mouseup: function(event){
+                        swipeEnd = event.clientX;
+                        mouseDown  = false; //드래그 끝
+                        if( swipeStart-swipeEnd > 0 ){//다음슬라이드                     
+                           nextCount();
+                        }
+                        if( swipeStart-swipeEnd < 0 ){   // 이전슬라이드                    
+                           prevCount();
+                     }
+                  
+                  }
+               });
+               
+               //5. 마우스 드레그 앤 드롭
+               // mousemove
+   
+               //6. 반응형 모바일 손가락 핑거 드래드 앤 드롭(반응형)
+               // 마우스 인식못함 동작안함
+               // 반응형 진행하고 폴리필 touchEvent 추가
+               // touchstart(mousedown) / touchend(mouseup) / touchmove(mousemove)
+               btnContainer.on({
+
+                  
+                  touchstart: function(event){
+                     swipeStart = event.originalEvent.touches[0].clientX;
+                     dragStart  = event.originalEvent.touches[0].clientX - btnWrap.offset().left - 80;
+                     mouseDown  = true;//드래그 시작임을 표시  
+                     
+                  },
+                  touchend: function(event){
+                     
+                        swipeEnd   = event.originalEvent.changedTouches[0].clientX;   
+                        mouseDown  = false; //드래그 끝   
+                        if( swipeStart-swipeEnd > 0 ){//다음슬라이드                     
+                           nextCount();
+                        }
+                        if( swipeStart-swipeEnd < 0 ){   // 이전슬라이드                    
+                           prevCount();
+                        }   
+   
+                  }
+               });
+
+
+</script>
+    <script>
+
+
+ //헤더영역 스크롤 이벤트 (페럴럭스)
+ var $window  = $(window);
+         var $header  = $('#wrap1 .bottom-wrap');
+         var $mainBtn = $('#wrap1 .bottom-wrap .mainbtn');
+         var t = 0; // false === 0 같다는 표시   toggle
+         
+
+             
+             //마우스로 스크롤값이 아래로 30픽셀이상 >= 내려가면 
+             //선택자 헤더영역(.headerTop)에 효과 이벤트가 발생하게 하라 
+             $window.scroll(function(){ //스크롤 이벤트
+                // console.log(  $window.scrollTop() ); //스크롤 탑값 확인
+                 if( $window.scrollTop() >= 30 ){  //마우스로 스크롤값이 아래로 30픽셀이상 내려가면
+                  $header.addClass('addHeader');  //헤더에 클래스 추가
+                 // $appBtn.animate({left :'0px',right: '0px',bottom:'0px',borderRadius: '0px'},.1);
+              }
+              else{
+                  $header.removeClass('addHeader'); //추가된 클래스 삭제
+                 // $appBtn.animate({left :'30px',right: '30px',bottom:'54px',borderRadius: '6px'},.1);  
+              }           
+             });
+
+
+            //  메뉴버튼 addCLass removeClass            
+            $mainBtn.each(function (idx) {
+               $mainBtn.eq(0).addClass('addClass'); 
+               $(this).on({
+                  
+                   mouseenter: function () {
+                     $mainBtn.removeClass('addClass');  // 클래스 삭제
+                     $mainBtn.eq(idx).addClass('addClass'); // 클래스 주입
+                      // countFn(idx);
+                   }
+               });
+           });
+
+    </script>
+<script>
+    var fArrowBtn =  $('#footer .Registration .fArrowBtn');
+         var footerhide =  $('#footer .Registration .footerhide');
+         
+  
+               // 화살표 버튼 클릭 이벤트
+               fArrowBtn.each(function (idx) {
+                  $(this).on({
+                     click: function () {
+                     
+                        fArrowBtn.eq(idx).toggleClass('fArrow'); // 클래스 주입
+                        footerhide.eq(idx).toggleClass('footerShow'); // 클래스 주입
+                        
+                        
+                     }
+                  });
+               });
+  
+  
+  
+  
+     
+  </script>
+<script>
+
+
+
+    var listWrap2 =$('.listWrap2');
+    var listWrap1 =$('.listWrap1');
+    var listWrap3 =$('.listWrap3');
+
+    // 인기 검색어 버튼 눌렀을때 
+    var hot =$('.hot');
+    var hotTxt =$('.hot a');
+    var twingkle =$('.twingkle'); //인기검색어 옆에 아이콘
+
+
+    // 최근 검색어 버튼 눌렀을때 
+    var recSeacrch =$('.recSeacrch');
+    var recSeacrchTxt =$('.recSeacrch a');
+    var search =$('.search'); //최근검색어 옆에 아이콘
+
+    // 최근 본 상품 버튼 눌렀을때 
+    var recLook =$('.recLook');
+    var recLookTxt =$('.recLook a');
+    var recent =$('.recent'); //최근 본 상품 옆에 아이콘
+
+    
+    hot.each(function(idx) {       //인기 검색어를 누르면              
+        $(this).on({
+            click: function () {
+
+                //인기 검색어 활성화
+                listWrap2.eq(idx).addClass('hide_listWrap2'); //hide_listWrap2 나타남
+                hotTxt.eq(idx).addClass('red'); //글씨 빨간색
+                twingkle.eq(idx).addClass('hideTwingkle'); // 글씨 앞에 아이콘 나타남
+                
+                // 최근 검색어 디폴트 만들기
+                listWrap1.eq(idx).addClass('hide_listWrap1'); // hide_listWrap1 사라짐
+                recSeacrchTxt.eq(idx).removeClass('red'); //글씨 빨간색x
+                search.eq(idx).removeClass('hideSearch'); // 글씨 앞에 아이콘 나타남
+                // 최근 본 상품 디폴트 만들기
+                recLookTxt.eq(idx).removeClass('red'); //글씨 빨간색 x
+                recent.eq(idx).removeClass('hideRecent'); // 글씨 앞에 아이콘 나타남
+                listWrap3.eq(idx).addClass('hide_listWrap3'); // hide_listWrap3 사라짐
+            }
+            
+        });
+    });
+
+
+    
+    recSeacrch.each(function(idx) {       //최근 검색어를 누르면              
+        $(this).on({
+            click: function () {
+                // 인기 검색어 디폴트 만들기
+                hotTxt.eq(idx).removeClass('red'); //글씨 빨간색
+                twingkle.eq(idx).removeClass('hideTwingkle'); // 글씨 앞에 아이콘 나타남
+                listWrap2.eq(idx).removeClass('hide_listWrap2'); //hide_listWrap2 사라짐
+                //최근 검색어 활성화
+                recSeacrchTxt.eq(idx).addClass('red'); //글씨 빨간색
+                search.eq(idx).addClass('hideSearch'); // 글씨 앞에 아이콘 나타남
+                listWrap1.eq(idx).removeClass('hide_listWrap1'); // hide_listWrap1 나타남
+                // 최근 본 상품 디폴트 만들기
+                recLookTxt.eq(idx).removeClass('red'); //글씨 빨간색 x
+                recent.eq(idx).removeClass('hideRecent'); // 글씨 앞에 아이콘 나타남
+                listWrap3.eq(idx).addClass('hide_listWrap3'); // hide_listWrap3 사라짐
+            }
+            
+        });
+    });
+
+
+
+
+
+    
+    recLook.each(function(idx) {       //최근 본 상품  누르면              
+        $(this).on({
+            click: function () {
+                // 인기 검색어 디폴트 만들기
+                hotTxt.eq(idx).removeClass('red'); //글씨 빨간색
+                twingkle.eq(idx).removeClass('hideTwingkle'); // 글씨 앞에 아이콘 나타남
+                listWrap2.eq(idx).removeClass('hide_listWrap2'); //hide_listWrap2 사라짐
+                //최근 검색어 디폴트 만들기
+                recSeacrchTxt.eq(idx).removeClass('red'); //글씨 빨간색
+                search.eq(idx).removeClass('hideSearch'); // 글씨 앞에 아이콘 나타남
+                listWrap1.eq(idx).addClass('hide_listWrap1'); // hide_listWrap1 사라짐
+                
+                //최근 본 상품 활성화
+                recLookTxt.eq(idx).addClass('red'); //글씨 빨간색
+                recent.eq(idx).addClass('hideRecent'); // 글씨 앞에 아이콘 나타남
+                listWrap3.eq(idx).removeClass('hide_listWrap3'); // hide_listWrap3 나타남
+                
+            }
+            
+        });
+    });
+
+
+
+
+
+
+
+// 최근 검색한 기록이 없습니다  ->  검색어 전체삭제 버튼 누르면 나옴 -> 검색기록 사라짐
+    var topRemoveCon =$('.topRemoveCon');//검색어 전체삭제 버튼
+    var resultNone =$('.resultNone'); //최근 검색한 기록이 없습니다
+    var topSearchRemoveCon =$('.topSearchRemoveCon'); //최근 검색한 기록 
+
+    
+    topRemoveCon.each(function(idx) {       //인기 검색어를 누르면              
+        $(this).on({
+            click: function () {
+                resultNone.eq(idx).addClass('resultNoneShow'); //resultNoneShow 나타남
+                topSearchRemoveCon.eq(idx).addClass('RemoveCon'); //resultNoneShow 나타남
+                
+            }
+            
+        });
+    });
+</script>
+<script>
+
+    //헤더영역 스크롤 이벤트 (페럴럭스)
+    var $window  = $(window);
+    var $header  = $('#wrap1 #header .container');
+    var $topWrap = $('#wrap1 #main> #section1>.container>.gap>.topWrap');
+    var $toph2   = $('#wrap1 #main> #section1>.container>.gap>.topWrap h2');
+    var $gaptop   = $('#wrap1 #main> #section1>.container>.gap');
+    var $backBtn = $('#wrap1 #main> #section1>.container>.gap>.topWrap .inputWrap .inputBox .backBtn');
+    
+    var t = 0; // false === 0 같다는 표시   toggle
+    
+
+    
+    //마우스로 스크롤값이 아래로 30픽셀이상 >= 내려가면 
+    //선택자 헤더영역(#header)에 효과 이벤트가 발생하게 하라 
+    $window.scroll(function(){ //스크롤 이벤트
+        // console.log(  $window.scrollTop() ); //스크롤 탑값 확인
+        if( $window.scrollTop() >= 30 ){  //마우스로 스크롤값이 아래로 30픽셀이상 내려가면
+            $header.addClass('addTop');  //헤더에 클래스 추가
+            $topWrap.addClass('addTop'); 
+            $toph2.addClass('addTop'); 
+            $gaptop.addClass('addTop'); 
+            $backBtn.addClass('addTop');  
+ 
+        }
+        else{
+                $header.removeClass('addTop'); //추가된 클래스 삭제
+                $topWrap.removeClass('addTop'); 
+                $toph2.removeClass('addTop'); 
+                $gaptop.removeClass('addTop'); 
+                $backBtn.removeClass('addTop'); 
+          
+        }           
+    });
+
+
+
+
+   
+    
+</script>
+
+<script>
+    var focusInput  = $('.focusWrap');
+    var inputTxtBox = $('.inputTxtBox');
+    var searchIcon  = $('.searchIcon');
+    var dropDown    = $('.box-dropDown');
+    var xbtn        = $('.xbtn');
+
+  
+
+   
+
+    inputTxtBox.each(function(idx) {                   
+        $(this).on({
+            click: function () {
+                focusInput.eq(idx).toggleClass('addInput'); //빨간새 돋보기 보여줌 
+                searchIcon.eq(idx).toggleClass('addhide'); //회색 돋보기 안보여줌 
+                dropDown.eq(idx).toggleClass('addshow'); //드롭다운리스트 감춤
+                
+            }
+            
+        });
+     });
+
+     xbtn.each(function(idx) {                   
+        $(this).on({
+            click: function () {
+                focusInput.eq(idx).toggleClass('addInput'); //빨간새 돋보기 보여줌 
+                dropDown.eq(idx).removeClass('addshow'); // 드롭다운리스트 감춤 
+              
+                
+            }
+            
+        });
+     });
+
+
+
+    var btn    = document.querySelector('input');
+
+        btn.addEventListener('click', updateBtn);
+
+
+        function updateBtn() {
+            if (btn.value === '비') {
+                btn.value = '';
+              
+            
+            } else {
+                btn.value = '비';
+                
+            }
+        } 
+
+
+
+</script>
+
+
+</body>
+</html>

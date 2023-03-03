@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./fonts.css);
+
+
+
+*{   width:100%; height: 100%;  font-family: 'SUIT';}
+html, body {background: #fff; color: #fff;    }
+
+
+
+
+
+#discountCoupon { position: relative;  max-width:450px;width:100%; height: 100%; background: #fff; margin: 0 auto;display: block; }
+#discountCoupon .TopContainer { width:100%; max-width:450px; margin:0 auto;height:100%;  background: #fff;/* #3D3F84; */ }
+
+#discountCoupon .TopContainer .container{width:100%; padding: 0; } 
+
+#discountCoupon .TopContainer .container .top { padding:0 18px; display: flex; }
+#discountCoupon .TopContainer .container .top>li{width: 33.333%; display:inline-block; padding:14px 0 11px 0 ; }
+/*  header left */
+#discountCoupon .TopContainer .container .top>.left .leftWrap {  width: 100%; }
+#discountCoupon .TopContainer .container .top>.left .leftWrap .backBtn { width:25px;   }
+#discountCoupon .TopContainer .container .top>.left .leftWrap .backBtn a { width:100%;  padding:1px 0; }
+#discountCoupon .TopContainer .container .top>.left .leftWrap .backBtn a span { width:100%;height:18px; display: inline-block;}
+
+/* header medium */
+#discountCoupon .TopContainer .container .top>.medium {text-align: center; color: #1A1A1A; font-size: 18px;font-weight: 400; white-space: nowrap; }
+
+/* header  right */
+#discountCoupon .TopContainer .container .top>.right #aside {width: 100%;  }
+#discountCoupon .TopContainer .container .top>.right #aside .icon-box-gap { width:100%;  }
+#discountCoupon .TopContainer .container .top>.right #aside .icon-box-gap .icon-box {  width:100%;  }
+#discountCoupon .TopContainer .container .top>.right #aside .icon-box-gap .icon-box ul{float: right; box-sizing: border-box;white-space: nowrap;   }
+#discountCoupon .TopContainer .container .top>.right #aside .icon-box-gap .icon-box ul li { padding: 0 5px; text-align: center;display:inline-block; }
+#discountCoupon .TopContainer .container .top>.right #aside .icon-box-gap .icon-box ul li a  { width:15px; }
+#discountCoupon .TopContainer .container .top>.right #aside .icon-box-gap .icon-box ul li a img { color:#1A1A1A;width:15px; float: right;   }
+
+
+
+/* 이미지 */
+.imgWrap { width: 100%; display: block;  padding: 20px 18px;  }
+.imgWrap .slide-container{position: relative;width:100%;   }
+.imgWrap .slide-container>.slide-view{ z-index:3; position: relative;width:100%; display: block; }
+.imgWrap .slide-container>.slide-view .slide-wrap{ position: relative;  width:100%; }
+.imgWrap .slide-container>.slide-view>.slide-wrap>.slide{ position: relative; width:100%; display: inline-block; padding:0 0 10px 0 ;   }
+.imgWrap .slide-container>.slide-view>.slide-wrap>.slide>.slide-text{ position: absolute; width:auto; height:auto;top:40px; left:25px; padding-right:18px; }
+.imgWrap .slide-container>.slide-view>.slide-wrap>.slide>.white{ color:#fff; }
+.imgWrap .slide-container>.slide-view>.slide-wrap>.slide>.white>h4.white{ color:#fff; }
+.imgWrap .slide-container>.slide-view>.slide-wrap>.slide>.slide-text h3 { font-size: 24px; line-height: 28px;font-family: 'SUIT'; font-weight: 400;}
+.imgWrap .slide-container>.slide-view>.slide-wrap>.slide>.slide-text h3 strong{ font-weight: 700; }
+.imgWrap .slide-container>.slide-view>.slide-wrap>.slide>.slide-text h4 { font-size: 14px; line-height: 18px; color:#565656;font-family: 'SUIT';font-weight: 400; }
+.imgWrap .slide-container>.slide-view>.slide-wrap>.slide>.slide-text span {display: block;  }
+.imgWrap .slide-container>.slide-view>.slide-wrap>.slide>.slide-text span button {font-size: 10px;font-weight: 500; width: auto;font-family: 'SUIT'; background-color: #444; border-radius: 20px; padding:4px 10px;  color:#fff; border: 0; }
+.imgWrap .slide-container>.slide-view>.slide-wrap>.slide>.date {z-index:5; height: auto; width: auto; position: absolute; bottom:28px; left:25px; color:#BDBDBD;font-weight:400; font-size: 14px; font-family: 'SUIT';  }
+.imgWrap .slide-container>.slide-view .goBtn { height: auto; width: auto; z-index:5; position: absolute; bottom:28px; right: 18px; height: auto; width: auto; white-space: nowrap;}
+.imgWrap .slide-container>.slide-view .goBtn a {width: auto;font-size: 11px; color:#fff; font-weight: 400;  display: inline-block;  float:right; font-family: 'SUIT'; }
+.imgWrap .slide-container>.slide-view .goBtn a  i{ width: auto;font-size: 15px; color:#fff; font-weight: 300; }
+.imgWrap .slide-container>.slide-view>.slide-wrap .slide>a {width: 100%; border-radius: 6px;}
+.imgWrap .slide-container>.slide-view>.slide-wrap .slide>a img{width: 100%; border-radius: 6px;}
+
+
+	/* 탑버튼 우측 하단 따라다니는거 */
+   .top-btn{z-index:10;position:fixed;bottom:82px;left:50%; display:block;width:44px; margin-left:120px;height:auto; opacity:1; transition:all 1s;}
+   .top-btn.addEvent{opacity:0; transition:all 1s;}
+   .top-btn>a>img{width:100%; border-radius: 22px; }
+    

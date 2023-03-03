@@ -1,0 +1,178 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./fonts.css);
+
+
+
+
+#login { max-width:450px; width:100%; height: 100vh; background: #fff; margin: 0 auto;display: block; }
+#login >.TopContainer {position: relative; width:100%; max-width:450px;  margin: 0 auto;display: block;font-family: 'SUIT';}
+/* 상단 로그인top */
+#login >.TopContainer .topWrap{ position: absolute; top: 0; left: 0; display: flex; height: 52px; width:100%;  display: flex;color: #1A1A1A;  padding: 10px ;  }
+#login >.TopContainer .topWrap>div {width: 33.333%; display: block;}
+#login >.TopContainer .topWrap .Top { text-align: center;}
+#login >.TopContainer .topWrap .Top .TopTxt {font-size: 18px; line-height: 190%; font-weight: 400; letter-spacing: -.4; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+#login >.TopContainer .topWrap .Top .TopTxt strong {vertical-align: baseline; }
+#login >.TopContainer .topWrap .Back {  width: 33.333%; }
+#login >.TopContainer .topWrap .Back a { width:30px; }
+#login >.TopContainer .topWrap .Back a img { width:30px; }
+/* 상단 로고 */
+#login >.TopContainer .loginContents {text-align: center; }
+#login >.TopContainer .loginContents .logoBox {  display: block;  }
+#login >.TopContainer .loginContents .logoBox div { width: 114px; margin: 0 auto ;}
+#login >.TopContainer .loginContents .logoBox div img { width: 100%; }
+#login >.TopContainer .loginContents h2 {font-size: 16px;font-weight: 400;  margin: 16px 0 20px 0; color: #1A1A1A; font-family: 'SCoreDream'; line-height: 24px;}
+#login >.TopContainer .loginContents h2 span {width: 100%;height: 10px;position:relative; z-index: 2; vertical-align: baseline;  }
+#login >.TopContainer .loginContents h2 span i {  z-index: -1; bottom:1px; position:absolute;left: 0;background: rgba(255, 92, 56, 0.3); width: 100%;height: 10px; display: inline-block;   }
+
+
+
+
+
+/* 회원가입 아이디 비번 input */
+.signUpModify { width: 100%; font-family: 'SUIT';padding-top:52px;}
+.signUpModify .signUpModifyGap { width: 100%;}
+
+.signUpModify .signUpModifyGap .signUpModifyCon { width: 100%; border-bottom: 6px solid #E9E9E9; background-color: #fff;}
+.signUpModify .signUpModifyGap .signUpModifyBox { width: 100%; border-bottom: 1px solid #E2E2E2; padding:30px 0 0 0; }
+.signUpModify .signUpModifyGap .signUpModifyBox>.title { color: #1A1A1A; font-weight: 700; font-size: 16px;  padding: 0 18px 16px 18px; }
+.signUpModify .signUpModifyGap .signUpModifyBox .info {display: flex;  margin:0; padding: 0 18px 15px 18px; }
+.signUpModify .signUpModifyGap .signUpModifyBox .info .left { display: inline-block; width: 68px; white-space: nowrap; text-overflow: ellipsis; color: #565656; font-size: 12px; line-height: 21px;  }
+.signUpModify .signUpModifyGap .signUpModifyBox .infocon1 .right { display: inline-block; color: #1A1A1A; font-size: 14px; line-height: 21px; }
+.signUpModify .signUpModifyGap .signUpModifyBox .infocon2 .right { width: 100%; display: flex; white-space: nowrap; text-overflow: ellipsis; }
+.signUpModify .signUpModifyGap .signUpModifyBox .infocon2 .right .rightPs { margin:auto auto auto 10px;display: inline-block; color: #1A1A1A; font-size: 14px; line-height: 21px; }
+.signUpModify .signUpModifyGap .signUpModifyBox .infocon2 .right .greyBtn { margin:-2px 0 auto auto; width: auto;}
+.signUpModify .signUpModifyGap .signUpModifyBox .infocon2 .right .greyBtn a {white-space: nowrap; height: 26px; width: auto;display: inline-block;  color: #797979; font-size: 14px; line-height: 19px; border: 1px solid #E2E2E2; padding:3px 8px;border-radius: 4px; text-decoration: none; }
+
+
+
+
+
+
+
+                    /*  비번 input */
+                    .signUpBox { display: block;}
+                    .signUpBox.hidePsBox { display: none;}
+                    .signUpBox .signUpGap { width: 100%; background: #F9F9F9;padding: 20px 18px;}
+                     
+                    
+                    /*  변경 이메일 input */
+                    .chEmailBox { display: block;}
+                    .chEmailBox.hideEmailBox { display: none;}
+                    .chEmailBox .chEmailGap { width: 100%; background: #F9F9F9;padding:20px 18px; margin-bottom: 14.5px;}
+                       
+
+                    
+                    /*  회원 탈퇴 input */
+                    .withDrawalBox { display: block;}
+                    .withDrawalBox.hideWithDrawalBox { display: none;}
+                    .withDrawalBox .withDrawalGap { width: 100%; background: #F9F9F9;padding:10px 18px 20px 18px; margin-top: 12px; }
+                       
+
+
+
+
+                                        .signUpCon { width: 100%; margin: 0; }
+                                        .signUpCon li { width: 100%;}
+                                        .signUpCon>li>.title { width: 100%; color: #565656; font-weight:400;font-size:12px; padding-bottom: 10px; line-height: 15px;}
+
+                                        .signUpCon li .input { width: 100%;position:relative; margin-bottom:10px;}
+                                        /* input 밑에 파란색 텍스트 */
+                                        .signUpCon li .input .blueTxt { display: block; color: #187AEF; font-size: 12px; line-height: 15px; font-weight: 400;padding: 10px 0 30px 0;}
+                                        .signUpCon li .input .blueTxt.buleHide { display: none; }
+                                        /* input 밑에 파란색 텍스트 */
+                                        .signUpCon li .input .redTxt { display: block; color: #E7382D; font-size: 12px; line-height: 15px; font-weight: 400; padding: 10px 0 30px 0;}
+                                        .signUpCon li .input .redTxt.redHide { display: none; }
+
+                                        .signUpCon li .input input {z-index: 0; position:relative; color:#1a1a1a ; outline: none;width: 100%; font-size: 12px; padding: 12px; height:38px; border-radius: 6px; border: 1px solid #E2E2E2;}
+                                        .signUpCon li .input input::placeholder { color:#CCCCCC; }
+                                        /* 아이디 */
+                                        .signUpCon li .input .inputPs3 {display: inline-block; z-index: 5;background: url(../img/btn_x_input.svg) no-repeat 50% 50%; position:absolute; top:8px; right: 20px; width: 20px; height: 20px;cursor: pointer; }
+                                        .signUpCon li .input .inputPs3.hidePsBtn3 {display: none;}
+                                        /* 패스워드 첫번째줄 x 버튼*/
+                                        .signUpCon .inputPs .input .btnWrap  {display: flex; }
+                                        .signUpCon .inputPs .input .btnWrap .xbtnPs1 {display: inline-block;  z-index: 5; background: url(../img/btn_x_input.svg) no-repeat 50% 50%;  position:absolute; top:9px; right: 48px;width: 20px; height: 20px;cursor: pointer;  }
+                                        .signUpCon .inputPs .input .btnWrap .xbtnPs1.hidePsBtn1 {display: none ;}
+                                    
+                                    
+                                    /* 변경 패스워드  x 버튼*/
+                                    .signUpCon .inputPs .input .btnWrap  {display: flex; }
+                                    .signUpCon .inputPs .input .btnWrap .xbtnPsCh {display: inline-block;  z-index: 5; background: url(../img/btn_x_input.svg) no-repeat 50% 50%;  position:absolute; top:9px; right: 48px;width: 20px; height: 20px;cursor: pointer;  }
+                                    .signUpCon .inputPs .input .btnWrap .xbtnPsCh.hidePsChBtn {display: none ;}
+                                    /* 변경 비밀번호  눈 */
+                                    .signUpCon .inputPs .input .btnWrap .eyesCh.openEyes { display: inline-block; background: url(../img/ico_eyes.svg)no-repeat 50% 50% ; z-index: 5; position:absolute; top:5px; right: 20px; margin-top: 3px;width: 20px; height: 20px; cursor: pointer; }
+                                    .signUpCon .inputPs .input .btnWrap .eyesCh.closeEyes {display: inline-block; background: url(../img/ico_close_eyes.svg)no-repeat 50% 50% ; z-index: 5; position:absolute; top:5px; right: 20px;margin-top: 4px;  width: 20px; height: 20px; cursor: pointer; }
+                                    .signUpCon .inputPs .input .btnWrap .eyesCh.hidePsChBtn {display: none;}
+                                    
+                                    
+                                    
+                                        /* 패스워드 첫번째줄 눈 */
+                                        .signUpCon .inputPs .input .btnWrap .eyes1.openEyes { display: inline-block; background: url(../img/ico_eyes.svg)no-repeat 50% 50% ; z-index: 5; position:absolute; top:5px; right: 20px; margin-top: 3px;width: 20px; height: 20px; cursor: pointer; }
+                                        .signUpCon .inputPs .input .btnWrap .eyes1.closeEyes {display: inline-block; background: url(../img/ico_close_eyes.svg)no-repeat 50% 50% ; z-index: 5; position:absolute; top:5px; right: 20px;margin-top: 4px;  width: 20px; height: 20px; cursor: pointer; }
+                                        .signUpCon .inputPs .input .btnWrap .eyes1.hidePsBtn1 {display: none;}
+                                        /* 패스워드 두번째줄 x 버튼 */
+                                        .signUpCon .inputPs .input .btnWrap .xbtnPs2 {display: inline-block; background: url(../img/btn_x_input.svg)no-repeat 50% 50% ; z-index: 5; position:absolute; top:9px; right: 48px;width: 20px; height: 20px;  cursor: pointer; }
+                                        .signUpCon .inputPs .input .btnWrap .xbtnPs2.hidePsBtn2 {display: none ;}
+                                        /* 패스워드 두번째줄 눈 */
+                                        .signUpCon .inputPs .input .btnWrap .eyes2.openEyes { display: inline-block; background: url(../img/ico_eyes.svg)no-repeat 50% 50% ; z-index: 5; position:absolute; top:5px; right: 20px; margin-top: 3px;width: 20px; height: 20px; cursor: pointer; }
+                                        .signUpCon .inputPs .input .btnWrap .eyes2.closeEyes {display: inline-block; background: url(../img/ico_close_eyes.svg)no-repeat 50% 50% ; z-index: 5; position:absolute; top:5px; right: 20px;margin-top: 4px;  width: 20px; height: 20px; cursor: pointer;}
+                                        .signUpCon .inputPs .input .btnWrap .eyes2.hidePsBtn2 {display: none;}
+
+                                        /* 확인버튼 */
+                                        .signUpCon .redBtn {width: 100%;padding-top: 20px;}
+                                        .signUpCon .redBtn a {display: block; padding: 12px 0; background: #E7342C; font-size: 16px; color: #fff; font-weight: 400; text-align: center; border-radius: 6px; text-decoration: none;}
+
+
+                                        /* 변경 이메일 */
+                                        .signUpCon li .input .inputEmail2 {display: inline-block; z-index: 5;background: url(../img/btn_x_input.svg) no-repeat 50% 50%; position:absolute; top:8px; right: 20px; width: 20px; height: 20px;cursor: pointer; }
+                                        .signUpCon li .input .inputEmail2.hideEmail {display: none;}
+                                        /* Email x 버튼*/
+                                        .signUpCon .inputEmailCon .input .btnWrap  {display: flex; }
+                                        .signUpCon .inputEmailCon .input .btnWrap .xbtnEmail {display: inline-block;  z-index: 5; background: url(../img/btn_x_input.svg) no-repeat 50% 50%;  position:absolute; top:9px; right: 18px;width: 20px; height: 20px;cursor: pointer;  }
+                                        .signUpCon .inputEmailCon .input .btnWrap .xbtnEmail.hideEmailBtn {display: none ;}
+                                        
+
+
+.signUpModify .signUpModifyGap .signUpModifyBox .inputCheck {width: 100%; margin:0; padding:0 18px 0 18px;}
+.signUpModify .signUpModifyGap .signUpModifyBox .inputCheck .inputBox {display: flex; padding-bottom: 10px;}
+.signUpModify .signUpModifyGap .signUpModifyBox .inputCheck .inputBox:last-child {display: flex; padding-bottom: 0;}
+.signUpModify .signUpModifyGap .signUpModifyBox .inputCheck .inputBox .inputTxt {color: #1A1A1A; font-size: 14px; font-weight: 400; line-height: 21px;}
+.signUpModify .signUpModifyGap .signUpModifyBox .inputCheck .inputBox .greyBtn { margin:-2px 0 auto auto; }
+.signUpModify .signUpModifyGap .signUpModifyBox .inputCheck .inputBox .greyBtn a { height: 26px; display: inline-block;  color: #797979; font-size: 14px; line-height: 19px; border: 1px solid #E2E2E2; padding:3px 8px;border-radius: 4px; text-decoration: none; }
+
+.signUpModify .signUpModifyGap .signUpModifyBox .inputCheck .inputBox .check {margin: auto 0 auto auto ; width: 50px; height:28px;display: inline-block;  }
+.signUpModify .signUpModifyGap .signUpModifyBox .inputCheck .inputBox .check input[type='checkbox'] { outline:none;appearance: none; margin-top:-3px; background: url(../img/checkboxGreyRound.svg)no-repeat 50% 50%;width: 50px; height:28px; }
+.signUpModify .signUpModifyGap .signUpModifyBox .inputCheck .inputBox .check input[type='checkbox']:checked { appearance: none; margin-top:-3px; background: url(../img/checkboxRedRound.svg)no-repeat 50% 50%;width: 50px; height:28px; }
+
+.signUpModify .signUpModifyGap .signUpModifyBox .smallTxt { font-size: 12px; font-weight: 400; color: #797979;  padding: 10px 18px 20px 18px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  셀렉트박스 */
+.selectBox {margin: 0 auto 10px auto ; position: relative; width: 100%; height:42px; display: block;   border: 1px solid #E2E2E2; border-radius: 4px; background: #fff;}
+/*   탭버튼 화살표 내리면 나오는거 */
+.selectBox .mobileTab{display: block;box-sizing: border-box; text-decoration:none; }
+.selectBox .mobileTab .tab-wrap{position:relative;z-index:4; display:block;width:100%;box-sizing:border-box;}
+/* 탭버튼  */
+.selectBox .mobileTab .tab-wrap>a{ font-size:14px; position:relative; display:block; white-space: nowrap;color: #1A1A1A; text-decoration: none; text-align:left;text-indent: 14px; margin-top: 10px; background: url(../img/select_arrow_open.svg) no-repeat 98% 50%; }
+.selectBox .mobileTab .tab-wrap>a.addFamily{ background:  url(../img/select_arrow_close.svg) no-repeat 98% 50%;  }
+/* 탭버튼 누르면 나오는 메뉴 내용들 */
+.selectBox .mobileTab .tab-wrap>ul.tab{display:block;z-index:1; background:#fff;width:100%; height: auto; padding:5px 0; position:absolute; top:31px; margin:0;  box-sizing:border-box;border:1px solid #E2E2E2; border-radius: 6px;}
+.selectBox .mobileTab .tab-wrap>ul.tab>li{width:100%;display:block;box-sizing:border-box; padding: 5px 0;font-size:14px; }
+.selectBox .mobileTab .tab-wrap>ul.tab>li:last-child{ border:0 ;}
+.selectBox .mobileTab .tab-wrap>ul.tab>li>a{ color:#1a1a1a; font-size:14px; text-decoration: none;}
+.selectBox .mobileTab .tab-wrap>ul.tab>li>a:hover{color:#e7382d;}
+.selectBox .mobileTab .tab-wrap>ul.tab>li>a div { display: block;   }
+.selectBox .mobileTab .tab-wrap>ul.tab>li>a div.option {text-align: left;text-indent: 14px; }
+
+

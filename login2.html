@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="publisher" content="eunheeChoi">
+    <title>로그인진행</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="./img/favicon/favicon-32.png" sizes="32x32">
+
+
+   
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login2.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
+
+    <!-- jQuery 오픈소스 -->
+    <script src="./js/lib/jquery.min.js"></script> 
+	<script src='./js/lib/jquery-1.12.4.min.js'></script>
+	<!-- <script src='./js/lib/jquery.mobile-1.4.5.min.js'></script>터치이벤트 웹앱 -->
+	<script src='./js/lib/jquery.easing.1.3.js'></script>
+	<script src='./js/lib/jquery.touchSwipe.min.js'></script>
+	<!-- <script src='./js/lib/slick.min.js'></script> -->
+
+    <!-- 리액트 웹개발 오픈소스 -->    
+    <script src="./js/lib/react.development.js"></script>
+    <script src="./js/lib/react-dom.development.js"></script>
+    <script src="./js/lib/babel.min.js"></script>
+
+</head>
+<body>
+    <div id="login">
+        <div class="TopContainer">
+            <div class="topWrap">
+ 
+                <div class="Back">
+                    <a href="javascript:void(0);" ><img src="./img/ico_gnb_arrwo_back.svg" alt=""></a>
+                </div>
+                <div class="Top">
+                    <div class="TopTxt">
+                        무한혜택! <strong>Nstore</strong>
+                    </div>
+                </div>
+                <div class="right">
+                    <div>
+                        
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="loginContents">
+
+                <div class="logoBox">
+                    <div><img src="./img/logo.svg" alt=""></div>
+                </div>
+                
+                <h2>
+                    끝이 없는 혜택! Nstore에서<br>
+                    <span>트렌디한 상품을 초특가<i></i></span>로 만나보세요!
+                </h2>
+
+                  <ul class="loginBtnBox">
+
+                        <li class="inputBox">
+                            <div class="input inputId">
+                                <input type="text" id="id" name="id"  class="inputId1" placeholder="아이디">
+                                <span class="xbtnId hideIdBtn1"></span>                                
+                            </div>
+                            <div class="input inputPs">
+                                <input type="text"  type="password" id="password" name="password" autocomplete="current-password" class="input01" placeholder="비밀번호">
+                                <div class="btnWrap">
+                                    <span class="xbtnPs1 hidePsBtn1 xbtn"></span>
+                                    <span class="eyes1 closeEyes hidePsBtn1 eyes"></span>
+                                </div>
+                            </div>
+                            <div class="saveLogin">
+                                <div class="saveLoginBox"><input type="checkBox"></div>
+                                <div class="saveLoginTxt">아이디 저장</div>
+                            </div>
+                        </li>
+
+                        <li class="login">
+                            <div class="loginBtn "><a href="#">로그인</a></div>
+                        </li>
+
+                        <li class="findID_PS">
+                            <div class="findID_PS_GAP">
+                                <div class="findID findBtn">
+                                    <a href="#">아이디 찾기</a>
+                                </div>
+                                <div class="bar"></div>
+                                <div class="findPS findBtn">
+                                    <a href="#">비밀번호 찾기</a> 
+                                </div>
+                            </div>
+                        </li>
+                      
+                  </ul>
+                    
+
+
+                    <div class="loginStart">
+                       <div class="simpleLogin">
+                            <span class="bar"></span>
+                            <div><i>간편 로그인</i></div>
+                       </div> 
+                
+                        <ul class="naverKakao">
+                            <li class="txtBoxBlue">간편하게 로그인 하세요!</li>
+                            <li class="kakao"><a href="javascript:void(0);"><img src="./img/ico_kakaotalk.svg" alt="">카카오로 시작하기</a></li>
+                            <li class="naver"><a href="javascript:void(0);"><img src="./img/ico_naver.svg" alt="">네이버로 시작하기</a></li>
+                        </ul>
+
+                        <div class="bottomTxtBox">
+                            <div class="bottomTxt">
+                                <div class="redTxt">가입만해도 즉시 20% 할인!</div>
+                                <div class="signUpBtnBox">
+                                    <a href="javascript:void(window.open('signUpDetail.html', '_self'))">회원가입</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
+
+<script>
+    
+
+
+    var loginBtn    = $('.loginBtn'); //eyes 비밀번호input
+    var inputId1   = $('.inputId1'); //아이디input
+    var xbtnId     = $('.xbtnId'); //xbtn 버튼 아이디input
+    var inputId = document.getElementById('id'); 
+
+
+    inputId1.each(function(idx) {       //아이디input누르면              
+        $(this).on({
+            click: function () {
+               
+                xbtnId.eq(idx).removeClass('hideIdBtn1'); //x버튼 나타남
+                loginBtn.eq(idx).addClass('active'); // 로그인 버튼 활성화
+
+
+                
+            }
+            
+        });
+    });
+    
+    xbtnId.each(function(idx) {       //아이디input 안에 있는 x버튼 누르면              
+        $(this).on({
+            click: function () {
+               
+                xbtnId.eq(idx).addClass('hideIdBtn1'); //x버튼 사라짐
+                inputId.value = null;// input 안에 텍스트 다 지워짐
+                loginBtn.eq(idx).removeClass('active'); // 로그인 버튼 비활성화
+            }
+            
+        });
+    });
+
+    
+
+
+
+
+
+
+
+
+
+
+    var inputPs01   = $('.input01'); //패스워드 input
+    var xbtnPs1     = $('.xbtnPs1'); //xbtn 버튼 패스워드 input 안에있음
+    var eyes1       = $('.eyes1');    //xbtn 버튼 옆에 eyes1 패스워드 input 안에있음
+   
+    var input = document.getElementById('password'); 
+
+
+
+    inputPs01.each(function(idx) {       // 패스워드 input누르면              
+        $(this).on({
+            click: function () {
+               
+                xbtnPs1.eq(idx).removeClass('hidePsBtn1'); //x버튼 나타남
+                eyes1.eq(idx).removeClass('hidePsBtn1'); //x버튼 나타남
+                
+            }
+            
+        });
+    });
+
+    
+    xbtnPs1.each(function(idx) {       //패스워드 input 안에 있는 x버튼 누르면              
+        $(this).on({
+            click: function () {
+               
+                xbtnPs1.eq(idx).addClass('hidePsBtn1'); //x버튼 사라짐
+                eyes1.eq(idx).addClass('hidePsBtn1'); //x버튼 사라짐
+                input.value = null;// input 안에 텍스트 다 지워짐
+            }
+            
+        });
+    });
+
+
+             
+    
+    var password   = $('#password');
+
+    eyes1.each(function(idx) {       //eyes2 눈 버튼 누르면               
+        $(this).on({
+            click: function () {
+               
+                eyes1.eq(idx).toggleClass('closeEyes openEyes '); //토클
+
+                if(  eyes1.hasClass('openEyes')  ){
+                    password.prop('type', 'text');
+                    password.removeAttr('autocomplete');
+                }
+                else if(  eyes1.hasClass('closeEyes')  ){
+                    password.prop('type', 'password');
+                    password.attr('autocomplete');
+                }
+               
+            }
+            
+        });
+    });
+
+
+                
+   
+
+
+
+</script>

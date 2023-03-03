@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="publisher" content="eunheeChoi">
+    <title>쿠폰등록</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="./img/favicon/favicon-32.png" sizes="32x32">
+    
+   
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/chooseCouponNone.css">    
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- jQuery 오픈소스 -->
+    <script src="./js/lib/jquery.min.js"></script> 
+	<script src='./js/lib/jquery-1.12.4.min.js'></script>
+	<!-- <script src='./js/lib/jquery.mobile-1.4.5.min.js'></script>터치이벤트 웹앱 -->
+	<script src='./js/lib/jquery.easing.1.3.js'></script>
+	<script src='./js/lib/jquery.touchSwipe.min.js'></script>
+	<!-- <script src='./js/lib/slick.min.js'></script> -->
+
+    <!-- 리액트 웹개발 오픈소스 -->    
+    <script src="./js/lib/react.development.js"></script>
+    <script src="./js/lib/react-dom.development.js"></script>
+    <script src="./js/lib/babel.min.js"></script>
+
+</head>
+<body>
+    <div id="discountCoupon" >
+        <div class="TopContainer">
+            <div class="container">
+                <ul class="top clearfix">
+                    <li class="left">
+                        <div class="leftWrap">
+                            <span class="backBtn">
+                                <a  href="#" class="back-btn " title="back">
+                                    <span ></span>
+                                </a>
+                            </span>                       
+                        </div>
+                    </li>
+                    <li class="medium">
+                        쿠폰 선택
+                    </li>
+                    <li class="right">
+                        <aside id="aside" class="clearfix">
+                            <div class="icon-box-gap">
+                                <div class="icon-box">
+                                    <ul class="clearfix ">
+                                        <li>
+                                            <a href='javascript:Function();'>
+                                               
+                                                <span><img src="./img/btn_x_blackBTn.svg" alt=""></span> 
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                    </li>
+                </ul>
+            </div>   
+
+            <!-- 버튼 -->
+            <div class="plusBtn">
+                <div class="enrollCoupon">
+                    <a href="javascript:Function();" >
+                        <span><img src="./img/plus_btn.svg" alt=""></span>쿠폰 등록하기
+                    </a>
+                </div>
+                
+            
+                <div class="inputShow">
+                    <p>쿠폰번호를 아래 창에 입력해주세요.</p>
+                    <input type="text" placeholder="쿠폰번호 입력">
+                    <div class="enrollBtn "><a href="javascript:Function();">등록하기</a></div>
+                </div>
+                <span class="greytxt">* 상품할인쿠폰과 주문할인쿠폰은 중복사용이 불가능합니다.</span>
+            </div>
+
+            <!-- 탭버튼 -->
+            <div class="reviewBtn">
+                <ul>
+                    <li class="addfocus reviewBtn1">
+                        <a href="javascript:Function();">상품할인쿠폰 3<span class="red"></span></a>
+                    </li>
+                    <li class="reviewBtn2">
+                        <a href="javascript:Function();">주문할인쿠폰 4<span class="red"></span></a>
+                    </li>
+                </ul>
+            </div>
+             <!-- 상품할인쿠폰 3 내용 -->
+            <div class="discountCouponCon tabCon reviewCon1 " >
+                <div class="discountCouponList tabConDelect" >
+                    <div class="discountCouponWrap" >
+
+                        <div class="boxBottomWrap" >
+                            <div class="box1 box">
+                                <div class="brandWrap brandWrap1">
+                                
+                                   
+                                    <a href="javascript:Function();">
+                                        <div class="NoneCoupon">
+                                            <div class="couponImg"> <img src="./img/ico_circle_coupon_em.svg" alt=""> </div>
+                                            <div class="couponTxt">사용가능한 쿠폰이 없습니다.</div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+
+          
+
+<!-- 주문할인쿠폰 4 내용 -->
+            <div class="orderCon tabCon tabReview2" >
+
+                       
+                <div class="orderList  ">
+                    <div class="orderWrap">
+                        
+                        <div class="txtWrap">
+                            <div class="title">쿠폰 0</div>
+                           
+
+                            <div class="selectBox">
+                                <div class="mobileTab">
+                                    <div class="tab-wrap active">
+                                        <ul class="tab ServiceTab" style="  display: none; ">
+                                            <li class="active">
+                                                <a href="javascript:" class="service-tab-1" title="할인금액순">
+                                                    <div class="option">할인금액순</div>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="javascript:" class="service-tab-2" title="남은기간순">
+                                                    <div class="option">남은기간순</div>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="javascript:" class="service-tab-3" title="최신순">
+                                                    <div class="option">최신순</div>
+                                                </a>
+                                            </li>
+                                                        
+                                        </ul>
+                                        <a href="javascript:" class="tabBtn" title="할인금액순" style="text-decoration: none; ">할인금액순</a>	
+                                    </div>						
+                                </div>
+                            
+                            </div>
+
+                            </div>
+                       
+                        <a href="javascript:Function();">
+                            <div class="NoneCoupon">
+                                <div class="couponImg"> <img src="./img/ico_circle_coupon_em.svg" alt=""> </div>
+                                <div class="couponTxt">최근 본 상품이 없습니다.</div>
+                            </div>
+                        </a>
+
+
+                    </div>
+                </div> 
+                        
+                    
+            </div>
+            
+         
+
+        </div> 
+    </div>
+
+
+    <div id="modal" >
+        <div class="modalWrap">
+            <div class="modalGap">
+                <div class="modalContent">
+                    <div class="txt">
+                        쿠폰을 정상적으로 등록했습니다.<br>
+                        쿠폰함에서 확인해주세요.
+                    </div>
+                    <div class="okBtn"> <a href="javascript:">확인</a></div>
+             
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+     
+<script>
+
+ 
+var reviewtab1       = $('.reviewBtn1');      // 상품할인쿠폰 버튼
+var reviewtab2       = $('.reviewBtn2');      // 주문할인쿠폰 버튼
+var tabCon           = $('.tabCon');          // 상품할인쿠폰,  주문할인쿠폰  내용리스트
+var modal            = $('#modal');           // 모달창 
+var enrollBtn        = $('.enrollBtn');       // 등록하기 회색버튼 
+var okBtn            = $('.okBtn');           // 모달창에 확인버튼 
+var enrollCoupon     = $('.enrollCoupon');    // 쿠폰등록하기 버튼 
+var inputShow        = $('.inputShow');       // 인풋 상자  
+
+
+// 상품할인쿠폰 버튼 눌렀을때 이벤트
+reviewtab1.each(function (idx) {
+               
+    $(this).on({
+        click: function () {
+            tabCon.removeClass('tabReview1');   // 보여줌
+            tabCon.addClass('tabReview2');      // 안보여줌
+            reviewtab1.addClass('addfocus');    // 상품할인쿠폰 버튼 줄 그어짐              
+            reviewtab2.removeClass('addfocus'); // 주문할인쿠폰 버튼 줄 지워짐              
+        }
+        
+    });
+});
+// 주문할인쿠폰  버튼 눌렀을때 이벤트
+reviewtab2.each(function (idx) {
+               
+    $(this).on({
+        click: function () {
+            tabCon.removeClass('tabReview2');      // 보여줌
+            tabCon.addClass('tabReview1');      // 안보여줌
+            reviewtab2.addClass('addfocus');    // 주문할인쿠폰 버튼 줄 그어짐             
+            reviewtab1.removeClass('addfocus'); // 상품할인쿠폰 벝튼 줄 지워짐                 
+        }
+        
+    });
+});
+// 등록하기 회색버튼 이벤트
+enrollBtn.each(function (idx) {
+               
+    $(this).on({
+        click: function () {
+            
+            enrollBtn.addClass('addRed');      // 버튼빨간색으로 색상변함
+            modal.addClass('modalShow');       // 모달창이 뜸             
+                        
+        }
+        
+    });
+});
+
+// 모달창 확인버튼 이벤트
+okBtn.each(function (idx) {
+               
+    $(this).on({
+        click: function () {
+            
+            
+            modal.removeClass('modalShow');       // 모달창이 사라짐           
+                        
+        }
+        
+    });
+});
+
+
+// 쿠폰등록하기 버튼 이벤트
+enrollCoupon.each(function (idx) {
+               
+    $(this).on({
+        click: function () {            
+            inputShow.addClass('addInputBtn');       // input 상자 나타남           
+                        
+        }
+        
+    });
+});
+
+
+
+
+</script>
+
+<script>
+        
+
+
+    //   탭버튼 이벤트
+    var t=0;
+       var tab8_btn = $('.tab .active');
+       var tab8mobile = $('#section1 .tabBtn');
+       priceBox       = $('#wrap1> #main>#section1 .priceBox');
+
+
+       $('.tabBtn').on({
+          click:	function(){
+             showHideList();
+          }
+       });
+       
+       
+       $(".tab > li > a").click(function(e) {
+       e.preventDefault();	
+       priceBox.removeClass('addClose'); // 탭버튼 누르면 priceBox 다시나타남
+       // 전역변수 조정
+       showHideList();
+       
+       //새로운 클릭일 경우에만 ui 변경
+       if(!$(this).parent().hasClass('active')) { 
+         $('.tabBtn').text($(this).text()); //보여지는 제목 바꾸기
+       }
+       
+       // 액티브 조정 
+       $(this).parent().siblings().removeClass('active').end().addClass('active');
+       
+       });
+       
+       //모바일 & PC 공통 
+       $(".tabs a").click(function(e) {
+          e.preventDefault();	
+          $(this).parent().siblings().removeClass('active').end().addClass('active');
+          
+       //	$(this).parents('ul').next().children().hide().eq($(this).parent().index()).show();
+          $('.tab').parents('ul').next().children().hide().eq($(this).parent().index()).show();
+       });
+       
+       //현재 active 되어있는 탭 외의 모든 데이터 접기 => 모바일도 적용하기 위해선 공통 class 생성하여 적용 필요
+       $('.ServiceTab > li').on('click', function(e){
+          e.preventDefault();	
+       // $(".nav").navgoco('toggle', false);
+          $(".nav > li").removeClass('active');
+          $(".nav > li").removeClass('open');
+       });
+       
+       function showHideList() {
+          if(t==0){
+             t=1;
+             $('.tab').stop().slideDown();
+             $('.tabBtn').addClass('addFamily');
+          }else{
+             t=0;
+             $('.tab').hide();
+             $('.tabBtn').removeClass('addFamily');	
+             $('.tabBtn').children().stop().slideUp();	
+          }
+       }
+       
+
+
+
+</script>
+</body>
+</html>

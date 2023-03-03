@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="publisher" content="eunheeChoi">
+    <title>Nmall 상세페이지 리뷰없음</title>
+    <!-- favicon -->
+    <link rel="icon" href="./img/favicon/favicon-57.png" sizes="57x57">
+   
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/detailNoReviewOption.css">
+    
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- jQuery 오픈소스 -->
+    <script src="./js/lib/jquery.min.js"></script> 
+	<script src='./js/lib/jquery-1.12.4.min.js'></script>
+	<!-- <script src='./js/lib/jquery.mobile-1.4.5.min.js'></script>터치이벤트 웹앱 -->
+	<script src='./js/lib/jquery.easing.1.3.js'></script>
+	<script src='./js/lib/jquery.touchSwipe.min.js'></script>
+	<!-- <script src='./js/lib/slick.min.js'></script> -->
+
+    <!-- 리액트 웹개발 오픈소스 -->    
+    <script src="./js/lib/react.development.js"></script>
+    <script src="./js/lib/react-dom.development.js"></script>
+    <script src="./js/lib/babel.min.js"></script>
+
+</head>
+<body>
+   
+<div id="wrap1">
+    <ul id="skip">
+        <li><a href="#header" class="smoothBtn ">메뉴바로가기</a></li>
+        <li><a href="#main" class="smoothBtn ">메인바로가기</a></li>
+        <li><a href="#footer" class="smoothBtn ">하단바로가기</a></li>
+    </ul>
+    <header id="header"  class="header">
+        <div class="container ">
+
+            <div class="top clearfix">
+
+                <div class="left">
+                    <div class="leftWrap">
+                        <span class="backBtn">
+                            <a  href="#" class="back-btn " title="back">
+                                <span ></span>
+                            </a>
+                        </span>
+                        <span class="logoBtn">
+                            <a  href="./index.html" class="logo-btn " title="Logo">
+                                <span ></span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="right">
+                    <aside id="aside" class="clearfix">
+                        <div class="icon-box-gap">
+                            <div class="icon-box">
+                                <ul class="clearfix ">
+                                    <li >
+                                       <a href='javascript:Function();'><img src="./img/magni.svg" alt=""></a> 
+                                    </li>
+                                    <!-- 
+                                    <li >
+                                       <a href='javascript:Function();'><img src="./img/home.svg" alt=""></a> 
+                                    </li> -->
+                                    <li>
+                                        <a href='javascript:Function();'>
+                                            <em class="badge">5</em>
+                                            <span><img src="./img/cart.svg" alt=""></span> 
+                                            <!-- <span class="glyphicon">&#xe116;</span> -->
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+
+            </div>
+
+
+            <div class="bottom">
+                <div class="bottom-wrap">
+                    <nav id="nav" class="clearfix">
+                        <ul class="clearfix nav-warp ">
+                            <li class="mainbtn addClass">
+                                <a href='#section1' class="main-btn smoothBtn addClass">상품설명<i></i></a>
+                            </li>
+                            <li class="mainbtn">
+                                <a href='#section9' class="main-btn smoothBtn">리뷰<span>999+</span><i></i></a>     
+                            </li>
+                            <li class="mainbtn" onclick="javascript:void(window.open('detailAsk.html', '_self'))">
+                                <a href="" class="main-btn smoothBtn">문의<span>99</span><i></i></a>      
+                            </li>   
+                            <li class="mainbtn" onclick="javascript:void(window.open('purchaseInfo.html', '_self'))">
+                                <a href='#section6' class="main-btn smoothBtn">구매정보<i></i></a>
+                            </li>                
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main id="main">
+        <section id="section1">
+            <div class="container">
+                <div class="gap">
+                    <div class="wrap">
+
+                        <div class="imgContent">
+                            <div class="time redBg">
+                                <div class="left" ><span class="timeIcon"><img src="./img/time_ico.svg" alt=""></span></div>
+                                <div class="right"> 05:02:49 </div>
+                                <div class="text">남음</div>
+                            </div>
+
+
+                            <div class="slide-view">
+                                <ul class="slide-wrap fixedclear">
+                                    <li><img src="./img/detail1_sec1.png" alt=""></li>
+                                    <li><img src="./img/detail1_sec1.png" alt=""></li>
+                                    <li><img src="./img/detail1_sec1.png" alt=""></li>
+                                    <li><img src="./img/detail1_sec1.png" alt=""></li>
+                                    <li><img src="./img/detail1_sec1.png" alt=""></li>
+                                </ul> 
+                            </div>
+                          
+
+                            <ul class="slide-control-wrap">
+                               
+                                
+                                    <li><a href="javascript:" class="navBtn blind"></a></li>
+                                     
+                                
+                                    
+                                    <li><a href="javascript:" class="navBtn blind"></a></li> 
+                                
+                                    
+                                    <li><a href="javascript:" class="navBtn blind"></a></li> 
+                                
+                                    
+                                    <li><a href="javascript:" class="navBtn blind"></a></li> 
+                                
+                                    
+                                    <li><a href="javascript:" class="navBtn blind addNav"></a></li> 
+                                
+                                    
+                                    <li><a href="javascript:" class="navBtn blind"></a></li> 
+                                
+                            </ul>
+                        </div>
+
+                        <div class="txtContent">
+                                <div class="txtWrap">
+                                        <ul class="box1" >
+                                            <li class="star">
+                                                <i class="fa fa-star"></i>
+                                                4.0 <span>(1,234)</span>
+                                            </li>
+                                            <li class="right">
+                                                <span class="myPick"> </span>
+                                                <span class="share"> </span>
+                                            </li>
+                                        </ul>
+                                        <h2>[ROYALMINSTER] 2021년형 로얄민스터 프리미
+                                            엄 무선청소기 S10
+                                        </h2>
+                                        <ul class="price">
+                                            <li>73<span>%</span></li>
+                                            <li>21,800<span>원</span></li>                                                        
+                                            <li>598,000원</span></li>                                                        
+                                        </ul>
+                                        <ul class="box4">
+                                            <li>한정특가</li>
+                                            <li>무료배송</li>
+                                            <li>BEST</li>
+                                        </ul>
+                                        <div class="box5">
+                                            <ul>
+                                                <li></li>
+                                                <li>쿠폰 적용 할인가<span>19,500원</span></li>
+                                                <li class="getCoupon"><button>보유쿠폰 (#)<!-- <img src="./img/ico_coupon_down.svg" alt="">  --></button></li>   
+                                            </ul>
+                                            <div></div>
+                                        </div>
+                                        <div class="box6">
+                                            <div class="iconBox"><img src="./img/ico_page_delivery.svg"></div>
+                                            <div class="txtBox">
+                                                <h5>배송 정보</h5>
+                                                <div>
+                                                    배송비 3,000원 (40,000원 이상 무료배송)
+                                                    <div class="i">
+                                                        <div class="toolTipImg">
+                                                            <img src="./img/i.svg" alt="">
+                                                        </div>
+                                                        
+                                                        <div class="toolTipBox">
+                                                            <p>배송정보 내용 툴팁</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>00택배 ㅣ 평균 2~5일 소요 (공휴일 및 주말 제외)</div>
+                                            </div>
+                                        </div>
+                                        <div class="box7">
+                                            <div class="iconBox"><img src="./img/ico_page_money.svg"></div>
+                                            <div class="txtBox">
+                                            <h5>혜택</h5>
+                                            <div>카드사별 혜택 <span>무이자</span> 혜택<i class="material-icons">&#xe315;</i></div>
+                                            <div>포인트 <span>최대 10%</span> 적립<i class="material-icons">&#xe315;</i></div>
+                                            <div>리뷰 작성 시, <span>1,000원</span> 쿠폰 지급<i class="material-icons">&#xe315;</i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <span class="top-btn">
+                <a href="#section1" class="smoothBtn " target="_blank">
+                    <img src="img/topbtn.png" alt="">
+                </a>
+            </span>
+            <!-- 방금전 5개팔렸어요 -->
+            <div class="alertNow">
+                <p>방금전 <strong>5개</strong>가 팔렸어요!</p>
+            </div>
+            <!-- 장바구니 팝업 -->
+            <div id="cart" class=""   >
+                <img src="./img/cart_check_popup.svg" alt="">
+            </div>
+            <!-- 찜하기 팝업 -->
+            <div id="myPick" class=""   >
+                <img src="./img/mypick_check_popup.svg" alt="">
+            </div>
+            <!-- 찜하기해제 팝업 -->
+            <div id="removeMyPick" class=""   >
+                <img src="./img/mypick_out_popup.svg" alt="">
+            </div>
+            <!-- 공유하기 팝업 -->
+            <div id="share">
+                <div class="sharewrap">
+                    <div class="share-gap">
+                        
+                        <div class="closeBtn-wrap">
+                            <div class="closeBtn">
+                                <a href="javascript:Function();">
+                                    <img src="./img/btn_x.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="share-content">
+                            <ul>
+                                <li>
+                                    <a href="javascript:Function();" class="kakaotalk" >
+                                        
+                                        <img src="./img/share/ico_kakaotalk.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:Function();"  class="kakaotalk1" >
+                                        <img src="./img/share/ico_kakaotalk-1.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:Function();" class="kakaotalk"  >
+                                        <img src="./img/share/ico_fb.svg" alt="">
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="javascript:Function();"  class="ico_band" >
+                                        <img src="./img/share/ico_band.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:Function();" class="band-1" >
+                                        <img src="./img/share/ico_band-1.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=ko" class="urlCopyBtn" >
+                                        <img src="./img/share/ico_url.svg" alt="">
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                            <span class="urlCopytxt" >
+                                URL 주소가 복사되었습니다.
+                            </span>
+                            <input type="text" value="https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=ko" id="urlAddress" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 쿠폰 팝업 -->
+            <div id="coupon">
+                <div class="couponwrap">
+                    <div class="coupon-gap">
+                        
+
+                        <div class="coupon-content">
+                            
+                            <div class="closeBtn-wrap">
+                                <div class="closeBtn">
+                                    <a href="javascript:Function();">
+                                        <img src="./img/btn_x_popup.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <h2>사용 가능 쿠폰</h2>
+
+
+                            <ul class="totalWrap">
+                    
+                                <li class="selectBox1">
+                                    <div class="selectBox">
+                                        <div class="mobileTab">
+                                            <div class="tab-wrap active">
+                                                <ul class="tab ServiceTab" style="  display: none; ">
+                                                    <li class="active">
+                                                        <a href="javascript:" class="service-tab-1" title="전체">
+                                                            <div class="option">전체</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="javascript:" class="service-tab-2" title="상품쿠폰">
+                                                            <div class="option">상품쿠폰</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="javascript:" class="service-tab-2" title="주문쿠폰">
+                                                            <div class="option">주문쿠폰</div>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                                <a href="javascript:" class="tabBtn" title="전체" style="text-decoration: none; font-size:12px; ;  ">전체</a>	
+                                            </div>						
+                                        </div>
+                                    
+                                    </div>
+                                </li>
+            
+                                <li class="selectBox2">
+                                    <div class="selectBox">
+                                        <div class="mobileTab">
+                                            <div class="tab-wrap active">
+                                                <ul class="tab ServiceTab" style="  display: none; ">
+                                                    <li class="active">
+                                                        <a href="javascript:" class="service-tab-1 service" title="최신순">
+                                                            <div class="option">최신순</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="javascript:" class="service-tab-2 service" title="할인금액순">
+                                                            <div class="option">할인금액순</div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="javascript:" class="service-tab-2 service" title="남은기간순">
+                                                            <div class="option">남은기간순</div>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                                <a href="javascript:" class="tabBtn" title="최신순" style="text-decoration: none; font-size:12px;">최신순</a>	
+                                            </div>						
+                                        </div>
+                                    
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="contentWrap">
+                                
+                                <div class="couponCon">
+                                    <div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;">
+                                        <div class="mCSB_draggerContainer">
+                                                <div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; z-index:9;min-height: 30px; display: block; height: 263px; max-height: 310.547px; top: 0;left:0;">
+                                                    <div class="mCSB_dragger_bar" style="line-height: 30px;">
+                                                    </div>
+                                                </div>
+                                            <div class="mCSB_draggerRail"></div>
+                                        </div>
+                                    </div>
+                                        
+                                    <ul class="couponImg"  style="position: relative; top:0; left: 0;">
+                                
+                                        <li  class="couponBtn">
+                                            <div class="inputBox inputBox1">
+                                                <a href="#">
+                                                    
+                                                    <div class="couponTxt">
+                                                        <p class="redPrice">20,000<span class="small">원</span><span class="new"><img src="./img/ico_coupon_new.svg" alt=""></span></p>
+                                                        <p class="eventName">[이벤트]쿠폰명쿠폰명쿠폰명쿠폰명쿠폰…</p>
+                                                        <p class="date">
+                                                            총 상품 30,000원 이상 구매 시<br>
+                                                            유효기간 2022.00.00
+                                                        </p>
+                                                    </div>
+                                                    <div class="couponRed"><p>COUPON</p></div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li  class="couponBtn">
+                                            <div class="inputBox inputBox2">
+                                                <a href="#">
+                                                 
+                                                    <div class="couponTxt">
+                                                        <p class="redPrice">10<span class="small">%</span></p>
+                                                        <p class="eventName">[이벤트]쿠폰명쿠폰명쿠폰명쿠폰명쿠폰…</p>
+                                                        <p class="date">
+                                                            총 상품 30,000원 이상 구매 시<br>
+                                                            유효기간 2022.00.00
+                                                        </p>
+                                                    </div>
+                                                    <div class="couponRed"><p>COUPON</p></div>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li  class="couponBtn">
+                                            <div class="inputBox inputBox3">
+                                                <a href="#">
+                                                    
+                                                    <div class="couponTxt">
+                                                        <p class="redPrice">7<span class="small">%</span></p>
+                                                        <p class="eventName">[이벤트]쿠폰명쿠폰명쿠폰명쿠폰명쿠폰…</p>
+                                                        <p class="date">
+                                                            총 상품 30,000원 이상 구매 시<br>
+                                                            유효기간 2022.00.00
+                                                        </p>
+                                                    </div>
+                                                    <div class="couponRed"><p>COUPON</p></div>
+                                                </a>
+                                            </div>
+                                        </li>
+
+
+                                    </ul>
+        
+                                    
+        
+                                </div>
+                                <div class="barWrap">
+                                    <div class="bar">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- <ul>
+                                <h2>사용 가능 쿠폰</h2>
+                                <li  class="coupon">
+                                    <a href="javascript:Function();">
+                                        <div class="couponText">
+                                            <h3 class="coupon">10<span>%</span></h3>
+                                            <div class="txt2">[이벤트]쿠폰명쿠폰명쿠폰명쿠폰명쿠폰…</div>
+                                            <div class="txt3">총 상품 30,000원 이상 구매 시<br>
+                                                유효기간 2022.00.00</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li  class="coupon">
+                                    <a href="javascript:Function();" >
+                                        <div class="couponText">
+                                            <h3 class="coupon">20,000<span>원</span></h3>
+                                            <div class="txt2">[이벤트]쿠폰명쿠폰명쿠폰명쿠폰명쿠폰…</div>
+                                            <div class="txt3">총 상품 30,000원 이상 구매 시<br>
+                                                유효기간 2022.00.00</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li  class="coupon">
+                                    <a href="javascript:Function();" >
+                                        <div class="couponText">
+                                            <h3 class="coupon">10<span>%</span></h3>
+                                            <div class="txt2">[이벤트]쿠폰명쿠폰명쿠폰명쿠폰명쿠폰…</div>
+                                            <div class="txt3">총 상품 30,000원 이상 구매 시<br>
+                                                유효기간 2022.00.00</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul> -->
+                           
+                            <div class="bottomtxt">
+                                <ul class="bottomtxtWrap" >
+                                    <li>쿠폰은 정해진 수량에 따라 선착순 마감될 수 있습니다.</li>
+                                    <li>유의사항 내용</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+           
+
+            <div class="btnBoxWrap1">
+                
+
+                <ul class="btnBox">
+                    <li><a href="javascript:Function();" class="gift"><span><img src="./img/ico_gift.svg" alt=""></span>선물하기</a></li>
+                    <li><a href="javascript:Function();" class="cart" >장바구니</a></li>
+                    <li><a href="javascript:Function();" class="buyNow">바로구매</a></li>
+                </ul>
+            
+            </div>
+
+
+            
+            <div class="btnBoxWrap2">
+
+                <div class="priceWrap">
+                    <div class="priceBoxgap">
+                        <div class="arrowBtn"><a href="javascript:Function();"><img src="./img/arrow_opt_close.svg" alt=""></a></div>
+                        <div class="priceBox">
+                            <ul class="goodsTit">
+                                <li>
+                                    상품명 내용 노출 상품명 내용 노출 상품명 내용
+                                    상품명 내용 노출 상품명 내용 노출 상품명 내용...
+                                </li>
+                                <li class="PriceCloseBtn"><a href="javascript:Function();"><img src="./img/XcloseBtn.svg" alt=""></a></li>
+                            </ul>
+
+                            <ul class="numPrice">
+                                <li class="numBox"> 
+                                    <input type='number' name='amount'min="0" max="100" value="0" style = "text-align:center;" />
+                                    <input type="button" value="+" id="inc-button" class="spinner-button" onClick="javascript:this.form.amount.value++;">
+                                    <input type="button" value="-" id="dec-button" class="spinner-button" onClick="javascript:this.form.amount.value--;">
+                                </li>
+                                <li class="numpriceBox"><strong>119,000</strong>원</li>
+                            </ul>
+                            
+                        </div>
+                        <ul class="price">
+                            <li class="left">총 <strong> 1 </strong>개</li>
+                            <li class="right">총 금액 <span><strong>119,000</strong>원</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <ul class="btnBox">
+                    <li><a href="javascript:Function();" class="cart">장바구니</a></li>
+                    <li><a href="javascript:Function();" class="buyNow">바로구매</a></li>
+                </ul>
+                              
+            </div>
+
+            
+            <div class="btnBoxWrap3">
+
+                <div class="priceWrap">
+                    <div class="priceBoxgap">
+                        <div class="arrowBtn"><a href="javascript:Function();"><img src="./img/arrow_opt_close.svg" alt=""></a></div>
+                      
+                        <div class="selectBox">
+                            <div class="mobileTab">
+                                <div class="tab-wrap active">
+                                    <ul class="tab ServiceTab" style="  display: none; ">
+                                        <li class="active">
+                                            <a href="javascript:" class="service-tab-1" title="1) 옵션내용">
+                                                <div class="optionLeft">1) 옵션내용</div>
+                                                <div class="optionRight"><strong>119,000</strong>원</div>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="javascript:" class="service-tab-2" title="2) 옵션내용">
+                                                <div class="optionLeft">2) 옵션내용</div>
+                                                <div class="optionRight"><strong>140,000</strong>원</div>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="javascript:" class="service-tab-3" title="3) 옵션내용">
+                                                <div class="optionLeft">3) 옵션내용</div>
+                                                <div class="optionRight"><strong>159,000</strong>원</div>
+                                            </a>
+                                        </li>
+                                       				
+                                    </ul>
+                                    <a href="javascript:" class="tabBtn" title="옵션 선택" style="text-decoration: none; ">옵션 선택</a>	
+                                </div>						
+                            </div>
+                          
+                        </div>
+                        
+
+
+
+                        <div class="priceBox">
+                            <ul class="goodsTit">
+                                <li>
+                                    상품명 내용 노출 상품명 내용 노출 상품명 내용
+                                    상품명 내용 노출 상품명 내용 노출 상품명 내용...
+                                </li>
+                                <li class="PriceCloseBtn"><a href="javascript:Function();"><img src="./img/XcloseBtn.svg" alt=""></a></li>
+                            </ul>
+
+                            <ul class="numPrice">
+                                <li class="numBox"> 
+                                    <input type='number' name='amount'min="0" max="100" value="0" style = "text-align:center;" />
+                                    <input type="button" value="+" id="inc-button" class="spinner-button" onClick="javascript:this.form.amount.value++;">
+                                    <input type="button" value="-" id="dec-button" class="spinner-button" onClick="javascript:this.form.amount.value--;">
+                                </li>
+                                <li class="numpriceBox"><strong>119,000</strong>원</li>
+                            </ul>
+                            
+                        </div>
+                        <ul class="price">
+                            <li class="left">총 <strong> 1 </strong>개</li>
+                            <li class="right">총 금액 <span><strong>119,000</strong>원</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="btnBox">
+                    <li><a href="javascript:Function();"  class="cart" >장바구니</a></li>
+                    <li><a href="javascript:Function();" class="buyNow">바로구매</a></li>
+                </ul>
+                              
+            </div>
+
+
+            <div class="btnBoxWrap4">
+
+                <div class="priceWrap">
+                    <div class="priceBoxgap">
+                        <div class="arrowBtn"><a href="javascript:Function();"><img src="./img/arrow_opt_close.svg" alt=""></a></div>
+                      
+                        <div class="selectBox">
+                            <div class="mobileTab">
+                                <div class="tab-wrap active">
+                                    <ul class="tab ServiceTab" style="  display: none; ">
+                                        <li class="active">
+                                            <a href="javascript:" class="service-tab-1" title="1) 옵션내용">
+                                                <div class="optionLeft">1) 옵션내용</div>
+                                                <div class="optionRight"><strong>119,000</strong>원</div>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="javascript:" class="service-tab-2" title="2) 옵션내용">
+                                                <div class="optionLeft">2) 옵션내용</div>
+                                                <div class="optionRight"><strong>140,000</strong>원</div>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="javascript:" class="service-tab-3" title="3) 옵션내용">
+                                                <div class="optionLeft">3) 옵션내용</div>
+                                                <div class="optionRight"><strong>159,000</strong>원</div>
+                                            </a>
+                                        </li>
+                                       				
+                                    </ul>
+                                    <a href="javascript:" class="tabBtn" title="옵션 선택" style="text-decoration: none; ">옵션 선택</a>	
+                                </div>						
+                            </div>
+                          
+                        </div>
+                        
+
+
+
+                        <div class="priceBox ">
+                            <ul class="goodsTit">
+                                <li>
+                                    상품명 내용 노출 상품명 내용 노출 상품명 내용
+                                    상품명 내용 노출 상품명 내용 노출 상품명 내용...
+                                </li>
+                                <li class="PriceCloseBtn"><a href="javascript:Function(); "><img src="./img/XcloseBtn.svg" alt=""></a></li>
+                            </ul>
+
+                            <ul class="numPrice">
+                                <li class="numBox"> 
+                                    <input type='number' name='amount'min="0" max="100" value="0" style = "text-align:center;" />
+                                    <input type="button" value="+" id="inc-button" class="spinner-button" onClick="javascript:this.form.amount.value++;">
+                                    <input type="button" value="-" id="dec-button" class="spinner-button" onClick="javascript:this.form.amount.value--;">
+                                </li>
+                                <li class="numpriceBox"><strong>119,000</strong>원</li>
+                            </ul>
+                            
+                        </div>
+                        <ul class="price">
+                            <li class="left">총 <strong> 1 </strong>개</li>
+                            <li class="right">총 금액 <span><strong>119,000</strong>원</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <ul class="btnBox">
+                    <li><a href="javascript:Function();" class="gift"><span><img src="./img/ico_gift.svg" alt=""></span>선물하기</a></li>
+                </ul>
+                              
+            </div>
+
+
+
+        </section>
+        <section id="section2">
+            <div class="container">
+                <div class="gap">
+                    <div class="wrap">
+                        <div class="content">
+                            <h3>이 상품과 유사한 추천 상품<span><a href='javascript:Function();'>전체보기<i class="material-icons">&#xe315;</i></a></span></h3>
+
+                         
+                            <div class="slide-container">
+                                <div class="slide-view">
+                                    <ul class="slide-wrap" >
+        
+                                        <li class="slide slide0 swipe">
+                                            <div class="slide-text">                                                
+                                                <div class="img-box">
+                                                    <div class="heart">
+                                                        <a href='javascript:Function();'>
+                                                            <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                            <img class="blankHeart" src="./img/heart.svg" alt="">   
+                                                        </a>
+                                                    </div>
+                                                    <a href='javascript:Function();'>
+                                                        <img src="./img/sec3slide1.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="text-box">
+                                                    <h3>
+                                                        [소유] UVC 다용도 살 균기 MDA-100RG2...
+                                                    </h3>
+                                                    <h4>50,000원</h4>
+                                                    <ul class="price">
+                                                        <li>42<span>%</span></li>
+                                                        <li>49,900<span>원</span></li>                                                        
+                                                    </ul>
+                                                    <ul >
+                                                        <li class="star">
+                                                            <i class="fa fa-star"></i>
+                                                            4.0 <span>(9,999)</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                무료배송
+                                                            </span>
+                                                         </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="slide slide1 swipe">
+                                            <div class="slide-text">                                                
+                                                <div class="img-box">
+                                                    <div class="heart">
+                                                        <a href='javascript:Function();'>
+                                                            <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                            <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                        </a>
+                                                    </div>
+                                                    <a href='javascript:Function();'>
+                                                        <img src="./img/sec3slide2.png" alt="">
+                                                    </a>                                                
+                                                </div>
+                                                <div class="text-box">
+                                                    <h3>
+                                                        제목 한줄 처리
+                                                    </h3>
+                                                    <h4>2,290,000원</h4>
+                                                    <ul class="price">
+                                                        <li>42<span>%</span></li>
+                                                        <li>49,900<span>원</span></li>                                                        
+                                                    </ul>
+                                                    <ul >
+                                                        <li class="star">
+                                                            <i class="fa fa-star"></i>
+                                                            4.0 <span>(6)</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                무료배송
+                                                            </span>
+                                                         </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="slide slide2 swipe">
+                                            <div class="slide-text">                                                
+                                                <div class="img-box">
+                                                    <div class="heart">
+                                                        <a href='javascript:Function();'>
+                                                            <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                            <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                        </a>
+                                                    </div>
+                                                    <a href='javascript:Function();'>
+                                                        <img src="./img/sec3slide3.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="text-box">
+                                                    <h3>
+                                                        [소유] UVC 다용도 살균기 MDA-100RG2...
+                                                    </h3>
+                                                    <h4>2,290,000원</h4>
+                                                    <ul class="price">
+                                                        <li>42<span>%</span></li>
+                                                        <li>49,900<span>원</span></li>                                                        
+                                                    </ul>
+                                                    <ul >
+                                                        <li class="star">
+                                                            <i class="fa fa-star"></i>
+                                                            4.0 <span>(6)</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                무료배송
+                                                            </span>
+                                                         </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="slide slide3 swipe">
+                                            <div class="slide-text">                                                
+                                                <div class="img-box">
+                                                    <div class="heart">
+                                                        <a href='javascript:Function();'>
+                                                            <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                            <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                        </a>
+                                                    </div>
+                                                    <a href='javascript:Function();'>
+                                                        <img src="./img/sec3slide4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="text-box">
+                                                    <h3>
+                                                        [소유] UVC 다용도 살균기 MDA-100RG2...
+                                                    </h3>
+                                                    <h4>2,290,000원</h4>
+                                                    <ul class="price">
+                                                        <li>42<span>%</span></li>
+                                                        <li>49,900<span>원</span></li>                                                        
+                                                    </ul>
+                                                    <ul >
+                                                        <li class="star">
+                                                            <i class="fa fa-star"></i>
+                                                            4.0 <span>(6)</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                무료배송
+                                                            </span>
+                                                         </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="slide slide4 swipe">
+                                            <div class="slide-text">
+                                                <div class="img-box">
+                                                    <div class="heart">
+                                                        <a href='javascript:Function();'>
+                                                            <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                            <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                        </a>
+                                                    </div>
+                                                    <a href='javascript:Function();'>
+                                                        <img src="./img/sec3slide5.png" alt="">
+                                                    </a>                                                
+                                                </div>
+                                                <div class="text-box">
+                                                    <h3>
+                                                        [소유] UVC 다용도 살균기 MDA-100RG2...
+                                                    </h3>
+                                                    <h4>2,290,000원</h4>
+                                                    <ul class="price">
+                                                        <li>42<span>%</span></li>
+                                                        <li>49,900<span>원</span></li>                                                        
+                                                    </ul>
+                                                    <ul >
+                                                        <li class="star">
+                                                            <i class="fa fa-star"></i>
+                                                            4.0 <span>(6)</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                무료배송
+                                                            </span>
+                                                         </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                       
+                                        <li class="circle swipe">
+                                            <div class="slide-text">
+                                                <div class="img-box">
+                                                    <a href='javascript:Function();'>
+                                                        <img src="./img/sec3arrow.png" alt="">
+                                                    </a>                                               
+                                                </div>
+                                                <div class="text-box">
+                                                    <h5>더보기</h5>                                                
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                 
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section3">
+            <div class="container" id="banner1">
+                <div class="gap">
+                    <div class="wrap">
+                   
+
+                        <div class="slide-container">
+                            <div class="slide-view">
+                                <ul class="slide-wrap" >
+    
+                                    <li class="slide slide0 swipe">
+                                        <a href='javascript:Function();'><img src="./img/BNN.svg" alt=""></a>
+                                    </li>
+                                    <li class="slide slide1 swipe">
+                                        <a href='javascript:Function();'><img src="./img/BNN.svg" alt=""></a>
+                                    </li>
+                                    <li class="slide slide2 swipe">
+                                        <a href='javascript:Function();'><img src="./img/BNN.svg" alt=""></a>
+                                    </li>
+                                    <li class="slide slide3 swipe">
+                                        <a href='javascript:Function();'><img src="./img/BNN.svg" alt=""></a>
+                                    </li>
+                                    <li class="slide slide4 swipe">
+                                        <a href='javascript:Function();'><img src="./img/BNN.svg" alt=""></a>
+                                    </li>
+                                   
+                                    
+                                </ul>
+                            </div>
+                        </div>     
+
+                       
+
+                        <!-- #banner-->
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+        <section id="section4">
+            <div class="container">
+                <div class="gap">
+                    <div class="optionGoodsWrap">
+                        <div class="optionGap">
+                            <ul class="optionCon clearfix">
+                                <li class="option line1" data-intent="column-02">
+                                    <div class="goodsCap">
+
+                                        <div class="GoodsImgBoxWrap">
+                                           
+                                            <div class="media">   
+                                                <div class="tag">1</div>
+                                                <div class="view">
+                                                    <a href="javascript:void(window.open('img.html', '_self'))">
+                                                        <img src="./img/ico_view.svg" alt="">
+                                                    </a>
+                                                </div>                                         
+                                                <div class="imgBox">
+                                                    <img src="./img/Rectangle 6516.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="goodsInfoBox">
+                                            <div class="infoTxt">
+                                                <div class="optionBtn">
+                                                    <a href="#">
+                                                        옵션선택<span class="optionIcon"><img src="./img/optionChooseIco.svg" alt=""></span>
+                                                    </a>
+                                                </div>
+                                                <div class="txtBox">
+                                                    <h3>[아디다스] 상품명 상품명 상
+                                                        품명 상품명 상품명 상품명 ...
+                                                    </h3>
+                                                    <div class="priceBox">
+                                                        <div class="percent">90<small class="small">%</small></div>
+                                                        <div class="price">19,900<small class="small">원</small></div>
+                                                    </div>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="option line2" data-intent="column-02">
+                                    <div class="goodsCap">
+
+                                        <div class="GoodsImgBoxWrap">
+                                           
+                                            <div class="media">   
+                                                <div class="tag">2</div>
+                                                <div class="view">
+                                                    <a href="javascript:void(window.open('img.html', '_self'))">
+                                                        <img src="./img/ico_view.svg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="./img/Rectangle 6516 (1).png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="goodsInfoBox">
+                                            <div class="infoTxt">
+                                                <div class="optionBtn">
+                                                    <a href="#">
+                                                        옵션선택<span class="optionIcon"><img src="./img/optionChooseIco.svg" alt=""></span>
+                                                    </a>
+                                                </div>
+                                                <div class="txtBox">
+                                                    <h3>[아디다스] 상품명 상품명 상
+                                                        품명 상품명 상품명 상품명 ...
+                                                    </h3>
+                                                    <div class="priceBox">
+                                                        <div class="percent">90<small class="small">%</small></div>
+                                                        <div class="price">19,900<small class="small">원</small></div>
+                                                    </div>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="option line1" data-intent="column-02">
+                                    <div class="goodsCap">
+
+                                        <div class="GoodsImgBoxWrap">
+                                            
+                                            <div class="media">   
+                                                <div class="tag">3</div>
+                                                <div class="view">
+                                                    <a href="javascript:void(window.open('img.html', '_self'))">
+                                                        <img src="./img/ico_view.svg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="./img/Rectangle 6516 (2).png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="goodsInfoBox">
+                                            <div class="infoTxt">
+                                                <div class="optionBtn">
+                                                    <a href="#">
+                                                        옵션선택<span class="optionIcon"><img src="./img/optionChooseIco.svg" alt=""></span>
+                                                    </a>
+                                                </div>
+                                                <div class="txtBox">
+                                                    <h3>[아디다스] 상품명 상품명 상
+                                                        품명 상품명 상품명 상품명 ...
+                                                    </h3>
+                                                    <div class="priceBox">
+                                                        <div class="percent">90<small class="small">%</small></div>
+                                                        <div class="price">19,900<small class="small">원</small></div>
+                                                    </div>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="option line2" data-intent="column-02">
+                                    <div class="goodsCap">
+
+                                        <div class="GoodsImgBoxWrap">
+                                           
+                                            <div class="media">   
+                                                <div class="tag">4</div>
+                                                <div class="view">
+                                                    <a href="javascript:void(window.open('img.html', '_self'))">
+                                                        <img src="./img/ico_view.svg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="./img/Rectangle 6516 (3).png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="goodsInfoBox">
+                                            <div class="infoTxt">
+                                                <div class="optionBtn">
+                                                    <a href="#">
+                                                        옵션선택<span class="optionIcon"><img src="./img/optionChooseIco.svg" alt=""></span>
+                                                    </a>
+                                                </div>
+                                                <div class="txtBox">
+                                                    <h3>[아디다스] 상품명 상품명 상
+                                                        품명 상품명 상품명 상품명 ...
+                                                    </h3>
+                                                    <div class="priceBox">
+                                                        <div class="percent">90<small class="small">%</small></div>
+                                                        <div class="price">19,900<small class="small">원</small></div>
+                                                    </div>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="option line1" data-intent="column-02">
+                                    <div class="goodsCap">
+
+                                        <div class="GoodsImgBoxWrap">
+                                            
+                                            <div class="media">   
+                                                <div class="tag">5</div>
+                                                <div class="view">
+                                                    <a href="javascript:void(window.open('img.html', '_self'))">
+                                                        <img src="./img/ico_view.svg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="./img/Rectangle 6516 (4).png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="goodsInfoBox">
+                                            <div class="infoTxt">
+                                                <div class="optionBtn">
+                                                    <a href="#">
+                                                        옵션선택<span class="optionIcon"><img src="./img/optionChooseIco.svg" alt=""></span>
+                                                    </a>
+                                                </div>
+                                                <div class="txtBox">
+                                                    <h3>[아디다스] 상품명 상품명 상
+                                                        품명 상품명 상품명 상품명 ...
+                                                    </h3>
+                                                    <div class="priceBox">
+                                                        <div class="percent">90<small class="small">%</small></div>
+                                                        <div class="price">19,900<small class="small">원</small></div>
+                                                    </div>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="option line2" data-intent="column-02">
+                                    <div class="goodsCap">
+
+                                        <div class="GoodsImgBoxWrap">
+                                            
+                                            <div class="media">   
+                                                <div class="tag">6</div>
+                                                <div class="view">
+                                                    <a href="javascript:void(window.open('img.html', '_self'))">
+                                                        <img src="./img/ico_view.svg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="./img/Rectangle 6516.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="goodsInfoBox">
+                                            <div class="infoTxt">
+                                                <div class="optionBtn">
+                                                    <a href="#">
+                                                        옵션선택<span class="optionIcon"><img src="./img/optionChooseIco.svg" alt=""></span>
+                                                    </a>
+                                                </div>
+                                                <div class="txtBox">
+                                                    <h3>[아디다스] 상품명 상품명 상
+                                                        품명 상품명 상품명 상품명 ...
+                                                    </h3>
+                                                    <div class="priceBox">
+                                                        <div class="percent">90<small class="small">%</small></div>
+                                                        <div class="price">19,900<small class="small">원</small></div>
+                                                    </div>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="imgCap"></div>
+                        <img src="./img/detailNoReview.svg" alt="">
+                        <div class="Btn-wrap">
+                            <a href="#" >상품 정보 더보기 <span><i></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section5">
+            <div class="container">
+                <div class="gap">
+                    <div class="wrap">
+                        <div class="content">
+                            <h3>함께보면 좋은 상품<span><a href='javascript:Function();'>전체보기<i class="material-icons">&#xe315;</i></a></span></h3>
+
+                         
+                            <div class="slide-container">
+                                <div class="slide-view">
+                                    <ul class="slide-wrap" >
+        
+                                        <li class="slide slide0 swipe">
+                                            <div class="slide-text">                                                
+                                                <div class="img-box">
+                                                    <div class="heart">
+                                                        <a href='javascript:Function();'>
+                                                            <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                            <img class="blankHeart" src="./img/heart.svg" alt="">   
+                                                        </a>
+                                                    </div>
+                                                    <a href='javascript:Function();'>
+                                                        <img src="./img/sec3slide1.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="text-box">
+                                                    <h3>
+                                                        [소유] UVC 다용도 살 균기 MDA-100RG2...
+                                                    </h3>
+                                                    <h4>50,000원</h4>
+                                                    <ul class="price">
+                                                        <li>42<span>%</span></li>
+                                                        <li>49,900<span>원</span></li>                                                        
+                                                    </ul>
+                                                    <ul >
+                                                        <li class="star">
+                                                            <i class="fa fa-star"></i>
+                                                            4.0 <span>(9,999)</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                무료배송
+                                                            </span>
+                                                         </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="slide slide1 swipe">
+                                            <div class="slide-text">                                                
+                                                <div class="img-box">
+                                                    <div class="heart">
+                                                        <a href='javascript:Function();'>
+                                                            <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                            <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                        </a>
+                                                    </div>
+                                                    <a href='javascript:Function();'>
+                                                        <img src="./img/sec3slide2.png" alt="">
+                                                    </a>                                                
+                                                </div>
+                                                <div class="text-box">
+                                                    <h3>
+                                                        제목 한줄 처리
+                                                    </h3>
+                                                    <h4>2,290,000원</h4>
+                                                    <ul class="price">
+                                                        <li>42<span>%</span></li>
+                                                        <li>49,900<span>원</span></li>                                                        
+                                                    </ul>
+                                                    <ul >
+                                                        <li class="star">
+                                                            <i class="fa fa-star"></i>
+                                                            4.0 <span>(6)</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                무료배송
+                                                            </span>
+                                                         </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="slide slide2 swipe">
+                                            <div class="slide-text">                                                
+                                                <div class="img-box">
+                                                    <div class="heart">
+                                                        <a href='javascript:Function();'>
+                                                            <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                            <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                        </a>
+                                                    </div>
+                                                    <a href='javascript:Function();'>
+                                                        <img src="./img/sec3slide3.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="text-box">
+                                                    <h3>
+                                                        [소유] UVC 다용도 살균기 MDA-100RG2...
+                                                    </h3>
+                                                    <h4>2,290,000원</h4>
+                                                    <ul class="price">
+                                                        <li>42<span>%</span></li>
+                                                        <li>49,900<span>원</span></li>                                                        
+                                                    </ul>
+                                                    <ul >
+                                                        <li class="star">
+                                                            <i class="fa fa-star"></i>
+                                                            4.0 <span>(6)</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                무료배송
+                                                            </span>
+                                                         </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="slide slide3 swipe">
+                                            <div class="slide-text">                                                
+                                                <div class="img-box">
+                                                    <div class="heart">
+                                                        <a href='javascript:Function();'>
+                                                            <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                            <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                        </a>
+                                                    </div>
+                                                    <a href='javascript:Function();'>
+                                                        <img src="./img/sec3slide4.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="text-box">
+                                                    <h3>
+                                                        [소유] UVC 다용도 살균기 MDA-100RG2...
+                                                    </h3>
+                                                    <h4>2,290,000원</h4>
+                                                    <ul class="price">
+                                                        <li>42<span>%</span></li>
+                                                        <li>49,900<span>원</span></li>                                                        
+                                                    </ul>
+                                                    <ul >
+                                                        <li class="star">
+                                                            <i class="fa fa-star"></i>
+                                                            4.0 <span>(6)</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                무료배송
+                                                            </span>
+                                                         </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="slide slide4 swipe">
+                                            <div class="slide-text">
+                                                <div class="img-box">
+                                                    <div class="heart">
+                                                        <a href='javascript:Function();'>
+                                                            <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                            <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                        </a>
+                                                    </div>
+                                                    <a href='javascript:Function();'>
+                                                        <img src="./img/sec3slide5.png" alt="">
+                                                    </a>                                                
+                                                </div>
+                                                <div class="text-box">
+                                                    <h3>
+                                                        [소유] UVC 다용도 살균기 MDA-100RG2...
+                                                    </h3>
+                                                    <h4>2,290,000원</h4>
+                                                    <ul class="price">
+                                                        <li>42<span>%</span></li>
+                                                        <li>49,900<span>원</span></li>                                                        
+                                                    </ul>
+                                                    <ul >
+                                                        <li class="star">
+                                                            <i class="fa fa-star"></i>
+                                                            4.0 <span>(6)</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>
+                                                                무료배송
+                                                            </span>
+                                                         </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                       
+                                        <li class="circle swipe">
+                                            <div class="slide-text">
+                                                <div class="img-box">
+                                                    <a href='javascript:Function();'>
+                                                        <img src="./img/sec3arrow.png" alt="">
+                                                    </a>                                               
+                                                </div>
+                                                <div class="text-box">
+                                                    <h5>더보기</h5>                                                
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="purpleBanner">
+
+            <div class="container"  id="banner2">
+                <div class="gap">
+                    <div class="wrap">
+                        
+                        
+                        
+                        <div class="slide-container">
+                            <div class="slide-view">
+                                <ul class="slide-wrap" >
+    
+                                    <li class="slide slide0 swipe">
+                                        <a href='javascript:Function();'><img src="./img/sec7banner.svg" alt=""></a>
+                                    </li>
+                                    <li class="slide slide1 swipe">
+                                        <a href='javascript:Function();'><img src="./img/sec7banner.svg" alt=""></a>
+                                    </li>
+                                    <li class="slide slide2 swipe">
+                                        <a href='javascript:Function();'><img src="./img/sec7banner.svg" alt=""></a>
+                                    </li>
+                                    <li class="slide slide3 swipe">
+                                        <a href='javascript:Function();'><img src="./img/sec7banner.svg" alt=""></a>
+                                    </li>
+                                    <li class="slide slide4 swipe">
+                                        <a href='javascript:Function();'><img src="./img/sec7banner.svg" alt=""></a>
+                                    </li>
+                                
+                                    
+                                </ul>
+                            </div>
+                        </div>     
+
+
+
+
+
+
+                    </div>
+                </div>
+            
+            </div>
+
+
+        </section>
+
+
+        <section id="section9">
+            <div class="container">
+                <div class="gap">
+                    <div class="wrap">
+                        <div class="content">
+                           
+
+                            <div class="noReviewWrap">
+                                <div class="noReviwCon">
+                                    <div class="noReviewImg">
+                                        <img src="./img/ico_circle_noReview_empty_status.svg" alt="">
+                                    </div>
+                                    <p>등록된 리뷰가 없습니다.</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        
+    </main>
+
+    
+    <footer id="footer">
+        <div class="container">
+            <div class="gap">
+                <div class="wrap">
+                    <div class="content">
+                        <ul class="foot-content">
+                            <li class="foot1">
+                                <ul class="list">                                    
+                                    <li><a href='javascript:Function();'>휴대폰 인증</a></li>                                    
+                                    <li><a href='javascript:Function();'>즐겨찾기 추가</a></li>                                    
+                                    <li><a href='javascript:Function();'>고객센터</a><i></i></li>                                    
+                                  
+                                </ul>
+                            </li>
+                            <li class="foot2">
+
+                               <h3>고객센터</h3>
+                               <div class="tel">
+                                   <div>
+                                        <img src="./img/ico_footer_call.svg" alt=""><p>1234-5678</p> <span>전화걸기</span>
+                                    </div>
+                                </div>
+                               <div>평일 9시 ~ 18시 30분</div>
+
+
+                               <ul class="email">
+                                    <li>이메일 문의</li> 
+                                    <li >
+                                        <span id="textDiv">cs@kdeal.co.kr</span>                                       
+                                        <a id="copy">주소복사</a>
+                                    </li>
+                               </ul>
+                               
+                               
+                               <div class="Registration">
+                                  
+                                    <a href='javascript:Function();'  class="fArrowBtn">나스미디어 사업자정보</a>
+                                    <ul class="footerhide   ">
+                                        <li class="footerAddress">서울특별시 강남구 도곡로1길 14 삼일프라자 3, 4, 5층<br>
+                                         사업자 등록번호 102-81-42945</li>
+                                         <li class="searchNum"><a href="#">사업자번호조회</a></li>
+                                     </ul>
+                               </div>
+
+                            </li>
+                            
+                            <li class="foot3">
+                                <ul class="list">                                    
+                                    <li><a href='javascript:Function();'>이용약관 </a><i></i></li>                                    
+                                    <li><a href='javascript:Function();'>개인정보처리방침 </a><i></i></li>                              
+                                    <li><a href='javascript:Function();'>입점문의 </a></li>
+                                </ul>
+                            </li>
+                            <li class="foot4">
+                                Copyright ⓒ NASMEDIA Co., LTD. All Rights Reserved.
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</div>
+<script src="./js/detailmall.js"></script>
+
+ 
+</body>
+</html>

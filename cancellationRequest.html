@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="publisher" content="eunheeChoi">
+    <title>취소신청</title>
+    <!-- favicon -->
+    <link rel="icon" href="./img/favicon/favicon-32.png" sizes="32x32">
+   
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/cancellationRequest.css">
+    
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- jQuery 오픈소스 -->
+    <script src="./js/lib/jquery.min.js"></script> 
+	<script src='./js/lib/jquery-1.12.4.min.js'></script>
+	<!-- <script src='./js/lib/jquery.mobile-1.4.5.min.js'></script>터치이벤트 웹앱 -->
+	<script src='./js/lib/jquery.easing.1.3.js'></script>
+	<script src='./js/lib/jquery.touchSwipe.min.js'></script>
+	<!-- <script src='./js/lib/slick.min.js'></script> -->
+
+    <!-- 리액트 웹개발 오픈소스 -->    
+    <script src="./js/lib/react.development.js"></script>
+    <script src="./js/lib/react-dom.development.js"></script>
+    <script src="./js/lib/babel.min.js"></script>
+
+</head>
+<body>
+   
+<div id="wrap1">
+   
+  
+
+    <header id="header"  class="header">
+        <div class="container ">
+
+            <ul class="top clearfix">
+
+                <li class="left">
+                    <div class="leftWrap">
+                        <span class="backBtn">
+                            <a  href="#" class="back-btn " title="back">
+                                <span ></span>
+                            </a>
+                        </span>                       
+                    </div>
+                </li>
+                <li class="medium">
+                    취소신청
+                </li>
+                <li class="right">
+                    <aside id="aside" class="clearfix">
+                        <div class="icon-box-gap">
+                            <div class="icon-box">
+                                <ul class="clearfix ">
+                                    <li>
+                                        <a href='javascript:Function();'>
+                                            <em class="badge">5</em>
+                                            <span><img src="./img/cart.svg" alt=""></span> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+                </li>
+            </ul>
+    
+           
+        </div>
+    </header>
+
+ 
+    <main id="main">
+        <section id ="section1">
+            <div class="container">
+                <div class="gap">
+                    <div class="wrap">
+                        <h2>상품정보</h2>
+                        <ul>                        
+                            <li class="listBox listBox1">
+                                <div class="listTop">
+                                    <div class="inputBox">
+                                        <div class="checkBox">
+                                            <input type="checkbox" >
+                                        </div>                                        
+                                        <a href="javascript:Function();">
+                                            상품명 한줄상품명 한줄상품명 한줄상품명 한줄...
+                                        </a>
+                                    </div>
+                                    <div class="closeBtn">
+                                        <a href="javascript:Function();"><img src="./img/btn_x_gray.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="textWrap">
+                                    <div class="left">
+                                        <a href="javascript:Function();">
+                                            <img src="./img/cart_th1.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="right">
+                                        <div class="txt1">옵션 : 블랙/90 (24,000)</div>
+                                        <div class="blue">
+                                            조건부 무료배송
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="priceBox">                                    
+                                    <div class="priceBoxGap" >
+                                        <div class="numPrice">
+                                            <div class="numBox"> 
+                                                <input type='text' name='amount'min="0" max="100" value="0" style = "text-align:left;" />
+                                                <!-- <input type="button" value="+" id="inc-button" class="spinner-button" onClick="javascript:this.form.amount.value++;"> -->
+                                                <!-- <input type="button" value="∨" id="dec-button" class="spinner-button" onClick="javascript:this.form.amount.value--;"> -->
+                                                <span class="arrowOpen"><a href="#"><img src="./img/arrow_open.svg" alt=""></a></span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="red">24<span class="Percent">%</span></div>
+                                        <div class="price">24,000<span class="won">원</span></div>
+                                    </div>
+                                </div>
+                                <div class="listBottomBox">
+                                    <div class="listBottomRight">
+                                        판매처이름노출
+                                    </div>
+                                    <div class="listBottomLeft">
+                                        <a href="#">
+                                            판매자 정보 / 문의 <i class="material-icons">&#xe315;</i>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </li>
+                            <li class="listBox listBox2">
+                                <div class="listTop">
+                                    <div class="inputBox">
+                                        <div class="checkBox">
+                                            <input type="checkbox" >
+                                        </div>                                        
+                                        <a href="javascript:Function();">
+                                            상품명 노출 최대 두줄 처리 상품명 노출 최대 두줄<br>
+                                            상품명 노출 최대 두줄 처리 상품명 노출 최대 두...
+                                        </a>
+                                    </div>
+                                    <div class="closeBtn">
+                                        <a href="javascript:Function();"><img src="./img/btn_x_gray.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                
+                                <div class="textWrap">
+                                    <div class="left">
+                                        <a href="javascript:Function();">
+                                            <img src="./img/cart_th6.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="right">
+                                       
+                                        <div class="blue">
+                                            조건부 무료배송
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="priceBox">                                    
+                                    <div class="priceBoxGap" >
+                                        <div class="numPrice">
+                                            <div class="numBox"> 
+                                                <input type='text' name='amount'min="0" max="100" value="0" style = "text-align:left;" />
+                                                <span class="arrowOpen"><a href="#"><img src="./img/arrow_open.svg" alt=""></a></span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="red">54<span class="Percent">%</span></div>
+                                        <div class="price">300,000<span class="won">원</span></div>
+                                    </div>
+                                </div>
+                                <div class="listBottomBox">
+                                    <div class="listBottomRIght">
+                                        판매처이름노출
+                                    </div>
+                                    <div class="listBottomLeft">
+                                        <a href="#">
+                                            판매자 정보 / 문의 <i class="material-icons">&#xe315;</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+
+
+                        <div class="cancellationResonWrap">
+                            <div class="cancellationResonCon">
+                                <h2>취소사유 선택</h2>
+                                <div class="cancellationResonBox">
+                                    <div class="cancellationTxt">
+                                        사유&nbsp;<i class="redStart" style="color: rgba(231, 52, 44, 0.6);">*</i>
+                                    </div>
+                                    <div class="cancellationInput">
+
+                                        <div class="selectBoxWrap">
+                                                
+                                                <div class="selectBox">
+                                                    <div class="mobileTab">
+                                                        <div class="tab-wrap active">
+                                                            <ul class="tab ServiceTab" style="  display: none;height:auto; ">
+                                                                <li class="active">
+                                                                    <a href="javascript:" class="service-tab-1" title="단순변심"  >
+                                                                        <div class="option">단순변심</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="javascript:" class="service-tab-2" title="주문오류">
+                                                                        <div class="option">주문오류</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="">
+                                                                    <a href="javascript:" class="service-tab-3" title="직접입력">
+                                                                        <div class="option">직접입력</div>
+                                                                    </a>
+                                                                </li>                                                             
+                                                            </ul>
+                                                            <a href="javascript:" class="tabBtn" title="사유를 선택해주세요." style="text-decoration: none; ;  ">사유를 선택해주세요.</a>	
+                                                        </div>						
+                                                    </div>
+                                                
+                                                </div>
+                                            
+                                        </div>
+
+
+                                        <div class="text">
+                                            <textarea type="text"   class="TEXT" cols="30" rows="10" 
+                                            placeholder="문의 내용을 입력해주세요. 최대 50자까지 입력 가능합니다."></textarea>
+                                            <span id="counter"><em>0 </em>/ 50자</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- # 취소사유 선택 -->
+                        
+
+
+
+                        <div class="priceInfoWrap">
+                            <div class="priceInfo">
+                                <h2>환불 내역</h2>
+                                <div class="priceinfoBox">
+                                    <ul>
+                                        <li>
+                                            <div class="left">
+                                                취소 주문금액
+                                            </div>
+                                            <div class="right">
+                                                0,000,000원
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="left">
+                                                취소 할인금액
+                                            </div>
+                                            <div class="right">
+                                                0,000,000원
+                                            </div>
+                                        </li>
+                                        <li class="border">
+                                            <div class="left">
+                                                취소 배송비
+                                            </div>
+                                            <div class="right">
+                                                0원
+                                            </div>
+                                        </li>
+                                        <li >
+                                            <div class="left">
+                                                할인쿠폰 금액 차감
+                                            </div>
+                                            <div class="right">
+                                                0,000원
+                                            </div>
+                                        </li>
+                                        <li class="border">
+                                            <div class="left">
+                                                포인트 사용 금액 차감
+                                            </div>
+                                            <div class="right">
+                                                 0,000원
+                                            </div>
+                                        </li>
+                                        <li class="border bigTxt ">
+                                            <div class="left">
+                                                환불 차감금액
+                                            </div>
+                                            <div class="right">
+                                                0,000,000원
+                                            </div>
+                                        </li>
+                                        <li class="border bigTxt ">
+                                            <div class="left">
+                                                환불 예정금액
+                                            </div>
+                                            <div class="right">
+                                                0,000,000원
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="left">
+                                                환불수단
+                                            </div>
+                                            <div class="right">
+                                                신용카드 승인 취소
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- #priceInfoWrap -->
+
+
+                        <div class="refundInfoWrap">
+                            <div class="refundInfoCon">
+
+                                <div class="topCon">
+                                    <div class="title">
+                                        <h2>환불 계좌정보</h2>
+                                       
+                                    </div>
+                                    <div class="topright">
+                                        <div class="bank">신한은행</div>
+                                        <div class="arrowBtnBox">
+                                            <a href="javascript:"  class="arrowBtn"><span></span></a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="refund">
+                                    
+                                    <ul class="bottom">
+                                        <li>
+                                            <div class="titleTxt">예금주</div>
+                                            <div class="inputBox">
+                                                <input type="text" >
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="titleTxt">은행명</div>
+                                            <div class="selectBoxWrap" style="width:100%; margin:auto 0 auto auto;">
+                                                <div class="selectBox">
+                                                    <div class="mobileTab">
+                                                        <div class="tab-wrap active">
+                                                            <ul class="tab ServiceTab" style="  display: none;height:auto; ">
+                                                                <li class="active" style="display: block; text-align: center;" >
+                                                                    <a href="javascript:" class="service-tab-1" title="국민은행"  >
+                                                                        <div class="option" >국민은행</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="" style="display: block; text-align: center;" >
+                                                                    <a href="javascript:" class="service-tab-2" title="우리은행">
+                                                                        <div class="option">우리은행</div>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="" style="display: block; text-align: center;" >
+                                                                    <a href="javascript:" class="service-tab-3" title="신한은행">
+                                                                        <div class="option">신한은행</div>
+                                                                    </a>
+                                                                </li>                                                             
+                                                                <li class="" style="display: block; text-align: center;" >
+                                                                    <a href="javascript:" class="service-tab-3" title="하나은행">
+                                                                        <div class="option">하나은행</div>
+                                                                    </a>
+                                                                </li>                                                             
+                                                                <li class="" style="display: block; text-align: center;" >
+                                                                    <a href="javascript:" class="service-tab-3" title="농협은행">
+                                                                        <div class="option">농협은행</div>
+                                                                    </a>
+                                                                </li>                                                             
+                                                                <li class="" style="display: block; text-align: center;" >
+                                                                    <a href="javascript:" class="service-tab-3" title="기업은행">
+                                                                        <div class="option">기업은행</div>
+                                                                    </a>
+                                                                </li>                                                             
+                                                                <li class="" style="display: block; text-align: center;" >
+                                                                    <a href="javascript:" class="service-tab-3" title="산업은행">
+                                                                        <div class="option">산업은행</div>
+                                                                    </a>
+                                                                </li>                                                             
+                                                                <li class="" style="display: block; text-align: center;" >
+                                                                    <a href="javascript:" class="service-tab-3" title="수협은행">
+                                                                        <div class="option">수협은행</div>
+                                                                    </a>
+                                                                </li>                                                             
+                                                                <li class="" style="display: block; text-align: center;" >
+                                                                    <a href="javascript:" class="service-tab-3" title="우체국">
+                                                                        <div class="option">우체국</div>
+                                                                    </a>
+                                                                </li>                                                             
+                                                            </ul>
+                                                            <a href="javascript:" class="tabBtn" title="직접선택" style="text-decoration: none; ;  ">직접선택</a>	
+                                                        </div>						
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="titleTxt">환불 계좌번호</div>
+                                            <div class="inputBox">
+                                                <input type="text" placeholder="‘-’없이 계좌번호를 입력해주세요."> 
+                                            </div>
+                                        </li>
+
+                                        <li class="lastText">* 현금 환불 발생 시, 등록된 환불계좌로 처리됩니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- #refundInfoWrap -->
+
+                        <div class="grayBoxWrap">
+                            <div class="grayBoxCon">
+                                <ul>
+                                    <li>신용카드 결제 취소시 바로 환불 가능하며, 계좌이체/무통장 입금일 경우 취소 신청 후 영업일 기준 3~7일 이내에 결제 금액 환불처리가 됩니다.</li>
+                                    <li>단, 부분 취소 신청시 결제수단 상관없이 쉬소신청 후 영업일 기준 3~7일 이내에 결제금액 환불처리가 됩니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- #grayBoxWrap -->
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                    <!-- #wrap -->
+                </div>  
+                <!-- #gap -->
+                
+
+                        
+
+
+
+
+
+                    <!-- #container -->
+            </div>
+       
+
+          
+            
+            
+
+
+           
+
+            <div class="btnBoxWrap1">
+                <ul class="btnBox">
+                    <li><a href="javascript:Function();" class="back" >이전</a></li>
+                    <li><a href="javascript:Function();" class="buyNow">취소신청</a></li>
+                </ul>
+            </div>
+         
+            
+
+
+
+
+
+        </section>
+       
+     
+  
+    </main>
+
+    
+</div>
+<script src="./js/detailmall.js"></script>
+
+
+<script>
+    //서류사항 textarea 체크
+    $('.TEXT').keyup(function (e){    var content = $(this).val();    $('#counter').html("<em>"+content.length+"</em>"+" / 50자");    
+    //글자수 실시간 카운팅   
+    if (content.length > 50){        alert("최대 50자까지 입력 가능합니다.");        
+    $(this).val(content.substring(0, 50));        $('#counter').html("50 / 50자");    }});
+</script>
+
+<script>
+
+ 
+    var modal       = $('#modal');          // 모달창
+    var delect      = $('.delect');         // 전체삭제 버튼    
+    var cancle      = $('.cancle');         // 취소버튼
+    var ok          = $('.ok');             // 확인버튼
+   
+   
+    // 전체삭제 버튼 누르면 모달창 띄어짐
+    delect.each(function (idx) {
+                   
+        $(this).on({
+            click: function () {
+                modal.addClass('modalShow'); //보여줌 
+            }
+            
+        });
+    });
+    // 확인 버튼 누르면
+    ok.each(function (idx) {
+                   
+        $(this).on({
+            click: function () {
+                modal.removeClass('modalShow');   // 보여줌               
+               
+            }
+            
+        });
+    });
+    // 취소 버튼 누르면 모달창 사라짐
+    cancle.each(function (idx) {
+                   
+        $(this).on({
+            click: function () {
+                modal.removeClass('modalShow'); //모달창 사라짐 
+            }
+            
+        });
+    });
+    
+    var arrowBtn     = $('.arrowBtn');    // 화살표 버튼
+    var refund       = $('.refund');  // answer    
+    var hidebox      = $('.hidebox');  // hideboxshow   
+    var wirteDown    = $('.wirteDown');  // 직접입력
+    
+ 
+  
+   
+    // 화살표 버튼 누르면 밑에 notice텍스트 토글
+    arrowBtn.each(function (idx) {                   
+        $(this).on({
+            click: function () {
+                refund.eq(idx).toggleClass('addArrow'); //보여줌  
+                arrowBtn.eq(idx).toggleClass('closeArrow'); //보여줌 
+                hidebox.toggleClass('hideboxshow'); //보여줌 
+            }
+            
+        });
+    });
+   
+    
+    </script>
+
+    <script>
+
+
+ //헤더영역 스크롤 이벤트 (페럴럭스)
+ var $window  = $(window);
+         var $header  = $('#wrap1 .bottom-wrap');
+         var $mainBtn = $('#wrap1 .bottom-wrap .mainbtn');
+         var t = 0; // false === 0 같다는 표시   toggle
+         
+
+             
+             //마우스로 스크롤값이 아래로 30픽셀이상 >= 내려가면 
+             //선택자 헤더영역(.headerTop)에 효과 이벤트가 발생하게 하라 
+             $window.scroll(function(){ //스크롤 이벤트
+                // console.log(  $window.scrollTop() ); //스크롤 탑값 확인
+                 if( $window.scrollTop() >= 30 ){  //마우스로 스크롤값이 아래로 30픽셀이상 내려가면
+                  $header.addClass('addHeader');  //헤더에 클래스 추가
+                 // $appBtn.animate({left :'0px',right: '0px',bottom:'0px',borderRadius: '0px'},.1);
+              }
+              else{
+                  $header.removeClass('addHeader'); //추가된 클래스 삭제
+                 // $appBtn.animate({left :'30px',right: '30px',bottom:'54px',borderRadius: '6px'},.1);  
+              }           
+             });
+
+
+            //  메뉴버튼 addCLass removeClass            
+            $mainBtn.each(function (idx) {
+               $mainBtn.eq(0).addClass('addClass'); 
+               $(this).on({
+                  
+                   mouseenter: function () {
+                     $mainBtn.removeClass('addClass');  // 클래스 삭제
+                     $mainBtn.eq(idx).addClass('addClass'); // 클래스 주입
+                      // countFn(idx);
+                   }
+               });
+           });
+
+    </script>
+
+       
+<script>
+
+
+    
+    //   탭버튼 이벤트
+    var t=0;
+      
+      priceBox       = $('#wrap1> #main>#section1 .priceBox');
+
+
+      $('.tabBtn').on({
+         click:	function(){
+            showHideList();
+         }
+      });
+      
+      
+      $(".tab > li > a").click(function(e) {
+      e.preventDefault();	
+      priceBox.removeClass('addClose'); // 탭버튼 누르면 priceBox 다시나타남
+      // 전역변수 조정
+      showHideList();
+      
+      //새로운 클릭일 경우에만 ui 변경
+      if(!$(this).parent().hasClass('active')) { 
+        $('.tabBtn').text($(this).text()); //보여지는 제목 바꾸기
+      }
+      
+      // 액티브 조정 
+      $(this).parent().siblings().removeClass('active').end().addClass('active');
+      
+      });
+      
+      //모바일 & PC 공통 
+      $(".tabs a").click(function(e) {
+         e.preventDefault();	
+         $(this).parent().siblings().removeClass('active').end().addClass('active');
+         
+      //	$(this).parents('ul').next().children().hide().eq($(this).parent().index()).show();
+         $('.tab').parents('ul').next().children().hide().eq($(this).parent().index()).show();
+      });
+      
+      //현재 active 되어있는 탭 외의 모든 데이터 접기 => 모바일도 적용하기 위해선 공통 class 생성하여 적용 필요
+      $('.ServiceTab > li').on('click', function(e){
+         e.preventDefault();	
+      // $(".nav").navgoco('toggle', false);
+         $(".nav > li").removeClass('active');
+         $(".nav > li").removeClass('open');
+      });
+      
+      function showHideList() {
+         if(t==0){
+            t=1;
+            $('.tab').stop().slideDown();
+            $('.tabBtn').addClass('addFamily');
+         }else{
+            t=0;
+            $('.tab').hide();
+            $('.tabBtn').removeClass('addFamily');	
+            $('.tabBtn').children().stop().slideUp();	
+         }
+      }
+      
+
+
+
+</script>
+</body>
+</html>

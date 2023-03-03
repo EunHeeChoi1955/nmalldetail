@@ -1,0 +1,325 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./fonts.css);
+
+
+
+#wrap1 { position: relative; width:100%;  max-width:450px; margin:0 auto;display: block; background: #fff;  }
+#wrap1>.header { z-index:3; position:fixed;  top:0; width:100%; max-width:450px; margin:0 auto;  background: #fff;/* #3D3F84; */  }
+
+#wrap1>.header .container{width:100%; padding: 0; } 
+
+#wrap1>.header .container .top { padding:0 18px 11px 18px; display: flex; }
+#wrap1>.header .container .top>li{width: 33.333%; display:inline-block; padding:14px 0 0 0 ;}
+
+/*  header left */
+#wrap1>.header .container .top>.left .leftWrap {  width: 100%; }
+#wrap1>.header .container .top>.left .leftWrap .backBtn { width:25px;   }
+#wrap1>.header .container .top>.left .leftWrap .backBtn a { width:100%;  padding:1px 0; }
+#wrap1>.header .container .top>.left .leftWrap .backBtn a span { background:  url(../img/back.svg) no-repeat 0% 100%;  background-size:contain; width:100%;height:18px; display: inline-block;}
+
+/* header medium */
+#wrap1>.header .container .top>.medium {text-align: center; color: #1A1A1A; font-size: 18px; white-space: nowrap; }
+
+/* header  right */
+#wrap1>.header .container .top>.right #aside {width: 100%;  }
+#wrap1>.header .container .top>.right #aside .icon-box-gap { width:100%;  }
+#wrap1>.header .container .top>.right #aside .icon-box-gap .icon-box {  width:100%;  }
+#wrap1>.header .container .top>.right #aside .icon-box-gap .icon-box ul{float: right; box-sizing: border-box;white-space: nowrap;   }
+#wrap1>.header .container .top>.right #aside .icon-box-gap .icon-box ul li { padding: 0 5px; text-align: center;display:inline-block; }
+#wrap1>.header .container .top>.right #aside .icon-box-gap .icon-box ul li a  { width:23.5px; }
+#wrap1>.header .container .top>.right #aside .icon-box-gap .icon-box ul li a img { color:#1A1A1A;  }
+#wrap1>.header .container .top>.right #aside .icon-box-gap .icon-box ul li a em {padding:4.9px 4px; width:20px; height:20px; position:absolute; z-index:2; top:7px; right:14px; font-weight: 200; background-color: #E7342C; border-radius: 50%; font-size: 11px;box-sizing: border-box;line-height: 11px;}
+
+/* headerTop 하단 전체선택 선택삭제 */
+#wrap1>.headerTop .bottom-wrap{ width:100%; display: block; z-index:3; position:fixed; top:50.71px; max-width:450px; background: #fff; }
+#wrap1>.headerTop .bottom-wrap.addHeader {  border-bottom: 1px solid #E6E6E6; }
+#wrap1>.headerTop .bottom-wrap ul {display: flex; padding: 12px 18px; margin: 0;}
+#wrap1>.headerTop .bottom-wrap ul li {width: 50%; color:#565656; font-size: 14px; vertical-align: baseline;}
+#wrap1>.headerTop .bottom-wrap ul .left {text-align: left; }
+#wrap1>.headerTop .bottom-wrap ul .left div {  display: inline-block; margin-top: 1px;  }
+#wrap1>.headerTop .bottom-wrap ul .left input:focus {  outline: none;}
+#wrap1>.headerTop .bottom-wrap ul .left input[type='checkbox'] { appearance: none; display: inline-block; width: 22px; height: 22px; background: url(../img/ico_unchecked_gray_squre.svg) no-repeat 50% 50%; margin: 0 10px 0 0; background-size: 22px 22px;}
+#wrap1>.headerTop .bottom-wrap ul .left input[type='checkbox']:checked {  background: url(../img/ico_checked_squre_red.svg) no-repeat 50% 50%; margin: 0 10px 0 0; background-size: 22px 22px;}
+#wrap1>.headerTop .bottom-wrap ul .right {text-align: right;}
+
+
+
+
+
+/* https://www.figma.com/file/tblbFFmNni1zJgjeEbFGcA/%EB%82%98%EC%8A%A4-%EC%9E%90%EC%82%AC%EB%AA%B0?node-id=26%3A2845 */
+/* fixed 때문에 상단에 여백을 주어 섹션1을 보이게 해준다. */
+/* 메인영역상단 padding-top:120px; */
+#wrap1> #main{position:relative;width:100%; max-width:450px; overflow:visible; display:block;margin: 0 auto; padding:0;font-family: 'SUIT'; padding-bottom: 50px; }
+	
+#wrap1> #main> #section1{ position: relative; width:100%;height:auto; padding:0; }
+#wrap1> #main> #section1 .container {position:relative; width:100%;height:100%; margin:0 auto;padding:0;background:#fff ; background-size: cover;}		
+#wrap1> #main> #section1 .container.addBg {background:#fff ; }		
+#wrap1> #main> #section1 .container .gap{ width: 100%; padding:64px 0 0 0 ;}
+#wrap1> #main> #section1 .container .gap .wrap {width:100%;  }
+#wrap1> #main> #section1 .container .gap .wrap>h2 { margin:0;font-size: 16px; font-weight: 700; color: #1a1a1a; width:auto; padding:0 18px;}
+#wrap1> #main> #section1 .container .gap .wrap ul { margin: 0;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li { padding: 16px 0 0 0;width: 100%; border-bottom: 7px solid #E2E2E2; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .listTop{display: flex; padding: 0 18px; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .listTop .inputBox {display: flex; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .listTop .inputBox a { display: inline-block; font-weight: 400; color: #1a1a1a; line-height: 140%;   }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .listTop .inputBox .checkBox {  width: 32px; height: 22px;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .listTop .inputBox input:focus {  outline: none;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .listTop .inputBox input[type='checkbox'] { appearance: none; display: inline-block; width: 22px; height: 22px; background: url(../img/ico_check.svg) no-repeat 50% 50%; margin: 0 10px 0 0; background-size: 22px 22px;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .listTop .inputBox input[type='checkbox']:checked {  background: url(../img/ico_checked_squre_red.svg) no-repeat 50% 50%; margin: 0 10px 0 0; background-size: 22px 22px;}
+/* 장바구니 상품 닫기버튼 */
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .listTop .closeBtn { width: 12.19px; margin: -2px 0 auto auto;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .listTop .closeBtn a { width: 12.19px;} 
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .listTop .closeBtn a img {width: 12.19px;}
+/* 장바구니 상품left */
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap { width: 100%; display: flex; padding: 12px 18px 0 18px;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .left { z-index:1;position: relative; width: 90px;border-radius: 6px; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .left a  { width: 90px; height:90px; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .left a img {width: 90px; height:90px; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .left .imgCap {z-index:2; position: absolute; bottom: 0;left: 0; width:100%;border-radius: 0 0 6px 6px; font-size: 12px; font-weight: 400; color: #fff; text-align: center; background: rgba(0,0,0, .9);}
+/*장바구니 상품 right */
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right {  padding: 0 20px 0 16px ; width: 100%; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .txt1 { width: 100%;margin: 0 0 12px 0;color:#797979;  line-height:100%;text-overflow: ellipsis;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .blue  {width: 100%; padding:0 0 12px 0; color:#187AEF ; font-size: 12px; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .soldOutRedbox { color: #fff;  background:#E7382D; border-radius:18px; display: inline-block; padding: 4px 10px; font-size: 12px; font-weight: 400;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .textWrap .right .soldOut { color: #E7342C; font-size: 14px; font-weight: 400;}
+
+/* 재입고알림 박스 */
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .alarmBox  {  padding: 16px 18px 17px 18px ; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .alarmBox .alarm { color: #E7342C; font-size: 14px; font-weight: 400; width: 100%; padding: 13px 0; text-align: center; line-height: 100%; border-radius:4px;border: 1px solid #E7342C;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .alarmBox .alarm .alarmIcon {width: 13px;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .alarmBox .alarm .alarmIcon img {width: 13px;margin:-6px 5px auto auto;}
+
+
+
+/* input박스 가격 */
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox { display: block; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap { display: flex;padding: 16px 18px 15px 18px; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap div {display: inline-block;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice { position: relative; display: flex;  box-sizing: border-box;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice input {appearance: none; outline:none; text-indent: 15px; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice input[type='text']::-webkit-inner-outer-button,
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice input[type='text']::-webkit-inner-spin-button { appearance: none; outline:none; position: absolute; left: 0; top: 0; width: 109px; height: 30px;  }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice input[type='text'] { position: relative; left: 0;  top: 0; width: 90px; height: 30px; font-size: 14px; border: solid 0.5px #D8D8D8;  border-radius:6px; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice .numBox .spinner-button[type='button'] {appearance: none; } 
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice .numBox .arrowOpen { position: absolute; right: 5px;  top:3px; width:26px; height: 22px; }
+/*#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice .numBox .spinner-button { position: absolute; cursor: default; border: 0; background: none; color: #000; width: 30px; height: 30px;text-align: center; margin: 0px;  refunder-events: none; padding: 5px;  line-height: 18px; color: #909090; }
+ #wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice .numBox #inc-button { left: 60px; top:0px; } 
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice .numBox #dec-button { right: 10px;  top:0; }*/
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice .numpriceBox { margin: auto 0 auto auto; font-size: 14px; font-weight: 400; padding: 8px 0;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .numPrice .numpriceBox strong {font-weight: 700; vertical-align:baseline ; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .red {margin: auto auto auto 18px; font-size: 18px; font-weight: 700; line-height:100%;color: #E7342C;white-space: nowrap;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .red span{ font-size: 14px; font-weight: 400;vertical-align: baseline;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .price { margin:auto 0 auto auto ; color: #1A1A1A; font-size: 16px; font-weight: 700; line-height:100%;text-align: left; white-space: nowrap;vertical-align: baseline;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .priceBox .priceBoxGap .price .won { vertical-align: baseline; font-weight: 400;}
+
+/* listBottomLeft */
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .listBottomBox { display: flex; background: #F9F9F9; border-top: 1px solid #E2E2E2; padding: 10px 18px;font-size: 14px; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .listBottomBox .listBottomRight { margin:auto auto auto 0; color: #565656;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .listBottomBox .listBottomLeft { margin:auto 0 auto auto; }
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .listBottomBox .listBottomLeft a { margin:auto 0 auto auto; color: #187AEF;}
+#wrap1> #main> #section1 .container .gap .wrap>ul>li .listBottomBox .listBottomLeft a i { font-size: 16px; font-weight: 100; margin-top:-3px;}
+
+
+
+
+
+/*  취소사유 선택 */
+.cancellationResonWrap {font-family: 'SUIT'; padding: 20px 18px 20px 18px;border-bottom: 7px solid #E2E2E2; background: #fff;  }
+.cancellationResonWrap .cancellationResonCon {width: 100%; }
+.cancellationResonWrap .cancellationResonCon h2{margin:0;font-size: 16px; font-weight: 700; color: #1a1a1a;padding-bottom: 16px; }
+.cancellationResonWrap .cancellationResonCon .cancellationResonBox { display: flex; }
+.cancellationResonWrap .cancellationResonCon .cancellationResonBox .cancellationTxt {font-size: 14px; padding:10px 0; color: #797979; font-weight: 400; white-space: nowrap; padding-right: 16px;}
+.cancellationResonWrap .cancellationResonCon .cancellationResonBox .cancellationInput {width: 100%;}
+.cancellationResonWrap .cancellationResonCon .cancellationResonBox .cancellationInput .text {width: 100%; position: relative;}
+.cancellationResonWrap .cancellationResonCon .cancellationResonBox .cancellationInput .text textarea { resize: none; z-index: 1; position: relative;  padding:10px; appearance: none; color: #1a1a1a;font-size: 14px; font-weight: 400; outline: none; border-radius:6px; border:1px solid #E5E5E5 ;outline: none;width: 100%; height: 122px;}
+.cancellationResonWrap .cancellationResonCon .cancellationResonBox .cancellationInput .text>textarea::placeholder{  color: hsl(0, 0%, 80%);font-size: 14px; font-weight: 400;}
+.cancellationResonWrap .cancellationResonCon .cancellationResonBox .cancellationInput .text>#counter {z-index: 1; position: absolute; bottom: 10px; right: 10px; line-height: 100%;height:auto;width:auto; display:inline-block; color: #CCCCCC;font-size: 14px; font-weight: 400;}
+.cancellationResonWrap .cancellationResonCon .cancellationResonBox .cancellationInput .text>#counter em {color: #1A1A1A;vertical-align: baseline;}
+/*  사진 첨부하기 */
+.cancellationResonWrap .cancellationResonCon .cancellationResonBox .cancellationInput .picBtn { display:block; text-align: center; }
+.cancellationResonWrap .cancellationResonCon .cancellationResonBox .cancellationInput .picBtn.addPic {display: none;}
+.cancellationResonWrap .cancellationResonCon .cancellationResonBox .cancellationInput .picBtn a {width: 100%; display:block; white-space: nowrap;color: #fff;  font-size: 14px; font-weight: 700; background: #51617D;border-radius: 3px;padding: 13px 0; margin:14px 0 10px 0; }
+.cancellationResonWrap .cancellationResonCon .cancellationResonBox .cancellationInput .picBtn a span { width: 19px; margin: -8px 7px auto auto; display: inline-block;}
+.cancellationResonWrap .cancellationResonCon .cancellationResonBox .cancellationInput .picBtn a span img { width: 19px;}
+/* 사진은 10MB 이하의 PNG,JPG, GIF 파일로 최대 5개까지만 등록가능합니다. */
+.cancellationResonWrap .cancellationResonCon .cancellationResonBox .cancellationInput>.bottomTextBox { display: flex; width: 100%; }
+.cancellationResonWrap .cancellationResonCon .cancellationResonBox .cancellationInput>.bottomTextBox.addPic { display: none; }
+.cancellationResonWrap .cancellationResonCon .cancellationResonBox .cancellationInput>.bottomTextBox div { color: #797979; font-size: 12px; font-weight: 400;display: inline-block;  }
+
+
+/* 셀렉트박스 */
+.cancellationResonWrap .cancellationResonCon .cancellationResonBox .cancellationInput .selectBoxWrap { display: block; padding-bottom: 10px;}
+
+
+
+
+
+
+                                                        /* 셀렉트박스 상자  */
+                                                        .selectBox {z-index:2; position: relative; width: 100%; height: 40px; display: block; }
+                                                        /*   탭버튼 화살표 내리면 나오는거 */
+                                                        .selectBox >.mobileTab{display: block;box-sizing: border-box; text-decoration:none;height: 40px;}
+                                                        .selectBox >.mobileTab>.tab-wrap{position:relative; z-index:3; display:block;width:100%;box-sizing:border-box;height: 40px;}
+
+                                                        /* 탭버튼  */
+                                                        .selectBox >.mobileTab>.tab-wrap>a{ position:relative;display:block; width:100%;height: 40px; color: #1A1A1A; padding:13px 0; font-size:14px; border:1px solid #E2E2E2;text-decoration: none; border-radius: 6px; line-height: 100%;  text-indent:15px; text-align:left; background:#fff url(../img/ico_option_arrow1.svg) no-repeat 98% 50%; }
+                                                        .selectBox >.mobileTab>.tab-wrap>a.addFamily{ background: #F9F9F9 url(../img/ico_option_arrow2.svg) no-repeat 98% 50%; color: #1A1A1A; }
+
+
+                                                        /* 탭버튼 누르면 나오는 메뉴 내용들 */
+                                                        .selectBox >.mobileTab>.tab-wrap>ul{display:block; z-index:2; background:#fff;width:100%;height:auto; position:absolute; top:40px; margin:0;text-align:center;  box-sizing:border-box;border:1px solid #E2E2E2;  border-radius: 6px 6px 6px 6px;}
+                                                        .selectBox >.mobileTab>.tab-wrap>ul>li{width:100%;display:block;box-sizing:border-box; }
+                                                        .selectBox >.mobileTab>.tab-wrap>ul>li:last-child{ border:0 ;}
+                                                        .selectBox >.mobileTab>.tab-wrap>ul>li>a{display:flex; padding:5px 0 5px 0; color:#1a1a1a; font-size:12px; text-decoration: none;text-align:center; display: block;}
+                                                        .selectBox >.mobileTab>.tab-wrap>ul>li:first-child>a{padding:10px 0 5px 0;}
+                                                        .selectBox >.mobileTab>.tab-wrap>ul>li:last-child>a{padding:5px 0 10px 0;} 
+                                                        .selectBox >.mobileTab>.tab-wrap>ul>li>a:hover{color:#E7342C; }
+                                                        .selectBox >.mobileTab>.tab-wrap>ul>li>a div { display: block;   }
+
+
+
+
+
+/* 회수지 정보 */
+.returnInfoWrap { width: 100%; font-family: 'SUIT'; padding: 20px 18px 20px 18px;border-bottom: 7px solid #E2E2E2; background: #fff;  }
+
+                .listWrap { width: 100%;    }
+                .listWrap form {width: 100%;}
+                /* 타이틀박스 */
+                .listWrap form .titleBox { display: flex; }
+                .listWrap form .titleBox div { display: inline-block; }
+                .listWrap form .titleBox div.rightTit { margin: auto 0 auto auto; }
+                .listWrap form .titleBox div h2{margin:0; font-size: 16px; font-weight: 700;color: #1a1a1a; }
+                .listWrap form .titleBox div input[type=checkbox] {margin:-2px 9px 0 0; border-radius: 0; border:0;appearance: none; background: url(../img/ico_uncheck_sm.svg) no-repeat 50% 50%;  display: inline-block; width: 16px; height: 16px; background-size: contain; outline: none;}
+                .listWrap form .titleBox div input[type=checkbox]:checked {margin:-2px 9px 0 0; border:0;border-radius: 0;  appearance: none; background: url(../img/ico_check_square.svg) no-repeat 50% 50%;  display: inline-block; width: 16px; height: 16px; background-size: contain; outline: none;}
+
+                .listWrap form ul {padding-top: 26px;}
+                .listWrap form ul li { padding-bottom: 16px;}
+                .listWrap form ul li:last-child { padding-bottom: 0;}
+                /* 타이틀 input박스 위에  */
+                .listWrap form ul li .title {font-size: 12px; color: #565656; font-weight: 400; padding-bottom: 10px;}
+                /* input box */
+                .listWrap form ul li .left {width:100%;}
+                /* 맨위 상단 아이콘 = 우리집, 회사 , 기타 */
+                .listWrap form ul li .left input { width: 100%;  outline: none; border:1px solid #E2E2E2 ;  border-radius: 6px; }
+                .listWrap form ul li .left input[type=text] { appearance: none; text-indent: 12px; width: 100%; height: 48px;  outline: none;}
+                .listWrap form ul li .left input::placeholder { color:#797979; font-size:14px;}
+                /* 주소 */
+                .listWrap form ul li .address .addressBox1 {width: 100%;position: relative;margin-bottom: 8px;}
+                .listWrap form ul li .address .addressBox2 {margin-bottom: 0;}
+                .listWrap form ul li .address .addressBox1>.input-box {z-index: 1;position: relative;}
+                .listWrap form ul li .address .addressBox1 .magni {position:absolute;z-index: 2; top:12px; left:12px; display: inline-block;}
+                .listWrap form ul li .address .addressBox1 .magni a img {width: 12.17px;}
+                .listWrap form ul li .address .addressBox1 input[type=text] { appearance: none; text-indent: 30px; font-size: 14px; color: #1A1A1A;}
+                .listWrap form ul li .address .addressBox1 input[type=text]::placeholder { appearance: none; text-indent: 30px; font-size: 14px; color: #1A1A1A;}
+
+
+
+
+
+/* 반품 방법 선택 */
+.returnWrap {padding: 20px 18px; border-bottom: 7px solid #E2E2E2;  }
+.returnWrap .returnCon {width: 100%; }
+.returnWrap .returnCon h2{margin:0; font-size: 16px; font-weight: 700;color: #1a1a1a; }
+.returnWrap .returnCon .checkBoxWrap { padding: 16px 0 0 0;}
+.returnWrap .returnCon .checkBoxWrap .checkBox { display: flex;}
+.returnWrap .returnCon .checkBoxWrap .checkBox div { display: inline-block;font-size: 14px; font-weight: 400; padding-right: 20px;}
+.returnWrap .returnCon .checkBoxWrap .checkBox div input { appearance: none; background: url(../img/ico_radio_sm_unchecked.svg) no-repeat 50% 50%;outline: none; width: 16px; height: 16.5px; margin: -5px 10px auto auto; }
+.returnWrap .returnCon .checkBoxWrap .checkBox div input:checked { background: url(../img/ico_radio_sm.svg) no-repeat 50% 50%; width: 16px; height: 16.5px; margin: -5px 10px auto auto; }
+
+
+
+
+
+
+                                                                    
+ /* 결제 정보 */
+.priceInfoWrap {font-family: 'SUIT'; padding: 20px 18px 20px 18px;border-bottom: 7px solid #E2E2E2; background: #fff; }
+.priceInfoWrap .priceInfo { width: 100%;}
+.priceInfoWrap .priceInfo h2 {margin:0;font-size: 16px; font-weight: 700; color: #1a1a1a;}
+.priceInfoWrap .priceInfo .priceinfoBox { width: 100%; padding: 18px 0 0 0;}
+.priceInfoWrap .priceInfo .priceinfoBox ul { display: block; font-weight:400; margin:0;} 
+.priceInfoWrap .priceInfo .priceinfoBox ul li {display: flex; padding: 5px 0;  }
+.priceInfoWrap .priceInfo .priceinfoBox ul li:nth-child(1) {padding: 0 0 5px 0;}
+.priceInfoWrap .priceInfo .priceinfoBox ul li:nth-child(3) {border-bottom:1px solid #E2E2E2 ; margin: 0 0 5px 0;}
+.priceInfoWrap .priceInfo .priceinfoBox ul .border {border-bottom:1px solid #E2E2E2 ; margin:5px 0;}
+.priceInfoWrap .priceInfo .priceinfoBox ul .bigTxt .right {font-size: 16px; color: #E7342C; font-weight: 700;vertical-align: top; }
+.priceInfoWrap .priceInfo .priceinfoBox ul .bigTxt .left { font-size: 14px; color: #1a1a1a;font-weight: 700;}
+.priceInfoWrap .priceInfo .priceinfoBox ul li .left {display:inline-block;  color: #797979; font-size: 14px;}
+.priceInfoWrap .priceInfo .priceinfoBox ul li .right { display:inline-block; margin: auto 0 auto auto ; font-size: 14px;}
+
+
+
+
+
+
+
+/* 환불계좌정보 */
+.refundInfoWrap  {font-family: 'SUIT'; padding: 20px 18px 20px 18px;border-bottom: 7px solid #E2E2E2; background: #fff; }
+.refundInfoWrap .refundInfoCon { width: 100%;}
+
+
+.refundInfoWrap .refundInfoCon .topCon  {display: flex;}
+.refundInfoWrap .refundInfoCon .topCon .title  { margin:auto auto auto 0; display: flex;}
+.refundInfoWrap .refundInfoCon .topCon .title h2 { margin:auto auto auto 0; display:inline-block;font-size: 16px; font-weight: 700;  color: #1a1a1a; width:auto;}
+ 
+.refundInfoWrap .refundInfoCon .topCon .topright {margin:auto 0 auto auto; white-space: nowrap;}
+.refundInfoWrap .refundInfoCon .topCon .topright>div {display: inline-block;}
+.refundInfoWrap .refundInfoCon .topCon .topright .bank {font-size: 16px; color: #1a1a1a; font-weight: 400; }
+.refundInfoWrap .refundInfoCon .topCon .arrowBtnBox a {display: inline-block; padding-left: 4px;}
+.refundInfoWrap .refundInfoCon .topCon .arrowBtnBox a span { background: url(../img/arrow_open_gray.svg) no-repeat 98% 50%; width: 26px; height: 22px; display: block;}
+.refundInfoWrap .refundInfoCon .topCon .arrowBtnBox a.closeArrow span { background: url(../img/arrow_close_review.svg) no-repeat 98% 50%; width: 26px; height: 22px; display: block;}
+
+.refundInfoWrap .refundInfoCon .refund.addArrow { display: block; }
+.refundInfoWrap .refundInfoCon .refund { display: none; }
+
+.refundInfoWrap .refundInfoCon .refund .bottom {  padding: 16px 0 0 0;}
+.refundInfoWrap .refundInfoCon .refund .bottom li { display: flex; padding-bottom: 10px;}
+.refundInfoWrap .refundInfoCon .refund .bottom li .titleTxt { width:120px;font-size: 14px; font-weight: 400;white-space: nowrap; color: #797979;  display: inline-block; margin: 9px 0 0 0;}
+.refundInfoWrap .refundInfoCon .refund .bottom li .inputBox {   margin: auto 0 auto auto; width:100%; }
+.refundInfoWrap .refundInfoCon .refund .bottom li .inputBox input[type=text] {padding:0 12px; appearance: none; outline: none; border-radius: 4px ; border: 1px solid #E2E2E2; height: 38px; width:100%;}
+.refundInfoWrap .refundInfoCon .refund .bottom li .inputBox input[type=text]::placeholder {color: #1A1A1A;}
+.refundInfoWrap .refundInfoCon .refund .bottom li.lastText {font-size: 12px; color: #797979;padding-bottom: 0;}
+
+
+
+
+
+
+.grayBoxWrap { width: 100%; background: #F4F4F4; }
+.grayBoxWrap .grayBoxCon { width: 100%; padding: 15px 18px 15px 24px;}
+.grayBoxWrap .grayBoxCon ul { width: 100%;}
+.grayBoxWrap .grayBoxCon ul li { position: relative; width: 100%; color: #909090; font-size: 10px;}
+.grayBoxWrap .grayBoxCon ul li::before { position: absolute; top:5px; left:-8px; display: block; content: ''; width:2px; height: 2px; border-radius: 2px; background: #909090; }
+
+
+
+
+
+
+
+
+
+/* 하단 btn Box1 */ 
+
+.btnBoxWrap1 {display:block; background: #fff;   z-index:8; position:fixed;bottom:0; width:100%;max-width: 450px; height:auto; opacity:1; transition:all 1s;}
+.btnBoxWrap1 .btnBox {display: flex; font-family:'SUIT'; margin: 0;box-sizing: border-box;}
+.btnBoxWrap1 .btnBox li{ height: 100%; display: inline-block; border-top: 1.5px solid #E7342C; }
+.btnBoxWrap1 .btnBox li:first-child{width:50%; text-align: left;height: 100%;}
+.btnBoxWrap1 .btnBox li:first-child>a{ display:block; color: #1A1A1A; font-size: 16px; font-weight: 700;  text-align: center; width: 100%; height: 100%; display: block; padding:14px 0;text-decoration:none; white-space: nowrap;  }
+.btnBoxWrap1 .btnBox li:last-child {width:50%; height: 100%;}
+.btnBoxWrap1 .btnBox li:last-child a {color: #fff; font-weight: 700; font-size: 16px; background: #E7342C; text-align: center;  width: 100%; height: 100%; display: block; padding:14px 0;text-decoration:none; white-space: nowrap; }
+
+
+
+
+
+
+
+
+
+
+
+
+

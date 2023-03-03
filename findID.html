@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="publisher" content="eunheeChoi">
+    <title>아이디 찾기</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="./img/favicon/favicon-32.png" sizes="32x32">
+    
+   
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/findID.css">    
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- jQuery 오픈소스 -->
+    <script src="./js/lib/jquery.min.js"></script> 
+	<script src='./js/lib/jquery-1.12.4.min.js'></script>
+	<!-- <script src='./js/lib/jquery.mobile-1.4.5.min.js'></script>터치이벤트 웹앱 -->
+	<script src='./js/lib/jquery.easing.1.3.js'></script>
+	<script src='./js/lib/jquery.touchSwipe.min.js'></script>
+	<!-- <script src='./js/lib/slick.min.js'></script> -->
+
+    <!-- 리액트 웹개발 오픈소스 -->    
+    <script src="./js/lib/react.development.js"></script>
+    <script src="./js/lib/react-dom.development.js"></script>
+    <script src="./js/lib/babel.min.js"></script>
+
+</head>
+<body>
+    <div id="findID_resetPS">
+        <div class="TopContainer">
+            <div class="container">
+                <ul class="top clearfix">
+                    <li class="left">
+                        <div class="leftWrap">
+                            <span class="backBtn">
+                                <a  href="#" class="back-btn " title="back">
+                                    <span ></span>
+                                </a>
+                            </span>                       
+                        </div>
+                    </li>
+                    <li class="medium">
+                        아이디 찾기
+                    </li>
+                    <li class="right">
+                        <aside id="aside" class="clearfix">
+                            <div class="icon-box-gap">
+                                <div class="icon-box">
+                                    <ul class="clearfix ">
+                                        <li>
+                                            <a href='javascript:Function();'>
+                                           
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                    </li>
+                </ul>
+            </div>   
+            <!-- #container -->
+            <div class="id_ps_Btn">
+                <ul>
+                    <li class="addfocus findIDBtn">
+                        <a href="javascript:Function();">아이디 찾기</a>
+                    </li>
+                    <li class="resetPsBtn">
+                        <a href="javascript:Function();">비밀번호 재설정</a>
+                    </li>
+                </ul>
+            </div><!-- #id_ps_Btn  아이디찾기 , 비밀번호 재설정 탭 버튼  -->
+
+             <!--아이디 찾기 내용 -->
+             <div class="findIDWrap tabCon">
+                <div class="findID  ">
+                    <div class="txtTop">
+                        <p class="txtBk">아이디 찾기를 위해 <span class="redTxt">아래의 방법 중 하나를 선택</span>해 주세요.</p>
+                        <p class="greyTxt">SNS를 통해 회원가입을 하신 경우 아이디 찾기는 가입하신<br/>
+                            SNS에서 아이디 찾기가 가능합니다.
+                        </p>
+                    </div>
+                    <div class="inputBox">
+                        <div class="inputTit">
+                            <input type="checkbox" name="checkbox" id="checkbox"> 
+                            <div class="tit">휴대폰으로 찾기</div>
+                        </div>
+                        <div class="findForm ">
+                            <ul  class="inputWrap "><!--formClose 넣으면 닫힘-->
+                                <li class="input">
+                                    <div class="title">이름 </div>
+                                    <div class="inputCon">
+                                        <input type="text" id="name" name="name"  class="name" placeholder="이름">
+                                        <div class="btnWrap">
+                                            <span class=" xbtn"></span>
+                                        </div>
+                                        
+                                    </div>
+                                </li>
+                                <li class="secondInput input">
+                                    <div class="title">휴대폰번호 </div>
+                                    <div class="line1 form">
+                                        <div class="inputCon">
+                                            <input type="text" id="phoneNumber1" name="phoneNumber1"  class="input01" placeholder="예시 ) 01012345678">
+                                            <div class="btnWrap">
+                                                    <span class=" hidePhoneBtn1 xbtn"></span>
+                                            </div>
+                                        </div>
+                                        <div class="certifiBtn redBtn certiNumBtn"><a href="#">인증번호</a></div>
+                                    </div>
+
+                                    <div class="line2 form">
+                                        <div class="inputCon">
+                                            <input type="text" id="password2" name="password" autocomplete="off" class="input02" placeholder="발송 된 인증번호를 입력해주세요">
+                                            <div class="timeflex">
+                                                <div class="xbtnWrap">
+                                                    <span class=" hidePhoneBtn1 xbtn"></span>
+                                                </div>
+                                                <div class="time">03:00</div>
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="certifiBtn"><a href="#">인증하기</a></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="inputTit">
+                            <input type="checkbox" name="checkbox" id="checkbox"> 
+                            <div class="tit">이메일로 찾기</div>
+                        </div>
+                        <div class="findForm">
+                            <ul  class="inputWrap "><!--formClose 넣으면 닫힘-->
+                                <li class="secondInput input">
+                                    <div class="title">이메일주소 </div>
+                                    <div class="line1 form">
+                                        <div class="inputCon">
+                                            <input type="text" id="phoneNumber1" name="phoneNumber1"  class="input01" placeholder="이메일 주소를 입력해주세요">
+                                            <div class="btnWrap">
+                                                    <span class="xbtnPhone1 hidePhoneBtn1 xbtn"></span>
+                                            </div>
+                                        </div>
+                                        <div class="certifiBtn redBtn"><a href="#">인증하기</a></div>
+                                    </div>
+                                    
+                                    <div class="greyTxt">*이메일 정보가 있는 회원만 확인 가능</div>
+                                
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <div class="inputTit">
+                            <input type="checkbox" name="checkbox" id="checkbox"> 
+                            <div class="tit">휴대폰 본인인증으로 찾기</div>
+                        </div>
+                        <div class="findForm">
+                            <ul  class="inputWrap "><!--formClose 넣으면 닫힘-->
+                                <li class="secondInput">
+                                    <div class="greyTxt">본인 주민등록번호로 가입된 휴대폰번호로 본인확인을 합니다.</div>
+                                    <div class="certiPhone">
+                                        <a href="javascript:void(window.open('signUpWithdrawalCertification.html', '_self'))">
+                                            휴대폰 본인인증하기
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div><!-- #findID -->
+                <!-- 본인인증 버튼 누르면 나오는 창 -->
+                <div class="certiWrap ">     
+                    <!-- 고객님의 아이디를 찾았습니다. -->     
+                    <div class="certiPhoneCon successId ">
+                        <div class="topMention">
+                            <div class="idimgBox">
+                                <div class="orderImg"><img src="./img/orderCancel_Img.svg" alt=""/></div>
+                                <h2>고객님의 <span class="red">아이디</span>를 찾았습니다.</h2>
+                                <p class="id">ID : IDisNstore</p>
+                                <p class="date">YY.MM.DD 가입 | 본인인증</p>
+                            </div>
+                            <div class="btnBoxWrap">
+                                <div class="redBtn">
+                                    <a href="javascript:void(window.open('login.html', '_self'))">로그인하기</a>
+                                </div>
+                                <div class="greyBtn psReset">
+                                    <a href="#">비밀전호 재설정하기</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- 고객님의 고객정보가 없습니다. -->
+                    <div class="certiPhoneCon failureId hideFailure">
+                        <div class="topMention">
+                            <div class="idimgBox">
+                                <div class="orderImg"><img src="./img/failID.svg" alt=""/></div>
+                                <h2>고객님의 고객정보가 없습니다.</h2>
+                                <p class="id">
+                                    Nstore 로그인 후,<br/>
+                                    <span class="red">무한 할인</span>과 <span class="red">최저가 혜택</span>을 바로 경험해보세요!
+                                </p>
+                            </div>
+                            <div class="btnBoxWrap">
+                                <div class="redBtn">
+                                    <a href="javascript:void(window.open('login.html', '_self'))">회원가입하기</a>
+                                </div>
+                                <div class="greyBtn">
+                                    <a href="javascript:void(window.open('login.html', '_self'))">로그인하기</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 비밀번호 재설정 내용 -->
+            <div class="tabResetConWrap tabCon">           
+                <div class="writeID tabResetCon hideID" ><!-- hideID 클래스에 넣으면 감춰짐 -->
+                    <h5>가입하신 아이디를 입력해주세요.</h5>
+                    <ul class="psinputWrap">
+                        <li class="input">
+                            <div class="title">아이디</div>
+                            <div class="inputCon">
+                                <input type="text" id="name" name="name"  class="name" placeholder="아이디입력">
+                                <div class="btnWrap">
+                                    <span class=" xbtn"></span>
+                                </div>
+                                
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="nextbtnBoxWrap ">
+                        <div class="greyBtn redBtn">
+                            <a href="javascript:void(window.open('loginFindPsCerti.html', '_self'))">다음</a>
+                        </div>
+                    </div>
+
+                </div><!-- #resetPs -->
+                <div class="resetPs tabResetCon " ><!-- hidePs 클래스에 넣으면 감춰짐 -->
+                    <h5>비밀번호를 재설정해주세요.</h5>
+                    <ul class="psinputWrap">
+                        <li class="input">
+                            <div class="title">비밀번호</div>
+                            <div class="inputCon">
+                                <input type="text" id="password" name="password"  class="password" placeholder="숫자, 영문, 특수문자 조함 최소 8자 입력">
+                                <div class="btnCon">
+                                    <span class=" xbtn"></span>
+                                    <span class="eyes1 closeEyes eyes"></span>
+                                </div>
+                                <div class="blueTxt alertTxt">안전한 비밀번호입니다.</div>
+                                <div class="redTxt redHide alertTxt">8~30자 이내로 입력해주세요.</div>
+                            </div>
+                        </li>
+                        <li class="input">
+                            <div class="title">비밀번호 재확인</div>
+                            <div class="inputCon">
+                                <input type="text" id="password" name="password"  class="password" placeholder="비밀번호 재입력">
+                                <div class="btnCon">
+                                    <span class=" xbtn"></span>
+                                    <span class="eyes1 openEyes  eyes"></span>
+                                </div>
+                                <div class="blueTxt buleHide alertTxt">비밀번호가 일치합니다.</div>
+                                <div class="redTxt alertTxt">비밀번호가 일치하지 않습니다.</div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="nextbtnBoxWrap psResetCom">
+                        <div class="greyBtn redBtn">
+                            <a href="#">비밀번호 재설정 완료</a>
+                        </div>
+                    </div>
+
+                </div><!-- #resetPs -->
+
+                <div class="certiWrap  psResetComPlete">     <!-- certiShow 클래스에 넣으면 보임 -->
+                    <!-- 비밀번호 설정이 완료되었습니다. -->     
+                    <div class="certiPhoneCon successId ">
+                        <div class="topMention">
+                            <div class="idimgBox">
+                                <div class="orderImg"><img src="./img/orderCancel_Img.svg" alt=""/></div>
+                                <h2>비밀번호 설정이 <span class="red">완료</span>되었습니다.</h2>
+                                <p class="id">
+                                    Nstore 로그인 후,<br/>
+                                    <span class="red">무한 할인</span>과 <span class="red">최저가 혜택</span>을 바로 경험해보세요!
+                                </p>
+                            </div>
+                            <div class="btnBoxWrap">
+                                <div class="redBtn">
+                                    <a href="javascript:void(window.open('login.html', '_self'))">로그인하기</a>
+                                </div>
+                                <div class="greyBtn ">
+                                    <a href="javascript:void(window.open('', '_self'))">회원정보 수정하기</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+
+        </div> <!-- #TopContainer -->
+    </div><!-- #findID_resetPS -->
+
+
+
+
+
+
+
+
+
+<!--      
+<script>
+
+var findIDBtn  = $('.findIDBtn');       // 아이디 찾기 탭 버튼
+var resetPsBtn  = $('.resetPsBtn');     // 비밀번호 재설정 탭 버튼
+var tabCon      = $('.tabCon');         // 탭 누르면 나온느 내용
+var psReset      = $('.psReset');         // 비밀번호 재설정 하기 버튼 
+var psResetComPlete      = $('.psResetComPlete');         // 비밀번호 설정이 완료되었습니다
+
+
+    // 휴대폰 폰인인증하기 버튼눌렀을때 
+    var certifiBtn     = $('.certifiBtn');       // 본인인증 버튼
+    var certiPhoneCon  = $('.certiPhoneCon');         // 본인인증 버튼 누르면 나온느 내용
+    var certiWrap      = $('.certiWrap');         // 본인인증 버튼 누르면 나오는 창
+    var findID      = $('.findID');         // 본인인증 버튼 누르면 나오는 창
+  
+    // 비밀번호 재설정 완료 버튼눌렀을때 
+    var psResetCom     = $('.psResetCom');       // 본인인증 버튼
+
+    var resetPs      = $('.resetPs');         // 본인인증 버튼 누르면 나오는 창
+  
+
+
+    // 아이디찾기 버튼 눌렀을때 이벤트
+    findIDBtn.each(function (idx) {
+               
+        $(this).on({
+            click: function () {
+                tabCon.removeClass('hideIDWrap'); //보여줌
+                tabCon.removeClass('showBtn'); //안보여줌
+                
+                findIDBtn.addClass('addfocus');  //버튼 줄 그어짐              
+                resetPsBtn.removeClass('addfocus'); // 버튼 줄 지워짐              
+            }
+            
+        });
+    });
+    // 비밀번호 재설정  버튼 눌렀을때 이벤트
+    resetPsBtn.each(function (idx) {
+                    
+        $(this).on({
+            click: function () {
+                tabCon.addClass('hideIDWrap'); // 안보여줌
+                tabCon.addClass('showBtn');//보여줌
+                        
+                resetPsBtn.addClass('addfocus');   //줄 그어짐             
+                resetPs.removeClass('hidePs');   // 비밀번호재설정 누르면 내용나옴          
+                findIDBtn.removeClass('addfocus'); // 줄 지워짐                 
+                psResetComPlete.removeClass('certiShow'); // 줄 지워짐                 
+            }
+            
+        });
+    });
+
+
+
+    // 비밀번호 재설정  버튼 눌렀을때 이벤트
+    psReset.each(function (idx) {
+                    
+        $(this).on({
+            click: function () {
+                tabCon.addClass('hideIDWrap'); // 안보여줌
+                tabCon.addClass('showBtn');//보여줌
+                        
+                resetPsBtn.addClass('addfocus');   //줄 그어짐             
+                findIDBtn.removeClass('addfocus');     
+                certiWrap.removeClass('certiShow'); //안보여줌          
+            }
+            
+        });
+    });
+
+
+
+
+
+
+    certifiBtn.each(function (idx) {
+               
+        $(this).on({
+            click: function () {
+               
+                certiPhoneCon.removeClass('hideSucId'); //보여줌
+                certiWrap.addClass('certiShow'); //안보여줌
+                findID.addClass('hideFindId'); //안보여줌
+             
+                     
+            }
+            
+        });
+    });
+    
+
+
+    
+
+
+
+    psResetCom.each(function (idx) {
+               
+        $(this).on({
+            click: function () {
+               
+                certiPhoneCon.removeClass('hideSucId'); //보여줌
+                psResetComPlete.addClass('certiShow'); //안보여줌
+                resetPs.addClass('hidePs'); //안보여줌
+                resetPs.addClass('hidePs'); //안보여줌
+             
+                     
+            }
+            
+        });
+    });
+
+
+
+
+    
+</script>  -->
+
+
+</body>
+</html>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="publisher" content="eunheeChoi">
+    <title>1:1문의없음</title>
+
+
+   
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/1_1_ASK_None.css">    
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- jQuery 오픈소스 -->
+    <script src="./js/lib/jquery.min.js"></script> 
+	<script src='./js/lib/jquery-1.12.4.min.js'></script>
+	<!-- <script src='./js/lib/jquery.mobile-1.4.5.min.js'></script>터치이벤트 웹앱 -->
+	<script src='./js/lib/jquery.easing.1.3.js'></script>
+	<script src='./js/lib/jquery.touchSwipe.min.js'></script>
+	<!-- <script src='./js/lib/slick.min.js'></script> -->
+
+    <!-- 리액트 웹개발 오픈소스 -->    
+    <script src="./js/lib/react.development.js"></script>
+    <script src="./js/lib/react-dom.development.js"></script>
+    <script src="./js/lib/babel.min.js"></script>
+
+</head>
+<body>
+    <div id="myPageReview">
+        <div class="TopContainer">
+            <div class="container">
+                <ul class="top clearfix">
+                    <li class="left">
+                        <div class="leftWrap">
+                            <span class="backBtn">
+                                <a  href="#" class="back-btn " title="back">
+                                    <span ></span>
+                                </a>
+                            </span>                       
+                        </div>
+                    </li>
+                    <li class="medium">
+                        1:1 문의
+                    </li>
+                    <li class="right">
+                        <aside id="aside" class="clearfix">
+                            <div class="icon-box-gap">
+                                <div class="icon-box">
+                                    <ul class="clearfix ">
+                                        <li>
+                                            <a href='javascript:Function();'>
+                                                <em class="badge">5</em>
+                                                <span><img src="./img/cart.svg" alt=""></span> 
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                    </li>
+                </ul>
+            </div>   
+
+            <div class="reviewBtn">
+                <ul>
+                    <li class="addfocus reviewBtn1">
+                        <a href="javascript:Function();">1:1 문의하기<span class="red"></span></a>
+                    </li>
+                    <li class="reviewBtn2">
+                        <a href="javascript:Function();">나의 문의내역 0 <span class="red"></span></a>
+                    </li>
+                </ul>
+            </div>
+             <!-- 1:1 문의하기 내용 -->
+            <div class="askCon tabCon reviewCon1 ">
+                <ul class="totalWrap">
+                    
+                    <li>
+                        <div class="selectBox">
+                            <div class="mobileTab">
+                                <div class="tab-wrap active">
+                                    <ul class="tab ServiceTab" style="  display: none; ">
+                                        <li class="active">
+                                            <a href="javascript:" class="service-tab-1" title="배송">
+                                                <div class="option">배송</div>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="javascript:" class="service-tab-2" title="주문/결제">
+                                                <div class="option">주문/결제</div>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="javascript:" class="service-tab-2" title="취소/환불">
+                                                <div class="option">취소/환불</div>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="javascript:" class="service-tab-2" title="빈품/교환">
+                                                <div class="option">빈품/교환</div>
+                                            </a> 
+                                        </li>
+                                        <li class="">
+                                            <a href="javascript:" class="service-tab-2" title="서비스">
+                                                <div class="option">서비스</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="javascript:" class="tabBtn" title="문의유형을 선택해주세요" style="text-decoration: none; ">문의유형을 선택해주세요</a>	
+                                </div>						
+                            </div>
+                        
+                        </div>
+                    </li>
+                </ul>
+                            
+                <div class="askList tabConDelect">
+                    <div class="askListWrap">
+                        <ul>
+                            <li class="inputBox name">
+                               <div class="title">
+                                     이름 <span> (필수)</span>
+                               </div>
+                               <div class="text"> 
+                                   <input type="text" placeholder="이름 입력">
+                               </div>
+                            </li>
+                            <li class="inputBox name">
+                                <div class="title">
+                                    휴대폰 번호<span> (필수)</span>
+                                </div>
+                                <div class="text"> 
+                                    <input type="text" placeholder="'-' 없이 숫자 입력">
+                                </div>
+                             </li>
+                             <li class="inputBox name">
+                                <div class="title">
+                                    이메일<span> (선택)</span>
+                                </div>
+                                <div class="text"> 
+                                    <input type="text" placeholder="이메일 입력">
+                                </div>
+                             </li>
+                             <li>
+                                 <div class="text">
+                                    <textarea type="text" class="TEXT" placeholder="문의 내용을 입력해주세요.&#13;&#10;최대 1,000자까지 입력 가능합니다." name="" id="" cols="30" rows="10"></textarea>
+                                    <span id="counter">0 / 1,000</span>
+                                 </div>
+                                 <div class="galleryBox">
+                                    <ul>
+                                        <li><img src="./img/img_add.svg" alt=""></li>
+                                        <li>
+                                            <img src="./img/galleryboximg.png" alt="">
+                                            <em><img src="./img/ico_rw_del.svg" alt=""></em>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="addPhotoBtn">
+                            <a href="javascript:Function();"><img src="./img/ico_rw_add_photo.svg" alt="">파일 첨부하기</a>
+                        </div>
+                        <div class="noticeText">
+                            <p>*<span>파일은 10MB 이하의 PNG,JPG, GIF 파일로 최대 5개까지만
+                                등록가능합니다.</span></p>
+                        </div>
+
+                        <div class="privacyInfo">
+                            <h2>개인정보 수집 및 이용 동의 (필수)</h2>
+                            <div class="Txt2">
+                                엔몰은 아래의 목적으로 개인정보를 수집 및 이용하며,<br> 
+                                개인정보를 안전하게 취급하는데 최선을 다합니다.
+                            </div>
+                            <div class="Txt3">
+                                <ul>
+                                    <li>1. 목적 : 계약이행을 위한 연락, 민원 및 고충처리</li>
+                                    <li>2. 항목 : 이름, 휴대전화, 이메일주소, 문의내용</li>
+                                    <li>3. 보유기간 : 이용 목적 달성 시 또는 관계 법령에 의한 보존 필요 시까지</li>
+                                </ul>
+                            </div>
+                            <div class="Txt4">
+                                <div><input type="checkbox" class="inputBox1">개인 정보 수집 및 이용에 동의합니다.</div>
+                                <div><input type="checkbox"  class="inputBox2">만 14세 이상입니다.(필수)</div>                                
+                            </div>
+                            <div class="Txt5">
+                                위 개인정보 수집에 대한 동의를 거부할 권리가 있으며, <br>
+                                동의 거부 시에는 문의 등록이 제한될 수 있습니다.<br>
+                                더 자세한 내용에 대해서는 <a href=""> 엔몰 개인정보처리방침</a>을 참고하시길 바랍니다.
+                            </div>
+                        </div>
+
+                        <div class="askBtn">
+                            <a href="javascript:Function();">문의하기</a>
+                        </div>
+                      
+                    </div>
+                </div>              
+            </div>
+
+          
+
+<!-- 나의 문의 내역 내용 -->
+            <div class="myAskCon tabCon  reviewCon2" >
+                       
+                <div class="myAskNoneList tabCon tabReview2">
+                    <div class="myAskNoneWrap">
+                        <ul>
+                            <li class="imgBox">
+                               <img src="./img/ico_circle_empty_status.svg" alt="">
+                                <p>문의하신 내역이 없습니다.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+            
+         
+
+        </div> 
+    </div>
+
+
+    <div id="modal" >
+        <div class="modalWrap">
+            <div class="modalGap">
+                <div class="modalContent">
+                    <div class="txt">
+                        문의 접수가 완료되었습니다.<br>
+                        담당자가 확인 후 <br>
+                        신속히 답변드리도록 하겠습니다.<br>
+                        감사합니다.
+                    </div>
+                    <div class="okBtn"> <a href="javascript:">확인</a></div>
+             
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        //서류사항 textarea 체크
+        $('.TEXT').keyup(function (e){    var content = $(this).val();    $('#counter').html(content.length+" / 1,000");    
+        //글자수 실시간 카운팅   
+        if (content.length > 1000){        alert("최대 1,000자까지 입력 가능합니다.");        
+        $(this).val(content.substring(0, 1000));        $('#counter').html("1,000 / 1,000");    }});
+    </script>
+
+     
+<script>
+
+var reviewtab1  = $('.reviewBtn1');     // 작성가능한 리뷰 버튼
+var reviewtab2  = $('.reviewBtn2');     // 작성한 리뷰 버튼
+var tabCon      = $('.tabCon');         // 작성한 리뷰가 없습니다,  리뷰를 작성할 상품이 없습니다 내용리스트
+var askBtn      = $('.askBtn');         // 문의하기 버튼
+var galleryBox  = $('.galleryBox');     // galleryBox 사진들
+var picBtn      = $('.addPhotoBtn');    // addPhotoBtn 파일첨부파일 버튼
+var noticeText  = $('.noticeText');     
+var modal       = $('#modal');          //모달창 
+var okBtn       = $('.okBtn');          //모달창 okBtn
+var arrowBtn    = $('.arrowBtn');       // 화살표 버튼
+var answer      = $('.answerBox');      // answer    
+
+// 1:1 문의하기 버튼 눌렀을때 이벤트
+reviewtab1.each(function (idx) {
+               
+    $(this).on({
+        click: function () {
+            tabCon.removeClass('tabReview1'); //보여줌
+            tabCon.removeClass('tabReview2'); //안보여줌
+            reviewtab1.addClass('addfocus');  //1:1 문의하기 버튼 줄 그어짐              
+            reviewtab2.removeClass('addfocus'); //나의 문의내역 버튼 줄 지워짐              
+        }
+        
+    });
+});
+// 나의 문의내역  버튼 눌렀을때 이벤트
+reviewtab2.each(function (idx) {
+               
+    $(this).on({
+        click: function () {
+            tabCon.addClass('tabReview2'); //보여줌
+            tabCon.addClass('tabReview1');//안보여줌
+                    
+            reviewtab2.addClass('addfocus');   //나의 문의내역 버튼 줄 그어짐             
+            reviewtab1.removeClass('addfocus'); //1:1 문의하기 벝튼 줄 지워짐                 
+        }
+        
+    });
+});
+// 나의 문의내역  버튼 눌렀을때 이벤트
+picBtn.each(function (idx) {
+               
+    $(this).on({
+        click: function () {
+           
+            picBtn.addClass('addhideBtn');       //  addPhotoBtn 버튼사라짐
+            noticeText.addClass('addhidNotice'); // noticeText 사라짐
+            galleryBox.addClass('picBtn');       //보여줌                
+        }
+        
+    });
+});
+
+//문의하기 버튼 눌렀을때 이벤트
+askBtn.each(function (idx) {
+               
+    $(this).on({
+        click: function () {
+            askBtn.addClass('addred ');       // 문의하기 버튼 빨강으로 변함
+            modal.addClass('modalShow');       // 모달창 뜨기
+        }
+        
+    });
+});
+
+
+//모달창 okBtn 버튼 눌렀을때 이벤트
+okBtn.each(function (idx) {
+               
+    $(this).on({
+        click: function () {
+            modal.removeClass('modalShow');       // 모달창 뜨기
+        }
+        
+    });
+});
+
+    // 화살표 버튼 누르면 밑에 answerBox 텍스트 토글
+    arrowBtn.each(function (idx) {                   
+        $(this).on({
+            click: function () {
+                answer.eq(idx).toggleClass('addAnswer'); //보여줌 
+                arrowBtn.eq(idx).toggleClass('addClose'); //보여줌 
+            }
+            
+        });
+    });
+
+</script>
+
+<script>
+        
+
+
+    //   탭버튼 이벤트
+    var t=0;
+       var tab8_btn = $('.tab .active');
+       var tab8mobile = $('#section1 .tabBtn');
+       priceBox       = $('#wrap1> #main>#section1 .priceBox');
+
+
+       $('.tabBtn').on({
+          click:	function(){
+             showHideList();
+          }
+       });
+       
+       
+       $(".tab > li > a").click(function(e) {
+       e.preventDefault();	
+       priceBox.removeClass('addClose'); // 탭버튼 누르면 priceBox 다시나타남
+       // 전역변수 조정
+       showHideList();
+       
+       //새로운 클릭일 경우에만 ui 변경
+       if(!$(this).parent().hasClass('active')) { 
+         $('.tabBtn').text($(this).text()); //보여지는 제목 바꾸기
+       }
+       
+       // 액티브 조정 
+       $(this).parent().siblings().removeClass('active').end().addClass('active');
+       
+       });
+       
+       //모바일 & PC 공통 
+       $(".tabs a").click(function(e) {
+          e.preventDefault();	
+          $(this).parent().siblings().removeClass('active').end().addClass('active');
+          
+       //	$(this).parents('ul').next().children().hide().eq($(this).parent().index()).show();
+          $('.tab').parents('ul').next().children().hide().eq($(this).parent().index()).show();
+       });
+       
+       //현재 active 되어있는 탭 외의 모든 데이터 접기 => 모바일도 적용하기 위해선 공통 class 생성하여 적용 필요
+       $('.ServiceTab > li').on('click', function(e){
+          e.preventDefault();	
+       // $(".nav").navgoco('toggle', false);
+          $(".nav > li").removeClass('active');
+          $(".nav > li").removeClass('open');
+       });
+       
+       function showHideList() {
+          if(t==0){
+             t=1;
+             $('.tab').stop().slideDown();
+             $('.tabBtn').addClass('addFamily');
+          }else{
+             t=0;
+             $('.tab').hide();
+             $('.tabBtn').removeClass('addFamily');	
+             $('.tabBtn').children().stop().slideUp();	
+          }
+       }
+       
+
+
+
+</script>
+</body>
+</html>

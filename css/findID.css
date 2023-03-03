@@ -1,0 +1,205 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./fonts.css);
+
+
+
+*{   width:100%; height: 100%; }
+html, body {background: #f4f4f4; color: #fff;font-family: 'SUIT'; }
+
+
+
+
+
+#findID_resetPS {font-family: 'SUIT'; position: relative;  max-width:450px;width:100%; height: 100%; background: #fff; margin: 0 auto;display: block; }
+#findID_resetPS .TopContainer { width:100%; max-width:450px; margin:0 auto;height:100%;  background: #fff;/* #3D3F84; */ }
+
+#findID_resetPS .TopContainer .container{width:100%; padding: 0; } 
+
+#findID_resetPS .TopContainer .container .top { padding:0 18px; display: flex; }
+#findID_resetPS .TopContainer .container .top>li{width: 33.333%; display:inline-block; padding:14px 0 0 0 ; }
+/*  header left */
+#findID_resetPS .TopContainer .container .top>.left .leftWrap {  width: 100%; }
+#findID_resetPS .TopContainer .container .top>.left .leftWrap .backBtn { width:25px;   }
+#findID_resetPS .TopContainer .container .top>.left .leftWrap .backBtn a { width:100%;  padding:1px 0; }
+#findID_resetPS .TopContainer .container .top>.left .leftWrap .backBtn a span { background:  url(../img/back.svg) no-repeat 0% 100%;  background-size:contain; width:100%;height:18px; display: inline-block;}
+
+/* header medium */
+#findID_resetPS .TopContainer .container .top>.medium {text-align: center; color: #1A1A1A; font-size: 18px;font-weight: 400; white-space: nowrap; }
+
+/* header  right */
+#findID_resetPS .TopContainer .container .top>.right #aside {width: 100%;  }
+#findID_resetPS .TopContainer .container .top>.right #aside .icon-box-gap { width:100%;  }
+#findID_resetPS .TopContainer .container .top>.right #aside .icon-box-gap .icon-box {  width:100%;  }
+#findID_resetPS .TopContainer .container .top>.right #aside .icon-box-gap .icon-box ul{float: right; box-sizing: border-box;white-space: nowrap;   }
+#findID_resetPS .TopContainer .container .top>.right #aside .icon-box-gap .icon-box ul li { padding: 0 5px; text-align: center;display:inline-block; }
+#findID_resetPS .TopContainer .container .top>.right #aside .icon-box-gap .icon-box ul li a  { width:23.5px; }
+
+
+
+
+/* 탭버튼 */
+#findID_resetPS >.TopContainer .id_ps_Btn {display: block; width: 100%;} 
+#findID_resetPS >.TopContainer .id_ps_Btn ul{ font-family: 'SUIT';display: flex;text-align: center; margin: 0;} 
+#findID_resetPS >.TopContainer .id_ps_Btn ul li{display: inline-block;} 
+#findID_resetPS >.TopContainer .id_ps_Btn ul li:focus a{border-bottom: 2px solid #E7382D;}
+#findID_resetPS >.TopContainer .id_ps_Btn ul li.addfocus a{border-bottom: 2px solid #E7382D;}
+#findID_resetPS >.TopContainer .id_ps_Btn ul li a{ color: #565656; font-weight: 400; font-size: 16px; text-decoration: none; padding: 12px 0; width: 100%; display: block; border-bottom:1px solid #E2E2E2;} 
+#findID_resetPS >.TopContainer .id_ps_Btn ul li a .red{ vertical-align: baseline;} 
+#findID_resetPS >.TopContainer .id_ps_Btn ul li.addfocus a{ color: #1a1a1a; font-weight: 700; font-size: 16px; text-decoration: none; padding: 12px 0; width: 100%; display: block; } 
+
+
+
+
+
+/* 아이디찾기 전체 */
+.findIDWrap { display: block;}
+.findIDWrap.hideIDWrap { display: none;}
+
+
+        /* 아이디 찾기  */
+        .findID { width: 100%; display:block; padding: 30px 0 0 0; font-family: 'SUIT';   font-weight: 400;}
+        .findID.hideFindId { display: none;}
+        .findID .txtTop  {padding: 0 18px;font-size: 14px; line-height: 21px;}
+        .findID .txtTop .txtBk { color:#1A1A1A; margin-bottom: 6px;}
+        .findID .txtTop .txtBk .redTxt {color: #E7342C; vertical-align: baseline; }
+        .findID .txtTop .greyTxt {font-size: 12px; line-height: 18px; color: #565656; margin-bottom:0; }
+
+                .inputBox {width: 100%;}
+                .inputBox .inputTit { display: flex; padding: 20px 18px 20px 18px;}
+                .inputBox .inputTit input[type=checkbox] {outline: none; appearance: none;border:0; width: 16px; height: 16px; display: inline-block; background: url(../img/ico_radio_sm_unchecked.svg) no-repeat 50% 50%; box-sizing: border-box;}
+                .inputBox .inputTit input[type=checkbox]:checked {width: 16px; height: 16px; display: inline-block; background: url(../img/ico_radio_sm_checked.svg) no-repeat 50% 50%;box-sizing: border-box;}
+                .inputBox .inputTit .tit { margin:auto auto auto 8px; color: #1A1A1A; font-weight: 700; font-size: 16px; line-height: 24px;}
+
+                        .findForm {border-bottom: 1px solid #E2E2E2; }
+                                .inputWrap.formClose {display: none;}
+                                .inputWrap { width: 100%; margin: 0; background:#F9F9F9 ; padding: 10px 18px 13px 18px;display: block;}
+                                .inputWrap li { width: 100%;}
+                                .inputWrap .input { width: 100%; padding-bottom: 20px;}
+                                .inputWrap .input:last-child {  padding-bottom: 0;}
+                                .inputWrap .input .inputCon {position: relative;}
+                                .inputWrap .input .inputCon input {z-index: 0; position: relative; color:#1a1a1a ; outline: none; width: 100%; font-size: 12px; padding: 12px; height:38px; border-radius: 6px; border: 1px solid #E2E2E2;}
+                                .inputWrap .input .inputCon input::placeholder { color:#CCCCCC; font-size: 12px; line-height: 15px;}
+
+                                /* 제목 */
+                                .inputWrap li .title { width: 100%; color: #565656; font-size:12px; padding-bottom: 10px; line-height: 15px; font-weight: 400;}
+
+
+
+
+                                /* 2번째 input */
+                                .inputWrap .secondInput .form {display: flex; width: 100%; margin-bottom:14px;}
+                                .inputWrap .secondInput .line2 {margin-bottom: 0;}
+                                .inputWrap .secondInput .form .inputCon input[type=text] { z-index: 0; position: relative; color:#1a1a1a ; outline: none; width: 100%; font-size: 12px; padding: 12px; height:38px; border-radius: 6px; border: 1px solid #E2E2E2;}
+
+                                        /* input안 x 버튼 */
+                                        .btnWrap {display: inline-block; z-index: 5;background: url(../img/btn_x_input.svg) no-repeat 50% 50%; position:absolute; top:9px; right: 20px; width: 20px; height: 20px;cursor: pointer; }
+                                        .btnWrap.hideBtn1 {display: none;}
+
+                                .inputWrap .secondInput .form .inputCon .timeflex { display: flex;  z-index: 5; position: absolute; top:9px; right: 14px;width: auto; height: auto;}
+                                .inputWrap .secondInput .form .inputCon .timeflex .time {  color: #CCCCCC; font-size: 12px; display: inline-block; line-height: 15px; width: 30px;margin:3px 0 2px 11px;  }
+
+                                                                        /* time 옆에 x 버튼 */
+                                                                        .xbtnWrap { display: inline-block; background: url(../img/btn_x_input.svg) no-repeat 50% 50%; background-size: contain;  width: 20px; height: 20px;cursor: pointer; }
+                                                                        .xbtnWrap.hideBtn2 {display: none;}
+                                        
+                                /* 눈 */
+                                .btnCon { display: flex; }
+                                .btnCon .xbtn { z-index: 5;background: url(../img/btn_x_input.svg) no-repeat 50% 50%; position:absolute; top:9px; right: 47px; width: 20px; height: 20px;cursor: pointer;  }
+                                .eyes1.openEyes { display: inline-block; background: url(../img/ico_eyes.svg)no-repeat 50% 50% ; z-index: 5; position:absolute; top:5px; right: 20px; margin-top: 3px;width: 20px; height: 20px; cursor: pointer; }
+                                .eyes1.closeEyes {display: inline-block; background: url(../img/ico_close_eyes.svg)no-repeat 50% 50% ; z-index: 5; position:absolute; top:5px; right: 20px;margin-top: 4px;  width: 20px; height: 20px; cursor: pointer; }
+                                .eyes1.hidePsBtn1 {display: none;}
+                        
+                                /* input 밑에 파란색 텍스트 */
+                                .input .alertTxt {padding: 10px 0;font-size: 12px; line-height: 15px; font-weight: 400;display: block; }
+                                .input .blueTxt {  color: #187AEF; padding-bottom: 8px; }
+                                .input .blueTxt.buleHide { display: none; }
+                                /* input 밑에 파란색 텍스트 */
+                                .input .redTxt { color: #E7382D; }
+                                .input .redTxt.redHide { display: none; }
+
+
+
+                                .inputWrap .secondInput .greyTxt {font-size: 12px; color: #797979; line-height: 15px; font-weight: 400;}
+
+                                /* 인증하기 버튼 */
+                                .inputWrap .secondInput .form .certifiBtn { margin: auto 0 auto 8px;width: 69px; height:38px; display: inline-block;padding: 9px 10px;border-radius: 6px; background: #F4F4F4; }
+                                .inputWrap .secondInput .form .certifiBtn a {font-size: 14px; color: #1A1A1A;white-space: nowrap; line-height: 20px; font-weight: 400; vertical-align: top; text-align: center;   }
+                                .inputWrap .secondInput .form .certifiBtn.redBtn { margin: auto 0 auto 8px;width: 69px; height:38px; display: inline-block;padding: 9px 10px;border-radius: 6px; background: #E7342C; }
+                                .inputWrap .secondInput .form .certifiBtn.redBtn a {font-size: 14px; color: #fff;white-space: nowrap; line-height: 20px; font-weight: 400; vertical-align: top; text-align: center;   }
+                                /*  휴대폰 본인인증 버튼 */
+                                .inputWrap .secondInput .certiPhone {height:48px; display: block;padding: 12px 10px;border-radius: 6px; background: #E7342C; width: 100%;text-align: center; margin: 20px 0 7px 0;  }
+                                .inputWrap .secondInput .certiPhone a { color: #fff ; line-height: 24px; font-weight: 700; font-size: 16px;}
+
+
+
+        /* 본인인증 버튼 누르면 나오는 창 */
+        .certiWrap { display: none;}
+        .certiWrap.certiShow { display: block;}
+
+                /* 고객님의 아이디를 찾았습니다. */
+                .successId { display: block;}
+                .successId.hideSucId { display: none;}
+
+                /* 고객님의 고객정보가 없습니다 */
+                .failureId { display: block;}
+                .failureId.hideFailure { display: none;}
+                        
+                .topMention {width: 100%; text-align: center; padding:30px 0 20px 0;  border-bottom: 7px solid #E9E9E9;}
+                .topMention .idimgBox  {width: 100%; }
+                .topMention .idimgBox .orderImg {width: 100%; text-align: center; padding-bottom: 10px;}
+                .topMention .idimgBox .orderImg img {width: 130px;  }
+                .topMention h2 { font-size:20px ; font-weight: 700; width: 100%; text-align: center;  line-height: 30px;}
+                .red { color: #E7342C; vertical-align: baseline;}
+                .topMention .id { font-size:14px ; font-weight: 400; width: 100%; color:#1A1A1A; text-align: center; line-height: 21px; margin:10px 0;}
+                .topMention .date { font-size:12px ; font-weight: 400; width: 100%; color:#565656; text-align: center; line-height: 18px; margin:0;}
+
+
+                
+                .btnBoxWrap { display:block; padding: 0 18px; margin-top: 40px;}
+                /* 빨간버튼 */
+                .btnBoxWrap .redBtn { background:#E7342C;border-radius: 6px; margin-bottom: 10px;}
+                .btnBoxWrap div a{  color: #fff;  display: inline-block; text-align: center;  width:100%; height: 48px; padding: 12px 0; font-weight: 700; line-height: 24px; font-size: 16px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+                /* 회색버튼 */
+                .btnBoxWrap .greyBtn { background:#CCCCCC;border-radius: 6px; }
+                .btnBoxWrap .greyBtn.turnRed { background:#E7342C;border-radius: 6px; }
+
+
+
+
+
+                        
+/* 비밀번호 재설정 전체 */
+.tabResetConWrap {width: 100%; display:none;  }
+.tabResetConWrap.showBtn {  display:block;   }
+
+                .tabResetCon { font-family: 'SUIT';}
+                .tabResetCon h5 {color: #1A1A1A;  font-size: 14px; line-height: 21px; font-weight: 400; padding:20px 18px 20px 18px; margin:0;}
+                
+
+                /* 가입하신 아이디를 입력해주세요.  */  
+                .writeID { display: block;}
+                .writeID.hideID { display: none;}
+
+
+                /* 비밀번호 재설정 내용 */
+                .resetPs { display: block;}
+                .resetPs.hidePs { display: none;}
+
+                        .psinputWrap {  padding:0 18px 0 18px;}
+                        .psinputWrap li { width: 100%;}
+                        .psinputWrap .input { width: 100%; padding-bottom: 20px;}
+                        .psinputWrap .input:last-child {  padding-bottom: 0;}
+                        .psinputWrap .input .inputCon {position: relative;}
+                        .psinputWrap .input .inputCon input {z-index: 0; position: relative; color:#1a1a1a ; outline: none; width: 100%; font-size: 12px; padding: 12px; height:38px; border-radius: 6px; border: 1px solid #E2E2E2;}
+                        .psinputWrap .input .inputCon input::placeholder { color:#CCCCCC; font-size: 12px; line-height: 15px;}
+
+                        /* 제목 */
+                        .psinputWrap li .title { width: 100%; color: #565656; font-size:12px; padding-bottom: 10px; line-height: 15px; font-weight: 400;}
+
+
+                        .nextbtnBoxWrap { display:block; padding: 20px 18px; }
+                        .nextbtnBoxWrap .greyBtn { background:#CCCCCC;border-radius: 6px; }
+                        .nextbtnBoxWrap .greyBtn.redBtn { background:#E7342C;border-radius: 6px; }
+                        .nextbtnBoxWrap  div a{  color: #fff;  display: inline-block; text-align: center;  width:100%; height: 48px; padding: 12px 0; font-weight: 400; line-height: 24px; font-size: 16px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+                        

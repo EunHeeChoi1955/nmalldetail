@@ -1,0 +1,339 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./fonts.css);
+
+
+
+#wrap1 { position: relative; width:100%; max-width:450px; margin:0 auto;display: block; height: 100vh;  background: #fff;   }
+
+
+/* https://www.figma.com/file/tblbFFmNni1zJgjeEbFGcA/%EB%82%98%EC%8A%A4-%EC%9E%90%EC%82%AC%EB%AA%B0?node-id=26%3A2845 */
+/* fixed 때문에 상단에 여백을 주어 섹션1을 보이게 해준다. */
+/* 메인영역상단 padding-top:120px; */
+#wrap1> #main{  position: relative;  width:100%; max-width:450px; overflow:visible; display:block;margin: 0 auto; padding:0;font-family: 'SUIT'; }
+	
+#wrap1> #main> #section1{  width:100%; height:100%; padding:0; }
+#wrap1> #main> #section1>.container {  width:100%; margin:0 auto;padding:0;background:#fff ; background-size: cover;}		
+#wrap1> #main> #section1>.container>.gap{ width: 100%;}
+#wrap1> #main> #section1>.container>.gap>.topWrap { display:block; z-index: 4; position:fixed; top:0; width:100%; max-width:450px; margin:0 auto;padding:15px 18px 10px 18px; border-top: 2px solid #000;background: #fff;}
+/* #wrap1> #main> #section1>.container>.gap>.topWrap.addTop { border-bottom: 1px solid #E2E2E2; top:0; } */
+
+
+
+
+
+/* 인풋박스 */
+#wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap { position: relative; } 
+#wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap .inputBox { display: flex; } 
+#wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap .inputBox .backBtn { display:none;} 
+#wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap .inputBox .backBtn.addTop {  display: inline-block; background:url(../img/back.svg) no-repeat 0 100%;  background-size:contain; width:30px; height:18px; margin-top:10px;} 
+#wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap input { position: relative; z-index: 5; font-size: 14px; padding: 10px 0; text-indent: 14px ; width: 100%; border-radius: 4px; border: 1px solid #797979;} 
+#wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap input:focus { position: relative; z-index: 5; font-size: 14px; padding: 10px 0;caret-color: #E7342C; text-indent: 14px ; width: 100%; border-radius: 4px; border: 1px solid rgba(231, 52, 44, .6);} 
+#wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap input[type=text] { appearance: none; outline: none; color: #1a1a1a;} 
+#wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap input::placeholder { color: #909090; } 
+/* 찾기  돋보기 아이콘 검정 */
+#wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap .searchIcon {  z-index: 5; position: absolute; top:9px; right: 14px; width: 18px; height: 18px; display: block;} 
+#wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap .searchIcon.addhide { display: none;} 
+#wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap .searchIcon img { width: 100%; height: 100%; padding: 1px;} 
+/* 클릭했을때 돋보기 빨강색으로 변하고 x버튼 나옴 */
+#wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap .focusWrap  {   display: none;  } 
+#wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap .focusWrap.addInput  { display: block; z-index: 5;position: absolute; top:10px; right:0; margin-right: 14px; width: auto;} 
+#wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap .focusWrap .searchIconhid {display: inline-block; } 
+#wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap .focusWrap .searchIconhid a img { width: 18px; height: 18px;  padding: 1px;} 
+#wrap1> #main> #section1>.container>.gap>.topWrap .inputWrap .box-dropDown { width: 100%;} 
+
+
+
+/* contentsWrap */
+.contentsWrap{ position:relative; max-width:450px; width:100%;overflow:hidden;background:#fff; padding:72px 0 20px 0;display:block; }	
+.contentsWrap.addTop{  padding:48px 0 20px 0; }	
+.contentsWrap>.contentsGap{width:100%;}	
+.contentsWrap>.contentsGap>.contentsBox { position:relative; width:100%;margin:0; }
+
+/* 연관 */
+.relation-container.addTop {display:none; }
+.relation-container {display: block; position: relative; width:100%; border-bottom: 2px solid #E2E2E2;}
+.relation-container .relation-view {z-index:2; position: relative; display: flex;width: 100%;  padding: 12px 0 13px 18px;  }
+.relation-container .relation-view h3 {width: auto; font-size:14px ;color: #1A1A1A; font-weight: 700; white-space: nowrap; }
+.relation-container .relation-view .relationWrap { position:relative; display: flex; padding: 0 10px; }
+.relation-container .relation-view .relationWrap:hover{ cursor: url(../img/icon-move-black.png),move; }
+.relation-container .relation-view .relationWrap .relation { position: relative;   padding-right: 12px; margin-top: -2px;  }
+.relation-container .relation-view .relationWrap .relation a { width:124px; text-decoration: none; cursor: pointer; color: #565656;white-space: nowrap; font-size: 14px; font-weight: 400; }
+
+/* 카테고리 */
+.category-container.addTop {display:none; }
+.category-container {display: block; position: relative; width:100%; border-bottom: 1px solid #E2E2E2;}
+.category-container .category-view {z-index:2; position: relative; display: flex;width: 100%;  padding: 12px 0 12px 18px;  }
+.category-container .category-view h3 {width: auto; font-size:14px ;color: #1A1A1A; font-weight: 700; white-space: nowrap; }
+.category-container .category-view .categoryWrap { position:relative; display: flex; padding: 0 10px; }
+.category-container .category-view .categoryWrap:hover{ cursor: url(../img/icon-move-black.png),move; }
+.category-container .category-view .categoryWrap .category { position: relative;   padding-right: 12px; margin-top: -2px;  }
+.category-container .category-view .categoryWrap .category a { width:124px; text-decoration: none; cursor: pointer; color: #565656;white-space: nowrap; font-size: 14px; font-weight: 400; }
+
+
+/* 브랜드 */
+.brand-container.addTop {display:none; }
+.brand-container {display: block; position: relative; width:100%; }
+.brand-container .brand-view {z-index:2; position: relative; display: flex;width: 100%;  padding: 12px 0 12px 18px;  }
+.brand-container .brand-view h3 {width: auto; font-size:14px ;color: #1A1A1A; font-weight: 700; white-space: nowrap; }
+.brand-container .brand-view .brandWrap { position:relative; display: flex; padding: 0 10px; }
+.brand-container .brand-view .brandWrap:hover{ cursor: url(../img/icon-move-black.png),move; }
+.brand-container .brand-view .brandWrap .brand { position: relative;   padding-right: 12px; margin-top: -2px;  }
+.brand-container .brand-view .brandWrap .brand a { width:124px; text-decoration: none; cursor: pointer; color: #565656;white-space: nowrap; font-size: 14px; font-weight: 400; }
+
+
+/* 총 ~ 건  필터 카드UI 옵션영역 */
+.optionContainer.addTop { z-index:4; position: fixed; top:67px;  background: #fff;padding-top: 10px; }
+.optionContainer { width: 100%; position: relative; top:0;  padding-bottom:12px;border-bottom: 1px solid #E2E2E2;width:100%; max-width: 450px;}
+.optionContainer .optionView { display: flex; padding:0 18px;}
+.optionContainer .optionView .title { font-size: 16px; color: #1A1A1A; font-weight: 700; }
+.optionContainer .optionView .optionWrap { display: flex;margin:auto 0 auto auto; }
+
+
+/* 셀렉트박스 */
+.optionContainer .optionView .optionWrap >.selectBox {margin: 0 auto ; z-index:2; position: relative; width: auto; height:20px; display: block;  }
+/*   탭버튼 화살표 내리면 나오는거 */
+.optionContainer .optionView .optionWrap >.selectBox .mobileTab{display: block;box-sizing: border-box; text-decoration:none; }
+.optionContainer .optionView .optionWrap >.selectBox .mobileTab .tab-wrap{position:relative;z-index:3; display:block;width: 75px; box-sizing:border-box; }
+/* 탭버튼  */
+.optionContainer .optionView .optionWrap >.selectBox .mobileTab .tab-wrap .inputBoxTab {display: flex; text-align: right; }
+.optionContainer .optionView .optionWrap >.selectBox .mobileTab .tab-wrap .inputBoxTab a{position:relative;text-align: right; padding: 3px 0; width:100%; font-size:12px;  white-space: nowrap;  color: #1A1A1A; text-decoration: none;   }
+.optionContainer .optionView .optionWrap >.selectBox .mobileTab .tab-wrap .inputBoxTab span{ display: block; margin: auto 0 auto 5px; background:url(../img/ico_option_arrow1.svg) no-repeat 50% 50%; height: 12px; width: 14px; }
+.optionContainer .optionView .optionWrap >.selectBox .mobileTab .tab-wrap .inputBoxTab span.addFamily{ background:url(../img/ico_option_arrow2.svg) no-repeat 50% 50%; height: 12px; width: 14px; }
+/* 탭버튼 누르면 나오는 메뉴 내용들 */
+.optionContainer .optionView .optionWrap >.selectBox .mobileTab .tab-wrap>ul.tab{display:block;z-index:3; background:#fff;width: 82px; height: auto; padding:5px 0; position:absolute; top:29px; right:0;margin:0;  box-sizing:border-box;border:1px solid #E2E2E2; border-radius: 6px;}
+.optionContainer .optionView .optionWrap >.selectBox .mobileTab .tab-wrap>ul.tab>li{width:100%;display:block;box-sizing:border-box; padding: 5px 0;font-size:12px; }
+.optionContainer .optionView .optionWrap >.selectBox .mobileTab .tab-wrap>ul.tab>li:last-child{ border:0 ;}
+.optionContainer .optionView .optionWrap >.selectBox .mobileTab .tab-wrap>ul.tab>li>a{ color:#1a1a1a; font-size:12px; text-decoration: none; }
+.optionContainer .optionView .optionWrap >.selectBox .mobileTab .tab-wrap>ul.tab>li>a:hover{color:#e7382d;}
+.optionContainer .optionView .optionWrap >.selectBox .mobileTab .tab-wrap>ul.tab>li>a div { display: block;   }
+.optionContainer .optionView .optionWrap >.selectBox .mobileTab .tab-wrap>ul.tab>li>a div.option {text-align: center; }
+
+
+
+
+
+/* 필터 */
+.optionContainer .optionView .optionWrap>.filter {padding:0 14px;}
+
+/* bar */
+.optionContainer .optionView .optionWrap>.bar {background: #B3B3B3;display: inline-block; margin-top: 3px; height: 16px; width: 1px; }
+
+/* 카드 UI */
+.optionContainer .optionView .optionWrap>.cardUI {padding:0 0 0 14px;}
+.optionContainer .optionView .optionWrap>.cardUI a .uiIcon {display: block; background: url(../img/ico_2depUI.svg)no-repeat 50% 50%; width: 18px; height: 20px; }/* 2단형 아이콘 감추기 */
+.optionContainer .optionView .optionWrap>.cardUI a .uiIcon.cardUI {display: block; background: url(../img/ico_cardUI.svg)no-repeat 50% 50%; width: 18px; height: 20px;}/* 2단형 아이콘 감추기 */
+
+
+
+
+
+/* 디폴트 2단형  상품리스트  */
+.goodsContainer { display: block; }
+.goodsContainer.addCardhid { display: none; }
+.goodsContainer .goodsView { width:100%;  padding: 10px 18px; }
+.goodsContainer .goodsView .goodsWrap { margin-bottom: 24px; position: relative; display: flex; justify-content: space-between;  flex-wrap: wrap;}
+.goodsContainer .goodsView .goodsWrap .goods[data-intent='column-02'] { position: relative; width:50%; display:inline-block;  }
+.goodsContainer .goodsView .goodsWrap .goods[data-intent='column-02'] a { display: block;   }
+.goodsContainer .goodsView .goodsWrap .line1[data-intent='column-02']{ padding:0 6px 24px 0; }
+.goodsContainer .goodsView .goodsWrap .line2[data-intent='column-02']{ padding:0 0 24px 6px;  }
+
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText { position: relative; width:100%; border-radius: 6px; background: #fff;}
+/* 2단형이미지 */
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText .media { z-index:1; position: relative;  overflow: hidden; width: 100%;height:201px; }
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText .media .img-box { position: relative;  height:201px;  width: 100%;  overflow: hidden;text-align:center;}
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText .media .img-box img {z-index: 1; position:relative;  height:201px; width: 100%;  object-fit: cover; display: block;overflow: hidden; margin:auto; border-radius: 6px 6px 0 0;}
+
+
+/* 2단형 이미지 위 하트  */
+.goodsContainer .goodsView .goodsWrap .goods .heart {  z-index:2; position:absolute; bottom:0;margin-bottom:8px; right:8px; width:26px; height: 26px; display: block;}
+.goodsContainer .goodsView .goodsWrap .goods .heart a{ width:26px; height: 26px; display: block; border-radius: 15px; background: 	rgba(68, 68, 68, .3); }
+.goodsContainer .goodsView .goodsWrap .goods .heart.addHeart a {  background: rgba(231, 56, 45, .3);  }
+.goodsContainer .goodsView .goodsWrap .goods .heart a img.redHeart { display: none; }
+.goodsContainer .goodsView .goodsWrap .goods .heart.addHeart>a>img.redHeart { display: block; position: relative; z-index: 5; display: block; width:100%;  padding: 8px 5px 5px 5px;}
+.goodsContainer .goodsView .goodsWrap .goods .heart.addHeart>a>img.blankHeart { display: none;}
+.goodsContainer .goodsView .goodsWrap .goods .heart a img {  width:100%;  padding: 8px 5px 5px 5px;}
+
+
+           
+             @media screen and (max-width: 412px){
+                .goodsContainer .goodsView .goodsWrap .goods a .goodsText>.media>.img-box  img { height: 156px; }
+
+            }
+            @media screen and (max-width: 375px){
+                .goodsContainer .goodsView .goodsWrap .goods a .goodsText>.media>.img-box  img { height: 156px; }
+
+            }
+            @media screen and (max-width: 360px){
+                .goodsContainer .goodsView .goodsWrap .goods a .goodsText>.media>.img-box  img { height: 156px; }
+
+            }
+            @media screen and (max-width: 280px){
+                .goodsContainer .goodsView .goodsWrap .goods a .goodsText>.media>.img-box  img { height: 116px; }
+
+            }
+            @media screen and (max-width: 220px){
+                .goodsContainer .goodsView .goodsWrap .goods a .goodsText>.media>.img-box  img { height: 86px; }
+
+            }
+
+             
+/* 2단형 txt박스 */
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox {width:100%;font-family: 'SUIT';  padding:0 8px 8px 8px;  display: block; }
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>h3 {font-size: 14px; font-weight: 400; height: 36px; width: 100%; text-overflow: ellipsis;  display: block; line-height: 18px; margin:8px 0 0 0; color:#1A1A1A; letter-spacing: -.5px; }
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>h4 {display: block; text-align: right; color:#909090;font-weight: 400;  font-size: 12px;  margin:5px 0 0 auto; text-decoration: line-through;}
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>.price {display: flex; margin: 0; overflow-x:hidden ;}
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>.price li {white-space: nowrap; }
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>.price li span {font-size: 14px; font-weight: 400; vertical-align: baseline;  }
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>.price li:first-child{font-size: 16px;  color:#E7342C; margin-right: 2px; font-weight: 700; }
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>.price li:last-child{margin:auto 0 auto auto; font-size: 18px;  color:#1A1A1A; font-weight: 700; text-align: right;}
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>.price li:last-child span{ font-size: 14px;vertical-align: baseline;  }
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>.starDelivery { display: flex;font-size: 12px; padding-top: 6.5px; }
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>.starDelivery .star   {margin:auto auto auto 0 ; display: block;  font-size: 12px;font-weight: 700; flex-flow: nowrap;box-sizing: border-box; color: #565656;}
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>.starDelivery .star i  {color:#FFC10E; font-size: 13px; margin-top: -2px;vertical-align: baseline;  }
+.goodsContainer .goodsView .goodsWrap .goods .goodsBox .goodsText>.txtBox>.starDelivery .star span{ font-size: 12px; font-weight: 400;vertical-align: baseline;   }
+
+
+
+
+
+
+
+
+
+
+
+/* 필터메뉴 dim */
+.filterWrap { display: none; z-index:5; position:fixed;width:100%;height: 100%; top:0; right:0; background: rgba(0, 0, 0, .5);}
+.filterWrap.filtershow { display: block; }
+.filterWrap .filterGap  { display: block; position: relative; width:100%;   height: 100%; }
+.filterWrap .filterGap .filterCon { display: block ; position:absolute; top:0; right:0; width:50%; min-width:278px; height: 100%;background: rgba(255, 255, 255, 1);}
+
+
+
+
+
+/* 상세검색 초기화 x버튼 타이틀 */
+.filterWrap .filterGap .filterCon .submenuTitle { width:100%; padding: 14px 10px 5px 18px; border-bottom: 2px solid #E2E2E2;}
+.filterWrap .filterGap .filterCon .submenuTitle .submenuTitleGap { display: flex; }
+.filterWrap .filterGap .filterCon .submenuTitle .submenuTitleGap .leftTit {margin:auto auto auto 0; }
+.filterWrap .filterGap .filterCon .submenuTitle .submenuTitleGap .leftTit h3 { font-size: 16px; color: #1A1A1A; font-weight: 700; }
+.filterWrap .filterGap .filterCon .submenuTitle .submenuTitleGap .rightBtn { margin:auto 0 auto auto; display: flex;}
+.filterWrap .filterGap .filterCon .submenuTitle .submenuTitleGap .rightBtn .resetBtn {padding:1px 10px; margin:6px 6px 6px auto;height: 24px; display: inline-block; border-radius: 55px; border: 1px solid #B3B3B3; font-size:12px ;}
+.filterWrap .filterGap .filterCon .submenuTitle .submenuTitleGap .rightBtn .resetBtn a {width: 100%;}
+.filterWrap .filterGap .filterCon .submenuTitle .submenuTitleGap .rightBtn .resetBtn a .resetIco { width: 12px;height: 16px;}
+.filterWrap .filterGap .filterCon .submenuTitle .submenuTitleGap .rightBtn .resetBtn a .resetIco img { width: auto; margin-top: -4px; display: inline-block; }
+
+.filterWrap .filterGap .filterCon .submenuTitle .submenuTitleGap .rightBtn .xBtn {display: block;}
+.filterWrap .filterGap .filterCon .submenuTitle .submenuTitleGap .rightBtn .xBtn.addhid {display: none;}
+
+
+/* 옵션선택 */
+.chooseOption { width: 100%; }
+.chooseOption .chooseOptionGap { background: #51617D; padding: 5px 18px;}
+.chooseOption .chooseOptionGap .chooseOptionCon { width: 100%; display: flex; }
+.chooseOption .chooseOptionGap .chooseOptionCon .option { font-size: 12px; color: #fff; padding-right:12px;font-weight: 300; white-space: nowrap; }
+.chooseOption .chooseOptionGap .chooseOptionCon .option span { padding-left: 3px;}
+.chooseOption .chooseOptionGap .chooseOptionCon .option span a img { width:8px; height: 8px; margin-top:-5px;}
+
+
+
+
+/* line_Option */
+.line_Option { width: 100%;}
+.line_Option .line_OptionGap {display: flex;padding: 10px 13px 9px 18px; border-bottom:1px solid #E2E2E2; }
+.line_Option .line_OptionGap .leftOptTit { margin: auto auto auto 0 ;}
+.line_Option .line_OptionGap .leftOptTit h3 { font-size: 14px; color: #1A1A1A; font-weight: 700;}
+.line_Option .line_OptionGap .rightOptBtn { display: flex; }
+.line_Option .line_OptionGap .rightOptBtn .optTit { padding:3px 0;color: #565656; font-size: 12px; font-weight: 400;}
+.line_Option .line_OptionGap .rightOptBtn .arrowBtn { margin: auto 0 auto 6px ;}
+.line_Option .line_OptionGap .rightOptBtn .arrowBtn a {width: 26px; height: 22px;}
+.line_Option .line_OptionGap .rightOptBtn .arrowBtn a span { width: 26px; height: 22px; background: url(../img/submenu_arrow_review.svg)no-repeat 50% 50%; display: block;}
+.line_Option .line_OptionGap .rightOptBtn .arrowBtn a span.hideArrow { width: 26px; height: 22px; background: url(../img/submenu_close_arrow_review.svg)no-repeat 50% 50%; display: block;}
+.line_Option .line_OptionGap .rightOptBtn .arrowBtn a img { width: 26px; height: 22px; }
+.line_Option .line_OptionGap .rightOptBtn .arrowBtn a img.showArrow { display: block; }
+.line_Option .line_OptionGap .rightOptBtn .arrowBtn a img.showArrow.hideArrow { display: none; }
+.line_Option .line_OptionGap .rightOptBtn .arrowBtn a img.hideArrow { display: none; }
+.line_Option .line_OptionGap .rightOptBtn .arrowBtn a img.hideArrow.showArrow { display: block; }
+
+
+
+
+
+/* input */
+.line_input { display: block; }
+.line_input.addhid { display: none; }
+.line_input .line_inputGap {padding: 10px 39px 10px 24px;  background: #F9F9F9; border-bottom: 1px solid #F4F4F4;}
+.line_input .line_inputGap ul {  justify-content: space-between;  }
+.line_input .line_inputGap ul li{ float: left; width: 50%; display:inline-block;  padding: 6px 0;}
+.line_input .line_inputGap ul li div {  display: block;  }
+.line_input .line_inputGap ul li div a{ font-size: 14px; color: #1A1A1A; font-weight: 400; white-space: nowrap; }
+.line_input .line_inputGap ul li div a input{ appearance: none; outline: none; margin: 2px 8px 2px 0; }
+.line_input .line_inputGap ul li div a input[type=checkbox]{ background: url(../img/ico_check_sm.svg)no-repeat 50% 50%; width: 16px; height: 16px; }
+.line_input .line_inputGap ul li div a input[type=checkbox]:checked{ background: url(../img/ico_checked_sm.svg)no-repeat 50% 50%; width: 16px; height: 16px; }
+
+.price_input {width: 100%; }
+.price_input .price_inputGap { width: 100%; padding: 6px 0; }
+.price_input .price_inputGap .price_inputCon { display: flex; }
+.price_input .price_inputGap .price_inputCon div.text { height: 100%;line-height: 230%; font-weight: 700;  }
+.price_input .price_inputGap .price_inputCon div.apply {  width: 100%;  margin-top: 3px;}
+.price_input .price_inputGap .price_inputCon div.apply a {  white-space: nowrap;  margin-left:10px; color: #fff; font-size: 14px; font-weight: 400; background:#E7342C ; border-radius: 4px; padding: 6px 12px 7px 12px;  text-align: center;  }
+.price_input .price_inputGap .price_inputCon div input { appearance: none; outline: none; width:81px; height: 32px; border-radius: 4px; border: 1px solid #E2E2E2;}
+.price_input .price_inputGap .price_inputCon div input[type='text'] { font-size:14px ; color:#1A1A1A ; font-weight: 400; text-align: left; padding:0 10px;}
+.price_input .price_inputGap .price_inputCon div input[type='text']::placeholder { font-size:14px ; color:#797979 ; font-weight: 400; text-align: left;}
+
+
+
+
+
+
+
+/* 결과보기 */
+.bottomBtn { width: 100%; }
+.bottomBtn .resultBtn { width: 100%;position: relative;}
+.bottomBtn .resultBtn.addTop { width: 50%; min-width:278px; position: fixed; bottom: 0; right:0; display: block;}
+.bottomBtn .resultBtn a{ font-size: 16px; color: #fff; font-weight: 700; padding: 13px 0; display: block;text-align: center; background:#E7342C ;}
+
+
+
+
+
+/* 카드형   상품리스트 */
+.cardCon  { display: none; }
+.cardCon.cardshow  { display: block; }
+.cardCon .cardView { width:100%;  padding: 10px 18px; }
+
+.cardCon .cardView  .slide-wrap {position: relative; width:100%; /* display: flex;  width:500%; margin-left:-100%;*/}
+.cardCon .cardView  .slide-wrap .slide {width:100%;max-width: 966px; padding:5px 0; display: block; margin:0 auto;} 
+.cardCon .cardView  .slide-wrap .slide .slide-text { font-family: 'SUIT'; border: 1px solid #E9E9E9;  border-radius: 6px;} 
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box  { width:100%;max-width: 966px; z-index:1; position: relative;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box a {position: relative;width:100%;max-width: 966px; height:auto;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box a img {z-index: 1; position:relative; width: 100%; border-radius: 6px 6px 0 0;}
+
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .heart { z-index:2;position:absolute; bottom:0;margin-bottom:8px; right:8px; width:26px; height: 26px; display: block;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .heart a{ width:26px; height: 26px; display: block; border-radius: 15px; background: 	rgba(68, 68, 68, .3); }
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .heart.addHeart a {  background: rgba(231, 56, 45, .3)  }
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .heart a img.redHeart { display: none; }
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .heart.addHeart>a>img.redHeart { display: block; position: relative; z-index: 5; display: block; width:100%;  padding: 8px 5px 5px 5px;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .heart.addHeart>a>img.blankHeart { display: none;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .img-box .heart a img {  width:100%;  padding: 8px 5px 5px 5px;}
+
+
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box {padding:10px 16px ; }
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box>h3 {color:#1A1A1A; letter-spacing: -.1px; font-size:14px; line-height: 140%; margin: 0; font-weight: 400; padding:  0 0 7px 0;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box ul {display: flex; }
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text2  {  font-size: 14px; margin:0;font-family: 'SUIT'; }
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text2 li:nth-child(1) { font-weight:700;color:#E7342C; font-size: 16px; line-height: 180%;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text2 li:nth-child(1)>span {color:#E7342C;font-size: 12px; font-weight: 400;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text2 li:nth-child(2) { padding:0 4px ; color:#1A1A1A;font-weight:700; font-size: 20px;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text2 li:nth-child(2)>span {color:#1A1A1A;font-size: 12px; font-weight: 400;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text2 li:nth-child(3) {font-size: 12px; margin: auto  auto 6px 4px; line-height: 130%;color:#909090; text-decoration: line-through;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text2 li span{font-size:12px; color:#1A1A1A; }
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box hr { padding: 0; margin: 7px 0 8px 0 ; color: #E2E2E2;/* IE */border-color: #E2E2E2;  /* 사파리 */background-color: #E2E2E2;   /* 크롬, 모질라 등, 기타 브라우저 */ height: 0.01px; }
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text3  { display: flex;  font-size: 12px;}
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text3 li span { color:#565656;  font-size:12px; }
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text3 li span i { color:#D8D8D8;  }
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text3 li.star {  margin:auto  auto auto 0; display: block; flex-flow: nowrap; box-sizing: border-box; }
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text3 li.star span{display: inline-block;  margin-top:-1px;  }
+.cardCon .cardView  .slide-wrap .slide .slide-text .text-box .text3 li.star i {color:#FFC10E; font-size: 12px; margin-top: -2px; }
+

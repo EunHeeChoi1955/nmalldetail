@@ -1,0 +1,163 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./fonts.css);
+
+
+
+
+#login { max-width:450px; width:100%; height: 100vh; background: #fff; margin: 0 auto;display: block; }
+#login >.TopContainer {position: relative; width:100%; max-width:450px; padding-top: 63px; margin: 0 auto;display: block;font-family: 'SUIT';}
+/* 상단 로그인top */
+#login >.TopContainer .topWrap{ position: absolute; top: 0; left: 0; display: flex; height: 52px; width:100%;  display: flex;color: #1A1A1A;  padding: 10px ;  }
+#login >.TopContainer .topWrap>div {width: 33.333%; display: block;}
+#login >.TopContainer .topWrap .Top { text-align: center;}
+#login >.TopContainer .topWrap .Top .TopTxt {font-size: 18px; line-height: 190%; font-weight: 400; letter-spacing: -.4; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+#login >.TopContainer .topWrap .Top .TopTxt strong {vertical-align: baseline; }
+#login >.TopContainer .topWrap .Back {  width: 33.333%; }
+#login >.TopContainer .topWrap .Back a { width:30px; }
+#login >.TopContainer .topWrap .Back a img { width:30px; }
+/* 상단 로고 */
+#login >.TopContainer .loginContents {text-align: center; }
+#login >.TopContainer .loginContents .logoBox {  display: block;  }
+#login >.TopContainer .loginContents .logoBox div { width: 114px; margin: 0 auto ;}
+#login >.TopContainer .loginContents .logoBox div img { width: 100%; }
+#login >.TopContainer .loginContents h2 {font-size: 16px;font-weight: 400;  margin: 16px 0 20px 0; color: #1A1A1A; font-family: 'SCoreDream'; line-height: 24px;}
+#login >.TopContainer .loginContents h2 span {width: 100%;height: 10px;position:relative; z-index: 2; vertical-align: baseline;  }
+#login >.TopContainer .loginContents h2 span i {  z-index: -1; bottom:1px; position:absolute;left: 0;background: rgba(255, 92, 56, 0.3); width: 100%;height: 10px; display: inline-block;   }
+
+
+
+
+
+/* 회원가입 아이디 비번 input */
+.signUpBox { width: 100%;}
+.signUpBox .signUpGap { width: 100%; padding: 0 18px;}
+.signUpBox .signUpGap ul { width: 100%; margin: 0;}
+.signUpBox .signUpGap ul li { width: 100%;}
+.signUpBox .signUpGap ul .inputId { width: 100%; padding-bottom: 20px;}
+.signUpBox .signUpGap ul li .title { width: 100%; color: #565656; font-size:12px; padding-bottom: 10px; line-height: 15px;}
+.signUpBox .signUpGap ul li .title .red {  color: #E7382D; font-size:12px; }
+
+.signUpBox .signUpGap ul li .input { width: 100%;position:relative; margin-bottom:10px;}
+/* input 밑에 파란색 텍스트 */
+.signUpBox .signUpGap ul li .input .blueTxt { display: block; color: #187AEF; font-size: 12px; line-height: 15px; font-weight: 400; padding-top: 10px;}
+.signUpBox .signUpGap ul li .input .blueTxt.buleHide { display: none; }
+/* input 밑에 파란색 텍스트 */
+.signUpBox .signUpGap ul li .input .redTxt { display: block; color: #E7382D; font-size: 12px; line-height: 15px; font-weight: 400; padding-top: 10px;}
+.signUpBox .signUpGap ul li .input .redTxt.redHide { display: none; }
+
+.signUpBox .signUpGap ul li .input input {z-index: 0; position:relative; color:#1a1a1a ; outline: none;width: 100%; font-size: 12px; padding: 12px; height:38px; border-radius: 6px; border: 1px solid #E2E2E2;}
+.signUpBox .signUpGap ul li .input input::placeholder { color:#CCCCCC; }
+/* 아이디 */
+.signUpBox .signUpGap ul li .input .xbtnId {display: inline-block; z-index: 5;background: url(../img/btn_x_input.svg) no-repeat 50% 50%; position:absolute; top:8px; right: 20px; width: 20px; height: 20px;cursor: pointer; }
+.signUpBox .signUpGap ul li .input .xbtnId.hideIdBtn1 {display: none;}
+/* 패스워드 첫번째줄 x 버튼*/
+.signUpBox .signUpGap ul .inputPs .input .btnWrap  {display: flex; }
+.signUpBox .signUpGap ul .inputPs .input .btnWrap .xbtnPs1 {display: inline-block;  z-index: 5; background: url(../img/btn_x_input.svg) no-repeat 50% 50%;  position:absolute; top:9px; right: 48px;width: 20px; height: 20px;cursor: pointer;  }
+.signUpBox .signUpGap ul .inputPs .input .btnWrap .xbtnPs1.hidePsBtn1 {display: none ;}
+/* 패스워드 첫번째줄 눈 */
+.signUpBox .signUpGap ul .inputPs .input .btnWrap .eyes1.openEyes { display: inline-block; background: url(../img/ico_eyes.svg)no-repeat 50% 50% ; z-index: 5; position:absolute; top:5px; right: 20px; margin-top: 3px;width: 20px; height: 20px; cursor: pointer; }
+.signUpBox .signUpGap ul .inputPs .input .btnWrap .eyes1.closeEyes {display: inline-block; background: url(../img/ico_close_eyes.svg)no-repeat 50% 50% ; z-index: 5; position:absolute; top:5px; right: 20px;margin-top: 4px;  width: 20px; height: 20px; cursor: pointer; }
+.signUpBox .signUpGap ul .inputPs .input .btnWrap .eyes1.hidePsBtn1 {display: none;}
+/* 패스워드 두번째줄 x 버튼 */
+.signUpBox .signUpGap ul .inputPs .input .btnWrap .xbtnPs2 {display: inline-block; background: url(../img/btn_x_input.svg)no-repeat 50% 50% ; z-index: 5; position:absolute; top:9px; right: 48px;width: 20px; height: 20px;  cursor: pointer; }
+.signUpBox .signUpGap ul .inputPs .input .btnWrap .xbtnPs2.hidePsBtn2 {display: none ;}
+/* 패스워드 두번째줄 눈 */
+.signUpBox .signUpGap ul .inputPs .input .btnWrap .eyes2.openEyes { display: inline-block; background: url(../img/ico_eyes.svg)no-repeat 50% 50% ; z-index: 5; position:absolute; top:5px; right: 20px; margin-top: 3px;width: 20px; height: 20px; cursor: pointer; }
+.signUpBox .signUpGap ul .inputPs .input .btnWrap .eyes2.closeEyes {display: inline-block; background: url(../img/ico_close_eyes.svg)no-repeat 50% 50% ; z-index: 5; position:absolute; top:5px; right: 20px;margin-top: 4px;  width: 20px; height: 20px; cursor: pointer;}
+.signUpBox .signUpGap ul .inputPs .input .btnWrap .eyes2.hidePsBtn2 {display: none;}
+
+
+
+
+
+
+
+
+/* 약관 */
+.terms { width: 100%; padding: 21px 18px 0 18px; }
+.terms .top { width: 100%;}
+.terms .top div {display: flex; padding-bottom: 21px;}
+.terms .top div input[type=checkbox] {margin:0;appearance: none; outline: none; width: 22px; height: 22px; display: inline-block; background:url(../img/ico_check_my_none.svg) no-repeat 50% 50%; background-size: contain; cursor: pointer;  }
+.terms .top div input[type=checkbox]:checked {margin:0;appearance: none; outline: none; width: 22px; height: 22px; display: inline-block; background:url(../img/ico_check_my.svg) no-repeat 50% 50%; background-size: contain;cursor: pointer;   }
+.terms .top div p { margin: auto auto  auto  6px; font-size: 16px; font-weight: 700; color: #1a1a1a;}
+.terms .top div span { margin: auto 0 auto auto ;background:url(../img/arrow_open_gray.svg) no-repeat 50% 50%; width: 26px; height: 22px; display: inline-block;background-size: contain; cursor: pointer;   }
+.terms .top div span.closeArrow { background: url(../img/arrow_close_review.svg) no-repeat 98% 50%; width: 26px; height: 22px; display: block;}
+
+.terms .bottom { display: none;}
+.terms .bottom.addArrow {display: block; padding-bottom: 30px; }
+.terms .bottom ul {padding: 10px; background: #FAFAFA ;margin:0;}
+.terms .bottom ul li { padding: 0 0 11px 0;width: 100%; }
+.terms .bottom ul li:last-child { padding: 0; }
+.terms .bottom ul li { display: flex;  width: 100%;}
+.terms .bottom ul li input[type=checkbox] { margin:0;appearance: none; outline: none; width: 18px; height: 18px;   background:url(../img/ico_check_my_none.svg) no-repeat 50% 50%; background-size: contain;cursor: pointer; }
+.terms .bottom ul li input[type=checkbox]:checked { margin:0;appearance: none; outline: none; width: 18px; height: 18px;   background:url(../img/ico_check_my.svg) no-repeat 50% 50%; background-size: contain;cursor: pointer;  }
+.terms .bottom ul li .termClick {color: #1a1a1a;  padding-left:6px;  width: 100%;display: flex; text-decoration: none;}
+.terms .bottom ul li .termClick p {margin:0;}
+.terms .bottom ul li .termClick p span {white-space: nowrap; color: #b3b3b3; font-size: 14px; padding-left: 6px; width: auto;}
+.terms .bottom ul li .rightBtn{ margin: auto 0 auto auto; background: url(../img/arrow_more_n2.svg ) no-repeat 50% 50%; width: 16px; height: 20px; display: inline-block;cursor: pointer; }
+/* 하단 빨간박스 버튼 */
+.bottomBtn {   width:100%; max-width: 450px; border-radius: 16px 16px 0 0;  }
+.bottomBtn .btnWrap {padding:0 18px;}
+.bottomBtn .btnWrap .btnGap { height: 48px; margin: 0 auto; text-align: center; padding: 12px 0;  background: #E7342C; border-radius: 6px;}
+.bottomBtn .btnWrap .btnGap a { display:block;font-size: 16px; line-height: 24px;   font-weight: 400; color: #fff; text-decoration: none; }
+
+
+
+
+
+/* 배너 */
+.bannerWrap {position: fixed; bottom: 0; z-index: 5; width:100%;overflow:hidden;  display:block; padding:0;}	
+        #banner1 {position:relative; width:100%; max-width:450px; height: auto; padding:0;overflow:hidden; }	
+        #banner1 .gap {width:100%;}
+        #banner1 .gap .wrap{width:100%;}
+        #banner1 .gap .wrap .slide-container {position: relative; width:100%;display: block; }
+        #banner1 .gap .wrap .slide-container .slide-view { z-index:3; position: relative;  width:100%; }
+        #banner1 .gap .wrap .slide-container .slide-view .slide-wrap { position:relative; width:calc(100%*5);  margin: 0; display: flex;}
+        #banner1 .gap .wrap .slide-container .slide-view .slide-wrap>li {z-index: 5;position: relative; width:100%; display: inline-block; }
+        #banner1 .gap .wrap .slide-container .slide-view .slide-wrap>li a {width:100%; position: relative;   display: block;cursor: grab;}
+        #banner1 .gap .wrap .slide-container .slide-view .slide-wrap>li a img{width:100%;}
+
+
+
+        
+/* 약관팝업 */
+#termPopUp { display:none; z-index:7; position: absolute; top:0; left: 0; width: 100% ; height: 100vh; background: rgba(0, 0, 0, 0.8);}
+#termPopUp.addTermPop {display: block; opacity:1; }
+#termPopUp .termPopUpwrap {width: 100%; font-family: 'SUIT'; }
+#termPopUp .termPopUpwrap .termPopUp-gap { width: 100%;  }
+
+#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content { position:absolute; top:15%; left: 50%;padding:0 18px; margin-left: -162px; background: #fff; width: 324px; display: block; border-radius: 6px;}
+
+/* 쿠폰 x버튼 */
+#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .closeBtn-wrap {  display: inline-block; position: absolute; top:10px; right: 10px; text-align: right;}
+#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .closeBtn-wrap .closeBtn {  display: inline-block;}
+#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .closeBtn-wrap .closeBtn a {display: inline-block; width: 32px; }
+#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .closeBtn-wrap .closeBtn a img {width: 100%;}
+/* 제목 사용가능쿠폰 */
+#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content h2 {color: #1a1a1a; font-size: 18px; font-weight: 700; text-align: center; padding: 23px 0 19px 0; margin:0; line-height: 27px;}
+#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .termInfoBox {color: #1a1a1a; font-size: 12px; font-weight: 400; text-align: left;border-top:1px solid #E2E2E2; border-bottom:1px solid #E2E2E2;padding: 12px 0;  }
+
+
+/* 팝업내용 없을때 최소 길이 height: 350px;  */
+#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .termInfoBox .termInfo {margin:0;  overflow-y: none; height:100%; min-height: 350px;}
+/* 팝업내용 많을때 최대 길이 height: 560px-> 이때 스크롤 생겨야함*/
+#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .termInfoBox .termInfo {margin:0;  overflow-y: scroll; height:100%; max-height: 560px; }
+/* 팝업안 컨텐츠 내용 스크롤바 스타일 */
+#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .termInfoBox .termInfo::-webkit-scrollbar {  width: 4px;  }
+#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .termInfoBox .termInfo::-webkit-scrollbar-thumb { width: 4px; height:209px;border-radius:10px;background-color: #D9D9D9; }
+#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .termInfoBox .termInfo::-webkit-scrollbar-track { background-color: #fff; }
+
+
+
+
+
+/*[선택] Nstore 회원 이용약관 동의  */
+.termInPut {width: 100%;}
+.termInPut .termInPutWrap { padding:21px 0 22px 0; margin: 0;}
+.termInPut .termInPutWrap li {display: flex;}
+.termInPut .termInPutWrap li .termText {display: flex; font-size: 14px; line-height: 20px;}
+.termInPut .termInPutWrap li .termText .greyTerm {color: #909090;}
+.termInPut .termInPutWrap li .termInput {display: inline-block; margin: auto 0 auto auto;}
+.termInPut .termInPutWrap li .termInput [type=checkbox] { margin:0;appearance: none; outline: none; width: 22px; height: 22px;   background:url(../img/ico_check_my_none.svg) no-repeat 50% 50%; background-size: contain;cursor: pointer; }
+.termInPut .termInPutWrap li .termInput [type=checkbox]:checked {margin:0;appearance: none; outline: none; width: 22px; height: 22px; display: inline-block; background:url(../img/ico_check_my.svg) no-repeat 50% 50%; background-size: contain;cursor: pointer;   }

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="publisher" content="eunheeChoi">
+    <title>나의관심</title>
+
+
+    <!-- favicon -->
+    <link rel="icon" href="./img/favicon/favicon-32.png" sizes="32x32">
+    
+    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/myPick.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- jQuery 오픈소스 -->
+    <script src="./js/lib/jquery.min.js"></script> 
+	<script src='./js/lib/jquery-1.12.4.min.js'></script>
+	<!-- <script src='./js/lib/jquery.mobile-1.4.5.min.js'></script>터치이벤트 웹앱 -->
+	<script src='./js/lib/jquery.easing.1.3.js'></script>
+	<script src='./js/lib/jquery.touchSwipe.min.js'></script>
+	<!-- <script src='./js/lib/slick.min.js'></script> -->
+
+    <!-- 리액트 웹개발 오픈소스 -->    
+    <script src="./js/lib/react.development.js"></script>
+    <script src="./js/lib/react-dom.development.js"></script>
+    <script src="./js/lib/babel.min.js"></script>
+
+</head>
+<body>
+    <div id="myPick">
+        <div class="TopContainer">
+            <div class="topWrap">
+ 
+                <div class="Back">
+                    <a href="javascript:void(0);" ><img src="./img/ico_gnb_arrwo_back.svg" alt=""></a>
+                </div>
+                <div class="Top">
+                    <div class="TopTxt">
+                        나의관심
+                    </div>
+                </div>
+              
+
+            </div>
+
+            <div class="tabBtn">
+                <ul>
+                    <li class="addfocus tabBtn1"><a href="javascript:Function();">MY찜</a></li>
+                    <li class="tabBtn2"><a href="javascript:Function();">최근 본 상품</a></li>
+                </ul>
+             </div>
+             <ul class="totalWrap">
+                <li class="total"><a href="#">총 <strong>9,999</strong>건</a></li>
+                <li class="delect"><a href="javascript:Function();">전체삭제</a></li>
+            </ul>
+            
+            <div class="pickConDelect tabConDelect">
+                   
+                <div class="listWrap">
+                    <p>찜하기 상품은 최대 90일까지 저장됩니다.</p>
+                    <ul>
+                        <li class="imgBox">
+                           <img src="./img/ico_circle_mypick_em.svg" alt="">
+                            <p>찜한 상품이 없습니다.</p>
+                        </li>
+                        <li class="gohome">
+                           <a href="index.html">홈으로</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <section id="banner">
+                <div class="container" id="banner1">
+                    <div class="gap">
+                        <div class="wrap">
+                       
+    
+                            <div class="slide-container">
+                                <div class="slide-view">
+                                    <ul class="slide-wrap" >
+        
+                                        <li class="slide slide0 swipe">
+                                            <a href='javascript:Function();'><img src="./img/BNN.svg" alt=""></a>
+                                        </li>
+                                        <li class="slide slide1 swipe">
+                                            <a href='javascript:Function();'><img src="./img/BNN.svg" alt=""></a>
+                                        </li>
+                                        <li class="slide slide2 swipe">
+                                            <a href='javascript:Function();'><img src="./img/BNN.svg" alt=""></a>
+                                        </li>
+                                        <li class="slide slide3 swipe">
+                                            <a href='javascript:Function();'><img src="./img/BNN.svg" alt=""></a>
+                                        </li>
+                                        <li class="slide slide4 swipe">
+                                            <a href='javascript:Function();'><img src="./img/BNN.svg" alt=""></a>
+                                        </li>
+                                       
+                                        
+                                    </ul>
+                                </div>
+                            </div>     
+    
+                           
+    
+                            <!-- #banner-->
+                        </div>
+                    </div>
+                   
+                </div>
+            </section>
+
+
+        </div>   
+        <footer id="footer">
+            <div class="container">
+                <div class="gap">
+                    <div class="wrap">
+                        <div class="content">
+                            <ul class="foot-content">
+                                
+                                <li class="foot1">
+                                    <ul class="list">                                    
+                                        <li><a href='javascript:Function();'>입점문의</a></li>                                    
+                                        <li><a href='javascript:Function();'>즐겨찾기 추가</a></li>                                    
+                                        <li><a href='javascript:Function();'>고객센터</a><i></i></li>                                    
+                                      
+                                    </ul>
+                                </li>
+    
+    
+                                <li class="foot2">
+    
+                                    <div class="customerBox">
+                                        <h3>고객센터</h3>
+                                        <p class="bold">1234-5678</p>                                     
+                                        <div class="worktime">평일 9시 ~ 18시 30분</div>
+                                        <span><a href="#">전화걸기</a></span>
+                                    </div>
+                                   
+    
+                                    <div class="emailBox">
+                                        <ul class="email">
+                                            <li>이메일 문의</li> 
+                                            <li >
+                                                <span id="textDiv">cs@kdeal.co.kr</span>                                       
+                                                <small>(또는 1:1문의)</small>                                       
+                                                <a id="copy">주소복사</a>
+                                            </li>
+                                       </ul>
+                                    </div>
+    
+                                </li>
+                                
+                                <li class="foot3">
+                                    <div class="Registration">
+                                      
+                                        <a href='javascript:Function();'  class="fArrowBtn">나스미디어 사업자정보</a>
+                                        <ul class="footerhide   ">
+                                            <li class="footerInfo">
+                                                <div class="left">
+                                                    대표이사
+                                                </div>
+                                                <div class="right">
+                                                    박평권
+                                                </div>
+                                            </li>
+                                            <li class="footerInfo">
+                                                <div class="left">
+                                                    사업자등록번호
+                                                </div>
+                                                <div class="right">
+                                                    220-81-80363
+                                                </div>
+                                            </li>
+                                            <li class="footerInfo">
+                                                <div class="left">
+                                                    호스팅사업자
+                                                </div>
+                                                <div class="right">
+                                                    나스미디어
+                                                </div>
+                                            </li>
+                                            <li class="footerInfo">
+                                                <div class="left">
+                                                    통신판매업신고번호
+                                                </div>
+                                                <div class="right">
+                                                    2021-서울강남-00534
+                                                </div>
+                                            </li>
+                                            <li class="footerInfo">
+                                                <div class="left">주소</div>
+                                                <div class="right">
+                                                    서울특별시 강남구 도곡로1길 14<br>
+                                                    (역삼동, 삼일프라자오피스텔 3~5층)
+                                                </div>
+                                            </li>
+    
+    
+    
+                                             <li class="searchNum">
+                                                <div class="left"></div>
+                                                <div class="right">
+                                                    <a href="#">사업자번호조회</a>
+                                                </div>
+                                             </li>
+                                         </ul>
+                                   </div>
+    
+                                    <ul class="list clearfix">                                    
+                                        
+                                        <li><a href='javascript:Function();'>로그인 </a><i></i></li>                                    
+                                        <li><a href='javascript:Function();'>이용약관 </a><i></i></li>                                    
+                                        <li><a href='javascript:Function();'>개인정보처리방침 </a><i></i></li>                              
+                                        <li><a href='javascript:Function();'>청소년보호방침 </a></li>
+                                    </ul>
+                                </li>
+                                <li class="foot4">
+                                    Copyright ⓒ NASMEDIA Co., LTD. All Rights Reserved.
+                                </li>
+                            </ul>
+    
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </footer>
+    </div>
+<script>
+
+var tab1        = $('.tabBtn1');        // 찜하기 버튼
+var tab2        = $('.tabBtn2');        // 최근본상품 버튼
+var modal       = $('#modal');          // 모달창
+var delect      = $('.delect');         // 전체삭제 버튼
+var tabCon      = $('.tabCon');         // 찜하기,최근 본 상품 내용리스트
+var cancle      = $('.cancle');         // 취소버튼
+var ok          = $('.ok');             // 확인버튼
+var tabConDel   = $('.tabConDelect');   // 찜하기,최근 본 상품 전체삭제된 리스트
+
+// 찜하기 버튼 눌렀을때 이벤트
+tab1.each(function (idx) {
+               
+    $(this).on({
+        click: function () {
+            tabCon.removeClass('tab1'); //보여줌
+            tabCon.removeClass('tab2'); //안보여줌
+            tab1.addClass('addfocus');  //찜하기 버튼 줄 그어짐              
+            tab2.removeClass('addfocus'); //최근본상품 버튼 줄 지워짐              
+        }
+        
+    });
+});
+// 최근본 상품 버튼 눌렀을때 이벤트
+tab2.each(function (idx) {
+               
+    $(this).on({
+        click: function () {
+            tabCon.addClass('tab2'); //보여줌
+            tabCon.addClass('tab1');//안보여줌
+                    
+            tab2.addClass('addfocus');   //최근본 상품 버튼 줄 그어짐             
+            tab1.removeClass('addfocus'); //찜하기 벝튼 줄 지워짐                 
+        }
+        
+    });
+});
+// 전체삭제 버튼 누르면 모달창 띄어짐
+delect.each(function (idx) {
+               
+    $(this).on({
+        click: function () {
+            modal.addClass('modalShow'); //보여줌 
+        }
+        
+    });
+});
+// 확인 버튼 누르면 MY찜 내용리스트 사라짐
+ok.each(function (idx) {
+               
+    $(this).on({
+        click: function () {
+            modal.removeClass('modalShow');   // 보여줌
+            tabCon.addClass('tab1');          // MY찜 내용리스트 사라짐 
+            tabConDel.addClass('tab1Delect'); // 찜한 상품이 없습니다. 내용리스트 나타남
+        }
+        
+    });
+});
+// 취소 버튼 누르면 모달창 사라짐
+cancle.each(function (idx) {
+               
+    $(this).on({
+        click: function () {
+            modal.removeClass('modalShow'); //모달창 사라짐 
+        }
+        
+    });
+});
+
+
+// 주소복사  footer
+     function copyToClipboard(val) {
+    var t = document.createElement("textarea");
+     document.body.appendChild(t);
+     t.value = val;
+     t.select();
+    document.execCommand('copy');
+     document.body.removeChild(t);
+    }
+
+     $('#copy').click(function() {
+       copyToClipboard('https://n-mall@nasmedia.co.kr/');
+      alert('주소를 복사하였습니다');
+     });
+
+</script>
+
+<script>
+    var fArrowBtn =  $('#footer .Registration .fArrowBtn');
+         var footerhide =  $('#footer .Registration .footerhide');
+         
+  
+               // 화살표 버튼 클릭 이벤트
+               fArrowBtn.each(function (idx) {
+                  $(this).on({
+                     click: function () {
+                     
+                        fArrowBtn.eq(idx).toggleClass('fArrow'); // 클래스 주입
+                        footerhide.eq(idx).toggleClass('footerShow'); // 클래스 주입
+                        
+                        
+                     }
+                  });
+               });
+  
+  
+  
+  
+     
+  </script>
+
+<script>
+    
+    const slideWrap      = $('#banner1 .slide-wrap');
+            const slideContainer = $('#banner1 .slide-view');
+            let   cnt            = 0;
+            let   swipeStart     = null;
+            let   swipeEnd       = null;
+            let   dragStart      = null; // 슬라이드 마지막이 처음에서 왼쪽으로 이동된 상태 값을 빼주고 시작
+            let   mouseDown      = null; // 반드시 마우스가 다우된 상태를판단 다운이면 tru, 업이면 false
+            let   dragEnd        = null;
+            let   count          = 0;
+            let   setId          = 0;
+            let   setId2         = 0;
+
+
+
+            //1.메인슬라이드 함수
+            function mainSlide(){ 
+               
+
+                  // btnWrap.stop().animate({left:(-100*cnt) + '%'});       
+               slideWrap.stop().animate( {left:(-450*cnt)}, 'easeInOutSine',function(){
+                  if(cnt>4){cnt=0}  //다음슬라이드 롤링
+                  if(cnt<0){cnt=4}  //이전슬라이드 롤링
+                  //초기화설정
+                  slideWrap.stop().animate( {left:(-450*cnt)},0 );
+               });
+            }
+
+
+            //2.다음카운트 함수
+            function nextCount(){
+               cnt++;
+               mainSlide();
+            }
+            //2.이전카운트 함수
+            function prevCount(){
+               cnt--;
+               mainSlide();
+            }
+
+
+
+            //4. 마우스 터치 스와이프
+            slideContainer.on({
+                  mousedown: function(event){
+                     //터치스와이프 시작 포지션
+                     swipestart = event.clientX;
+                     dragStart  = event.clientX - slideWrap.offset().left - 450;
+                     mouseDown  = true;//드래그 시작임을 표시
+                     
+
+                  },//mousedown 끝
+                  mouseup: function(event){
+                     swipeEnd = event.clientX;
+                     mouseDown  = false; //드래그 끝
+                     
+                     if( swipestart-swipeEnd > 0 ){//다음슬라이드                     
+                        nextCount();
+                     }
+                     if( swipestart-swipeEnd < 0 ){   // 이전슬라이드                    
+                        prevCount();
+                  }
+               
+               },// mouseup 끝
+                     mousemove: function(event){//마우스무브
+                        //console.log(event);
+                        // 반드시 마우스를 다운한 상태가 아니면 종료(리턴)시켜라
+                        // if(mouseDown !== true){
+                        // if(mouseDown == null){초기값을 null 지정해야한다.
+                        // if(mouseDown == false){초기값을 false 지정해야한다.
+                        if(!mouseDown){ //true가 아니면
+                           return;
+                        }
+                        dragEnd  = event.clientX; //마우스가 움직이면 계속 드래그된다.
+                        // 이동거리는 = dragEnd - dragStart;
+                        slideWrap.css({left: dragEnd - dragStart })
+                     },
+                     mouseleave: function(event){ 
+                           if(!mouseDown){return}
+                           swipeEnd = event.clientX;
+                           mouseDown  = false; //드래그 끝
+                           if( swipestart-swipeEnd > 0 ){//다음슬라이드                       
+                              nextCount();
+                           }
+                           if( swipestart-swipeEnd < 0 ){   // 이전슬라이드                        
+                              prevCount();
+                           }
+                     
+                     }
+            });
+                  //4-2. 타이머를 컨트롤 타이머 만들어서 5초 동안 터치가 없으면 다시
+                  // 타이머카운트함수 : 마우스 터치시에 슬라이드 정지시키고
+                  //                   카운트 동작 5초간 터치가 없으면 다시
+                  //                   다음 슬라이드 자동타이머 동작 알고리즘
+                  // 타이머카운트함수
+                  function timerCount(){
+                     clearInterval(setId); // setId 중지
+                     clearInterval(setId2); // setId2 중지
+                        count  = 0;         // 초기화 다시 카운트
+                        setId2 = setInterval(function(){
+                           count++;          // 증가변수는 반드시 초기값 설정                        
+                           if(count>5){      // 5초간 터치가 없으면 
+                              nextCount();   // 다음슬라이드 호출 실행
+                              autoTimer();   // 자동타이머 딱한번 호출하면 3초후 무한반복
+                              clearInterval(setId2);// 나 setId2자신을 중지시켜라
+                           }
+                        }, 1000);   // 자동타이머가 중지되면 카운트가 1초에 1회씩 증가
+                        
+                     
+                     }//
+
+
+            
+            //5. 마우스 드레그 앤 드롭
+            // mousemove
+
+            //6. 반응형 모바일 손가락 핑거 드래드 앤 드롭(반응형)
+            // 마우스 인식못함 동작안함
+            // 반응형 진행하고 폴리필 touchEvent 추가
+            // touchstart(mousedown) / touchend(mouseup) / touchmove(mousemove)
+            slideContainer.on({
+               touchstart: function(event){
+               
+                  swipeStart = event.originalEvent.touches[0].clientX;
+                  dragStart  = event.originalEvent.touches[0].clientX - slideWrap.offset().left - 450;
+                  mouseDown  = true;//드래그 시작임을 표시 
+                  timerCount(); //터치시작하면 타이머 카운트 실행
+               },
+               touchend: function(event){                  
+                     swipeEnd   = event.originalEvent.changedTouches[0].clientX;   
+                     mouseDown  = false; //드래그 끝
+                     
+                     
+                     if( swipeStart-swipeEnd > 0 ){//다음슬라이드                     
+                        nextCount();
+                     }
+                     if( swipeStart-swipeEnd < 0 ){   // 이전슬라이드                    
+                        prevCount();
+                        
+                     }   
+               }
+            });
+  </script>
+
+
+</body>
+</html>

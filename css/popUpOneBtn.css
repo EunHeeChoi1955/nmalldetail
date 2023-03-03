@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./fonts.css);
+
+
+
+*{   width:100%; height: 100%;  font-family: 'SUIT';}
+html, body {background: #fff; color: #fff;    }
+
+
+
+
+
+
+
+/* 모달창 */
+#modal {display:block; z-index:5; position:fixed; top:0; left: 0; background: rgba(0,0,0, .7); width: 100%; height: 100%;}
+#modal.modalShow {display:block; z-index:5; position:fixed; top:0; left: 0; background: rgba(0,0,0, .7); width: 100%; height: 100%;}
+#modal .modalWrap { display: block; position:absolute; top:50%; margin-top:-150px; left: 50%; margin-left:-154px; background:#fff;  width: 308px; height: auto; border-radius: 6px; }
+#modal .modalWrap .modalGap { width: 100%;}
+#modal .modalWrap .modalGap .modalContent{width: 100%;  padding:40px 0 0 0 ; text-align: center; font-size: 14px;}
+/* 확인 버튼 */
+#modal .modalWrap .modalGap .modalContent .btnWrap {width: 100%; padding-top: 30px;}
+#modal .modalWrap .modalGap .modalContent .btnWrap .btnCon {display:block; border-top:1px solid #E2E2E2; background:#f9f9f9; border-radius:0 0 6px 6px;}
+#modal .modalWrap .modalGap .modalContent .btnWrap .btnCon li {display: block;text-align: center; }
+#modal .modalWrap .modalGap .modalContent .btnWrap .btnCon li.ok {padding: 12px 0;}
+#modal .modalWrap .modalGap .modalContent .btnWrap .btnCon li.ok a { color: #E7342C; font-size: 16px;}
+
+
+
+

@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./fonts.css);
+
+
+
+
+#login { max-width:450px; width:100%; height: 100vh; background: #fff; margin: 0 auto;display: block; }
+#login >.TopContainer {position: relative; width:100%; max-width:450px;  margin: 0 auto;display: block;font-family: 'SUIT';}
+/* 상단 로그인top */
+#login >.TopContainer .topWrap{ position: absolute; top: 0; left: 0; display: flex; height: 52px; width:100%;  display: flex;color: #1A1A1A;  padding: 10px ;  }
+#login >.TopContainer .topWrap>div {width: 33.333%; display: block;}
+#login >.TopContainer .topWrap .Top { text-align: center;}
+#login >.TopContainer .topWrap .Top .TopTxt {font-size: 18px; line-height: 190%; font-weight: 400; letter-spacing: -.4; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+#login >.TopContainer .topWrap .Top .TopTxt strong {vertical-align: baseline; }
+#login >.TopContainer .topWrap .Back {  width: 33.333%; }
+#login >.TopContainer .topWrap .Back a { width:30px; }
+#login >.TopContainer .topWrap .Back a img { width:30px; }
+/* 상단 로고 */
+#login >.TopContainer .loginContents {text-align: center; }
+#login >.TopContainer .loginContents .logoBox {  display: block;  }
+#login >.TopContainer .loginContents .logoBox div { width: 114px; margin: 0 auto ;}
+#login >.TopContainer .loginContents .logoBox div img { width: 100%; }
+#login >.TopContainer .loginContents h2 {font-size: 16px;font-weight: 400;  margin: 16px 0 20px 0; color: #1A1A1A; font-family: 'SCoreDream'; line-height: 24px;}
+#login >.TopContainer .loginContents h2 span {width: 100%;height: 10px;position:relative; z-index: 2; vertical-align: baseline;  }
+#login >.TopContainer .loginContents h2 span i {  z-index: -1; bottom:1px; position:absolute;left: 0;background: rgba(255, 92, 56, 0.3); width: 100%;height: 10px; display: inline-block;   }
+
+
+
+
+
+/* 회원가입 아이디 비번 input */
+.signUpModify { width: 100%; font-family: 'SUIT';padding-top:52px;}
+.signUpModify .signUpModifyGap { width: 100%; padding: 40px 18px 40px 18px;}
+
+.signUpModify .signUpModifyGap .phoneImgCon {text-align: center;display: block;}
+.signUpModify .signUpModifyGap .phoneImgCon .phoneImg {display: inline-block;}
+.signUpModify .signUpModifyGap .phoneImgCon .phoneImg img { width: 86px; height: 86px;}
+
+.signUpModify .signUpModifyGap .signUpTxt {text-align: center; padding: 10px 0 20px 0; line-height: 24px; font-weight: 400;color: #000000;}
+
+
+
+.signUpModify .signUpModifyGap .certificationBtn {width: 100%;}
+.signUpModify .signUpModifyGap .certificationBtn a { text-decoration: none; margin:0 auto ;width:155px;height: 37px; padding:8px 24px;display:flex;color: #000000;font-weight: 400; font-size: 14px; border-radius: 50px; text-align: center; border: 1px solid #E2E2E2;    }
+.signUpModify .signUpModifyGap .certificationBtn a span{display: inline-block; margin: auto 0 auto auto;}
+.signUpModify .signUpModifyGap .certificationBtn a span img{ width:16px ; height: 20px; margin-top: -4px;}
+
+
+.signUpModify .signUpModifyGap .redBtn { width: 100%; padding-top: 30px;}
+.signUpModify .signUpModifyGap .redBtn a { text-align: center; display: block; color: #fff; font-size: 16px; line-height: 24px; border-radius: 6px; padding:12px 0; background:#E7342C ;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

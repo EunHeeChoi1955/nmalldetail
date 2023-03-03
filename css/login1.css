@@ -1,0 +1,62 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./fonts.css);
+
+
+
+
+#login { max-width:450px;width:100%; height: 100vh; background: #fff; margin: 0 auto;display: block; }
+#login >.TopContainer {position: relative; width:100%; max-width:450px; padding-top: 83px; margin: 0 auto;display: block;font-family: 'SUIT';}
+/* 상단 로그인top */
+#login >.TopContainer .topWrap{ position: absolute; top: 0; left: 0; display: flex; height: 52px; width:100%;  display: flex;color: #1A1A1A;  padding: 10px ;  }
+#login >.TopContainer .topWrap>div {width: 33.333%; display: block;}
+#login >.TopContainer .topWrap .Top { text-align: center;}
+#login >.TopContainer .topWrap .Top .TopTxt {font-size: 18px; line-height: 190%; font-weight: 400; letter-spacing: -.4; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+#login >.TopContainer .topWrap .Top .TopTxt strong {vertical-align: baseline; }
+#login >.TopContainer .topWrap .Back {  width: 33.333%; }
+#login >.TopContainer .topWrap .Back a { width:30px; }
+#login >.TopContainer .topWrap .Back a img { width:30px; }
+/* 상단 로고 */
+#login >.TopContainer .loginContents {text-align: center; }
+#login >.TopContainer .loginContents .logoBox {  display: block;  }
+#login >.TopContainer .loginContents .logoBox div { width: 114px; margin: 0 auto ;}
+#login >.TopContainer .loginContents .logoBox div img { width: 100%; }
+#login >.TopContainer .loginContents h2 {font-size: 16px;font-weight: 400;  margin: 16px 0 20px 0; color: #1A1A1A; font-family: 'SCoreDream'; line-height: 24px;}
+#login >.TopContainer .loginContents h2 span {width: 100%;height: 10px;position:relative; z-index: 2; vertical-align: baseline;  }
+#login >.TopContainer .loginContents h2 span i {  z-index: -1; bottom:1px; position:absolute;left: 0;background: rgba(255, 92, 56, 0.3); width: 100%;height: 10px; display: inline-block;   }
+
+/* 로그인 회원가입 */
+#login >.TopContainer .loginContents .loginBtnBox {width: 100%;padding:0 18px;}
+#login >.TopContainer .loginContents .loginBtnBox li {display: block;  }
+#login >.TopContainer .loginContents .loginBtnBox li div { width: 100%; white-space: nowrap; font-size: 16px;}
+/* 로그인버튼 */
+#login >.TopContainer .loginContents>.loginBtnBox li div.loginBtn {background: #E7342C; border-radius: 6px; margin-bottom: -5px;}
+#login >.TopContainer .loginContents>.loginBtnBox li div.loginBtn a { color:#fff; padding: 12px 0; display: block; text-decoration: none; }
+#login >.TopContainer .loginContents>.loginBtnBox li div { width: 100%; height: 48px; white-space: nowrap; font-size: 16px;}
+/* 회원가입버튼 */
+#login >.TopContainer .loginContents .loginBtnBox li div.signUpBtn { border:1px solid#E7342C; border-radius: 6px; }
+#login >.TopContainer .loginContents .loginBtnBox li div.signUpBtn a { color:#fff; padding: 12px 0; display: block; text-decoration: none; color: #E7342C;; }
+/* 말풍선 */
+#login >.TopContainer .loginContents>.loginBtnBox .txtBoxBk { display: inline-block; z-index: 1; font-weight: 400; position: relative; bottom:-8px;background:#000 ; border-radius: 15px; padding: 5px 10px;  font-size: 12px; color: #FFFFFF; text-align: center;  width: 161px; height:27.08px; }
+#login >.TopContainer .loginContents>.loginBtnBox .txtBoxBk em { font-weight: 700; vertical-align: baseline;  }
+#login >.TopContainer .loginContents>.loginBtnBox .txtBoxBk:before { position:absolute; bottom:0; margin-bottom:-8px; left:50%; margin-left:-2px; content:''; display:block; border:4px solid #000; border-bottom:4px solid transparent; border-right:2px solid transparent;  border-left:2px solid transparent;  }
+
+
+/* 간편로그인 텍스트 밑줄 */
+#login >.TopContainer .loginContents> .loginStart { display: block; padding:24px 0 10px 0; width: 100%;}
+#login >.TopContainer .loginContents> .loginStart>div {display: inline-block; position: relative;width: 100%;}
+#login >.TopContainer .loginContents> .loginStart>div>div {z-index: 1; position:absolute;  top:0;  margin-top:-10px; margin-left: -50px; line-height: 150%;   height:15px;color: #797979; font-size: 14px; display: inline-block; text-align: center;  }
+#login >.TopContainer .loginContents> .loginStart>div>div >i{ background: #fff;  width:100px;height: auto;  display: inline-block; }
+#login >.TopContainer .loginContents> .loginStart>div>.bar { z-index:0;  position: relative; display: block; background: #E2E2E2;  width:100%;  height: 1px;  }
+
+/* 버튼 */
+#login >.TopContainer .loginContents> .loginStart .naverKakao {width: 100%; padding:50px 32px 0 32px;} 
+#login >.TopContainer .loginContents> .loginStart .naverKakao li { width: 100% ;  padding-bottom: 10px;}
+#login >.TopContainer .loginContents> .loginStart .naverKakao .txtBoxBlue { display: inline-block; z-index: 1; font-weight: 400; position: relative; bottom:4px;background:#187AEF ; border-radius: 15px; padding: 5px 10px;  font-size: 12px; color: #FFFFFF; text-align: center;  width: 136.25px; height:27.08px; }
+#login >.TopContainer .loginContents> .loginStart .naverKakao .txtBoxBlue:before { position:absolute; bottom:0; margin-bottom:-8px; left:50%; margin-left:-2px; content:''; display:block; border:4px solid #187AEF; border-bottom:4px solid transparent; border-right:2px solid transparent;  border-left:2px solid transparent;  }
+#login >.TopContainer .loginContents> .loginStart .naverKakao .kakao a { display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; text-decoration: none;white-space: nowrap;background: #FFDE00;  padding: 12px 0; border-radius: 3px; font-size:16px; font-weight: 700; color: #3B1D1A; line-height: 180%; vertical-align: baseline; }
+#login >.TopContainer .loginContents> .loginStart .naverKakao .kakao a img{width: 21px; margin:-3px 10px 0 0; }
+#login >.TopContainer .loginContents> .loginStart .naverKakao .naver a {display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;  text-decoration: none;white-space: nowrap; background: #01C73C;  padding: 12px 0; border-radius: 3px; font-size:16px; font-weight: 700; color: #fff; line-height: 180%; vertical-align: baseline; }
+#login >.TopContainer .loginContents> .loginStart .naverKakao .naver a img { width: 21px; margin:-3px 10px 0 0;}
+
+

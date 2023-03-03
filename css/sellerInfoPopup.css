@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./fonts.css);
+
+
+
+
+
+
+
+
+
+/* 모달창 */
+#modal {display:block; z-index:4; position:fixed; top:0; left: 0; background: rgba(0,0,0, .7); width: 100%; height: 100%;}
+#modal.modalShow {display:block; z-index:4; position:fixed; bottom:0; left: 0; background: rgba(0,0,0, .7); width: 100%; height: 100%;}
+#modal .modalWrap { z-index:5; position:fixed; bottom:0; left: 50%; margin-left:-184px; display: block; background:#fff;  width: 360px; height: auto;  }
+#modal .modalWrap .modalGap { width: 100%;}
+#modal .modalWrap .modalGap .modalContent{    width: 100%; padding:13px 18px 18px 18px;}
+
+/* xbtn */
+#modal .modalWrap .modalGap .modalContent .xWrap { width: 100%;  }
+#modal .modalWrap .modalGap .modalContent .xWrap .xbtn {position: absolute; top: 7px; right: 18px;  display: inline-block;  width:32px; height: 36px;}
+#modal .modalWrap .modalGap .modalContent .xWrap .xbtn img { width:32px; height: 36px;}
+
+
+
+
+            .container{width:100%; }	
+            .container .gap {width:100%;margin:0;}
+            .container .gap .wrap {width:100%;  font-family: 'SUIT';}
+            .container .gap .wrap h5 { display: flex;font-size: 16px;line-height: 180%; margin: 0 0 9px 0;}
+          
+
+            .container .gap .wrap .tableWrap { width: 100%; display:block; }
+            .container .gap .wrap .tableWrap.add7Arrow { width: 100%;  }
+            .container .gap .wrap .tableWrap table { width: 100%; display:block; padding: 0 0 20px 0;}
+            .container .gap .wrap .tableWrap table tr { width: 100%; border-bottom: 1px solid #fff; }
+            .container .gap .wrap .tableWrap table tr .left { width: 93px; font-size: 12px; color: #1a1a1a; font-weight: 400; background: #E2E2E2; white-space: nowrap; text-align: center; padding: 12px 2px; }
+            .container .gap .wrap .tableWrap table tr .right { font-size: 10px; line-height: 150%; padding: 5px 8px;  color: #1a1a1a; font-weight: 400; }
+
+
+
+/* 빨간확인버튼상자 */
+#modal .modalWrap .modalGap .modalContent .btnWrap {display:flex;}
+#modal .modalWrap .modalGap .modalContent .btnWrap .redButton {display: block; width: 100%;text-align: center;padding: 12px 0;  line-height: 100%;  border: 1px solid #E7342C; border-radius: 6px;}
+#modal .modalWrap .modalGap .modalContent .btnWrap .phoneAsk {margin-right: 6px;}
+#modal .modalWrap .modalGap .modalContent .btnWrap .goodsAsk {margin-left: 6px;}
+#modal .modalWrap .modalGap .modalContent .btnWrap .redButton a  {  font-weight: 400; color: #E7342C;  font-family: 'SUIT';}
+
+
+
+
+
+

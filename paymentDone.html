@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="publisher" content="eunheeChoi">
+    <title>주문완료</title>
+    <!-- favicon -->
+    <link rel="icon" href="./img/favicon/favicon-57.png" sizes="57x57">
+       
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/paymentDone.css">    
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- jQuery 오픈소스 -->
+    <script src="./js/lib/jquery.min.js"></script> 
+	<script src='./js/lib/jquery-1.12.4.min.js'></script>
+	<!-- <script src='./js/lib/jquery.mobile-1.4.5.min.js'></script>터치이벤트 웹앱 -->
+	<script src='./js/lib/jquery.easing.1.3.js'></script>
+	<script src='./js/lib/jquery.touchSwipe.min.js'></script>
+	<!-- <script src='./js/lib/slick.min.js'></script> -->
+
+    <!-- 리액트 웹개발 오픈소스 -->    
+    <script src="./js/lib/react.development.js"></script>
+    <script src="./js/lib/react-dom.development.js"></script>
+    <script src="./js/lib/babel.min.js"></script>
+
+</head>
+<body>
+    <div id="wrap1">
+        <div id="header">
+            <div class="container">
+                <ul class="top clearfix">
+                    <li class="left">
+                        <div class="backWrap">
+                            <span class="backBtn">
+                                <a  href="#" class="x-btn " title="back">
+                                    <span ></span>
+                                </a>
+                            </span>                       
+                        </div>
+                    </li>
+                    <li class="medium">
+                        주문완료
+                    </li>
+                    <li class="right">
+                      
+                    </li>
+                </ul>
+            </div>   
+        </div>     
+        <div id="main">    
+            <div class="paymentCon ">                   
+                    <div class="paymentWrap"> 
+
+                        <div class="topMention">
+                            <div class="orderImg"><img src="./img/orderImg.svg" alt=""></div>
+                            <h2>주문이 <span class="red">완료</span>되었습니다.</h2>
+                            <p>주문번호 : ##############</p>
+                            <ul class="btnBoxWrap">
+                                <li class="whBtn"><a href="#">주문내역조회</a></li>
+                                <li class="redBtn"><a href="#">쇼핑 계속하기</a></li>
+                            </ul>
+                        </div>
+                        
+                        
+                        <div class="bannerWrap">
+                            <div id="banner2">
+                                <div class="gap">
+                                    <div class="wrap">
+                                   
+                
+                                        <div class="slide-container">
+                                            <div class="slide-view">
+                                                <ul class="slide-wrap" >
+                    
+                                                    <li class="slide slide0 swipe">
+                                                        <a href='javascript:Function();'><img src="./img/sec7banner.svg" alt=""></a>
+                                                    </li>
+                                                    <li class="slide slide1 swipe">
+                                                        <a href='javascript:Function();'><img src="./img/sec7banner.svg" alt=""></a>
+                                                    </li>
+                                                    <li class="slide slide2 swipe">
+                                                        <a href='javascript:Function();'><img src="./img/sec7banner.svg" alt=""></a>
+                                                    </li>
+                                                    <li class="slide slide3 swipe">
+                                                        <a href='javascript:Function();'><img src="./img/sec7banner.svg" alt=""></a>
+                                                    </li>
+                                                    <li class="slide slide4 swipe">
+                                                        <a href='javascript:Function();'><img src="./img/sec7banner.svg" alt=""></a>
+                                                    </li>
+                                                   
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>     
+                
+                                       
+                
+                                        <!-- #banner-->
+                                    </div>
+                                </div>
+                        </div>
+                        
+
+                           <div class="spot">                                
+                                <div class="spotTxt2">
+                                    <ul>
+                                        <li>홍길동</li>
+                                        <li class="bar"></li>
+                                        <li>010-1234-5678</li>
+                                    </ul>
+                                </div>
+                                <div class="spotTxt3">서울특별시 강남구 도곡로4길 11-4 ABCABC 205동 1203호</div>
+                                <div class="comment">
+                                    <span><img src="./img/ico_pay_dment.svg" alt=""></span>배송전에 연락주세요.
+                                </div>
+
+                                <div class="message">
+                                    <div class="text">
+                                        <textarea type="text" class="TEXT" placeholder="입력해주세요" name="" id="" cols="30" rows="1"></textarea>
+                                        <span class="counter">0 / 20</span>
+                                    </div>
+                                </div>
+
+                           </div>
+
+                           <div class="order">
+                                    <ul class="top">
+                                        <li class="topTxt1">주문상품</li>
+                                        <li class="topTxt3">
+                                            <div class="topTxt2">첫번째 상품명 10글자 노출하고 외 1건</div>
+                                            <div class="topTxt2hid">2건</div>
+                                            <a href="javascript:"  class="arrowBtn"><span></span></a>
+                                        </li>
+                                    </ul>
+                                    <div class="bottom">
+                                        <ul class="boxBottomWrap">
+                                            <li class="box1 box">
+                                                <div class="brandWrap brandWrap1">
+                                                    <div class="txt2">
+                                                        <div class="txt2Left">
+                                                            <a href="javascript:Function();">
+                                                                <img src="./img/delivery_th3.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="txt2Right">                                                    
+                                                            <div class="txt2Right_txt2">
+                                                                상품명 상품명 상품명 상품명 상품명 상품명 상품명 상품명 상품명 
+                                                            </div>
+                                                            <div class="txt2Right_txt2gray">
+                                                                옵션명 한줄 옵션명 한줄 옵션명 한줄 옵션
+                                                            </div>
+                                                        </div>
+                                                    </div>       
+                                                    <div class="txt3">
+                                                        <ul>
+                                                            <li class="txt2Right_left blue">
+                                                                <ul>
+                                                                    <li>무료배송<i class="dot">·</i></li>
+                                                                    <li>쿠폰적용</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="txt2Right_right" >
+                                                                <div class="right_sub1">19,900원</div> <i class="bar"></i>
+                                                                <div class="right_sub2">1개</div>                                                                                            
+                                                            </li> 
+                                                        </ul>
+                                                    </div>                                     
+                                                </div>
+
+                                                <div class="grayBox">
+                                                    <div class="grayTxt1"><strong>9,900</strong>원 + 배송비 <strong>0</strong>원 <span class="red">- 할인 <strong>1,000</strong>원</span> =</div>
+                                                    <div class="grayTxt2">= <strong>7,900</strong>원</div>
+                                                </div>
+                                            </li>
+
+                                            <li class="box2 box">
+                                                <div class="brandWrap brandWrap1">
+                                                    <div class="txt2">
+                                                        <div class="txt2Left">
+                                                            <a href="javascript:Function();">
+                                                                <img src="./img/img_th_bottle.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="txt2Right">                                                    
+                                                            <div class="txt2Right_txt2">
+                                                                상품명 상품명 상품명 상품명 상품명 상품명 상품명 상품명 상품명 
+                                                            </div>
+                                                            <div class="txt2Right_txt2gray">
+                                                                옵션명 한줄 옵션명 한줄 옵션명 한줄 옵션
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div> 
+                                                    <div class="txt3">
+                                                        <ul>
+                                                            <li class="txt2Right_left blue">무료배송</li>
+                                                            <li class="txt2Right_right" >
+                                                                <div class="right_sub1">19,900원</div> <i class="bar"></i>
+                                                                <div class="right_sub2">1개</div>                                                                                            
+                                                            </li> 
+                                                        </ul>
+                                                    </div>                                          
+                                                </div>
+
+                                                <div class="grayBox">
+                                                    <div class="grayTxt1"><strong>19,900</strong>원 + 배송비 <strong>0</strong>원 <span class="red">- 할인 <strong>1,000</strong>원</span> =</div>
+                                                    <div class="grayTxt2">= <strong>18,900</strong>원</div>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                            </div>
+                                                     
+                            <div class="total">
+                                <ul class="top">
+                                    <li class="topTxt1">최종 결제금액</li>                                   
+                                    <li class="topTxt2">
+                                        <div class="left">총 주문금액</div>
+                                        <div class="right bold">29,800원</div>
+                                    </li>   
+                                    <li class="topTxt3">
+                                        <div class="left">총 할인금액</div>
+                                        <div class="right red">- 2,800원</div>
+                                    </li>
+                                    <li class="topTxt4">
+                                        <div class="left">쿠폰할인</div>
+                                        <div class="right  red">- 2,000원</div>
+                                    </li>
+                                    <li class="topTxt5">
+                                        <div class="left">포인트</div>
+                                        <div class="right red">- 800원</div>
+                                    </li>
+                                    <li class="topTxt6">
+                                        <div class="left">배송비</div>
+                                        <div class="right  bold">0원</div>
+                                    </li>
+                                    <li class="topTxt7">
+                                        <div class="left black">총 결제금액</div>
+                                        <div class="right red">26,200원</div>
+                                    </li>  
+                                    <li class="topTxt8">
+                                        <div class="left bold">결제수단</div>
+                                        <div class="right">신용카드</div>
+                                    </li>                              
+                                </ul>
+                            </div>
+                           
+                            <section id="section2">
+                                <div class="container">
+                                    <div class="gap">
+                                        <div class="wrap">
+                                            <div class="content">
+                                                <h3>함께보면 좋은 상품<span><a href='javascript:Function();'>전체보기<i class="material-icons">&#xe315;</i></a></span></h3>
+
+                                            
+                                                <div class="slide-container">
+                                                    <div class="slide-view">
+                                                        <ul class="slide-wrap" >
+                            
+                                                            <li class="slide slide0 swipe">
+                                                                <div class="slide-text">                                                
+                                                                    <div class="img-box">
+                                                                        <div class="heart">
+                                                                            <a href='javascript:Function();'>
+                                                                                <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                                                <img class="blankHeart" src="./img/heart.svg" alt="">   
+                                                                            </a>
+                                                                        </div>
+                                                                        <a href='javascript:Function();'>
+                                                                            <img src="./img/sec3slide1.png" alt="">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="text-box">
+                                                                        <h3>
+                                                                            [소유] UVC 다용도 살 균기 MDA-100RG2...
+                                                                        </h3>
+                                                                        <h4>50,000원</h4>
+                                                                        <ul class="price">
+                                                                            <li>42<span>%</span></li>
+                                                                            <li>49,900<span>원</span></li>                                                        
+                                                                        </ul>
+                                                                        <ul >
+                                                                            <li class="star">
+                                                                                <i class="fa fa-star"></i>
+                                                                                4.0 <span>(9,999)</span>
+                                                                            </li>
+                                                                            <li>
+                                                                                <span>
+                                                                                    무료배송
+                                                                                </span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="slide slide1 swipe">
+                                                                <div class="slide-text">                                                
+                                                                    <div class="img-box">
+                                                                        <div class="heart">
+                                                                            <a href='javascript:Function();'>
+                                                                                <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                                                <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                                            </a>
+                                                                        </div>
+                                                                        <a href='javascript:Function();'>
+                                                                            <img src="./img/sec3slide2.png" alt="">
+                                                                        </a>                                                
+                                                                    </div>
+                                                                    <div class="text-box">
+                                                                        <h3>
+                                                                            제목 한줄 처리
+                                                                        </h3>
+                                                                        <h4>2,290,000원</h4>
+                                                                        <ul class="price">
+                                                                            <li>42<span>%</span></li>
+                                                                            <li>49,900<span>원</span></li>                                                        
+                                                                        </ul>
+                                                                        <ul >
+                                                                            <li class="star">
+                                                                                <i class="fa fa-star"></i>
+                                                                                4.0 <span>(6)</span>
+                                                                            </li>
+                                                                            <li>
+                                                                                <span>
+                                                                                    무료배송
+                                                                                </span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="slide slide2 swipe">
+                                                                <div class="slide-text">                                                
+                                                                    <div class="img-box">
+                                                                        <div class="heart">
+                                                                            <a href='javascript:Function();'>
+                                                                                <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                                                <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                                            </a>
+                                                                        </div>
+                                                                        <a href='javascript:Function();'>
+                                                                            <img src="./img/sec3slide3.png" alt="">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="text-box">
+                                                                        <h3>
+                                                                            [소유] UVC 다용도 살균기 MDA-100RG2...
+                                                                        </h3>
+                                                                        <h4>2,290,000원</h4>
+                                                                        <ul class="price">
+                                                                            <li>42<span>%</span></li>
+                                                                            <li>49,900<span>원</span></li>                                                        
+                                                                        </ul>
+                                                                        <ul >
+                                                                            <li class="star">
+                                                                                <i class="fa fa-star"></i>
+                                                                                4.0 <span>(6)</span>
+                                                                            </li>
+                                                                            <li>
+                                                                                <span>
+                                                                                    무료배송
+                                                                                </span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="slide slide3 swipe">
+                                                                <div class="slide-text">                                                
+                                                                    <div class="img-box">
+                                                                        <div class="heart">
+                                                                            <a href='javascript:Function();'>
+                                                                                <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                                                <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                                            </a>
+                                                                        </div>
+                                                                        <a href='javascript:Function();'>
+                                                                            <img src="./img/sec3slide4.png" alt="">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="text-box">
+                                                                        <h3>
+                                                                            [소유] UVC 다용도 살균기 MDA-100RG2...
+                                                                        </h3>
+                                                                        <h4>2,290,000원</h4>
+                                                                        <ul class="price">
+                                                                            <li>42<span>%</span></li>
+                                                                            <li>49,900<span>원</span></li>                                                        
+                                                                        </ul>
+                                                                        <ul >
+                                                                            <li class="star">
+                                                                                <i class="fa fa-star"></i>
+                                                                                4.0 <span>(6)</span>
+                                                                            </li>
+                                                                            <li>
+                                                                                <span>
+                                                                                    무료배송
+                                                                                </span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="slide slide4 swipe">
+                                                                <div class="slide-text">
+                                                                    <div class="img-box">
+                                                                        <div class="heart">
+                                                                            <a href='javascript:Function();'>
+                                                                                <img class="redHeart" src="./img/redheart.svg" alt="">
+                                                                                <img class="blankHeart" src="./img/heart.svg" alt="">  
+                                                                            </a>
+                                                                        </div>
+                                                                        <a href='javascript:Function();'>
+                                                                            <img src="./img/sec3slide5.png" alt="">
+                                                                        </a>                                                
+                                                                    </div>
+                                                                    <div class="text-box">
+                                                                        <h3>
+                                                                            [소유] UVC 다용도 살균기 MDA-100RG2...
+                                                                        </h3>
+                                                                        <h4>2,290,000원</h4>
+                                                                        <ul class="price">
+                                                                            <li>42<span>%</span></li>
+                                                                            <li>49,900<span>원</span></li>                                                        
+                                                                        </ul>
+                                                                        <ul >
+                                                                            <li class="star">
+                                                                                <i class="fa fa-star"></i>
+                                                                                4.0 <span>(6)</span>
+                                                                            </li>
+                                                                            <li>
+                                                                                <span>
+                                                                                    무료배송
+                                                                                </span>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        
+                                                            <li class="circle swipe">
+                                                                <div class="slide-text">
+                                                                    <div class="img-box">
+                                                                        <a href='javascript:Function();'>
+                                                                            <img src="./img/sec3arrow.png" alt="">
+                                                                        </a>                                               
+                                                                    </div>
+                                                                    <div class="text-box">
+                                                                        <h5>더보기</h5>                                                
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>                 
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+
+                    </div>
+            </div>
+        </div>    
+            
+
+
+       
+    </div>
+<script src="./js/banner.js"></script>
+
+<script>
+
+
+    var arrowBtn     = $('.arrowBtn');    // 화살표 버튼
+    var bottom       = $('.bottom');  // answer    
+    var hidebox      = $('.hidebox');  // hideboxshow   
+    var wirteDown    = $('.wirteDown');  // 직접입력    
+     
+
+      //   탭버튼 이벤트
+      
+       var tab8_btn = $('.tab .active');
+       var tab8mobile = $('#section1 .tabBtn');
+       priceBox       = $('#wrap1> #main>#section1 .priceBox');
+
+
+       $('.tabBtn').on({
+          click:	function(){
+             showHideList();
+          }
+       });
+   
+    // 화살표 버튼 누르면 밑에 notice텍스트 토글
+    arrowBtn.each(function (idx) {                   
+        $(this).on({
+            click: function () {
+                bottom.eq(idx).toggleClass('addArrow'); //보여줌  
+                arrowBtn.eq(idx).toggleClass('closeArrow'); //보여줌 
+                hidebox.toggleClass('hideboxshow'); //보여줌 
+            }
+            
+        });
+    });
+
+ 
+    
+    // 화살표 버튼 누르면 밑에 notice텍스트 토글
+    wirteDown.each(function (idx) {                   
+        $(this).on({
+            click: function () {
+                $('.message').eq(idx).addClass('showMes'); //보여줌 
+               
+            }
+            
+        });
+    });
+    
+
+</script>
+
+
+
+<script>
+        
+
+
+        const slideWrap       = $('#section2 .slide-wrap');
+         const slideContainer = $('#section2 .slide-view');
+         let   cnt            = 0;
+         let   swipeStart     = null;
+         let   swipeEnd       = null;
+         let   dragStart      = null; // 슬라이드 마지막이 처음에서 왼쪽으로 이동된 상태 값을 빼주고 시작
+         let   mouseDown      = null; // 반드시 마우스가 다우된 상태를판단 다운이면 tru, 업이면 false
+         var   heart          = $('#section2 .heart');
+
+                    
+            // heart 클릭 이벤트
+            heart.each(function (idx) {
+            $(this).on({
+                click: function () {
+                
+                    heart.eq(idx).toggleClass('addHeart'); // 클래스 주입
+                    
+                }
+            });
+            });
+         //1.메인슬라이드 함수
+         function mainSlide(){                
+
+               // btnWrap.stop().animate({left:(-100*cnt) + '%'});       
+            slideWrap.stop().animate( {left:(-124*cnt)}, 'easeInOutSine',function(){
+                 cnt>3?cnt=0:cnt; 
+                 cnt<1?cnt=0:cnt;                   
+                //초기화
+               slideWrap.stop().animate( {left:(-124*cnt)});
+               
+            });
+         }
+
+         //2.다음카운트 함수
+         function nextCount(){
+            cnt++;
+            mainSlide();
+         }
+         //2.이전카운트 함수
+         function prevCount(){
+            cnt--;
+            mainSlide();
+         }
+         
+         
+         //4. 마우스 터치 스와이프
+         slideContainer.on({
+               mousedown: function(event){
+                  //터치스와이프 시작 포지션
+                  swipeStart = event.clientX;
+                  dragStart  = event.clientX - slideWrap.offset().left - 124;
+                  mouseDown  = true;//드래그 시작임을 표시
+                  
+
+               },//mousedown 끝
+               mouseup: function(event){
+                  swipeEnd = event.clientX;
+                  mouseDown  = false; //드래그 끝
+                  
+                  if( swipeStart-swipeEnd > 0 ){//다음슬라이드                     
+                     nextCount();
+                  }
+                  if( swipeStart-swipeEnd < 0 ){   // 이전슬라이드                    
+                     prevCount();
+               }
+            
+            }
+         });
+
+         
+         //5. 마우스 드레그 앤 드롭
+         // mousemove
+
+         //6. 반응형 모바일 손가락 핑거 드래드 앤 드롭(반응형)
+         // 마우스 인식못함 동작안함
+         // 반응형 진행하고 폴리필 touchEvent 추가
+         // touchstart(mousedown) / touchend(mouseup) / touchmove(mousemove)
+         slideContainer.on({
+            touchstart: function(event){
+              
+               swipeStart = event.originalEvent.touches[0].clientX;
+               dragStart  = event.originalEvent.touches[0].clientX - slideWrap.offset().left - 124;
+               mouseDown  = true;//드래그 시작임을 표시 
+                                  
+            },
+            touchend: function(event){                  
+                  swipeEnd   = event.originalEvent.changedTouches[0].clientX;   
+                  mouseDown  = false; //드래그 끝
+                    
+                   
+                  if( swipeStart-swipeEnd > 0 ){//다음슬라이드                     
+                     nextCount();
+                  }
+                  if( swipeStart-swipeEnd < 0 ){   // 이전슬라이드                    
+                     prevCount();
+                  }   
+            }
+         });
+
+
+
+
+</script>
+    
+
+
+</body>
+</html>  
