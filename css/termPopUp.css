@@ -27,9 +27,9 @@
 
 
 /* 팝업내용 없을때 최소 길이 height: 350px;  */
-#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .termInfoBox .termInfo {margin:0;  overflow-y: none; height:100%; min-height: 350px;}
+#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .termInfoBox .termInfo {margin:0;  overflow-y: none; height:100%; min-height: 326px;}
 /* 팝업내용 많을때 최대 길이 height: 560px-> 이때 스크롤 생겨야함*/
-#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .termInfoBox .termInfo {margin:0;  overflow-y: scroll; height:100%; max-height: 560px; }
+#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .termInfoBox .termInfo {margin:0;  overflow-y: scroll; height:100%; max-height: 536px; }
 /* 팝업안 컨텐츠 내용 스크롤바 스타일 */
 #termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .termInfoBox .termInfo::-webkit-scrollbar {  width: 4px;  }
 #termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .termInfoBox .termInfo::-webkit-scrollbar-thumb { width: 4px; height:209px;border-radius:10px;background-color: #D9D9D9; }
