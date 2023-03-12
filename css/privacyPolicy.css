@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@import url(./reset.css);
+@import url(./fonts.css);
+
+
+
+
+
+
+        
+/* 개인정보처리방침팝업 */
+#privacyPolicyPopUp { display:block;/*임시로 block 처리해놓음 display:none;해야함*/ z-index:7; position: absolute; top:0; left: 0; width: 100% ; height: 100vh; background: rgba(0, 0, 0, 0.8);}
+#privacyPolicyPopUp.addTermPop {display: block; opacity:1; }
+#privacyPolicyPopUp .privacyPolicyPopUpwrap {width: 100%; font-family: 'SUIT'; }
+#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap { width: 100%;  }
+
+#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content { position:absolute; top:15%; left: 50%;padding:0 18px; margin-left: -162px; background: #fff; width: 324px; display: block; border-radius: 6px;}
+
+/* 개인정보처리방침 x버튼 */
+#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .closeBtn-wrap {  display: inline-block; position: absolute; top:10px; right: 10px; text-align: right;}
+#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .closeBtn-wrap .closeBtn {  display: inline-block;}
+#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .closeBtn-wrap .closeBtn a {display: inline-block; width: 32px; }
+#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .closeBtn-wrap .closeBtn a img {width: 100%;}
+/* 제목  */
+#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content h2 {color: #1a1a1a; font-size: 18px; font-weight: 700; text-align: center; padding: 23px 0 19px 0; margin:0; line-height: 27px;}
+#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .privacyPolicyInfoBox {color: #1a1a1a; font-size: 12px; font-weight: 400; text-align: left;border-top:1px solid #E2E2E2;padding: 20px 0;  }
+
+
+/* 팝업내용 없을때 최소 길이 height: 350px;  */
+#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .privacyPolicyInfoBox .privacyPolicyInfo {margin:0;  overflow-y: scroll; height:430px; }
+/* 팝업내용 많을때 최대 길이 height: 560px-> 이때 스크롤 생겨야함*/
+/* #privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .privacyPolicyInfoBox .privacyPolicyInfo {margin:0;   height:100%; max-height: 326px;} */
+/* 팝업안 컨텐츠 내용 스크롤바 스타일 */
+#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .privacyPolicyInfoBox .privacyPolicyInfo::-webkit-scrollbar {  width: 4px; height: 100%; }
+#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .privacyPolicyInfoBox .privacyPolicyInfo::-webkit-scrollbar-thumb { width: 4px; height:66.74px; border-radius:10px;background-color: #D9D9D9; }
+#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .privacyPolicyInfoBox .privacyPolicyInfo::-webkit-scrollbar-track { background-color: #fff; }
+
+
+
+
+
+/*[선택] Nstore 회원 이용약관 동의  */
+.privacyPolicyInPut {width: 100%;}
+.privacyPolicyInPut h5 {font-size: 12px; font-weight: 400; color: #1A1A1A; line-height: 18px;}
+.privacyPolicyInPut .privacyPolicyInPutWrap { padding:0 0 22px 0; margin: 0;}
+/* 셀렉트박스 */
+.selectBox {margin: 0 auto ;  position: relative; width: 100%; height:44.71px; display: block;   border: 1px solid #E2E2E2; border-radius: 4px;}
+/* 탭버튼 화살표 내리면 나오는거 */
+.selectBox .mobileTab{display: block;box-sizing: border-box; text-decoration:none; }
+.selectBox .mobileTab .tab-wrap{position:relative;z-index:4; display:block;width:100%;box-sizing:border-box;}
+/* 탭버튼  */
+.selectBox .mobileTab .tab-wrap>a{ font-size:12px; line-height: 15px; position:relative; display:block; white-space: nowrap;  color: #797979; text-decoration: none; text-align:left;text-indent: 16px; padding-top: 14px; background: url(../img/selectBox_arrow_open.svg) no-repeat 95% 170%; }
+.selectBox .mobileTab .tab-wrap>a.addFamily{ background:  url(../img/selectBox_arrow_close.svg) no-repeat 95% 170%;  }
+/* 탭버튼 누르면 나오는 메뉴 내용들 */
+.selectBox .mobileTab .tab-wrap>ul.tab{display:block;z-index:1; background:#fff;width:100%;   overflow-y: scroll; height: 152px; padding:3px 0 ; position:absolute; top:44px; margin:0;  box-sizing:border-box;border:1px solid #E2E2E2; border-radius: 6px;}
+/* 셀렉박스 스크롤 */
+.selectBox .mobileTab .tab-wrap>ul.tab::-webkit-scrollbar {  width: 4px;  }
+.selectBox .mobileTab .tab-wrap>ul.tab::-webkit-scrollbar-thumb { width: 4px; height:59px;border-radius:10px;background-color: #D9D9D9; }
+.selectBox .mobileTab .tab-wrap>ul.tab::-webkit-scrollbar-track { background-color: #fff; }
+
+.selectBox .mobileTab .tab-wrap>ul.tab>li{width:100%;display:block;box-sizing:border-box; padding: 9px 0 ;}
+.selectBox .mobileTab .tab-wrap>ul.tab>li:hover {background: #f4f4f4; padding: 9px 0 ;}
+.selectBox .mobileTab .tab-wrap>ul.tab>li:last-child{ border:0 ;}
+.selectBox .mobileTab .tab-wrap>ul.tab>li>a{ color:#1a1a1a; font-size:12px; text-decoration: none;}
+.selectBox .mobileTab .tab-wrap>ul.tab>li>a div { display: block;   }
+.selectBox .mobileTab .tab-wrap>ul.tab>li>a div.option {text-align: left;text-indent: 14px; }
+
+
