@@ -23,17 +23,17 @@
 #termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .closeBtn-wrap .closeBtn a img {width: 100%;}
 /* 제목 사용가능쿠폰 */
 #termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content h2 {color: #1a1a1a; font-size: 18px; font-weight: 700; text-align: center; padding: 23px 0 19px 0; margin:0; line-height: 27px;}
-#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .termInfoBox {color: #1a1a1a; font-size: 12px; font-weight: 400; text-align: left;border-top:1px solid #E2E2E2; border-bottom:1px solid #E2E2E2;padding: 12px 0;  }
+#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .scrollBox {color: #1a1a1a; font-size: 12px; font-weight: 400; text-align: left;border-top:1px solid #E2E2E2; border-bottom:1px solid #E2E2E2;padding: 12px 0;  }
 
 
 /* 팝업내용 없을때 최소 길이 height: 350px;  */
-#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .termInfoBox .termInfo {margin:0;  overflow-y: none; height:100%; min-height: 326px;}
+#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .scrollBox .scrollBoxInfo {margin:0;  overflow-y: none; height:100%; min-height: 326px;}
 /* 팝업내용 많을때 최대 길이 height: 560px-> 이때 스크롤 생겨야함*/
-#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .termInfoBox .termInfo {margin:0;  overflow-y: scroll; height:100%; max-height: 536px; }
+#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .scrollBox .scrollBoxInfo {margin:0;  overflow-y: scroll; height:100%; max-height: 536px; }
 /* 팝업안 컨텐츠 내용 스크롤바 스타일 */
-#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .termInfoBox .termInfo::-webkit-scrollbar {  width: 4px;  }
-#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .termInfoBox .termInfo::-webkit-scrollbar-thumb { width: 4px; height:209px;border-radius:10px;background-color: #D9D9D9; }
-#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .termInfoBox .termInfo::-webkit-scrollbar-track { background-color: #fff; }
+#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .scrollBox .scrollBoxInfo::-webkit-scrollbar {  width: 4px;  }
+#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .scrollBox .scrollBoxInfo::-webkit-scrollbar-thumb { width: 4px; height:209px;border-radius:10px;background-color: #D9D9D9; }
+#termPopUp .termPopUpwrap .termPopUp-gap .termPopUp-content .scrollBox .scrollBoxInfo::-webkit-scrollbar-track { background-color: #fff; }
 
 
 

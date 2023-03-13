@@ -23,17 +23,17 @@
 #privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .closeBtn-wrap .closeBtn a img {width: 100%;}
 /* 제목  */
 #privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content h2 {color: #1a1a1a; font-size: 18px; font-weight: 700; text-align: center; padding: 23px 0 19px 0; margin:0; line-height: 27px;}
-#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .privacyPolicyInfoBox {color: #1a1a1a; font-size: 12px; font-weight: 400; text-align: left;border-top:1px solid #E2E2E2;padding: 20px 0;  }
+#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .scrollBox {color: #1a1a1a; font-size: 12px; font-weight: 400; text-align: left;border-top:1px solid #E2E2E2;padding: 20px 0;  }
 
 
 /* 팝업내용 없을때 최소 길이 height: 350px;  */
-#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .privacyPolicyInfoBox .privacyPolicyInfo {margin:0;  overflow-y: scroll; height:430px; }
+#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .scrollBox .scrollBoxInfo {margin:0;  overflow-y: scroll; height:430px; }
 /* 팝업내용 많을때 최대 길이 height: 560px-> 이때 스크롤 생겨야함*/
-/* #privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .privacyPolicyInfoBox .privacyPolicyInfo {margin:0;   height:100%; max-height: 326px;} */
+/* #privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .scrollBox .scrollBoxInfo {margin:0;   height:100%; max-height: 326px;} */
 /* 팝업안 컨텐츠 내용 스크롤바 스타일 */
-#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .privacyPolicyInfoBox .privacyPolicyInfo::-webkit-scrollbar {  width: 4px; height: 100%; }
-#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .privacyPolicyInfoBox .privacyPolicyInfo::-webkit-scrollbar-thumb { width: 4px; height:66.74px; border-radius:10px;background-color: #D9D9D9; }
-#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .privacyPolicyInfoBox .privacyPolicyInfo::-webkit-scrollbar-track { background-color: #fff; }
+#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .scrollBox .scrollBoxInfo::-webkit-scrollbar {  width: 4px; height: 100%; }
+#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .scrollBox .scrollBoxInfo::-webkit-scrollbar-thumb { width: 4px; height:66.74px; border-radius:10px;background-color: #D9D9D9; }
+#privacyPolicyPopUp .privacyPolicyPopUpwrap .privacyPolicyPopUp-gap .privacyPolicyPopUp-content .scrollBox .scrollBoxInfo::-webkit-scrollbar-track { background-color: #fff; }
 
 
 
