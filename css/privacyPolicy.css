@@ -35,8 +35,11 @@
 #popUp .popUpwrap .popUp-gap .popUp-content .scrollBox .scrollBoxInfo::-webkit-scrollbar-thumb { width: 4px; height:66.74px; border-radius:10px;background-color: #D9D9D9; }
 #popUp .popUpwrap .popUp-gap .popUp-content .scrollBox .scrollBoxInfo::-webkit-scrollbar-track { background-color: #fff; }
 
+#popUp .popUpwrap .popUp-gap .popUp-content .scrollBox .scrollBoxInfo li {font-size:12px ;}
 
-
+tr{border: 1px solid #000;}
+td{border: 1px solid #000;}
+table{word-wrap: break-word; }
 
 
 /*[선택] Nstore 회원 이용약관 동의  */

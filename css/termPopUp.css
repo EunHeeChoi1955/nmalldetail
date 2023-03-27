@@ -27,7 +27,7 @@
 
 
 /* 팝업내용 없을때 최소 길이 height: 350px;  */
-#popUp .popUpwrap .popUp-gap .popUp-content .scrollBox .scrollBoxInfo {margin:0;  overflow-y: none; height:100%; min-height: 326px;}
+#popUp .popUpwrap .popUp-gap .popUp-content .scrollBox .scrollBoxInfo {margin:0;  overflow-y: none; height:100%; min-height: 276px;}
 /* 팝업내용 많을때 최대 길이 height: 560px-> 이때 스크롤 생겨야함*/
 #popUp .popUpwrap .popUp-gap .popUp-content .scrollBox .scrollBoxInfo {margin:0;  overflow-y: scroll; height:100%; max-height: 536px; }
 /* 팝업안 컨텐츠 내용 스크롤바 스타일 */
@@ -37,14 +37,27 @@
 
 
 
+/* 마케팅 수신동의(선택) */
+.marketingSelect {width: 100%;}
+.marketingSelect .marketingWrap { padding:21px 0 0 0; margin: 0;}
+.marketingSelect .marketingWrap li {display: flex; padding-bottom: 10px;}
+.marketingSelect .marketingWrap li:last-child{padding-bottom:0; }
+.marketingSelect .marketingWrap li .choose {display: flex;display: block; margin: auto auto auto 0; font-size: 12px; line-height: 18px; color: #1A1A1A; font-weight: 400;}
+.marketingSelect .marketingWrap li .chooseInput [type=checkbox] { margin:0;appearance: none; outline: none; width: 18px; height: 18px;   background:url(../img/ico_check_my_none.svg) no-repeat 50% 50%; background-size: contain;cursor: pointer; }
+.marketingSelect .marketingWrap li .chooseInput [type=checkbox]:checked {margin:0;appearance: none; outline: none; width: 18px; height: 18px; display: inline-block; background:url(../img/ico_check_my.svg) no-repeat 50% 50%; background-size: contain;cursor: pointer;   }
+
 
 
 /*[선택] Nstore 회원 이용약관 동의  */
 .termInPut {width: 100%;}
-.termInPut .termInPutWrap { padding:21px 0 22px 0; margin: 0;}
+.termInPut .termInPutWrap { padding:17px 0 22px 0; margin: 0;}
 .termInPut .termInPutWrap li {display: flex;}
 .termInPut .termInPutWrap li .termText {display: flex; font-size: 14px; line-height: 20px;}
 .termInPut .termInPutWrap li .termText .greyTerm {color: #909090;}
 .termInPut .termInPutWrap li .termInput {display: inline-block; margin: auto 0 auto auto;}
 .termInPut .termInPutWrap li .termInput [type=checkbox] { margin:0;appearance: none; outline: none; width: 22px; height: 22px;   background:url(../img/ico_check_my_none.svg) no-repeat 50% 50%; background-size: contain;cursor: pointer; }
 .termInPut .termInPutWrap li .termInput [type=checkbox]:checked {margin:0;appearance: none; outline: none; width: 22px; height: 22px; display: inline-block; background:url(../img/ico_check_my.svg) no-repeat 50% 50%; background-size: contain;cursor: pointer;   }
+
+
+
+
