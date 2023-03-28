@@ -38,8 +38,8 @@
 
 
 /* 마케팅 수신동의(선택) */
-.marketingSelect {width: 100%;}
-.marketingSelect .marketingWrap { padding:21px 0 0 0; margin: 0;}
+.marketingSelect {width: 100%; border-bottom: 1px solid #E2E2E2;}
+.marketingSelect .marketingWrap { padding:20px 0 17px 0; margin: 0;}
 .marketingSelect .marketingWrap li {display: flex; padding-bottom: 10px;}
 .marketingSelect .marketingWrap li:last-child{padding-bottom:0; }
 .marketingSelect .marketingWrap li .choose {display: flex;display: block; margin: auto auto auto 0; font-size: 12px; line-height: 18px; color: #1A1A1A; font-weight: 400;}
